@@ -3,6 +3,8 @@ from werkzeug.utils import secure_filename
 from werkzeug.security import generate_password_hash, check_password_hash
 from zipfile import ZipFile
 import os
+import re
+import time
 from datetime import timedelta
 import shutil
 import mysql.connector
@@ -80,14 +82,13 @@ def logout():
     session.clear()
     return redirect(url_for('login_page'))
     
-
-# Upload Handling
 @app.route('/upload', methods=['POST'])
 def upload_zip():
     if 'user_id' not in session or 'regno' not in session:
         return jsonify(error="Session expired. Please login again"), 401
-    try:    
-    # Verify user exists in database
+
+    try:
+        # Verify user exists
         conn = get_db()
         cursor = conn.cursor(dictionary=True)
         cursor.execute("SELECT id FROM users WHERE id = %s", (session['user_id'],))
@@ -95,9 +96,29 @@ def upload_zip():
         cursor.close()
         
         if not user:
-            session.clear()  # Destroy invalid session
+            session.clear()
             return jsonify(error="User not found. Please login again"), 401
-            
+
+        # Get project name from form data
+        project_name = request.form.get('projectName')
+        if not project_name:
+            return jsonify(error="Project name required"), 400
+
+        # Validate project name format
+        if not re.match(r'^[\w-]{3,50}$', project_name):
+            return jsonify(error="Invalid project name (3-50 chars, letters/numbers/-/_ only)"), 400
+
+        # Check name availability
+        cursor = conn.cursor()
+        cursor.execute(
+            "SELECT id FROM uploads WHERE user_id = %s AND filename = %s",
+            (session['user_id'], f"{project_name}.zip")
+        )
+        if cursor.fetchone():
+            return jsonify(error="Project name already exists"), 409
+        cursor.close()
+
+        # Process file upload
         if 'zipfile' not in request.files:
             return jsonify(error="No file uploaded"), 400
             
@@ -105,50 +126,83 @@ def upload_zip():
         if not file.filename.endswith('.zip'):
             return jsonify(error="Only ZIP files allowed"), 400
 
+        # Generate unique folder name
+        regno = session['regno']
+        timestamp = int(time.time())
+        extract_path = os.path.join(PROJECTS_DIR,regno,project_name)
+
+        # Save and process ZIP file
+        # Save and rename ZIP to project_name.zip
+        original_name = secure_filename(file.filename)
+        filename = secure_filename(f"{project_name}.zip")
+        temp_path = os.path.join(TEMP_DIR, filename)
+        file.save(temp_path)
+
         try:
-            filename = secure_filename(file.filename)
-            temp_path = os.path.join(TEMP_DIR, filename)
-            file.save(temp_path)
-            
-            # Extract to: projects/<regno>/<project_name>/
-            project_name = os.path.splitext(filename)[0]
-            regno = session['regno']
-            extract_path = os.path.join(PROJECTS_DIR, regno)
-            
             with ZipFile(temp_path, 'r') as zip_ref:
+                # Security checks
                 for entry in zip_ref.namelist():
                     if any(x in entry for x in ['..', '.env', 'node_modules']):
                         raise ValueError(f"Forbidden file: {entry}")
+                
+                # Extract to unique folder
                 os.makedirs(extract_path, exist_ok=True)
-                zip_ref.extractall(extract_path)
-            
-            os.remove(temp_path)
-            
+                # Flatten ZIP extraction: remove top-level folder if present
+                for member in zip_ref.namelist():
+                    member_path = os.path.normpath(member)
+
+                    if any(x in member_path for x in ['..', '.env', 'node_modules']):
+                        raise ValueError(f"Forbidden file: {member_path}")
+
+                    if member_path.endswith('/'):
+                        continue  # Skip folders, they'll be created with files
+
+                    # Remove top folder if exists (flatten)
+                    parts = member_path.split(os.sep)
+                    if len(parts) > 1:
+                        stripped_path = os.path.join(*parts[1:])
+                    else:
+                        stripped_path = parts[0]
+
+                    # Full target path
+                    target_file_path = os.path.join(extract_path, stripped_path)
+                    os.makedirs(os.path.dirname(target_file_path), exist_ok=True)
+
+                    with zip_ref.open(member) as source, open(target_file_path, 'wb') as target:
+                        shutil.copyfileobj(source, target)
+
+
             # Store in database
-            conn = get_db()
             cursor = conn.cursor()
             cursor.execute(
                 "INSERT INTO uploads (user_id, filename, project_folder) VALUES (%s, %s, %s)",
-                (session['user_id'], filename, f"{regno}/{project_name}")
+                (session['user_id'], filename, project_name)
             )
             conn.commit()
             cursor.close()
-            conn.close()
-            
+
             project_url = f"/projects/{regno}/{project_name}/"
-            file_url = f"http://{request.host}{project_url}"
             return jsonify(
                 success=True,
                 url=project_url,
-                viewUrl=file_url,
+                viewUrl=f"http://{request.host}{project_url}",
             )
-            
+
         except Exception as e:
+            # Cleanup on error
+            if os.path.exists(extract_path):
+                shutil.rmtree(extract_path)
+            raise e
+
+        finally:
             if os.path.exists(temp_path):
                 os.remove(temp_path)
-            return jsonify(error=str(e)), 400
+
     except Exception as e:
         return jsonify(error=str(e)), 500
+    finally:
+        conn.close()
+
 
 # Dashboard API
 @app.route('/api/dashboard')
