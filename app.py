@@ -202,8 +202,60 @@ def upload_zip():
         return jsonify(error=str(e)), 500
     finally:
         conn.close()
+# Add to your Flask app
+@app.route('/api/delete-project/<int:project_id>', methods=['DELETE'])
+def delete_project(project_id):
+    if 'user_id' not in session:
+        return jsonify(error="Unauthorized"), 401
 
+    try:
+        conn = get_db()
+        cursor = conn.cursor(dictionary=True)
+        
+        # Verify ownership
+        cursor.execute("""
+            SELECT project_folder 
+            FROM uploads 
+            WHERE id = %s AND user_id = %s
+        """, (project_id, session['user_id']))
+        project = cursor.fetchone()
+        
+        if not project:
+            return jsonify(error="Project not found"), 404
 
+        # Delete from database
+        cursor.execute("DELETE FROM uploads WHERE id = %s", (project_id,))
+        conn.commit()
+        
+                # Delete files
+        target_path = os.path.join(PROJECTS_DIR, project['project_folder'])
+        if os.path.exists(target_path):
+            shutil.rmtree(target_path)
+
+        return jsonify(success=True)
+        
+    except Exception as e:
+        return jsonify(error=str(e)), 500
+    finally:
+        cursor.close()
+        conn.close()
+
+# @app.route('/api/cleanup/<path:folder>', methods=['POST'])
+# def cleanup_files(folder):
+#     if 'user_id' not in session:
+#         return jsonify(error="Unauthorized"), 401
+
+#     try:
+#         target_path = os.path.join(PROJECTS_DIR, folder)
+#         if os.path.exists(target_path):
+#             shutil.rmtree(target_path)
+#         return jsonify(success=True)
+#     except Exception as e:
+#         return jsonify(error=str(e)), 500
+@app.route('/get_regno')
+def get_regno():
+    return jsonify({'regno': session.get('regno')})
+    
 # Dashboard API
 @app.route('/api/dashboard')
 def dashboard_data():
@@ -213,7 +265,7 @@ def dashboard_data():
     conn = get_db()
     cursor = conn.cursor(dictionary=True)
     cursor.execute("""
-        SELECT filename, project_folder, upload_time 
+        SELECT id, filename, project_folder, upload_time 
         FROM uploads 
         WHERE user_id = %s 
         ORDER BY upload_time DESC
