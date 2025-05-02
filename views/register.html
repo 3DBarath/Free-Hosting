@@ -30,6 +30,18 @@
             overflow: hidden;
             position: relative;
         }
+        .spinner {
+            width: 24px;
+            height: 24px;
+            border: 3px solid rgba(100, 255, 218, 0.3);
+            border-top-color: var(--teal);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
         /* Add to existing CSS */
         .home-link {
             position: fixed;
@@ -52,6 +64,16 @@
 
         .home-link i {
             font-size: 1.2rem;
+        }
+        .dob-group{
+            position: relative;
+        }
+
+        .error-message {
+            color: #ff6b6b;
+            font-size: 0.8rem;
+            margin-top: 0.5rem;
+            display: none;
         }
 
         .auth-blob {
@@ -179,23 +201,60 @@
         }
     </style>
 </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Keep previous head content -->
+    <style>
+        /* Add to existing CSS */
+        .dob-group {
+            position: relative;
+        }
+        
+        .error-message {
+            color: #ff6b6b;
+            font-size: 0.8rem;
+            margin-top: 0.5rem;
+            display: none;
+        }
+    </style>
+</head>
 <body>
     <div class="auth-blob"></div>
     <div class="auth-blob"></div>
     
+    <a href="/" class="home-link">
+        <i class="fas fa-home"></i>
+        Zip Host
+    </a>
+
     <div class="container">
         <h2>Developer Registration</h2>
         <form id="register-form">
             <div class="form-group">
                 <label for="regno">Developer ID</label>
                 <i class="fas fa-user-tag input-icon"></i>
-                <input type="text" id="regno" name="regno" required>
+                <input type="text" id="regno" name="regno" required 
+                       pattern="8301\d{8}" 
+                       title="Registration number must start with 8301 and have 12 digits">
+                <div class="error-message" id="regno-error">Invalid registration number format</div>
+            </div>
+            
+            <div class="form-group dob-group">
+                <label for="dob">Date of Birth</label>
+                <i class="fas fa-calendar input-icon"></i>
+                <input type="date" id="dob" name="dob" required 
+                       pattern="\d{4}-\d{2}-\d{2}"
+                       title="Enter your date of birth in yyyy-mm-dd format">
+                <div class="error-message" id="dob-error">Invalid date of birth</div>
             </div>
             
             <div class="form-group">
                 <label for="password">Access Code</label>
                 <i class="fas fa-key input-icon"></i>
-                <input type="password" id="password" name="password" required>
+                <input type="password" id="password" name="password" required 
+                       minlength="8"
+                       title="Password must be at least 8 characters">
             </div>
             
             <button type="submit">Create Account</button>
@@ -206,62 +265,82 @@
     </div>
 
     <script>
-        document.getElementById('register-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            const regno = document.getElementById('regno').value;
-            const password = document.getElementById('password').value;
+        document.getElementById('regno').addEventListener('input', function() {
+            const isValid = VALID_REGNO.test(this.value);
+            this.style.borderColor = isValid ? 'var(--teal)' : '#ff6b6b';
+            document.getElementById('regno-error').style.display = isValid ? 'none' : 'block';
+        });
 
-            // Show loading state
-            const btn = this.querySelector('button');
-            btn.innerHTML = '<div class="spinner"></div>';
-            btn.style.opacity = '0.7';
-            btn.disabled = true;
+        document.getElementById('dob').addEventListener('change', function() {
+            const isValid = isValidDate(this.value) && validateCredentials(
+                document.getElementById('regno').value,
+                this.value
+            );
+            this.style.borderColor = isValid ? 'var(--teal)' : '#ff6b6b';
+            document.getElementById('dob-error').style.display = isValid ? 'none' : 'block';
+        });
 
-            fetch('/register', {
-                method: 'POST',
-                body: new URLSearchParams({
-                    'regno': regno,
-                    'password': password
-                })
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    // Modern success notification
-                    const alert = document.createElement('div');
-                    alert.style.position = 'fixed';
-                    alert.style.top = '20px';
-                    alert.style.right = '20px';
-                    alert.style.padding = '1rem 2rem';
-                    alert.style.background = 'rgba(100, 255, 218, 0.9)';
-                    alert.style.color = 'var(--navy)';
-                    alert.style.borderRadius = '6px';
-                    alert.style.boxShadow = '0 5px 15px rgba(0,0,0,0.2)';
-                    alert.textContent = '✓ Account created successfully';
-                    document.body.appendChild(alert);
+        document.getElementById('register-form').addEventListener('submit', async function(event) {
+                event.preventDefault();
+                const form = event.target;
+                const btn = form.querySelector('button');
+                
+                // Reset UI
+                btn.innerHTML = '<div class="spinner"></div>';
+                btn.disabled = true;
 
-                    setTimeout(() => {
-                        window.location.href = '/login';
-                    }, 1500);
-                } else {
-                    // Error state reset
-                    btn.innerHTML = 'Create Account';
-                    btn.style.opacity = '1';
-                    btn.disabled = false;
+                try {
+                    const formData = new FormData(form);
+                    const response = await fetch('/register', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/x-www-form-urlencoded',
+                        },
+                        body: new URLSearchParams(formData)
+                    });
+
+                    const result = await response.json();
                     
-                    const error = document.createElement('div');
-                    error.style.color = '#ff6b6b';
-                    error.style.marginTop = '1rem';
-                    error.textContent = data.error;
-                    document.querySelector('.link').before(error);
+                    if (response.ok) {
+                        alert('Registration successful! Redirecting to login...');
+                        window.location.href = '/login';
+                    } else {
+                        alert(result.error || 'Registration failed');
+                    }
+                } catch (error) {
+                    alert('Network error - please try again');
+                } finally {
+                    btn.innerHTML = 'Create Account';
+                    btn.disabled = false;
                 }
             });
-        });
+
+        function showError(message, field = null) {
+            const errorDiv = document.createElement('div');
+            errorDiv.className = 'error-message';
+            errorDiv.textContent = message;
+            
+            if (field) {
+                document.getElementById(`${field}-error`).replaceWith(errorDiv);
+            } else {
+                document.querySelector('.link').before(errorDiv);
+            }
+            }
+
+        function showSuccess(message) {
+            const alert = document.createElement('div');
+            alert.style.position = 'fixed';
+            alert.style.top = '20px';
+            alert.style.right = '20px';
+            alert.style.padding = '1rem 2rem';
+            alert.style.background = 'rgba(100, 255, 218, 0.9)';
+            alert.style.color = 'var(--navy)';
+            alert.style.borderRadius = '6px';
+            alert.style.boxShadow = '0 5px 15px rgba(0,0,0,0.2)';
+            alert.textContent = message;
+            document.body.appendChild(alert);
+        }
     </script>
 </body>
-<!-- Add below <body> tag -->
-    <a href="/" class="home-link">
-        <i class="fas fa-home"></i>
-        Zip Host
-    </a>
+</html>
 </html>

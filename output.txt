@@ -363,3 +363,212 @@ Press CTRL+C to quit
  * Restarting with stat
  * Debugger is active!
  * Debugger PIN: 225-432-578
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7777
+ * Running on http://210.16.91.251:7777
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+27.61.49.240 - - [02/May/2025 07:24:44] "GET /home HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 07:24:46] "GET /dashboard HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 07:24:46] "GET /get_base_url HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 07:24:46] "GET /get_regno HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 07:24:46] "GET /get_regno HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 07:24:46] "GET /api/dashboard HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 07:24:48] "GET /deploy HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 07:24:52] "GET / HTTP/1.1" 302 -
+27.61.49.240 - - [02/May/2025 07:24:52] "GET /home HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 07:24:54] "GET /deploy HTTP/1.1" 304 -
+27.61.49.240 - - [02/May/2025 07:24:56] "GET /dashboard HTTP/1.1" 304 -
+27.61.49.240 - - [02/May/2025 07:24:56] "GET /get_base_url HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 07:24:56] "GET /get_regno HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 07:24:57] "GET /get_regno HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 07:24:57] "GET /api/dashboard HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 07:24:59] "GET / HTTP/1.1" 302 -
+27.61.49.240 - - [02/May/2025 07:24:59] "GET /home HTTP/1.1" 304 -
+27.61.49.240 - - [02/May/2025 07:25:02] "GET /dashboard HTTP/1.1" 304 -
+27.61.49.240 - - [02/May/2025 07:25:02] "GET /get_base_url HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 07:25:02] "GET /get_regno HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 07:25:02] "GET /get_regno HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 07:25:02] "GET /api/dashboard HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 07:25:04] "GET /logout HTTP/1.1" 302 -
+27.61.49.240 - - [02/May/2025 07:25:04] "GET /login HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 07:25:09] "POST /login HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 07:25:11] "GET /home HTTP/1.1" 304 -
+27.61.49.240 - - [02/May/2025 07:39:39] "GET /dashboard HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 07:39:40] "GET /get_base_url HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 07:39:40] "GET /get_regno HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 07:39:40] "GET /get_regno HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 07:39:40] "GET /api/dashboard HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 07:39:42] "GET /logout HTTP/1.1" 302 -
+27.61.49.240 - - [02/May/2025 07:39:42] "GET /login HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 07:39:44] "GET /register HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Documents\Free-Hosting\app.py", line 8, in <module>
+    im
+NameError: name 'im' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Documents\Free-Hosting\app.py", line 8, in <module>
+    import datetime
+NameError: name 'im' is not defined
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7777
+ * Running on http://210.16.91.251:7777
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+27.61.49.240 - - [02/May/2025 07:43:36] "GET /register HTTP/1.1" 304 -
+27.61.49.240 - - [02/May/2025 07:50:54] "GET /register HTTP/1.1" 304 -
+27.61.49.240 - - [02/May/2025 07:51:26] "GET /login HTTP/1.1" 304 -
+27.61.49.240 - - [02/May/2025 07:51:31] "POST /login HTTP/1.1" 401 -
+27.61.49.240 - - [02/May/2025 07:51:35] "GET /register HTTP/1.1" 304 -
+27.61.49.240 - - [02/May/2025 07:55:50] "GET /register HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7777
+ * Running on http://210.16.91.251:7777
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+27.61.49.240 - - [02/May/2025 08:07:29] "GET /register HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:07:48] "POST /register HTTP/1.1" 401 -
+27.61.49.240 - - [02/May/2025 08:07:56] "POST /register HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\Administrator\Documents\Free-Hosting\app.py", line 87, in register
+    """, (regno, password))
+NameError: name 'password' is not defined
+27.61.49.240 - - [02/May/2025 08:08:01] "POST /register HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\Administrator\Documents\Free-Hosting\app.py", line 87, in register
+    """, (regno, password))
+NameError: name 'password' is not defined
+27.61.49.240 - - [02/May/2025 08:08:18] "POST /register HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\Administrator\Documents\Free-Hosting\app.py", line 87, in register
+    """, (regno, password))
+NameError: name 'password' is not defined
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7777
+ * Running on http://210.16.91.251:7777
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+27.61.49.240 - - [02/May/2025 08:10:04] "GET /register HTTP/1.1" 304 -
+27.61.49.240 - - [02/May/2025 08:10:26] "POST /register HTTP/1.1" 401 -
+27.61.49.240 - - [02/May/2025 08:10:32] "POST /register HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:10:34] "GET /login HTTP/1.1" 304 -
+27.61.49.240 - - [02/May/2025 08:10:44] "POST /login HTTP/1.1" 401 -
+27.61.49.240 - - [02/May/2025 08:10:56] "POST /login HTTP/1.1" 401 -
+27.61.49.240 - - [02/May/2025 08:11:15] "POST /login HTTP/1.1" 401 -
+27.61.49.240 - - [02/May/2025 08:11:15] "POST /login HTTP/1.1" 401 -
+27.61.49.240 - - [02/May/2025 08:11:15] "POST /login HTTP/1.1" 401 -
+27.61.49.240 - - [02/May/2025 08:11:15] "POST /login HTTP/1.1" 401 -
+27.61.49.240 - - [02/May/2025 08:11:15] "POST /login HTTP/1.1" 401 -
+27.61.49.240 - - [02/May/2025 08:11:15] "POST /login HTTP/1.1" 401 -
+27.61.49.240 - - [02/May/2025 08:11:15] "POST /login HTTP/1.1" 401 -
+27.61.49.240 - - [02/May/2025 08:11:15] "POST /login HTTP/1.1" 401 -
+27.61.49.240 - - [02/May/2025 08:13:17] "GET /login HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:13:26] "POST /login HTTP/1.1" 401 -
+27.61.49.240 - - [02/May/2025 08:14:37] "POST /login HTTP/1.1" 401 -
+27.61.49.240 - - [02/May/2025 08:14:41] "POST /login HTTP/1.1" 401 -
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578

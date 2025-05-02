@@ -521,6 +521,11 @@
             }
         });
 
+        document.getElementById('projectName').addEventListener('input', function() {
+        document.getElementById('confirmBtn').disabled = true;
+        document.getElementById('nameStatus').textContent = '';
+        });
+
         // Name Availability Check
         async function checkNameAvailability(name) {
             const status = document.getElementById('nameStatus');
@@ -561,13 +566,16 @@
   }
 
 
-  // Show Name Dialog
-        function showNameDialog(defaultName) {
-            nameDialog.style.display = 'flex';
-            document.getElementById('projectName').value = defaultName;
-            document.getElementById('nameStatus').textContent = '';
-    document.getElementById('confirmBtn').disabled = true;
-  }
+  function showNameDialog(defaultName) {
+        nameDialog.style.display = 'flex';
+        const nameInput = document.getElementById('projectName');
+        nameInput.value = defaultName;
+        document.getElementById('nameStatus').textContent = '';
+        document.getElementById('confirmBtn').disabled = true;
+        
+        // Trigger input event to clear any previous state
+        nameInput.dispatchEvent(new Event('input'));
+    }
 
   // Dialog Event Listeners
         document.getElementById('checkBtn').addEventListener('click', async () => {

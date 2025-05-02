@@ -30,6 +30,20 @@
             overflow: hidden;
             position: relative;
         }
+        .toggle-password {
+            position: absolute;
+            top: 2.3rem;
+            right: 1rem;
+            color: var(--slate);
+            cursor: pointer;
+            font-size: 1.1rem;
+            z-index: 10;
+        }
+
+        .toggle-password:hover {
+            color: var(--teal);
+        }
+
         /* Add to existing CSS */
         .home-link {
             position: fixed;
@@ -211,6 +225,7 @@
                 <label for="password">Passcode</label>
                 <i class="fas fa-lock input-icon"></i>
                 <input type="password" id="password" name="password" required>
+                <span class="toggle-password"><i class="fas fa-eye"></i></span>
             </div>
             
             <button type="submit">Authenticate</button>
@@ -256,6 +271,14 @@
                     alert('Authentication failed: ' + data.error);
                 }
             });
+        });
+        const togglePassword = document.querySelector('.toggle-password i');
+        const passwordInput = document.getElementById('password');
+
+        togglePassword.addEventListener('click', () => {
+            const isPassword = passwordInput.type === 'password';
+            passwordInput.type = isPassword ? 'text' : 'password';
+            togglePassword.className = isPassword ? 'fas fa-eye-slash' : 'fas fa-eye';
         });
     </script>
 </body>

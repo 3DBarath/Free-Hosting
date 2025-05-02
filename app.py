@@ -5,6 +5,7 @@ from zipfile import ZipFile
 import os
 import re
 import time
+import datetime
 from datetime import timedelta
 import shutil
 import mysql.connector
@@ -45,16 +46,52 @@ def get_db():
 @app.route('/register', methods=['POST'])
 def register():
     regno = request.form['regno']
-    password = generate_password_hash(request.form['password'])
+    dob = request.form['dob']
+    password = request.form['password']
+    
+    # Validate REGNO format
+    if not regno.startswith('8301') or len(regno) != 12 or not regno.isdigit():
+        return jsonify(error="Invalid registration number format"), 400
+    
+    # Validate date format
+    try:
+        datetime.datetime.strptime(dob, '%Y-%m-%d')
+    except ValueError:
+        return jsonify(error="Invalid date format (use YYYY-MM-DD)"), 400
     
     conn = get_db()
-    cursor = conn.cursor()
+    cursor = conn.cursor(dictionary=True)
+    
     try:
-        cursor.execute("INSERT INTO users (regno, password_hash) VALUES (%s, %s)", (regno, password))
+        # Check valid REGNO/DOB combination
+        cursor.execute("""
+            SELECT regno 
+            FROM valid_registrations 
+            WHERE regno = %s AND dob = %s
+        """, (regno, dob))
+        valid = cursor.fetchone()
+        
+        if not valid:
+            return jsonify(error="Invalid registration number or date of birth"), 401
+
+        # Rest of registration logic...
+
+        # Check if already registered
+        cursor.execute("SELECT id FROM users WHERE regno = %s", (regno,))
+        if cursor.fetchone():
+            return jsonify(error="Registration number already exists"), 409
+        hashed_password = generate_password_hash(password)
+        # Create user
+        cursor.execute("""
+            INSERT INTO users (regno, password_hash) 
+            VALUES (%s, %s)
+        """, (regno, hashed_password))
         conn.commit()
+        
         return jsonify(success=True)
-    except mysql.connector.IntegrityError:
-        return jsonify(error="Registration number exists"), 409
+        
+    except mysql.connector.Error as e:
+        return jsonify(error="Database error"), 500
     finally:
         cursor.close()
         conn.close()
@@ -347,7 +384,7 @@ def upload_page():
 @app.route('/login')
 def login_page():
     if 'user_id' in session:
-        return redirect(url_for('login_page'))
+        return redirect(url_for('dashboard'))
     return send_from_directory(VIEWS_DIR, 'login.html')
 
 @app.route('/register')
