@@ -336,7 +336,7 @@ def check_valid_session():
 @app.route('/')
 def index():
     return redirect(url_for('home'))
-@app.route('/upload')
+@app.route('/deploy')
 def upload_page():
     check_valid_session()
     if 'user_id' not in session:
@@ -347,7 +347,7 @@ def upload_page():
 @app.route('/login')
 def login_page():
     if 'user_id' in session:
-        return redirect(url_for('upload_page'))
+        return redirect(url_for('login_page'))
     return send_from_directory(VIEWS_DIR, 'login.html')
 
 @app.route('/register')

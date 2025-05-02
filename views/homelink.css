@@ -1,0 +1,23 @@
+/* Add to existing CSS */
+.home-link {
+    position: fixed;
+    top: 1.5rem;
+    left: 1.5rem;
+    color: var(--teal);
+    text-decoration: none;
+    font-weight: 600;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.home-link:hover {
+    color: var(--light-slate);
+    transform: translateX(-3px);
+}
+
+.home-link i {
+    font-size: 1.2rem;
+}

@@ -3,46 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>ZipHost - Developer Dashboard</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
+        :root {
+            --navy: #0A192F;
+            --teal: #64FFDA;
+            --slate: #8892B0;
+            --light-slate: #CCD6F6;
+            --gradient: linear-gradient(45deg, var(--teal), #00C9A7);
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+        /* Add to existing CSS */
+        .home-link {
+            position: fixed;
+            top: 1.5rem;
+            left: 1.5rem;
+            color: var(--teal);
+            text-decoration: none;
+            font-weight: 600;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .home-link:hover {
+            color: var(--light-slate);
+            transform: translateX(-3px);
+        }
+
+        .home-link i {
+            font-size: 1.2rem;
         }
 
         body {
             min-height: 100vh;
-            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            background: var(--navy);
             padding: 2rem;
+            color: var(--light-slate);
         }
+
+        /* Cyber-style background elements */
+        .dashboard-blob {
+            position: fixed;
+            width: 800px;
+            height: 800px;
+            background: rgba(100, 255, 218, 0.03);
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            filter: blur(100px);
+            z-index: -1;
+        }
+
+        .dashboard-blob:nth-child(1) { top: -300px; left: -300px; }
+        .dashboard-blob:nth-child(2) { bottom: -300px; right: -300px; }
 
         .dashboard-container {
             max-width: 1200px;
             margin: 2rem auto;
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 20px;
+            background: rgba(10, 25, 47, 0.9);
+            backdrop-filter: blur(15px);
+            border-radius: 15px;
             padding: 2rem;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(100, 255, 218, 0.2);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.25);
             transform: translateY(20px);
             opacity: 0;
             animation: slideUp 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
         }
 
         @keyframes slideUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         h2 {
-            color: #2d3436;
+            color: var(--teal);
             margin-bottom: 2rem;
             font-size: 2.5em;
             text-align: center;
+            letter-spacing: -0.5px;
         }
 
         #uploads-list {
@@ -51,106 +97,121 @@
         }
 
         .upload-item {
-            background: #f8f9fa;
-            border-radius: 12px;
+            background: rgba(100, 255, 218, 0.05);
+            border-radius: 10px;
             padding: 1.5rem;
             margin-bottom: 1rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 1px solid rgba(100, 255, 218, 0.2);
             opacity: 0;
             animation: fadeIn 0.5s ease forwards;
         }
 
         @keyframes fadeIn {
-            to {
-                opacity: 1;
-            }
+            to { opacity: 1; }
         }
 
         .upload-item:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(100, 255, 218, 0.1);
+            background: rgba(100, 255, 218, 0.08);
         }
 
         .upload-info {
             flex: 1;
+            margin-right: 1.5rem;
         }
 
         .upload-info strong {
-            color: #2d3436;
-            font-size: 1.1em;
+            color: var(--teal);
+            font-size: 1.2em;
             display: block;
             margin-bottom: 0.5rem;
+            letter-spacing: -0.5px;
         }
 
-        .upload-info a {
-            color: #4ecdc4;
-            text-decoration: none;
-            font-weight: 600;
-            transition: color 0.3s ease;
-        }
-
-        .upload-info a:hover {
-            color: #ff6b6b;
+        .upload-actions {
+            display: flex;
+            gap: 0.75rem;
+            align-items: center;
         }
 
         .upload-time {
-            color: #636e72;
+            color: var(--slate);
             font-size: 0.9em;
             display: flex;
             align-items: center;
             gap: 0.5rem;
         }
-        .view-btn {
-            background: #0984e3 !important;
-            color: white !important;
-            padding: 0.5rem 1rem !important;
-            border-radius: 6px;
-            transition: all 0.3s ease;
-        }
 
-        .view-btn:hover {
-            background: #74b9ff !important;
-            transform: translateY(-2px);
-        }
-
-
+        /* Modern Action Buttons */
         .actions {
             margin-top: 2rem;
             text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
         }
 
         .actions a {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
             padding: 0.8rem 1.5rem;
-            background: #4ecdc4;
-            color: white;
-            border-radius: 8px;
+            background: var(--gradient);
+            color: var(--navy);
+            border-radius: 6px;
             text-decoration: none;
-            transition: all 0.3s ease;
-            margin: 0 0.5rem;
+            font-weight: 600;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
 
         .actions a:hover {
-            background: #45b7b0;
             transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(100, 255, 218, 0.3);
         }
 
         .logout-btn {
-            background: #ff6b6b !important;
+            background: linear-gradient(45deg, #ff6b6b, #ff4757) !important;
+            color: white !important;
         }
 
-        .logout-btn:hover {
-            background: #e55a5a !important;
+        /* Modern Control Buttons */
+        .view-btn, .share-btn, .delete-btn {
+            padding: 0.5rem 1rem !important;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
         }
 
-        .empty-state {
-            text-align: center;
-            color: #636e72;
-            padding: 2rem;
-            font-size: 1.2em;
+        .view-btn {
+            background: var(--gradient);
+            color: var(--navy);
+        }
+
+        .share-btn {
+            background: rgba(100, 255, 218, 0.1);
+            color: var(--teal);
+            border: 1px solid rgba(100, 255, 218, 0.3);
+        }
+
+        .delete-btn {
+            background: rgba(255, 107, 107, 0.1);
+            color: #ff6b6b;
+            border: 1px solid rgba(255, 107, 107, 0.3);
+        }
+
+        .view-btn:hover, .share-btn:hover, .delete-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
         @media (max-width: 768px) {
@@ -165,61 +226,43 @@
                 align-items: flex-start;
             }
 
+            .upload-actions {
+                width: 100%;
+                justify-content: space-between;
+            }
+
             .upload-time {
-                justify-content: flex-end;
+                justify-content: flex-start;
                 width: 100%;
             }
         }
-        /* Add delete button styles */
-        .delete-btn {
-            background: #ff4757 !important;
-            color: white !important;
-            padding: 0.5rem 1rem !important;
-            border-radius: 6px;
-            transition: all 0.3s ease;
-            margin-left: 1rem;
-        }
-
-        .delete-btn:hover {
-            background: #ff6b81 !important;
-            transform: translateY(-2px);
-        }
-
-        .upload-actions {
-            display: flex;
-            gap: 0.5rem;
-            align-items: center;
-        }
-        .share-btn {
-            background: #6c5ce7 !important;
-            color: white !important;
-            padding: 0.5rem 1rem !important;
-            border-radius: 6px;
-            transition: all 0.3s ease;
-        }
-
-        .share-btn:hover {
-            background: #a29bfe !important;
-            transform: translateY(-2px);
-        }
-
     </style>
 </head>
 <body>
+    <div class="dashboard-blob"></div>
+    <div class="dashboard-blob"></div>
+    
     <div class="dashboard-container">
-        <h2>Welcome to Your Dashboard</h2>
+        <h2>Developer Dashboard</h2>
         
         <ul id="uploads-list">
             <!-- Uploaded files will be displayed here -->
         </ul>
 
         <div class="actions">
-            <a href="/upload">📁 Upload New Project</a>
-            <a href="/logout" class="logout-btn">🚪 Logout</a>
+            <a href="/deploy">
+                <i class="fas fa-cloud-upload-alt"></i>
+                New Project
+            </a>
+            <a href="/logout" class="logout-btn">
+                <i class="fas fa-sign-out-alt"></i>
+                Logout
+            </a>
         </div>
     </div>
 
     <script>
+        // Updated JavaScript with modern UI feedback
         async function deleteProject(projectId, projectFolder, listItem) {
             if (!projectId || !projectFolder) {
                 alert('Invalid project data');
@@ -231,23 +274,37 @@
                 const response = await fetch(`/api/delete-project/${projectId}`, {
                     method: 'DELETE',
                 });
-                
+
                 const data = await response.json();
                 if (!response.ok || data.error) {
                     throw new Error(data.error || 'Failed to delete project');
                 }
                 
-                // Remove from UI
                 listItem.style.opacity = '0';
                 setTimeout(() => listItem.remove(), 300);
-                
+                showNotification('Project deleted successfully', 'var(--teal)');
                 // Optional: Remove folder from server
                 await fetch(`/api/cleanup/${projectFolder}`, { method: 'POST' });
                 
             } catch (err) {
-                alert('Delete failed: ' + err.message);
-                console.error('Delete error:', err);
+                showNotification(err.message, '#ff6b6b');
             }
+        }
+
+        function showNotification(message, color) {
+            const notification = document.createElement('div');
+            notification.style.position = 'fixed';
+            notification.style.bottom = '20px';
+            notification.style.right = '20px';
+            notification.style.padding = '1rem 2rem';
+            notification.style.background = color;
+            notification.style.color = 'var(--navy)';
+            notification.style.borderRadius = '6px';
+            notification.style.boxShadow = '0 5px 15px rgba(0,0,0,0.2)';
+            notification.textContent = message;
+            document.body.appendChild(notification);
+
+            setTimeout(() => notification.remove(), 3000);
         }
         async function fetchRegno() {
         const response = await fetch('/get_regno');
@@ -405,4 +462,9 @@
     });
 </script>
 </body>
+<!-- Add below <body> tag -->
+    <a href="/" class="home-link">
+        <i class="fas fa-home"></i>
+        Zip Host
+    </a>
 </html>
