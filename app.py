@@ -240,21 +240,27 @@ def delete_project(project_id):
         cursor.close()
         conn.close()
 
-# @app.route('/api/cleanup/<path:folder>', methods=['POST'])
-# def cleanup_files(folder):
-#     if 'user_id' not in session:
-#         return jsonify(error="Unauthorized"), 401
+@app.route('/api/cleanup/<path:folder>', methods=['POST'])
+def cleanup_files(folder):
+    if 'user_id' not in session:
+        return jsonify(error="Unauthorized"), 401
 
-#     try:
-#         target_path = os.path.join(PROJECTS_DIR, folder)
-#         if os.path.exists(target_path):
-#             shutil.rmtree(target_path)
-#         return jsonify(success=True)
-#     except Exception as e:
-#         return jsonify(error=str(e)), 500
+    try:
+        target_path = os.path.join(PROJECTS_DIR,session.get('regno'), folder)
+        if os.path.exists(target_path):
+            shutil.rmtree(target_path)
+        return jsonify(success=True)
+    except Exception as e:
+        return jsonify(error=str(e)), 500
 @app.route('/get_regno')
 def get_regno():
-    return jsonify({'regno': session.get('regno')})
+    try:
+        if 'regno' not in session:
+            return jsonify(error="Unauthorized"), 401
+        return jsonify(regno=session['regno'])
+    except Exception as e:
+        app.logger.error(f'Regno fetch error: {str(e)}')
+        return jsonify(error="Server error"), 500
     
 # Dashboard API
 @app.route('/api/dashboard')
@@ -297,11 +303,17 @@ def check_name():
     
     return jsonify(available=not bool(exists))
 
+@app.route('/get_base_url')
+def get_base_url():
+    return jsonify(base_url=request.host_url)
+
 @app.before_request
 def check_valid_session():
     # Skip validation for public routes
-    if request.path in ['/login', '/register', '/']:
+# Allow unauthenticated access to public routes
+    if request.path.startswith('/projects/') or request.path in ['/login', '/register', '/home', '/']:
         return
+
     
     # Check both user_id and regno exist
     if 'user_id' not in session or 'regno' not in session:
@@ -323,7 +335,7 @@ def check_valid_session():
 # Update home route to redirect to login
 @app.route('/')
 def index():
-    return redirect(url_for('upload_page'))
+    return redirect(url_for('home'))
 @app.route('/upload')
 def upload_page():
     check_valid_session()
@@ -343,6 +355,10 @@ def register_page():
     if 'user_id' in session:
         return redirect(url_for('upload_page'))
     return send_from_directory(VIEWS_DIR, 'register.html')
+
+@app.route('/home')
+def home():
+    return send_from_directory(VIEWS_DIR, 'home.html')
 
 @app.route('/dashboard')
 def dashboard():

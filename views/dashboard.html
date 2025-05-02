@@ -103,6 +103,19 @@
             align-items: center;
             gap: 0.5rem;
         }
+        .view-btn {
+            background: #0984e3 !important;
+            color: white !important;
+            padding: 0.5rem 1rem !important;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .view-btn:hover {
+            background: #74b9ff !important;
+            transform: translateY(-2px);
+        }
+
 
         .actions {
             margin-top: 2rem;
@@ -177,6 +190,19 @@
             gap: 0.5rem;
             align-items: center;
         }
+        .share-btn {
+            background: #6c5ce7 !important;
+            color: white !important;
+            padding: 0.5rem 1rem !important;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .share-btn:hover {
+            background: #a29bfe !important;
+            transform: translateY(-2px);
+        }
+
     </style>
 </head>
 <body>
@@ -188,7 +214,7 @@
         </ul>
 
         <div class="actions">
-            <a href="/">📁 Upload New Project</a>
+            <a href="/upload">📁 Upload New Project</a>
             <a href="/logout" class="logout-btn">🚪 Logout</a>
         </div>
     </div>
@@ -215,8 +241,8 @@
                 listItem.style.opacity = '0';
                 setTimeout(() => listItem.remove(), 300);
                 
-                // // Optional: Remove folder from server
-                // await fetch(`/api/cleanup/${projectFolder}`, { method: 'POST' });
+                // Optional: Remove folder from server
+                await fetch(`/api/cleanup/${projectFolder}`, { method: 'POST' });
                 
             } catch (err) {
                 alert('Delete failed: ' + err.message);
@@ -228,6 +254,104 @@
         const data = await response.json();
         return data.regno;
     }
+    // Update the delete handler in your dashboard script
+        document.addEventListener('click', (e) => {
+            if (e.target.classList.contains('delete-btn')) {
+                const listItem = e.target.closest('.upload-item');
+                const projectId = e.target.dataset.id;
+                const projectFolder = e.target.dataset.folder;
+                
+                if (!projectId || !projectFolder) {
+                    alert('Invalid project data');
+                    return;
+                }
+                
+                deleteProject(projectId, projectFolder, listItem);
+            }
+        });
+        // Add this at the top with other variables
+        let baseUrl = '';
+
+        // Add this before the fetchRegno() call
+        async function fetchBaseUrl() {
+            const response = await fetch('/get_base_url');
+            const data = await response.json();
+            baseUrl = data.base_url;
+        }
+
+        // Add this error logging function
+        function handleClipboardError(err) {
+            console.error('Clipboard error:', err);
+            const tempInput = document.createElement('input');
+            const fullUrl = window.location.href; // Fallback URL
+            tempInput.value = fullUrl;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            alert('URL copied to clipboard!');
+        }
+
+        // Modified share handler with better feedback
+        // Update the share button event listener
+        // Update the share button handler
+        document.addEventListener('click', async (e) => {
+            const btn = e.target.closest('.share-btn');
+            if (btn) {
+                try {
+                    // Get the actual view project URL from the anchor tag
+                    const viewLink = btn.closest('.upload-actions').querySelector('a').href;
+                    
+                    // Visual feedback
+                    const originalText = btn.innerHTML;
+                    btn.innerHTML = '⏳ Copying...';
+                    btn.style.pointerEvents = 'none';
+
+                    // Try modern clipboard API first
+                    await navigator.clipboard.writeText(viewLink);
+                    
+                    // Success feedback
+                    btn.innerHTML = '✅ Copied!';
+                    setTimeout(() => {
+                        btn.innerHTML = originalText;
+                        btn.style.pointerEvents = 'auto';
+                    }, 2000);
+
+                } catch (err) {
+                    // Fallback for browsers that block clipboard access
+                    const viewLink = btn.closest('.upload-actions').querySelector('a').href;
+                    const tempInput = document.createElement('input');
+                    tempInput.value = viewLink;
+                    document.body.appendChild(tempInput);
+                    tempInput.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(tempInput);
+                    
+                    // Show success feedback even for fallback
+                    btn.innerHTML = '✅ Copied!';
+                    setTimeout(() => {
+                        btn.innerHTML = '🔗 Share';
+                        btn.style.pointerEvents = 'auto';
+                    }, 2000);
+                }
+            }
+        });
+
+    // Update the initialization flow
+    async function initialize() {
+        try {
+            await fetchBaseUrl();
+            const regno = await fetchRegno();
+            // Rest of your dashboard loading code
+        } catch (error) {
+            console.error('Initialization error:', error);
+            alert('Failed to initialize page');
+        }
+    }
+
+    // Start the initialization
+    initialize();
+
 
     fetchRegno().then(regno => {
         fetch('/api/dashboard')
@@ -245,11 +369,15 @@
                         // Use the regno here after it's fetched
                         li.innerHTML = `
                             <div class="upload-info">
-                                <strong>📄 ${upload.filename}</strong>
+                                <strong>📄 ${upload.project_folder}</strong>
                                 <div class="upload-actions">
                                     <a href="/projects/${regno}/${upload.project_folder}" target="_blank">
-                                        👀 View Project
+                                          View Project
                                     </a>
+                                    <button class="share-btn" 
+                                            data-path="${upload.project_folder}">
+                                        🔗 Share
+                                    </button>
                                     <button class="delete-btn" 
                                             data-id="${upload.id}"
                                             data-folder="${upload.project_folder}">
