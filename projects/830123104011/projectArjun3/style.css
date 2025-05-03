@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1e1e1e;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  background: #00bcd4;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0097a7;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

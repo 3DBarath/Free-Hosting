@@ -40,8 +40,7 @@ os.makedirs(PROJECTS_DIR, exist_ok=True)
 os.makedirs(TEMP_DIR, exist_ok=True)
 
 def get_db():
-    return mysql.connector.connect(**DB_CONFIG)
-
+    return mysql.connector.connect(**DB_CONFIG)                                                                                                                                                                                                                                                                                                                                                             
 # Auth Routes
 @app.route('/register', methods=['POST'])
 def register():
@@ -111,14 +110,95 @@ def login():
     if user and check_password_hash(user['password_hash'], password):
         session['user_id'] = user['id']
         session['regno'] = regno
+        session['is_admin'] = user.get('is_admin', False)  # Add admin status to session
+        log_activity(user['id'], 'login', description=f"User logged in", request=request)
         return jsonify(success=True)
     return jsonify(error="Invalid credentials"), 401
 
 @app.route('/logout')
 def logout():
+    log_activity(session['user_id'], 'logout', description="User logged out", request=request)
     session.clear()
     return redirect(url_for('login_page'))
+
+@app.route('/api/activity-logs')
+def get_activity_logs():
+    if 'user_id' not in session:
+        return jsonify(error="Unauthorized"), 401
     
+    conn = get_db()
+    cursor = conn.cursor(dictionary=True)
+    
+    try:
+        # Check admin status
+        cursor.execute("SELECT is_admin FROM users WHERE id = %s", (session['user_id'],))
+        user = cursor.fetchone()
+        
+        if not user:
+            return jsonify(error="User not found"), 404
+
+        # Base query
+        query = """
+            SELECT al.*, u.regno 
+            FROM activity_logs al
+            JOIN users u ON al.user_id = u.id
+        """
+        params = []
+
+        # Add where clause for non-admins
+        if not user.get('is_admin', False):
+            query += " WHERE al.user_id = %s"
+            params.append(session['user_id'])
+
+        query += " ORDER BY al.created_at DESC LIMIT 100"
+
+        cursor.execute(query, params)
+        logs = cursor.fetchall()
+
+        return jsonify(logs=logs)
+
+    except Exception as e:
+        app.logger.error(f"Activity log error: {str(e)}")
+        return jsonify(error="Server error"), 500
+    finally:
+        cursor.close()
+        conn.close()
+
+def log_activity(user_id, action_type, table_affected=None, record_id=None, description=None, request=None):
+    """Log user activity to the database"""
+    try:
+        app.logger.info(f"Attempting to log activity: {action_type} for user {user_id}")
+        
+        ip_address = request.remote_addr if request else None
+        user_agent = request.headers.get('User-Agent') if request else None
+        
+        conn = get_db()
+        cursor = conn.cursor()
+        cursor.execute("""
+            INSERT INTO activity_logs 
+            (user_id, action_type, table_affected, record_id, description, ip_address, user_agent)
+            VALUES (%s, %s, %s, %s, %s, %s, %s)
+        """, (
+            user_id, 
+            action_type, 
+            table_affected, 
+            record_id, 
+            description, 
+            ip_address, 
+            user_agent
+        ))
+        conn.commit()
+        cursor.close()
+        app.logger.info(f"Successfully logged activity: {action_type} for user {user_id}")
+        
+    except Exception as e:
+        app.logger.error(f"Failed to log activity: {str(e)}")
+        if 'conn' in locals():
+            conn.rollback()
+    finally:
+        if 'conn' in locals():
+            conn.close()
+            
 @app.route('/upload', methods=['POST'])
 def upload_zip():
     if 'user_id' not in session or 'regno' not in session:
@@ -219,6 +299,15 @@ def upload_zip():
             cursor.close()
 
             project_url = f"/projects/{regno}/{project_name}/"
+
+            log_activity(
+            session['user_id'],
+            'upload',
+            table_affected='uploads',
+            record_id=cursor.lastrowid,
+            description=f"Uploaded project: {project_name}",
+            request=request)
+
             return jsonify(
                 success=True,
                 url=project_url,
@@ -236,6 +325,12 @@ def upload_zip():
                 os.remove(temp_path)
 
     except Exception as e:
+        log_activity(
+            session.get('user_id'),
+            'upload',
+            description=f"Upload failed: {str(e)}",
+            request=request
+        )
         return jsonify(error=str(e)), 500
     finally:
         conn.close()
@@ -268,10 +363,23 @@ def delete_project(project_id):
         target_path = os.path.join(PROJECTS_DIR, project['project_folder'])
         if os.path.exists(target_path):
             shutil.rmtree(target_path)
-
+        log_activity(
+            session['user_id'],
+            'delete',
+            table_affected='uploads',
+            record_id=project_id,
+            description=f"Deleted project: {project['project_folder']}",
+            request=request
+        )
         return jsonify(success=True)
         
     except Exception as e:
+        log_activity(
+            session.get('user_id'),
+            'delete',
+            description=f"Delete failed for project {project_id}: {str(e)}",
+            request=request
+        )
         return jsonify(error=str(e)), 500
     finally:
         cursor.close()

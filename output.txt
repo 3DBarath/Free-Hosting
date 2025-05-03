@@ -572,3 +572,532 @@ Press CTRL+C to quit
  * Restarting with stat
  * Debugger is active!
  * Debugger PIN: 225-432-578
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7777
+ * Running on http://210.16.91.251:7777
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+27.61.49.240 - - [02/May/2025 08:18:15] "POST /login HTTP/1.1" 401 -
+27.61.49.240 - - [02/May/2025 08:18:18] "GET /register HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:18:33] "POST /register HTTP/1.1" 401 -
+27.61.49.240 - - [02/May/2025 08:18:39] "POST /register HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:18:42] "GET /login HTTP/1.1" 304 -
+27.61.49.240 - - [02/May/2025 08:18:50] "POST /login HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:18:51] "GET /home HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:18:56] "GET /dashboard HTTP/1.1" 304 -
+27.61.49.240 - - [02/May/2025 08:18:56] "GET /get_base_url HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:18:56] "GET /get_regno HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:18:56] "GET /get_regno HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:18:56] "GET /api/dashboard HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:18:59] "GET /deploy HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:19:07] "GET /api/check-name?name=zipper HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:19:07] "POST /upload HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:19:09] "GET /projects/830123104011/zipper/ HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:19:19] "GET /api/check-name?name=zipper HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:19:27] "GET /api/check-name?name=zipper2 HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:19:36] "POST /upload HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:19:38] "GET /projects/830123104011/zipper2/ HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:20:45] "GET / HTTP/1.1" 302 -
+27.61.49.240 - - [02/May/2025 08:20:45] "GET /home HTTP/1.1" 304 -
+27.61.49.240 - - [02/May/2025 08:20:48] "GET /dashboard HTTP/1.1" 304 -
+27.61.49.240 - - [02/May/2025 08:20:48] "GET /get_base_url HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:20:48] "GET /get_regno HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:20:49] "GET /get_regno HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:20:49] "GET /api/dashboard HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:20:57] "GET /projects/830123104011/zipper2 HTTP/1.1" 308 -
+27.61.49.240 - - [02/May/2025 08:20:57] "GET /projects/830123104011/zipper2/ HTTP/1.1" 304 -
+27.61.49.240 - - [02/May/2025 08:21:05] "GET /projects/830123104011/zipper2/ HTTP/1.1" 304 -
+27.61.49.240 - - [02/May/2025 08:21:13] "GET / HTTP/1.1" 302 -
+27.61.49.240 - - [02/May/2025 08:21:14] "GET /home HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:21:15] "GET /dashboard HTTP/1.1" 302 -
+27.61.49.240 - - [02/May/2025 08:21:16] "GET /login HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:21:19] "GET /projects/830123104011/zipper2 HTTP/1.1" 308 -
+27.61.49.240 - - [02/May/2025 08:21:19] "GET /projects/830123104011/zipper2/ HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:21:58] "DELETE /api/delete-project/45 HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:21:59] "POST /api/cleanup/zipper2 HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:22:02] "DELETE /api/delete-project/44 HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:22:03] "POST /api/cleanup/zipper HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:23:59] "GET /deploy HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:24:08] "GET /api/check-name?name=zipper HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:24:08] "POST /upload HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:24:16] "GET /api/check-name?name=zipper HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:24:58] "GET /deploy HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:25:06] "GET /api/check-name?name=zipper HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:25:11] "GET /api/check-name?name=zipper2 HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:25:14] "POST /upload HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:25:17] "GET /dashboard HTTP/1.1" 304 -
+27.61.49.240 - - [02/May/2025 08:25:17] "GET /get_base_url HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:25:17] "GET /get_regno HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:25:17] "GET /get_regno HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:25:17] "GET /api/dashboard HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:25:23] "DELETE /api/delete-project/47 HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:25:23] "POST /api/cleanup/zipper2 HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:25:26] "DELETE /api/delete-project/46 HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:25:26] "POST /api/cleanup/zipper HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+27.61.49.240 - - [02/May/2025 08:58:45] "GET / HTTP/1.1" 302 -
+27.61.49.240 - - [02/May/2025 08:58:46] "GET /home HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:58:53] "GET /deploy HTTP/1.1" 302 -
+27.61.49.240 - - [02/May/2025 08:58:53] "GET /login HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:59:07] "POST /login HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:59:09] "GET /home HTTP/1.1" 304 -
+27.61.49.240 - - [02/May/2025 08:59:12] "GET /dashboard HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:59:13] "GET /get_base_url HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:59:13] "GET /get_regno HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:59:13] "GET /api/dashboard HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:59:13] "GET /get_regno HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:59:15] "GET /deploy HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:59:23] "GET /api/check-name?name=projectArjun HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:59:23] "POST /upload HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:59:25] "GET /projects/830123104011/projectArjun/ HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:59:29] "GET /dashboard HTTP/1.1" 304 -
+27.61.49.240 - - [02/May/2025 08:59:29] "GET /get_base_url HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:59:29] "GET /get_regno HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:59:29] "GET /get_regno HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:59:29] "GET /api/dashboard HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:59:52] "GET /logout HTTP/1.1" 302 -
+27.61.49.240 - - [02/May/2025 08:59:53] "GET /login HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 08:59:54] "GET /register HTTP/1.1" 200 -
+8.137.12.49 - - [02/May/2025 09:25:23] code 400, message Bad request version ('À\x13À')
+8.137.12.49 - - [02/May/2025 09:25:23] "\x16\x03\x01\x00ò\x01\x00\x00î\x03\x03\x9fóZÉ®)\x8d\x12ª\x80\x05WÑhþ¢aÁêÄ\x80rû©iq\x0c×¢^/Ì Q\x9fÀ\x93\x83~½Aæ\x87ìM\x09× \x1eó\x06Bïá_Ûx\x1eT#Þ²lé\x1d\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À" HTTPStatus.BAD_REQUEST -
+27.61.49.240 - - [02/May/2025 09:47:53] "POST /login HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 09:47:55] "GET /home HTTP/1.1" 304 -
+27.61.49.240 - - [02/May/2025 09:47:56] "GET /deploy HTTP/1.1" 304 -
+27.61.49.240 - - [02/May/2025 09:48:03] "GET /api/check-name?name=projectArjun HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 09:48:10] "GET /api/check-name?name=projectArjun2 HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 09:48:11] "POST /upload HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 09:48:13] "GET /projects/830123104011/projectArjun2/ HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 09:48:13] "GET /projects/830123104011/projectArjun2/style.css HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 09:48:13] "GET /projects/830123104011/projectArjun2/script.js HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 09:50:41] "GET / HTTP/1.1" 302 -
+27.61.49.240 - - [02/May/2025 09:50:41] "GET /home HTTP/1.1" 304 -
+27.61.49.240 - - [02/May/2025 09:50:43] "GET /dashboard HTTP/1.1" 304 -
+27.61.49.240 - - [02/May/2025 09:50:43] "GET /get_regno HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 09:50:43] "GET /get_base_url HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 09:50:44] "GET /get_regno HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 09:50:44] "GET /api/dashboard HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 09:50:53] "GET /dashboard HTTP/1.1" 304 -
+27.61.49.240 - - [02/May/2025 09:50:53] "GET /get_base_url HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 09:50:53] "GET /get_regno HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 09:50:54] "GET /get_regno HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 09:50:54] "GET /api/dashboard HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 09:50:55] "GET /dashboard HTTP/1.1" 304 -
+27.61.49.240 - - [02/May/2025 09:50:55] "GET /get_regno HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 09:50:55] "GET /get_base_url HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 09:50:56] "GET /get_regno HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 09:50:56] "GET /api/dashboard HTTP/1.1" 200 -
+106.197.117.157 - - [02/May/2025 09:55:38] "GET / HTTP/1.1" 302 -
+106.197.117.157 - - [02/May/2025 09:55:38] "GET /home HTTP/1.1" 200 -
+106.197.117.157 - - [02/May/2025 09:55:40] "GET /favicon.ico HTTP/1.1" 302 -
+106.197.117.157 - - [02/May/2025 09:55:40] "GET /login HTTP/1.1" 200 -
+106.197.117.157 - - [02/May/2025 09:55:44] "GET / HTTP/1.1" 302 -
+106.197.117.157 - - [02/May/2025 09:55:44] "GET /home HTTP/1.1" 304 -
+106.197.117.157 - - [02/May/2025 09:55:45] "GET /favicon.ico HTTP/1.1" 302 -
+106.197.117.157 - - [02/May/2025 09:55:45] "GET /login HTTP/1.1" 304 -
+106.197.117.157 - - [02/May/2025 09:56:07] "GET /deploy HTTP/1.1" 302 -
+106.197.117.157 - - [02/May/2025 09:56:08] "GET /login HTTP/1.1" 304 -
+106.197.117.157 - - [02/May/2025 09:56:08] "GET /favicon.ico HTTP/1.1" 302 -
+106.197.117.157 - - [02/May/2025 09:56:08] "GET /login HTTP/1.1" 304 -
+106.197.117.157 - - [02/May/2025 09:56:16] "GET /register HTTP/1.1" 200 -
+106.197.117.157 - - [02/May/2025 09:56:17] "GET /favicon.ico HTTP/1.1" 302 -
+106.197.117.157 - - [02/May/2025 09:56:17] "GET /login HTTP/1.1" 304 -
+27.61.49.240 - - [02/May/2025 10:01:41] "GET /get_regno HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 10:01:41] "GET /api/dashboard HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 10:01:43] "GET /logout HTTP/1.1" 302 -
+27.61.49.240 - - [02/May/2025 10:01:43] "GET /login HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 10:01:50] "GET /register HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 10:05:15] "GET /register HTTP/1.1" 304 -
+27.61.49.240 - - [02/May/2025 10:05:17] "GET /login HTTP/1.1" 200 -
+106.197.117.157 - - [02/May/2025 10:44:45] "POST /register HTTP/1.1" 200 -
+106.197.117.157 - - [02/May/2025 10:44:48] "GET /login HTTP/1.1" 200 -
+106.197.117.157 - - [02/May/2025 10:44:49] "GET /favicon.ico HTTP/1.1" 302 -
+106.197.117.157 - - [02/May/2025 10:44:49] "GET /login HTTP/1.1" 304 -
+106.197.117.157 - - [02/May/2025 10:45:18] "POST /login HTTP/1.1" 200 -
+106.197.117.157 - - [02/May/2025 10:45:20] "GET /home HTTP/1.1" 304 -
+106.197.117.157 - - [02/May/2025 10:45:20] "GET /favicon.ico HTTP/1.1" 404 -
+106.197.117.157 - - [02/May/2025 10:45:29] "GET /deploy HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 10:46:00] "POST /login HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 10:46:01] "GET /home HTTP/1.1" 304 -
+27.61.49.240 - - [02/May/2025 10:46:04] "GET /deploy HTTP/1.1" 304 -
+27.61.49.240 - - [02/May/2025 10:46:12] "GET /api/check-name?name=projectArjun HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 10:46:19] "GET /api/check-name?name=projectArjun2 HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 10:46:19] "GET /api/check-name?name=projectArjun2 HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 10:46:26] "GET /api/check-name?name=projectArjun3 HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 10:46:28] "POST /upload HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 10:46:31] "GET /projects/830123104011/projectArjun3/ HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 10:46:31] "GET /projects/830123104011/projectArjun3/style.css HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 10:46:31] "GET /projects/830123104011/projectArjun3/script.js HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 10:46:36] "GET /projects/830123104011/projectArjun3/ HTTP/1.1" 304 -
+27.61.49.240 - - [02/May/2025 10:46:36] "GET /projects/830123104011/projectArjun3/style.css HTTP/1.1" 304 -
+27.61.49.240 - - [02/May/2025 10:46:36] "GET /projects/830123104011/projectArjun3/script.js HTTP/1.1" 304 -
+27.61.49.240 - - [02/May/2025 10:46:44] "GET /dashboard HTTP/1.1" 304 -
+27.61.49.240 - - [02/May/2025 10:46:44] "GET /get_base_url HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 10:46:44] "GET /get_regno HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 10:46:45] "GET /get_regno HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 10:46:45] "GET /api/dashboard HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 10:47:01] "DELETE /api/delete-project/49 HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 10:47:01] "POST /api/cleanup/projectArjun2 HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 10:47:09] "GET / HTTP/1.1" 302 -
+27.61.49.240 - - [02/May/2025 10:47:10] "GET /home HTTP/1.1" 304 -
+27.61.49.240 - - [02/May/2025 10:47:26] "GET /dashboard HTTP/1.1" 304 -
+27.61.49.240 - - [02/May/2025 10:47:26] "GET /get_base_url HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 10:47:26] "GET /get_regno HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 10:47:26] "GET /get_regno HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 10:47:27] "GET /api/dashboard HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 10:47:28] "GET /logout HTTP/1.1" 302 -
+27.61.49.240 - - [02/May/2025 10:47:28] "GET /login HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 10:55:55] code 400, message Bad request version ('À')
+27.61.49.240 - - [02/May/2025 10:55:55] "\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03¸lg\x98~\x19¤\x83\x86ô[µ\x1cC<ÀY\x8b\x14l¥t\x84=IK³Øð_âC \x16æÜfÓh»\x89ß\x8d4;'©dÜfz§äé\x88]~»×\x8fÊ\x01S¦o\x00"\x13\x01\x13\x02\x13\x03À+À,Ì©À/À0Ì¨À\x09À" HTTPStatus.BAD_REQUEST -
+27.61.49.240 - - [02/May/2025 10:55:56] code 400, message Bad request version ('À')
+27.61.49.240 - - [02/May/2025 10:55:56] "\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03Éx\x14\x8bâD\x82\x7fÚ\x7fø\x1fv£Â>K\x80Ò\x17\x86VNf|©t\x8dªmg\x07 ñÜ£\x8a\x83Ã/­\x17\x95\x0c\x1d#L\x0fk¢\x9bqã\x87Î\x8c\x10Öñqk\x8be^Ö\x00"\x13\x01\x13\x02\x13\x03À+À,Ì©À/À0Ì¨À\x09À" HTTPStatus.BAD_REQUEST -
+27.61.49.240 - - [02/May/2025 10:55:59] code 400, message Bad request version ('À')
+27.61.49.240 - - [02/May/2025 10:55:59] "\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03dQ¹)ÚG6ñ3\x14;»\x88xo¿µ\x96'\x19ôº¦WW\x8fª Dîð= âLi¥Öm{Ïq9ê&ô½ºÈ; 5-Z7Í®ô#|\x90v \x89\x18\x00"\x13\x01\x13\x02\x13\x03À+À,Ì©À/À0Ì¨À\x09À" HTTPStatus.BAD_REQUEST -
+27.61.49.240 - - [02/May/2025 10:56:01] code 400, message Bad request version ('À')
+27.61.49.240 - - [02/May/2025 10:56:01] "\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03º\x92z\x12.Ñ\x9e=\x95ÜÔÅSÐ*/\x9a¦øÕÐ\x09ÄïøÆiÊLWðò \x94\x97ªÃ\x0d\x09èÓ4ÿó\x1d$\x87¾äV'\x1a¾\x193\x95Ø3=\x97Å§\x8e\x09÷\x00"\x13\x01\x13\x02\x13\x03À+À,Ì©À/À0Ì¨À\x09À" HTTPStatus.BAD_REQUEST -
+171.79.53.31 - - [02/May/2025 10:57:31] code 400, message Bad request syntax ('\x16\x03\x01\x06ú\x01\x00\x06ö\x03\x03¹ÃÛ½ª\x1a\x18}}\x82T®ÑX.\x94\x87¡ÝÖ\x90èú\x84¦')
+171.79.53.31 - - [02/May/2025 10:57:31] code 400, message Bad request syntax ('\x16\x03\x01\x06º\x01\x00\x06¶\x03\x030¢½¤£«')
+171.79.53.31 - - [02/May/2025 10:57:31] "\x16\x03\x01\x06ú\x01\x00\x06ö\x03\x03¹ÃÛ½ª\x1a\x18}}\x82T®ÑX.\x94\x87¡ÝÖ\x90èú\x84¦" HTTPStatus.BAD_REQUEST -
+171.79.53.31 - - [02/May/2025 10:57:31] "\x16\x03\x01\x06º\x01\x00\x06¶\x03\x030¢½¤£«" HTTPStatus.BAD_REQUEST -
+171.79.53.31 - - [02/May/2025 10:57:31] code 400, message Bad request syntax ('\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x03\x9a.\x94ó\x05ÿ')
+171.79.53.31 - - [02/May/2025 10:57:31] "\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x03\x9a.\x94ó\x05ÿ" HTTPStatus.BAD_REQUEST -
+171.79.53.31 - - [02/May/2025 10:57:31] code 400, message Bad request version ('Jr´\x16ü\x7fïMçÌº~¥\xadÏxµ2ë\x91Ì:´§lB(<·\x96Æ')
+171.79.53.31 - - [02/May/2025 10:57:31] "\x16\x03\x01\x06º\x01\x00\x06¶\x03\x031³i¾ØNpÑ:±ãçÕZÂwøü§c;ÕÈà{úÜû\x92Z\x11J Ù¥Ñ\x09\x9d\x9e\x10\\\x7f¯'bbÐçf\x91N6\x1a\x1eÚ\x82Óg\x7f\x819i£¿¸\x00 jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Mêê\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00\x00\x00\x16\x00\x14\x00\x00\x11gces2.duckdns.orgþ\x0d\x00º\x00\x00\x01\x00\x01%\x00 Q\x98uNº\x97$O½À 'T\x97\x9a\x90ã8äM\x84xWÀ\x9b¸ÌtC\x0fJ\x14\x00\x90pC!\x9f\x02×*J?{¿ì\x93¯Ýè\\\x9eÂ0\x93N\x05-z§êSðîD\x1açßÓâ\x99>i\x1eJr´\x16ü\x7fïMçÌº~¥­Ïxµ2ë\x91Ì:´§lB(<·\x96Æ" HTTPStatus.BAD_REQUEST -
+171.79.53.31 - - [02/May/2025 10:57:34] code 400, message Bad request version ('1e:!áV\x17¡\x844ü')
+171.79.53.31 - - [02/May/2025 10:57:34] "\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x03LØ\x9aÔ\x93÷¥\x9d\x13÷_Ý-k\x1bP\x18ß\x93\x1d\x0c­þ8Îôgn\x16 /  {Õ\x89©Ü ðò~X\x1dÚ§ÐnX\x07 é¶\x0dÀÄ½´w{y\x16ÈY?\x00 \x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06­jj\x00\x00DÍ\x00\x05\x00\x03\x02h2\x00+\x00\x07\x06::\x03\x04\x03\x03\x00-\x00\x02\x01\x01\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00#\x00\x00\x00\x12\x00\x00\x003\x04ï\x04ízz\x00\x01\x00\x11ì\x04À¬\x9a$(åDVcn\x06ìeè\x16Ä"¼\x17\x1d¼¯\x82óv\x97[ÈðV;µL7H\x10"l`#\x1b1\x13ÉHÍ©¦T´UnK\x10\x15kÒ7egZQCb\\5g`z'å«Åÿ\x0b\x04Î\x94`7hiéh\x93^ã\x8c<\x13^\x0c¡ª\x89\x94Î\x1dj¡GëÀG \x97\x11´Â#02\x84ãT\x95\x07U¾¶\x0cKD¥d\x8c\x13ÆÔc\x88ZÅE\x15*%@HW¹\x05¼XÏuT&#¶<\x95\x0ci¯Ùh_¬\x0dºå¬I\x09y;{+¾\x8b\x1au%TC<\x1f{\x19HãC\x9b\x04$'¡ø\x1f²w©l:|<5»\x1f\x12\x90J¹\x83OéT\x8düÌ\x8fB\x0e\x08»\x06×ËK)0ÆÈ\x91«¹JWôÃ\x12¥çD\x8fWw÷ãzrdoÚQká\x02±\x04Ã}Ä²5\x07£\x11ÉÐ£\x80<\x18·8\x81\x8fsc\x84ö\x83æáB[\x87Ï\x01\x13\x8e¡7dVÁ¦ìì\x1c\x84@\x12v0\x08_K\x93£\x06²@Ê¹Ü3¤cõ\x1cv;\x9a­\x8b?¥\x84Î\x08ä\x1crì\x15Æ\x17_\x82£µ% VÒ"ÊD\x17Y\x14Ài²\x06<\\¤0ç\x16C®\x1a\x90s\x1a±û\x8bOË\x8aT\x01öª\x92dË\x95\x85Nïp8\x9dÜ®åë$\x9fe\x9c\x16Rk\x85è\x12\x89â²A±µ\x17\x87\x1c"\x14¢*X"­£\x87ãåd\x034H\x09f\x98ñú\x1dM\x00,4%\x03Ná \x050\x03\x94[P3\\w\x8f´¿ÄÑÃ\x14!cW{\x8e0\x99&sA\x99\x875<áÓ°8&i?¼,\x1e\x8b\x0d>&lüá\x0e\x12k\\öÈ>@Q\x8a6\x82¶\x13£2\x8fL'Õ3Lï¸\x09<<(¬zÎCÆ\x83\x0f\x16ºÍö¸\x11ª\x13uú\x9dTÄ\x1d¾¼EÄ\x16Ì¦ü5Q\x00\x1býR\x9d\x01ä\x8e\x92\x91c\x92T5ÙY\x0d²\x90\x1f\x1b\x97síöÄ\x13Ék±\x1c1e:!áV\x17¡\x844ü" HTTPStatus.BAD_REQUEST -
+171.79.53.31 - - [02/May/2025 10:57:34] code 400, message Bad request version ('«Ö{#ÖÍ\x871\x00ÿð&E\x15Ç÷k-{\x94³¼\x1bZ\x7fA~\x19·5×\x11uèØ')
+171.79.53.31 - - [02/May/2025 10:57:34] "\x16\x03\x01\x06ú\x01\x00\x06ö\x03\x03HÄyÀ\x90Ò·\x83\x85£2%,\x88ÏV«iÄ:\x8bÁ~Ì\x08¯êk4\x80ýe ü¥\x99dæZ½\x15\x9cö~2ß¼:*àu\x89Nð\x0cË\x01MOòXÖ.\x1c¨\x00 \x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x8dzz\x00\x00\x00\x0b\x00\x02\x01\x00\x00\x17\x00\x00þ\x0d\x00ú\x00\x00\x01\x00\x01Z\x00 \x9dúãÁ\x06rèon²Å\x1eó¤7#ßå\x84Ä\x9aîAFÑ?\x88è$¯\x1f/\x00ÐA\x93MOïã^\x0f´³\x80j÷­õ\x1e'®D\x92Pi­Ã<WF\x7fE·r'iÎ;Á\x06!\x87´ô&åQIdå;Îï\x8e\x07\x82Zî×¸\x87ú\x825-\x8cÃvô+oü«Åìæ¼\x8e`C\x13Åoñ/4\x11hB[\x8cÀìYù,ÔÕ\x89ã\x1fZcUß]3»ïb\x81o7Óö¸\x8aÚqH\x97þs\x10­èC¶±¹kX\x0dk\x96Ý£ðN*#l¢R"ªC\x0fQÚ.lD³<Z\x0f\x9fÿ\x84\x92\x15ÎÛ"\x9dÿµ:U±òÇ`\x81\x98\x96rñ¸«¡CS=#ÊûõFìP»ÓzÕF7\x17\x90Õ\x81\x0dÍ5\x9câÏÎ4ó\x00\x00\x00\x16\x00\x14\x00\x00\x11gces2.duckdns.org\x003\x04ï\x04íªª\x00\x01\x00\x11ì\x04ÀaÐ¨FòX¹%µ \x9b\x19\x11ªKå[]U,]@\x93\x15ôK:F5YCì|¾\x82>©dgo\x94zf[T=\x11QçÙ7Ú\x90¾3;\x91õÛ$»G,\\ã\x9füä\x7fP\x16zd[\x11\x8c\x05\x8f±H\x91è1EXé\x8e¾ã.Ô`\x02dE\x05ÿ\x8c\x04¦áwÑ\x06¯yw\x1d\x04£\x1cùdaPÅc\x9c7\x05\x0f³§\x8eãZFË\x85yY$½À\x12Æ\x1cÊ\x93ÐX++(\x9b¼\x16ß&\x179ÙXÇ\x17M\x16\x1a8)\x871°)*ãD N\x94!ûê\x1d«Ö{#ÖÍ\x871\x00ÿð&E\x15Ç÷k-{\x94³¼\x1bZ\x7fA~\x19·5×\x11uèØ" HTTPStatus.BAD_REQUEST -
+171.79.53.31 - - [02/May/2025 10:57:34] code 400, message Bad request version ('jý¨c\x9cÞÌ\x96\x82ï\x13ð8®Ìz_ìºà¹)\x8dd\x03Øy*ü"þÓ\x00')
+171.79.53.31 - - [02/May/2025 10:57:34] "\x16\x03\x01\x06º\x01\x00\x06¶\x03\x03Õj4\x04cU\x85\x10akÎ¹¿T\x92\x17C½±Q\x8fDmÒÀ\x08¡xó\x07&3 jý¨c\x9cÞÌ\x96\x82ï\x13ð8®Ìz_ìºà¹)\x8dd\x03Øy*ü"þÓ\x00 " HTTPStatus.BAD_REQUEST -
+171.79.53.31 - - [02/May/2025 10:57:34] code 400, message Bad request version ('ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Mªª\x00\x00\x00\x12\x00\x00DÍ\x00\x05\x00\x03\x02h2\x00')
+171.79.53.31 - - [02/May/2025 10:57:34] "\x16\x03\x01\x06º\x01\x00\x06¶\x03\x03\x9bãâ@# Êµ6h%ê\x0f\x9c#4µ°Vw\x9e×òQ/·âÞæú\x09ú JÌÌ]Á½Û÷!\x88ì:y\x17t\x07\x88þ}a®Âî*S\x8bgÈ\x85LdÚ\x00 ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Mªª\x00\x00\x00\x12\x00\x00DÍ\x00\x05\x00\x03\x02h2\x00" HTTPStatus.BAD_REQUEST -
+171.79.53.31 - - [02/May/2025 10:57:37] "GET / HTTP/1.1" 302 -
+171.79.53.31 - - [02/May/2025 10:57:38] "GET /home HTTP/1.1" 200 -
+171.79.53.31 - - [02/May/2025 10:57:39] "GET /favicon.ico HTTP/1.1" 302 -
+171.79.53.31 - - [02/May/2025 10:57:39] "GET /login HTTP/1.1" 200 -
+171.79.53.31 - - [02/May/2025 10:57:41] "GET /deploy HTTP/1.1" 302 -
+171.79.53.31 - - [02/May/2025 10:57:42] "GET /login HTTP/1.1" 304 -
+171.79.53.31 - - [02/May/2025 10:57:42] "GET /favicon.ico HTTP/1.1" 302 -
+171.79.53.31 - - [02/May/2025 10:57:42] "GET /login HTTP/1.1" 304 -
+171.79.53.31 - - [02/May/2025 10:57:46] "GET /register HTTP/1.1" 200 -
+171.79.53.31 - - [02/May/2025 10:57:47] "GET /favicon.ico HTTP/1.1" 302 -
+171.79.53.31 - - [02/May/2025 10:57:47] "GET /login HTTP/1.1" 304 -
+171.79.53.31 - - [02/May/2025 10:58:29] "POST /register HTTP/1.1" 200 -
+171.79.53.31 - - [02/May/2025 10:58:32] "GET /login HTTP/1.1" 304 -
+171.79.53.31 - - [02/May/2025 10:58:32] "GET /favicon.ico HTTP/1.1" 302 -
+171.79.53.31 - - [02/May/2025 10:58:32] "GET /login HTTP/1.1" 304 -
+171.79.53.31 - - [02/May/2025 10:58:44] "POST /login HTTP/1.1" 200 -
+171.79.53.31 - - [02/May/2025 10:58:45] "GET /home HTTP/1.1" 304 -
+171.79.53.31 - - [02/May/2025 10:58:46] "GET /favicon.ico HTTP/1.1" 404 -
+171.79.53.31 - - [02/May/2025 10:58:48] "GET /deploy HTTP/1.1" 200 -
+171.79.53.31 - - [02/May/2025 10:59:18] "GET /api/check-name?name=NM HTTP/1.1" 200 -
+171.79.53.31 - - [02/May/2025 10:59:19] "POST /upload HTTP/1.1" 400 -
+171.79.53.31 - - [02/May/2025 10:59:25] "GET /api/check-name?name=NM HTTP/1.1" 200 -
+171.79.53.31 - - [02/May/2025 10:59:26] "POST /upload HTTP/1.1" 400 -
+171.79.53.31 - - [02/May/2025 11:01:01] "GET /api/check-name?name=nm1 HTTP/1.1" 200 -
+171.79.53.31 - - [02/May/2025 11:01:01] "POST /upload HTTP/1.1" 200 -
+171.79.53.31 - - [02/May/2025 11:01:04] "GET /projects/830123104015/nm1/ HTTP/1.1" 200 -
+171.79.53.31 - - [02/May/2025 11:01:13] "GET /dashboard HTTP/1.1" 200 -
+171.79.53.31 - - [02/May/2025 11:01:13] "GET /get_base_url HTTP/1.1" 200 -
+171.79.53.31 - - [02/May/2025 11:01:13] "GET /get_regno HTTP/1.1" 200 -
+171.79.53.31 - - [02/May/2025 11:01:13] "GET /get_regno HTTP/1.1" 200 -
+171.79.53.31 - - [02/May/2025 11:01:13] "GET /api/dashboard HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 11:03:06] code 400, message Bad request version ('´\x96Ì\x02&')
+27.61.49.240 - - [02/May/2025 11:03:06] "\x16\x03\x01\x06º\x01\x00\x06¶\x03\x03)\x8aû¿¿»\x0b°\x8a\x17x\x91.w\x81\x1cÜª\x8bh-+\x08|\x9eHÖ-\x8dÔ¡\x16 ó¡q«ÜêÆ\x1d\x8e¾}\x85ôu#®\x1dçîn;\x84À\x84ÿÚ6ð¾Ä;n\x00 êê\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Mêê\x00\x00\x00\x0b\x00\x02\x01\x00\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00#\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1þ\x0d\x00º\x00\x00\x01\x00\x01!\x00 îPRá\x8c´MäÿÒø\x07ÝP\x102!Aà³!\x04»ÝFx\x92ýËvª^\x00\x90üÝ_NÅWÇld¿Z¬Qì\x80\x90*-Kf÷\x898\x05­\x07\x0e¬w÷óá»ÃxI\x85\x8e\x11ãõ\x95\x07»\x9bP1Ð4\x80\x96=\x1c×S\x9d\x84ç\x13\x81\x1a\x16üü\x02æê@[/JQú÷4ýù\x01\x04\x7fîº\x069¨Ì¤·\x05)©a\x9bJ4[\x1b\x7f\x1c\x0c@Ð[\x8f\x92\x90äb\x8c'ÐX\x13»ì­¡Ê&\x99NÿCÞÄ\x89(\x84\x8d°òóñæ\x06\x02\x9d?\x0eÒ\x96\x81\x0b}ÿ\x01\x00\x01\x00\x00\x17\x00\x00\x00+\x00\x07\x06\x9a\x9a\x03\x04\x03\x03DÍ\x00\x05\x00\x03\x02h2\x003\x04ï\x04í::\x00\x01\x00\x11ì\x04ÀÐ\x83q´é©¼ñ!\x18K¼þ|,g¹Êz\x89Nz\x03\x0b¯\x17§­y/²\x0bG\x1f4YÙEtÏ§Å\x00'¡RQl\x10\x83½( ¸\x02\x10n\x996#8J2ÉIKÖCo)\x84ÇO\x981¬%«\x1fÑ5S\x80\x1f\x1dp\x12½[\x16©\x02Z\x05\x84Q B%´`AaÔ\x06aêI\x16³#¿Ó\x90d\x99\x9cîbÁ\x84&\x9c°Iu(\x91>åÂ Ñ\x03¿\x03\\Fí¹P=«d)\x19\x9aå9\x96`<\x98ßt\x15-¢»GV Z¡@$\x9c,Ò¹\x02î\x83Jà\x1cuE\x88jñ\x95"NÚÅÌ\x88Î¾\x13\x8a]\x17\x80ï#^¹ÕÄ\x0d\x91s©\x1bMIØ\x15;\x18½³\x83\x1eFa4\x88é\x88]Z¬\x8dUN\x92\x90C\x92r+\x0c¥\x1c¨Á\x99¤vÇ,Ó\x03@'VÚÄg ¢\x8d\x0540£\x8cl÷\x12\x8a\x8eV\x9e\x06W\x9e¢ì3ºc@»ä\x80\x1f8dp\x97A{\x1c´\x96Ì\x02&" HTTPStatus.BAD_REQUEST -
+27.61.49.240 - - [02/May/2025 11:03:06] code 400, message Bad request version ('**\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06mºº\x00\x00\x00+\x00\x07\x06úú\x03\x04\x03\x03\x00\x00\x00\x16\x00\x14\x00\x00\x11gces2.duckdns.org\x00#\x00\x00\x00')
+27.61.49.240 - - [02/May/2025 11:03:06] "\x16\x03\x01\x06Ú\x01\x00\x06Ö\x03\x03_.²)*\x93À°_$üàêd\x0bÆ6:ä¯ÄIE\x1d¿ðd!Ñî>× Âª,\x85I\x07t<rW\x86Ô@£\x03Ï¢¥\x018\x10::\x98m\x10\x81*B\x8a\x16\x1c\x00 **\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06mºº\x00\x00\x00+\x00\x07\x06úú\x03\x04\x03\x03\x00\x00\x00\x16\x00\x14\x00\x00\x11gces2.duckdns.org\x00#\x00\x00\x00" HTTPStatus.BAD_REQUEST -
+27.61.49.240 - - [02/May/2025 11:03:17] "GET /projects/830123104015/nm1 HTTP/1.1" 308 -
+27.61.49.240 - - [02/May/2025 11:03:18] "GET /projects/830123104015/nm1/ HTTP/1.1" 200 -
+27.61.49.240 - - [02/May/2025 11:03:18] "GET /favicon.ico HTTP/1.1" 302 -
+27.61.49.240 - - [02/May/2025 11:03:18] "GET /login HTTP/1.1" 200 -
+27.60.165.134 - - [02/May/2025 11:06:25] code 400, message Bad request version ('U\x08\x0f\x99Lm\x00-I\x88Güë)Æ')
+27.60.165.134 - - [02/May/2025 11:06:25] "\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x03Í¡¯M$\x91\x1a\x11\x1e|\x0bnÍ«ÏOy$k\x03Õ0*oú¶ûÂ5j<\x1f ·ÖÃ\x94X\x95=f2_\x11_)\x8e\x00\x01òcUbdû\x08L\x036û\x90ÑÿlÊ\x00 ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06­\x9a\x9a\x00\x00\x00+\x00\x07\x06zz\x03\x04\x03\x03\x003\x04ï\x04í**\x00\x01\x00\x11ì\x04À¢2}îPI\x12û\x92kÚ>\x1fø*ð\x19¿\x7f$oa¦\x8d\x9c¼\x96ôDm\x89\x0c+7P\x038W¹Ò\x80¹Òù\x80\x0bU\x08\x0f\x99Lm\x00-I\x88Güë)Æ" HTTPStatus.BAD_REQUEST -
+27.60.165.134 - - [02/May/2025 11:06:25] code 400, message Bad request version ('\x02h2\x08http/1.1\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00')
+27.60.165.134 - - [02/May/2025 11:06:25] "\x16\x03\x01\x06ú\x01\x00\x06ö\x03\x03ì\x16\x15?±½°M\x95çNÅ\x8aOÁ\x89\x09q¼/|ñ\x940ç0 ¤\x81\x9b©/ ÍKöÛf\x99c\x81ü¼\x165µ1\x8a\x1e\x99P\x1cì{ê®\x7fù$\x1b\x1bß¼¥L\x00 ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x8dJJ\x00\x00\x00\x17\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00" HTTPStatus.BAD_REQUEST -
+27.60.165.134 - - [02/May/2025 11:06:26] code 400, message Bad request version ('zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\xadZZ\x00\x00\x00')
+27.60.165.134 - - [02/May/2025 11:06:26] "\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x03\x88!ÕY> G1úýQS\x9dmq\x94ÔÛý\x0f/©\x06¢«ò\x0cT¥æÝ\x89 \x1d|ÇÅ«¥çT(\x8e\x81Íc\x00,dd\x91Ö\x1d\x06Þ\x14WaM\x96\x86à¬\x07F\x00 zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06­ZZ\x00\x00\x00" HTTPStatus.BAD_REQUEST -
+27.60.165.134 - - [02/May/2025 11:06:26] code 400, message Bad request syntax ('\x16\x03\x01\x06Ú\x01\x00\x06Ö\x03\x03&é<Á¬»\x16p½´fQþ\x06,-yP')
+27.60.165.134 - - [02/May/2025 11:06:26] "\x16\x03\x01\x06Ú\x01\x00\x06Ö\x03\x03&é<Á¬»\x16p½´fQþ\x06,-yP" HTTPStatus.BAD_REQUEST -
+27.60.165.134 - - [02/May/2025 11:06:26] code 400, message Bad request version ('ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\xadúú\x00\x00\x00#\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00')
+27.60.165.134 - - [02/May/2025 11:06:26] "\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x03$\x18\x88c\x84\x7fí#*\x19B Å\x1døÿaVâ§zï®ú\x85Z'm\x80¦À\x86 \x83AY\x08v¦à\x0fý\x00\x17;\x9a\x99\x9ec$÷%\x81#\x14IiM¯;\x91ì\x0759\x00 ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06­úú\x00\x00\x00#\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00" HTTPStatus.BAD_REQUEST -
+27.60.165.134 - - [02/May/2025 11:06:26] code 400, message Bad request version ('\x1bfò©³\x0f\x0f\x15\x90a')
+27.60.165.134 - - [02/May/2025 11:06:26] "\x16\x03\x01\x06Ú\x01\x00\x06Ö\x03\x032ã\x9fF}È+B\x90@\x92£·\x02\x15d±¹\x80å{\x8f!$:\x94\x1bÎãðþÉ \x0c³Ì4xäúUñ¶$Åh½WuµN`ÿ÷Lí#èÚ@{ù\x0egá\x00 JJ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06mªª\x00\x00\x00\x00\x00\x16\x00\x14\x00\x00\x11gces2.duckdns.org\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x17\x00\x00þ\x0d\x00Ú\x00\x00\x01\x00\x01)\x00 ëNßõÈ*YÑâm \x84íÕ\x81E}ó\x05\x10\x03¦\x9b\x12­Ï¼¨\x9a\x02NV\x00°\x84\x93)xw@\x13\x05\x91Ø\x1cÎsçÐ±«`oëËF\x18|Â4ã¼\x90|RÐÛL\x90[=7¶OÛ\x9a\x8ae}ò\x82[í\x91\x90\x06\x81ø\x15S%i!>Õ\x1dY*µ%ò*mÁ\x0ejxâ}\x16_pF\x9aaùÝnr¥4ç\x01\x15\x992\x19\x8f\x9f/\x0c_l\x8c¯£àHF\x97éD­i®4;§Ý'-$¹5\x98LJ|\x94S\x8e \x855VÑ¸v¹H\x11@fX\x8b\x7f\x9drÀccs\x01 nüø\x17øBÜ \x1bfò©³\x0f\x0f\x15\x90a\x09" HTTPStatus.BAD_REQUEST -
+27.60.165.134 - - [02/May/2025 11:06:40] "GET /projects/830123104015/nm1 HTTP/1.1" 308 -
+27.60.165.134 - - [02/May/2025 11:06:40] "GET /projects/830123104015/nm1/ HTTP/1.1" 304 -
+27.60.165.134 - - [02/May/2025 11:06:57] "GET /projects/830123104015/nm1/ HTTP/1.1" 304 -
+127.0.0.1 - - [02/May/2025 14:00:16] code 400, message Bad request syntax ('\x16\x03\x01\x06Ò\x01\x00\x06Î\x03\x039¸È«b\x05^¶\x8cë}\x98\x8bGuÐ¡Ð¢v$jA-')
+127.0.0.1 - - [02/May/2025 14:00:16] "\x16\x03\x01\x06Ò\x01\x00\x06Î\x03\x039¸È«b\x05^¶\x8cë}\x98\x8bGuÐ¡Ð¢v$jA-" HTTPStatus.BAD_REQUEST -
+127.0.0.1 - - [02/May/2025 14:00:16] code 400, message Bad request version ('ÿ&t;/')
+127.0.0.1 - - [02/May/2025 14:00:16] "\x16\x03\x01\x06ò\x01\x00\x06î\x03\x03¡\x85E\x89\x07\x9cx±QvðqâpKòéN(m?\x83ÄáDi­Uêj\x14\x97 \x7f¤{Ä\x08B\x9fôUÂÖ%\x8eø!\x81\x04mVþÝ\x0fOIÄ©\x8aß\x06'\x9fM\x00 úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x85ZZ\x00\x00\x00\x17\x00\x00\x00-\x00\x02\x01\x01\x00\x12\x00\x00þ\x0d\x00ú\x00\x00\x01\x00\x01\x0e\x00 ²\x85\x02}OÈÀEêôº^«\x7fí\x13ý\x0f£r\x87\x1f£Ë\x816uºl\x08~\x05\x00Ð¢sjO\x00wüÈéØ\x05\x8f\x8b<\x06q\x8c\x06õ\x18|èñôðxØ5ö\x9c\x09.¦\x92¡Õ\x0fÆR\x88ý§2F-µL1Ìà¼õ=ô\x18±Þ±ì\x9cÏüÒu\x84NL\x8e¥\x15\x8bW5á¡5\x97÷õªF³\x9c5í­u4vV\x1d±¦YòØÞ\x00\x83\x88_HsYêcáá8+ºF\x80\x97¾Ù¨\x82¢µ\x88 ÇÀUå\x9bãô\x0dÿ&t;/" HTTPStatus.BAD_REQUEST -
+127.0.0.1 - - [02/May/2025 14:00:17] code 400, message Bad request version ('4ôB\x10\x8bäC\x7fîÄß\x92å?kw?V3âÂyop²Û\x16Të\x18ój')
+127.0.0.1 - - [02/May/2025 14:00:17] "\x16\x03\x01\x06Ò\x01\x00\x06Î\x03\x03­Æ^ÈjÊô·?ª\x12wù\x1fó\x01\x8agSOÍÑ[öÙBÊÄ_Ô\x0e\x92 pù3k·O¬ñÛ\x97\x8b®Ñ£\x08\x14áì²÷'·Ûzâð·ÝCª\x82D\x00 jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06eZZ\x00\x00þ\x0d\x00Ú\x00\x00\x01\x00\x01+\x00 xÕKÐÖ|\x83`ÂIJ°}\x8cÍêæ@j¼\x803\x1b¶\x0eö©\x93ÿ\x92Ê?\x00°2é±ì\x89ÃÏ\x8b\x00¡R'\x8eÐ)ÇE\x17ü\x9d@ÔÊE´r\x86i­%\x12>1J\x87kØ\x1b(U#\x9fãþ6\x95\x94\x04ÝÓJèT\x05¦\x0dV\x10\x07êvËæd\x06X\x0b\x91ô,\x0d4ôB\x10\x8bäC\x7fîÄß\x92å?kw?V3âÂyop²Û\x16Të\x18ój" HTTPStatus.BAD_REQUEST -
+127.0.0.1 - - [02/May/2025 14:00:17] code 400, message Bad request version ('E}|Õ"â\x95')
+127.0.0.1 - - [02/May/2025 14:00:17] "\x16\x03\x01\x06ò\x01\x00\x06î\x03\x03Kju\x11\x17ù«\x07æàê1I¾~%\x92u¯4\x06c|¥\x91ùyÄ\x17ùO\x96 £mí¬e\x92¡A4ô «:5Õ¤[ÈS-îG¨D\x96ÇG_\x9b^Z\x06\x00 ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x85\x8a\x8a\x00\x00\x00\x17\x00\x00þ\x0d\x00ú\x00\x00\x01\x00\x01\x03\x00 yPÇäæZ1<\x91\x82æ\x1c\x00\x99\x06_»MÅé1\x8b¼Z¾RÝÌ.\x99C;\x00Ð±±Þ\x1eê\x18¯Ù\x92\x1a£È¸Ò\x8c/f)/©v\x9cÅdªrÆ-ê×\x91\x15¡¾\x8c(û\x08\x1dE}|Õ"â\x95" HTTPStatus.BAD_REQUEST -
+127.0.0.1 - - [02/May/2025 14:00:17] code 400, message Bad request syntax ('\x16\x03\x01\x06²\x01\x00\x06®\x03\x03A÷¨^Á\x03µ$>ûu\x06,Gê\x84`æÎ¸Á¬º_')
+127.0.0.1 - - [02/May/2025 14:00:17] "\x16\x03\x01\x06²\x01\x00\x06®\x03\x03A÷¨^Á\x03µ$>ûu\x06,Gê\x84`æÎ¸Á¬º_" HTTPStatus.BAD_REQUEST -
+127.0.0.1 - - [02/May/2025 14:00:17] code 400, message Bad request version ('\x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06')
+127.0.0.1 - - [02/May/2025 14:00:17] "\x16\x03\x01\x06ò\x01\x00\x06î\x03\x03AÒi\x19\x00\x15¶£·ÛH\x19B\x9e\x12\x96×6@Mµêò\x8e+p¨\x1e\x97»\x8fV Ê`ÿÌáS$&×©ãkSÂ)ÖM¼"\x1dcnmoW\x05\x17õQ\x8eaV\x00 \x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x85" HTTPStatus.BAD_REQUEST -
+127.0.0.1 - - [02/May/2025 14:00:19] code 400, message Bad request version ('Ô\x9aÝ\x8eiý¼²\x00')
+127.0.0.1 - - [02/May/2025 14:00:19] "\x16\x03\x01\x07\x12\x01\x00\x07\x0e\x03\x03\x84ùK×\x9c"¡Sx­=\x12[P@.n!\x89æ\x14pßU\x19mñAÎsÌØ i~\x8aYÂ\x94´k\x8aÂ\x03\x9d¶ç'\x91\\ÖÀ\x85©\x1dz\x15ÉÈéÈ0\x98\x01\x8c\x00 ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06¥JJ\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00\x17\x00\x00DÍ\x00\x05\x00\x03\x02h2\x00\x12\x00\x00þ\x0d\x01\x1a\x00\x00\x01\x00\x01å\x00 o\x0cÄ\x0eÒ¬PÛÌ²Ñ|GÁR\x89³\x11rTÚ Á50\x16\x7fwûp¸\x09\x00ðð{îÃ¨è1E\x91µ\x03\x1cø\x88\x83àÍs{Ö\x0c¬\x12\x8d»îJ\x80`\\-Û¬Vÿ\x00Å1Q1(S®Ó\x90ÅáTZ\x86&\x08\x8a\x97ä´ \x9adW\x7foW\x8cºÊÈáB§'%mÍzvX\x01îÿ<\x04§ãvzÄ>þ¬:áz\\\x95è\x05Ð\x1auØÞæÝõz{@¿ºL æÅ@\x9dçl®\x8dÂ£ÆzTã-\x87»½\x09"Y2äÑ+¬\x0dÅ¦~\x98@\x98¤\x9aKØÚ3V~\x826ª8\x9eÃßü¼\x8cne°x"ÙQ\x83Á\x8eä¸6§Í\x86Ìf\x951è%\x84¶\x81\x7fK±çÂ¾\x8fU9øª\x1b\x90 D&ÓÝ©GÔã¶Mþ@\x8e\x98Â Á<o{}<3pû\x925ýÐ\x85Ô\x9aÝ\x8eiý¼²\x00" HTTPStatus.BAD_REQUEST -
+127.0.0.1 - - [02/May/2025 14:00:19] code 400, message Bad request syntax ('\x16\x03\x01\x07\x12\x01\x00\x07\x0e\x03\x03ÔÉÿõi\x0f\x11"î\x8d8\x88')
+127.0.0.1 - - [02/May/2025 14:00:19] "\x16\x03\x01\x07\x12\x01\x00\x07\x0e\x03\x03ÔÉÿõi\x0f\x11"î\x8d8\x88" HTTPStatus.BAD_REQUEST -
+127.0.0.1 - - [02/May/2025 14:00:20] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06²\x01\x00\x06®\x03\x03Û\x8e\x80*\x06E3xËåÈ\x0fGJà£\x7fÎ\x8em\x91ÄÔ"äAiyÒ\x8be¼')
+127.0.0.1 - - [02/May/2025 14:00:20] "\x16\x03\x01\x06²\x01\x00\x06®\x03\x03Û\x8e\x80*\x06E3xËåÈ\x0fGJà£\x7fÎ\x8em\x91ÄÔ"äAiyÒ\x8be¼ Ø" HTTPStatus.BAD_REQUEST -
+127.0.0.1 - - [02/May/2025 14:00:20] code 400, message Bad request version ('\x02DÀ;Ù0MÛÙû>\x1a\x17K]\x9e7xÉ')
+127.0.0.1 - - [02/May/2025 14:00:20] "\x16\x03\x01\x06Ò\x01\x00\x06Î\x03\x03E\x1b\x18n\x1a\x88I2^$\x8d7\x9d:ô\x8dK\x04ú\x80\x8e¥Õ1\x05ö×\x0bnK\x1c} \x02DÀ;Ù0MÛÙû>\x1a\x17K]\x9e7xÉ" HTTPStatus.BAD_REQUEST -
+127.0.0.1 - - [02/May/2025 14:00:20] code 400, message Bad request version ('ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06e')
+127.0.0.1 - - [02/May/2025 14:00:20] "\x16\x03\x01\x06Ò\x01\x00\x06Î\x03\x03ê\x9c8ü"éüà·í0j\x1dtáæå?\x12£ë\x831ÄçA7115\x9c% Þ\x1f/\x0bËìáL­ÜZ>î\x1aU½¤|´U\x80~\x11u\x82\x86s\x02±¹ò{\x00 ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06e" HTTPStatus.BAD_REQUEST -
+127.0.0.1 - - [02/May/2025 14:00:20] code 400, message Bad request version ('MÝ')
+127.0.0.1 - - [02/May/2025 14:00:20] "\x16\x03\x01\x06Ò\x01\x00\x06Î\x03\x03g\x9a\x01\x9a«-\x86\x97ô\\\x18¸\x03øz)rS\x88÷$\x96\x10?½\x0f\x10\x0cróþê D\x12ýìÁ<ª\x9a?9\x12¯åÇ\x06²¨ï\\m5\x80£\x15\x12~\x18\x9e}!öl\x00 **\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06eÊÊ\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x0b\x00\x02\x01\x00\x00\x17\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00+\x00\x07\x06::\x03\x04\x03\x03\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x12\x00\x00\x00\x00\x00\x0e\x00\x0c\x00\x00\x09localhostÿ\x01\x00\x01\x00þ\x0d\x00Ú\x00\x00\x01\x00\x01q\x00 ê)\x1e\x8câ@=\x98\x91þ©5$Em\x80î\x01Wò¼¶_3°È\x8c\x1cmÿ\x17\x1c\x00°#È\x98!\x99'×\x09Ì\x13\x11n¤Ðc\x10Ü\x9a)Ëÿ\x9c})·ÿìz}\x1e¿5Fñ¸nÔ\x18\x93ì\x14\x83õÄf \x8c>\x9c\x1e-Ac\x14_\x0bi«ÊÇ§ùuïs|}â0øµÒö\x89J\x00}ï\x9c\x1dMÝ" HTTPStatus.BAD_REQUEST -
+127.0.0.1 - - [02/May/2025 14:00:26] "GET / HTTP/1.1" 302 -
+127.0.0.1 - - [02/May/2025 14:00:26] "GET /home HTTP/1.1" 200 -
+127.0.0.1 - - [02/May/2025 14:00:27] "GET /favicon.ico HTTP/1.1" 302 -
+127.0.0.1 - - [02/May/2025 14:00:27] "GET /login HTTP/1.1" 200 -
+42.106.93.78 - - [02/May/2025 15:34:34] code 400, message Bad request version ('+\x84m<\x1a¼+²mÛhW\x9aA÷´\x9b¬@<³º¯¥¬¶qhh\x87Q\x99\x19Ø')
+42.106.93.78 - - [02/May/2025 15:34:34] "\x16\x03\x01\x06Ú\x01\x00\x06Ö\x03\x03»È«-µ~Ñ\x81\x01¢o\x19z\x86Mó`¢veÇ¢'ub]¤¶ÌÏ@7 48\x15cRE n{ì\x9e\x911Û¼3ç¿0Y\x19\\\x08 §¸ÍOu³"\x93\x00 \x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06mÚÚ\x00\x00þ\x0d\x00Ú\x00\x00\x01\x00\x01`\x00 ë[ûò\x87ªuNñ\x87\x8bLÊÿ+¿÷gÝßº.¹\x01\x02]ç\x98iÞ~@\x00°&øß®ï'6VgÃ\x9bç\x92\x8e\x0dÆ\x11\x93G\x18 \x86Ö\x9adWµÝ:áj\x1c·~\x7fmú\x005·¸·¢³o\x02'å@Â(Ì¢\x91\x0c¯r\x9f\x04%[ßßKp¶\x9eHáóº¥.pfñDÎ\x93ËÓÜÐ\x96)ÌáÏBe\x8cÜâ\x1d#|\x10âk%*©Îèh<ºE\x0f(öÝyú\x87\x12\x06Û\x1a\x18òåã¤\\C\x09%Y7¯\x7fK¤ÈÏ¶\x00¿\x96jÿF¹¾Ã\x98a,·\x14\x02\x88\x0dc'VaAi>"7óåë¾Æ\x1br\x0e'\x05>\x8c\x1b\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x0b\x00\x02\x01\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x00\x00\x16\x00\x14\x00\x00\x11gces2.duckdns.org\x00\x12\x00\x00\x00\x17\x00\x00\x00-\x00\x02\x01\x01\x00+\x00\x07\x06\x1a\x1a\x03\x04\x03\x03\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x003\x04ï\x04íJJ\x00\x01\x00\x11ì\x04ÀÂX}\x83<-_aÈ.\x1b,e£\x17ÅÇH$L\x18¯¢\x84(9 O:Ï¡,\x92¯G\x8eÍ²vÒ6$¸¬\x84%\x91u\x8b¢\x97¬'}xÒÉùfµNI\x08p«\x85Á\x10Tkö6²\x1b\x1d4VP\x13KµÊÜ3RLl!kºÎ54EÓ£í§\x7f@Â\x198\x88jÆUÍ&Te\x0f)z\x9cÈD&Û\x8bÚ\x076@Ùb'è`Óö\x86Q«Zµh\x83êÇ´°¤g\x1c\x04\x07Ð\x10Ï\x9a7\x0e°\x9a\x92\x0b9k\x0bÃalè)â«¼.%)\x14[3Á[\x1bE¦º\x88·L¹y¿¤ \x94<ËD/d`²\x0bw±õ\x98\x08p&G\x912\x048r\x0b+\x84m<\x1a¼+²mÛhW\x9aA÷´\x9b¬@<³º¯¥¬¶qhh\x87Q\x99\x19Ø\x1c" HTTPStatus.BAD_REQUEST -
+42.106.93.78 - - [02/May/2025 15:34:34] code 400, message Bad request version ('IIn#\x9dÏø¶¹')
+42.106.93.78 - - [02/May/2025 15:34:34] "\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x03\x05/V¶\x8e©ÝQR9¼y\x14\x0c\x83\x01ÊOö\x05yl\x06\x91\x15k¡|í@@1 N.QD\x8d\x88Úõmc¹5¡8Û8o\x99AÈ7B"\x88Û¢|Ú$Y\x96\x9b\x00 zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06­ÚÚ\x00\x00\x00\x17\x00\x00\x00\x00\x00\x16\x00\x14\x00\x00\x11gces2.duckdns.org\x00#\x00\x00\x003\x04ï\x04íjj\x00\x01\x00\x11ì\x04Àôæx¬j\x07ìñ~ IIn#\x9dÏø¶¹" HTTPStatus.BAD_REQUEST -
+42.106.93.78 - - [02/May/2025 15:34:36] code 400, message Bad request version ('¸\x9fæ\x15\x05eP«ñ|')
+42.106.93.78 - - [02/May/2025 15:34:36] "\x16\x03\x01\x06Ú\x01\x00\x06Ö\x03\x03\x9fjÌò¯ÜöâÀ0·\x13L´aÝ\x13 /i>7J\x85\x86Å<\x97\x18fªp \x09%öÀ¹©õôª3è\x843å\x7f\x16+÷#§L\x8cWôÈwaPÕ\x05VO\x00 \x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06mªª\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00\x12\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00#\x00\x00\x00-\x00\x02\x01\x01\x003\x04ï\x04íJJ\x00\x01\x00\x11ì\x04ÀDH\x0fö*\x9eÝ\x09¯\x1dd\x9dñó(È0\x07±@\x13î#ok#¦\x82°vÑ\x01g\x05\x1c;"Â\x9fV×¥ì:N\x86§G\x89â\x89WZ2Jæc\x1f¸\x9fæ\x15\x05eP«ñ|" HTTPStatus.BAD_REQUEST -
+42.106.93.78 - - [02/May/2025 15:34:36] code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00')
+42.106.93.78 - - [02/May/2025 15:34:36] "\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x03\x1f]h^\x10!¤ä\x80ç\x1eC\x16¿cº!|m\x19Ö5Z§_ü+B\x10uK\x15 v\x1dµ^)è\x1c<\x8fôÛ\x92w®ú\x96¯{D93p\x83-\x0e\x04ø_\x1dÐrÞ\x00 ::\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06­ªª\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00" HTTPStatus.BAD_REQUEST -
+42.106.93.78 - - [02/May/2025 15:34:36] code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+42.106.93.78 - - [02/May/2025 15:34:36] "\x16\x03\x01\x06ú\x01\x00\x06ö\x03\x03Û;\x0bà®¥£Áw\x11ÂAäb\x02H°¹Ü¼\x8d¥¢ZÛË\x8bê[\x98çÞ qð\x8eO.\x83õªD\x94D*ÑÅt\x8bWËÓ(o@r\x1c\x99s+\x98`Î7t\x00 \x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x8djj\x00\x00\x00\x00\x00\x16\x00\x14\x00\x00\x11gces2.duckdns.org\x00\x0b\x00\x02\x01\x00\x00" HTTPStatus.BAD_REQUEST -
+42.106.93.78 - - [02/May/2025 15:34:36] code 400, message Bad request version ('ð7Î5\x87\x07lÇ¨\x92ÕZ\x14©s,ôV\x10')
+42.106.93.78 - - [02/May/2025 15:34:36] "\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x03ÓÖ\x83CF§d£ú¨Ëm±ñ\x05­vY\x89+£/\x80lðì\x0e'#ôjQ \x04_¹.1ö/Sþ½\x1cð7Î5\x87\x07lÇ¨\x92ÕZ\x14©s,ôV\x10" HTTPStatus.BAD_REQUEST -
+42.106.93.78 - - [02/May/2025 15:39:50] code 400, message Bad request version ('ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\xadZZ\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00\x12\x00\x00\x00+\x00\x07\x06::\x03\x04\x03\x03\x00\x00\x00\x16\x00\x14\x00\x00\x11gces2.duckdns.org\x00-\x00\x02\x01\x01\x00')
+42.106.93.78 - - [02/May/2025 15:39:50] "\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x03\x82ÁÄ\x86XgÖ¶\x01\x8c\x90©\x86ß:6\x95Ã\x1cén%*h\x9e&ÉRò\x8fÊÊ 8\x8cñMiR,!\x97c\x141\x00\x94w­/¿Ó\x1e'_°¿Q÷\x080ÁJ$f\x00 ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06­ZZ\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00\x12\x00\x00\x00+\x00\x07\x06::\x03\x04\x03\x03\x00\x00\x00\x16\x00\x14\x00\x00\x11gces2.duckdns.org\x00-\x00\x02\x01\x01\x00" HTTPStatus.BAD_REQUEST -
+42.106.93.78 - - [02/May/2025 15:39:50] code 400, message Bad request version ('#µ\x880')
+42.106.93.78 - - [02/May/2025 15:39:50] "\x16\x03\x01\x06Ú\x01\x00\x06Ö\x03\x03\x07¯x£:\x8c1ø\x19r\x90KÓµ\x11Oá2õ£p\x04·d\x84EÙ¯\x0cöÑß \x00sQf\x00\x07\x1aWâ\x1b\x92Øô«²\x19ý >£vÃ¯jò®#\x19\x95×þ\x02\x00 úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06mºº\x00\x00\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x00\x00\x16\x00\x14\x00\x00\x11gces2.duckdns.org\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00+\x00\x07\x06ÚÚ\x03\x04\x03\x03\x00\x17\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x12\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00#\x00\x00\x003\x04ï\x04í::\x00\x01\x00\x11ì\x04À\\\x91Êi|cO(\x8e½ü\x1aÍ\x12¡\x8eÈ\x9d¿D\x9f°\x17¢6±<R6«z¸³í ;?²\x9d\x0c#IM\x05wÅj¡0 'Â\x01\x1c\x9fZÆ¦Ù²ù¥±²áW\x18ö\x1afê\x9a\x1cS¦¢%~\x1cÇÍ¢ã\x8f ø±\x03\x9bvæÀ´4\x89m\x03ëi\x0b#µ\x880" HTTPStatus.BAD_REQUEST -
+42.106.93.78 - - [02/May/2025 15:39:50] code 400, message Bad request version ('ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\xadÊÊ\x00\x00\x00')
+42.106.93.78 - - [02/May/2025 15:39:50] "\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x03\x99Ù áv`¸A\x12¿mkÜ[aB¿xì\x97Üip\x9f×u\x9fÑ£\x0f%C §\x10¬ù\x15\x01\x069fÑú+öÆÏç"¢²*á±\x18tÉj¹ª©\x9e?&\x00 ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06­ÊÊ\x00\x00\x00" HTTPStatus.BAD_REQUEST -
+42.106.93.78 - - [02/May/2025 15:39:51] code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00+\x00\x07\x06úú\x03\x04\x03\x03\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00')
+42.106.93.78 - - [02/May/2025 15:39:51] "\x16\x03\x01\x06º\x01\x00\x06¶\x03\x03\x9bé1s\x02\x0bPú\x01àæáÁ{\x1aÚ\x82±\x0b\x9f<\x1e9fd¼­ ­S\x08. eñx0&\x17\x1cWÃ1Ø`¢À\x1a=Ùûö\x0fÔÈ;¢ä,3uÐ\x87ß\x8f\x00 úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06M::\x00\x00\x00\x00\x00\x16\x00\x14\x00\x00\x11gces2.duckdns.org\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00#\x00\x00\x00\x0b\x00\x02\x01\x00ÿ\x01\x00\x01\x00DÍ\x00\x05\x00\x03\x02h2\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00+\x00\x07\x06úú\x03\x04\x03\x03\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00" HTTPStatus.BAD_REQUEST -
+42.106.93.78 - - [02/May/2025 15:39:52] code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00')
+42.106.93.78 - - [02/May/2025 15:39:52] "\x16\x03\x01\x06Ú\x01\x00\x06Ö\x03\x03ÍÚ·\x99\x11ÆöO-\x96,=zä\x89½!ód:k\x8d}\x898K\x9cÐßµ7­ :o\x87ô:÷Åú=\x7f\\-¾\x1dØ!«"s¨ù\x0eÑ]cit\x0cRDÒ(\x00 JJ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06mªª\x00\x00\x00-\x00\x02\x01\x01\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00" HTTPStatus.BAD_REQUEST -
+42.106.93.78 - - [02/May/2025 15:39:52] code 400, message Bad request version ('\x00\x02\x01\x00ÿ\x01\x00\x01\x00\x00+\x00\x07\x06ºº\x03\x04\x03\x03\x00\x12\x00\x00\x00\x17\x00\x00\x00')
+42.106.93.78 - - [02/May/2025 15:39:52] "\x16\x03\x01\x06ú\x01\x00\x06ö\x03\x03\x9aI&zì»ÿ\x07Û\x8f\x94\x0bI\x06\x1cL\x92&\x87\x86¦â\x12Ö#ä8^\x9a|K¥ \x04I8\x9c\x8cbòïnÓ\x14Çpö_(\x03Çí\x88£dÔp\x8e§:7ùüÓ¥\x00 \x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x8d\x8a\x8a\x00\x00\x00\x0b\x00\x02\x01\x00ÿ\x01\x00\x01\x00\x00+\x00\x07\x06ºº\x03\x04\x03\x03\x00\x12\x00\x00\x00\x17\x00\x00\x00" HTTPStatus.BAD_REQUEST -
+42.106.93.78 - - [02/May/2025 15:39:52] code 400, message Bad request version ('úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\xadZZ\x00\x00ÿ\x01\x00\x01\x00\x00-\x00\x02\x01\x01\x00')
+42.106.93.78 - - [02/May/2025 15:39:52] "\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x03óÀ\x8b8V§\x98­úÂ\x09%Q\x0f\x81þ\x0c\x03ÊNC¾Ô\x1b\x9eaÑ\x14\x04|Ê  ]ÃÎ2]À¡.tõ*ÿq\x10´£#(ð÷m\x80çªÑÙÏÓë6³§\x00 úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06­ZZ\x00\x00ÿ\x01\x00\x01\x00\x00-\x00\x02\x01\x01\x00" HTTPStatus.BAD_REQUEST -
+42.106.93.78 - - [02/May/2025 15:39:52] code 400, message Bad request version ('ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06m**\x00\x00\x00\x00\x00\x16\x00\x14\x00\x00\x11gces2.duckdns.org\x00\x17\x00\x00\x00')
+42.106.93.78 - - [02/May/2025 15:39:52] "\x16\x03\x01\x06Ú\x01\x00\x06Ö\x03\x03\x98X2BÓÄÖaO\x15\x8e\x00ä¿£Ù3W|/£\x92\x96âu\x81çÛò\x86\x9f\x05 H2\x04ä\x92\\è\x95ß\x80Æn_Z8×\x11\x97»ru77à\x07hÃ\x9bë½Oþ\x00 ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06m**\x00\x00\x00\x00\x00\x16\x00\x14\x00\x00\x11gces2.duckdns.org\x00\x17\x00\x00\x00" HTTPStatus.BAD_REQUEST -
+42.106.93.78 - - [02/May/2025 15:40:10] "GET /projects/830123104015/nm1 HTTP/1.1" 308 -
+42.106.93.78 - - [02/May/2025 15:40:11] "GET /projects/830123104015/nm1/ HTTP/1.1" 200 -
+42.106.93.78 - - [02/May/2025 15:40:11] "GET /favicon.ico HTTP/1.1" 302 -
+42.106.93.78 - - [02/May/2025 15:40:11] "GET /login HTTP/1.1" 200 -
+210.16.91.251 - - [02/May/2025 15:47:07] "GET / HTTP/1.1" 302 -
+210.16.91.251 - - [02/May/2025 15:47:08] "GET /home HTTP/1.1" 200 -
+210.16.91.251 - - [02/May/2025 15:47:08] "GET /favicon.ico HTTP/1.1" 302 -
+210.16.91.251 - - [02/May/2025 15:47:08] "GET /login HTTP/1.1" 200 -
+210.16.91.251 - - [02/May/2025 15:47:26] "GET /dashboard HTTP/1.1" 302 -
+210.16.91.251 - - [02/May/2025 15:47:26] "GET /login HTTP/1.1" 304 -
+210.16.91.251 - - [02/May/2025 15:47:26] "GET /favicon.ico HTTP/1.1" 302 -
+210.16.91.251 - - [02/May/2025 15:47:26] "GET /login HTTP/1.1" 304 -
+210.16.91.251 - - [02/May/2025 15:47:37] "POST /login HTTP/1.1" 200 -
+210.16.91.251 - - [02/May/2025 15:47:39] "GET /home HTTP/1.1" 304 -
+210.16.91.251 - - [02/May/2025 15:47:39] "GET /favicon.ico HTTP/1.1" 404 -
+210.16.91.251 - - [02/May/2025 15:47:43] "GET /dashboard HTTP/1.1" 200 -
+210.16.91.251 - - [02/May/2025 15:47:43] "GET /get_regno HTTP/1.1" 200 -
+210.16.91.251 - - [02/May/2025 15:47:43] "GET /get_base_url HTTP/1.1" 200 -
+210.16.91.251 - - [02/May/2025 15:47:43] "GET /get_regno HTTP/1.1" 200 -
+210.16.91.251 - - [02/May/2025 15:47:43] "GET /api/dashboard HTTP/1.1" 200 -
+210.16.91.251 - - [02/May/2025 15:47:46] "GET /projects/830123104011/projectArjun3 HTTP/1.1" 308 -
+210.16.91.251 - - [02/May/2025 15:47:46] "GET /projects/830123104011/projectArjun3/ HTTP/1.1" 200 -
+210.16.91.251 - - [02/May/2025 15:47:46] "GET /projects/830123104011/projectArjun3/style.css HTTP/1.1" 200 -
+210.16.91.251 - - [02/May/2025 15:47:46] "GET /projects/830123104011/projectArjun3/script.js HTTP/1.1" 200 -
+210.16.91.251 - - [02/May/2025 15:47:52] "GET /deploy HTTP/1.1" 200 -
+210.16.91.251 - - [02/May/2025 15:48:00] "GET /dashboard HTTP/1.1" 304 -
+210.16.91.251 - - [02/May/2025 15:48:00] "GET /get_regno HTTP/1.1" 200 -
+210.16.91.251 - - [02/May/2025 15:48:00] "GET /get_base_url HTTP/1.1" 200 -
+210.16.91.251 - - [02/May/2025 15:48:00] "GET /get_regno HTTP/1.1" 200 -
+210.16.91.251 - - [02/May/2025 15:48:00] "GET /api/dashboard HTTP/1.1" 200 -
+210.16.91.251 - - [02/May/2025 15:48:07] "GET /projects/830123104011/projectArjun3/ HTTP/1.1" 304 -
+210.16.91.251 - - [02/May/2025 15:48:07] "GET /projects/830123104011/projectArjun3/style.css HTTP/1.1" 304 -
+210.16.91.251 - - [02/May/2025 15:48:07] "GET /projects/830123104011/projectArjun3/script.js HTTP/1.1" 304 -
+210.16.91.251 - - [02/May/2025 15:48:18] "GET /projects/830123104015/nm1/ HTTP/1.1" 200 -
+210.16.91.251 - - [02/May/2025 15:48:43] "GET /logout HTTP/1.1" 302 -
+210.16.91.251 - - [02/May/2025 15:48:43] "GET /login HTTP/1.1" 200 -
+210.16.91.251 - - [02/May/2025 15:48:45] "GET /register HTTP/1.1" 200 -
+210.16.91.251 - - [02/May/2025 15:50:31] "POST /register HTTP/1.1" 200 -
+210.16.91.251 - - [02/May/2025 15:50:34] "GET /login HTTP/1.1" 304 -
+210.16.91.251 - - [02/May/2025 15:50:45] "POST /login HTTP/1.1" 200 -
+210.16.91.251 - - [02/May/2025 15:50:46] "GET /home HTTP/1.1" 304 -
+210.16.91.251 - - [02/May/2025 15:50:51] "GET /deploy HTTP/1.1" 304 -
+210.16.91.251 - - [02/May/2025 15:51:11] "GET / HTTP/1.1" 302 -
+210.16.91.251 - - [02/May/2025 15:51:11] "GET /home HTTP/1.1" 304 -
+210.16.91.251 - - [02/May/2025 15:51:37] "GET /dashboard HTTP/1.1" 304 -
+210.16.91.251 - - [02/May/2025 15:51:37] "GET /get_base_url HTTP/1.1" 200 -
+210.16.91.251 - - [02/May/2025 15:51:37] "GET /get_regno HTTP/1.1" 200 -
+210.16.91.251 - - [02/May/2025 15:51:37] "GET /get_regno HTTP/1.1" 200 -
+210.16.91.251 - - [02/May/2025 15:51:37] "GET /api/dashboard HTTP/1.1" 200 -
+210.16.91.251 - - [02/May/2025 15:51:58] "GET /deploy HTTP/1.1" 304 -
+210.16.91.251 - - [02/May/2025 15:53:25] "GET /deploy HTTP/1.1" 304 -
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7777
+ * Running on http://210.16.91.251:7777
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+210.16.91.251 - - [02/May/2025 15:58:07] "GET / HTTP/1.1" 302 -
+210.16.91.251 - - [02/May/2025 15:58:07] "GET /home HTTP/1.1" 304 -
+210.16.91.251 - - [02/May/2025 15:58:12] "GET /projects/830123104015/nm1/ HTTP/1.1" 304 -
+210.16.91.251 - - [02/May/2025 15:58:15] "GET /projects/830123104015/nm2/ HTTP/1.1" 200 -
+210.16.91.251 - - [02/May/2025 16:02:47] "GET /projects/830123104015/nm2/ HTTP/1.1" 304 -
+210.16.91.251 - - [02/May/2025 16:04:39] "GET /projects/830123104015/nm2/ HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+210.16.91.251 - - [02/May/2025 16:18:21] "GET / HTTP/1.1" 302 -
+210.16.91.251 - - [02/May/2025 16:18:21] "GET /home HTTP/1.1" 304 -
+210.16.91.251 - - [02/May/2025 16:18:21] "GET /favicon.ico HTTP/1.1" 404 -
+106.195.34.215 - - [03/May/2025 09:48:38] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x87Nø/\x93Â²\x86\x84@Jéª¨\x8eYîÉà?Zrr*')
+106.195.34.215 - - [03/May/2025 09:48:38] "\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x87Nø/\x93Â²\x86\x84@Jéª¨\x8eYîÉà?Zrr*" HTTPStatus.BAD_REQUEST -
+106.195.34.215 - - [03/May/2025 09:48:57] code 400, message Bad request version ('êê\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06mzz\x00\x00\x00')
+106.195.34.215 - - [03/May/2025 09:48:57] "\x16\x03\x01\x06Ú\x01\x00\x06Ö\x03\x03µ§\x17\x1aÞ"K°¿>±uUÓ|Ö~®\x0b²!\x07\x14=\x1e^\x98n\x90Å~Å Ç\x92Ý%;?Ü¢ò-Û{¾5øUÍy\x9ao¬J :õtÅIèÏ\x9bó\x00 êê\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06mzz\x00\x00\x00" HTTPStatus.BAD_REQUEST -
+106.195.34.215 - - [03/May/2025 09:48:57] code 400, message Bad request version ('(\x86:íÔ²')
+106.195.34.215 - - [03/May/2025 09:48:57] "\x16\x03\x01\x06ú\x01\x00\x06ö\x03\x03o5×\x90NÇNí\x1dµ\x89a\x08ù1DÝ\x14z·-\x09\x14b^D/ö3P¶T Òs\x87\x1fª\x8cïÞ4úð\x82\\5Ê\x9a(|+Q¶M\x09ß\x089§\x0fDå{i\x00 JJ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x8dºº\x00\x00þ\x0d\x00ú\x00\x00\x01\x00\x01\x9f\x00 \x7f\x14ëj«Ô\x90¿Ìþ:C\x09(\x86:íÔ²" HTTPStatus.BAD_REQUEST -
+106.195.34.215 - - [03/May/2025 09:49:18] "GET / HTTP/1.1" 302 -
+106.195.34.215 - - [03/May/2025 09:49:18] "GET /home HTTP/1.1" 200 -
+106.195.34.215 - - [03/May/2025 09:49:19] "GET /favicon.ico HTTP/1.1" 302 -
+106.195.34.215 - - [03/May/2025 09:49:19] "GET /login HTTP/1.1" 304 -
+198.235.24.207 - - [03/May/2025 10:52:54] "GET / HTTP/1.1" 302 -
+198.235.24.207 - - [03/May/2025 10:52:55] "GET /home HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7777
+ * Running on http://210.16.91.251:7777
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+210.16.91.251 - - [03/May/2025 12:38:09] "GET / HTTP/1.1" 302 -
+210.16.91.251 - - [03/May/2025 12:38:09] "GET /home HTTP/1.1" 304 -
+210.16.91.251 - - [03/May/2025 12:38:10] "GET /favicon.ico HTTP/1.1" 302 -
+210.16.91.251 - - [03/May/2025 12:38:10] "GET /login HTTP/1.1" 200 -
+210.16.91.251 - - [03/May/2025 12:38:11] "GET /dashboard HTTP/1.1" 302 -
+210.16.91.251 - - [03/May/2025 12:38:11] "GET /login HTTP/1.1" 304 -
+210.16.91.251 - - [03/May/2025 12:38:11] "GET /favicon.ico HTTP/1.1" 302 -
+210.16.91.251 - - [03/May/2025 12:38:11] "GET /login HTTP/1.1" 304 -
+210.16.91.251 - - [03/May/2025 12:38:17] "POST /login HTTP/1.1" 200 -
+210.16.91.251 - - [03/May/2025 12:38:18] "GET /home HTTP/1.1" 304 -
+210.16.91.251 - - [03/May/2025 12:38:19] "GET /favicon.ico HTTP/1.1" 404 -
+210.16.91.251 - - [03/May/2025 12:38:22] "GET /dashboard HTTP/1.1" 200 -
+210.16.91.251 - - [03/May/2025 12:38:22] "GET /get_base_url HTTP/1.1" 200 -
+210.16.91.251 - - [03/May/2025 12:38:22] "GET /get_regno HTTP/1.1" 200 -
+210.16.91.251 - - [03/May/2025 12:38:22] "GET /get_regno HTTP/1.1" 200 -
+210.16.91.251 - - [03/May/2025 12:38:22] "GET /api/dashboard HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7777
+ * Running on http://210.16.91.251:7777
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+210.16.91.251 - - [03/May/2025 12:45:15] "GET /dashboard HTTP/1.1" 304 -
+210.16.91.251 - - [03/May/2025 12:45:15] "GET /get_base_url HTTP/1.1" 200 -
+210.16.91.251 - - [03/May/2025 12:45:15] "GET /get_regno HTTP/1.1" 200 -
+210.16.91.251 - - [03/May/2025 12:45:15] "GET /get_regno HTTP/1.1" 200 -
+210.16.91.251 - - [03/May/2025 12:45:15] "GET /api/dashboard HTTP/1.1" 200 -
+210.16.91.251 - - [03/May/2025 12:48:52] "GET /logout HTTP/1.1" 302 -
+210.16.91.251 - - [03/May/2025 12:48:52] "GET /login HTTP/1.1" 200 -
+210.16.91.251 - - [03/May/2025 12:49:08] "POST /login HTTP/1.1" 401 -
+210.16.91.251 - - [03/May/2025 12:49:16] "POST /login HTTP/1.1" 200 -
+210.16.91.251 - - [03/May/2025 12:49:17] "GET /home HTTP/1.1" 304 -
+210.16.91.251 - - [03/May/2025 12:49:20] "GET /dashboard HTTP/1.1" 304 -
+210.16.91.251 - - [03/May/2025 12:49:20] "GET /get_base_url HTTP/1.1" 200 -
+210.16.91.251 - - [03/May/2025 12:49:20] "GET /get_regno HTTP/1.1" 200 -
+210.16.91.251 - - [03/May/2025 12:49:20] "GET /get_regno HTTP/1.1" 200 -
+210.16.91.251 - - [03/May/2025 12:49:20] "GET /api/dashboard HTTP/1.1" 200 -
+210.16.91.251 - - [03/May/2025 12:49:28] "GET /projects/830123104015/nm1 HTTP/1.1" 308 -
+210.16.91.251 - - [03/May/2025 12:49:28] "GET /projects/830123104015/nm1/ HTTP/1.1" 304 -
+210.16.91.251 - - [03/May/2025 12:49:50] "GET /deploy HTTP/1.1" 304 -
+210.16.91.251 - - [03/May/2025 12:50:32] "GET /api/check-name?name=nm2 HTTP/1.1" 200 -
+210.16.91.251 - - [03/May/2025 12:50:32] "POST /upload HTTP/1.1" 200 -
+210.16.91.251 - - [03/May/2025 12:50:35] "GET /projects/830123104015/nm2/ HTTP/1.1" 200 -
+210.16.91.251 - - [03/May/2025 12:50:47] "GET /dashboard HTTP/1.1" 304 -
+210.16.91.251 - - [03/May/2025 12:50:47] "GET /get_regno HTTP/1.1" 200 -
+210.16.91.251 - - [03/May/2025 12:50:47] "GET /get_base_url HTTP/1.1" 200 -
+210.16.91.251 - - [03/May/2025 12:50:47] "GET /get_regno HTTP/1.1" 200 -
+210.16.91.251 - - [03/May/2025 12:50:47] "GET /api/dashboard HTTP/1.1" 200 -
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7777
+ * Running on http://210.16.91.251:7777
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+210.16.91.251 - - [03/May/2025 12:54:15] "GET /dashboard HTTP/1.1" 304 -
+210.16.91.251 - - [03/May/2025 12:54:15] "GET /get_regno HTTP/1.1" 200 -
+210.16.91.251 - - [03/May/2025 12:54:15] "GET /get_base_url HTTP/1.1" 200 -
+210.16.91.251 - - [03/May/2025 12:54:15] "GET /get_regno HTTP/1.1" 200 -
+210.16.91.251 - - [03/May/2025 12:54:15] "GET /api/dashboard HTTP/1.1" 200 -
+210.16.91.251 - - [03/May/2025 12:54:26] "DELETE /api/delete-project/52 HTTP/1.1" 200 -
+210.16.91.251 - - [03/May/2025 12:54:26] "POST /api/cleanup/nm2 HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
