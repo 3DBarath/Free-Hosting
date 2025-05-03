@@ -1,4 +1,4 @@
-from flask import Flask, request, send_from_directory, send_file, session, redirect, url_for, jsonify
+from flask import Flask, request,render_template, send_from_directory, send_file, session, redirect, url_for, jsonify
 from werkzeug.utils import secure_filename
 from werkzeug.security import generate_password_hash, check_password_hash
 from zipfile import ZipFile
@@ -27,7 +27,10 @@ DB_CONFIG = {
     'database': 'ziphost'
 }
 
-app = Flask(__name__)
+app = Flask(__name__,
+            template_folder='views',
+            static_folder='views',
+            static_url_path='/views')
 # Add session lifetime configuration
 app.config['PERMANENT_SESSION'] = True
 app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(hours=1)
@@ -486,36 +489,41 @@ def upload_page():
     check_valid_session()
     if 'user_id' not in session:
         return redirect(url_for('login_page'))
-    return send_from_directory(VIEWS_DIR, 'upload.html')
+    return render_template('upload.html')
 
 # Add redirects for authenticated users
 @app.route('/login')
 def login_page():
     if 'user_id' in session:
         return redirect(url_for('dashboard'))
-    return send_from_directory(VIEWS_DIR, 'login.html')
+    return render_template('login.html')
 
 @app.route('/register')
 def register_page():
     if 'user_id' in session:
         return redirect(url_for('upload_page'))
-    return send_from_directory(VIEWS_DIR, 'register.html')
+    return render_template('register.html')
 
 @app.route('/home')
 def home():
-    return send_from_directory(VIEWS_DIR, 'home.html')
+    return render_template('home.html')
+
+@app.route('/dash')
+def dash():
+    return render_template("dashboard.html")
 
 @app.route('/dashboard')
 def dashboard():
     if 'user_id' not in session:
         session.clear()
         return redirect(url_for('login_page'))
-    return send_from_directory(VIEWS_DIR, 'dashboard.html')
+    return render_template('dashboard.html')
 
 # Serve Projects
 @app.route('/projects/<path:subpath>')
 def serve_projects(subpath):
-    return send_from_directory(PROJECTS_DIR, subpath)
+    # return render_template(subpath)
+    return send_from_directory(PROJECTS_DIR,subpath)
 
 @app.route('/projects/<regno>/<project>/')
 def serve_project_index(regno, project):
