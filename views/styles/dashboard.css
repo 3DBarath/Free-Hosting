@@ -633,33 +633,76 @@ padding: 0;
     margin: 15px 0;
     display: flex;
     gap: 10px;
+    align-items: center;
 }
 
+
 .filter-select {
-    padding: 8px;
-    border-radius: 4px;
-    border: 1px solid var(--navy);
-    background: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid var(--teal);
+    background: var(--navy);
+    color: white;
+    font-family: inherit;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 12px;
+}
+.filter-select:hover {
+    border-color: #2a9d8f;
+    box-shadow: 0 0 8px rgba(42, 157, 143, 0.3);
 }
 
 .regno-filter {
-    padding: 8px;
-    border-radius: 4px;
-    border: 1px solid var(--navy);
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid var(--teal);
+    background: var(--navy);
+    color: white;
+    font-family: inherit;
+    font-size: 14px;
     flex-grow: 1;
+    transition: all 0.2s ease;
+}
+.regno-filter::placeholder {
+    color: #8f9ba8;
+}
+.regno-filter:focus {
+    border-color: #2a9d8f;
+    box-shadow: 0 0 8px rgba(42, 157, 143, 0.3);
+    outline: none;
 }
 
 .load-more-btn {
-    width: 100%;
-    padding: 10px;
     background: var(--teal);
-    color: white;
+    color: var(--navy);
     border: none;
-    border-radius: 4px;
+    padding: 10px 20px;
+    border-radius: 6px;
     cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    width: 100%;
     margin-top: 15px;
 }
 
 .load-more-btn:hover {
     background: #2a9d8f;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(42, 157, 143, 0.3);
+}
+
+.admin-badge {
+    background: rgba(42, 157, 143, 0.2);
+    color: var(--teal);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    margin-left: 10px;
+    vertical-align: middle;
 }
