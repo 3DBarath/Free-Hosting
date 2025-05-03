@@ -1,94 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <title>Neon Globe Hosting Site</title>
+  <title>3D Neon World</title>
   <style>
-    body {
-      margin: 0;
-      background-color: #0a0a0a;
-      overflow: hidden;
-      font-family: sans-serif;
-    }
-    #globe-container {
-      width: 100vw;
-      height: 100vh;
-    }
-    canvas {
-      display: block;
-    }
+    body { margin: 0; background: #000; }
+    canvas { display: block; }
   </style>
 </head>
 <body>
-  <div id="globe-container"></div>
-
-  <!-- Three.js + Globe -->
-  <script src="https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/three-globe@2.26.6/dist/three-globe.min.js"></script>
-
+  <!-- Include Three.js via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
   <script>
-    const renderer = new THREE.WebGLRenderer({ antialias: true });
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    document.getElementById('globe-container').appendChild(renderer.domElement);
-
+    // Scene setup
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(
       75, window.innerWidth / window.innerHeight, 0.1, 1000
     );
-    camera.position.z = 300;
+    const renderer = new THREE.WebGLRenderer({ antialias: true });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.body.appendChild(renderer.domElement);
 
-    const globe = new ThreeGlobe()
-      .globeImageUrl('https://unpkg.com/three-globe/example/img/earth-night.jpg')
-      .bumpImageUrl('https://unpkg.com/three-globe/example/img/earth-topology.png')
-      .showAtmosphere(true)
-      .atmosphereColor('#00f9ff')
-      .atmosphereAltitude(0.25)
-      .arcsData([
-        { startLat: 37, startLng: -122, endLat: 51, endLng: 0, color: ['cyan'] },
-        { startLat: 37, startLng: -122, endLat: -33, endLng: 151, color: ['cyan'] },
-        { startLat: 51, startLng: 0, endLat: 28, endLng: 77, color: ['cyan'] },
-        { startLat: -33, startLng: 151, endLat: 35, endLng: 139, color: ['cyan'] }
-      ])
-      .arcColor('color')
-      .arcAltitude(0.2)
-      .arcStroke(1)
-      .arcDashLength(0.5)
-      .arcDashGap(2)
-      .arcDashInitialGap(() => Math.random() * 5)
-      .arcDashAnimateTime(4000)
-      .pointsData([
-        { lat: 37, lng: -122, size: 1 },
-        { lat: 51, lng: 0, size: 1 },
-        { lat: -33, lng: 151, size: 1 },
-        { lat: 28, lng: 77, size: 1 },
-        { lat: 35, lng: 139, size: 1 }
-      ])
-      .pointAltitude(0.01)
-      .pointColor(() => '#00f9ff')
-      .pointRadius('size');
-
-    scene.add(globe);
-
-    const ambientLight = new THREE.AmbientLight(0xccccff, 1);
-    scene.add(ambientLight);
-
-    const directionalLight = new THREE.DirectionalLight(0xffffff, 0.6);
-    directionalLight.position.set(200, 200, 100);
-    scene.add(directionalLight);
-
-    window.addEventListener('resize', () => {
-      renderer.setSize(window.innerWidth, window.innerHeight);
-      camera.aspect = window.innerWidth / window.innerHeight;
-      camera.updateProjectionMatrix();
+    // Neon-like material
+    const neonMaterial = new THREE.MeshPhongMaterial({
+      color: 0x00ffff,
+      emissive: 0x00ffff, // Glow effect
+      shininess: 100
     });
 
+    // Create neon spheres
+    const sphereGeometry = new THREE.SphereGeometry(0.5, 32, 32);
+    const sphere1 = new THREE.Mesh(sphereGeometry, neonMaterial);
+    const sphere2 = new THREE.Mesh(sphereGeometry, neonMaterial);
+    sphere1.position.set(-2, 0, 0);
+    sphere2.position.set(2, 0, 0);
+    scene.add(sphere1);
+    scene.add(sphere2);
+
+    // Add lighting
+    const ambientLight = new THREE.AmbientLight(0x404040);
+    const pointLight = new THREE.PointLight(0xffffff, 1);
+    pointLight.position.set(5, 5, 5);
+    scene.add(ambientLight);
+    scene.add(pointLight);
+
+    camera.position.z = 5;
+
+    // Animation loop
     function animate() {
       requestAnimationFrame(animate);
-      globe.rotation.y += 0.0015;
+      sphere1.rotation.x += 0.01;
+      sphere1.rotation.y += 0.01;
+      sphere2.rotation.x += 0.01;
+      sphere2.rotation.y += 0.01;
       renderer.render(scene, camera);
     }
-
     animate();
+
+    // Responsive resizing
+    window.addEventListener('resize', () => {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    });
   </script>
 </body>
 </html>

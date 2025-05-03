@@ -419,15 +419,16 @@ def dashboard_data():
     conn = get_db()
     cursor = conn.cursor(dictionary=True)
     cursor.execute("""
-        SELECT id, filename, project_folder, upload_time 
+        SELECT id, filename, project_folder, upload_time, is_pinned
         FROM uploads 
         WHERE user_id = %s 
-        ORDER BY upload_time DESC
+        ORDER BY is_pinned DESC, upload_time DESC
     """, (session['user_id'],))
     uploads = cursor.fetchall()
     cursor.close()
     conn.close()
-    
+    for upload in uploads:
+        upload['is_pinned'] = bool(upload['is_pinned'])
     return jsonify(uploads=uploads)
 
 @app.route('/api/check-name')
@@ -454,7 +455,49 @@ def check_name():
 @app.route('/get_base_url')
 def get_base_url():
     return jsonify(base_url=request.host_url)
+@app.route('/api/toggle-pin/<int:project_id>', methods=['POST'])
+def toggle_pin(project_id):
+    if 'user_id' not in session:
+        return jsonify(error="Unauthorized"), 401
 
+    try:
+        conn = get_db()
+        cursor = conn.cursor(dictionary=True)
+        
+        # Get current pin state
+        cursor.execute("""
+            SELECT is_pinned FROM uploads 
+            WHERE id = %s AND user_id = %s
+        """, (project_id, session['user_id']))
+        project = cursor.fetchone()
+        
+        if not project:
+            return jsonify(error="Project not found"), 404
+
+        new_state = not project['is_pinned']
+        
+        # Update pin state
+        cursor.execute("""
+            UPDATE uploads 
+            SET is_pinned = %s 
+            WHERE id = %s
+        """, (new_state, project_id))
+        conn.commit()
+        
+        log_activity(
+            session['user_id'],
+            'pin' if new_state else 'unpin',
+            description=f"{'Pinned' if new_state else 'Unpinned'} project",
+            request=request
+        )
+        
+        return jsonify(success=True, newState=new_state)
+        
+    except Exception as e:
+        return jsonify(error=str(e)), 500
+    finally:
+        cursor.close()
+        conn.close()
 @app.before_request
 def check_valid_session():
     # Skip validation for public routes

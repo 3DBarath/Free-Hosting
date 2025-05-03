@@ -1,18 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Add event listeners
     document.querySelector('.toggle-header').addEventListener('click', toggleActivityLogs);
     document.addEventListener('click', handleButtonClicks);
-    
-    // Initialize app
     loadActivityLogs();
     initialize();
 });
 
-
 let logsVisible = false;
 let baseUrl = '';
 
-// Event handler for all button clicks
 function handleButtonClicks(e) {
     if (e.target.classList.contains('delete-btn')) {
         handleDeleteClick(e);
@@ -20,8 +15,53 @@ function handleButtonClicks(e) {
     if (e.target.classList.contains('share-btn')) {
         handleShareClick(e);
     }
+    if (e.target.classList.contains('pin-btn')) {
+        handlePinClick(e);
+    }
 }
 
+async function handlePinClick(e) {
+    const btn = e.target;
+    const projectId = btn.dataset.id;
+    const isPinned = btn.dataset.pinned === 'true';
+
+    try {
+        const response = await fetch(`/api/toggle-pin/${projectId}`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ pinned: !isPinned })
+        });
+
+        if (!response.ok) throw new Error('Failed to toggle pin');
+
+        const data = await response.json();
+        btn.dataset.pinned = data.newState;
+        // btn.textContent = data.newState ? '📌Unpin' : '📌 Pin';
+
+        const listItem = btn.closest('.upload-item');
+        listItem.classList.toggle('pinned-project', data.newState);
+        
+        sortProjects();
+        showNotification(data.newState ? 'Project pinned!' : 'Project unpinned', 'var(--teal)');
+
+    } catch (err) {
+        showNotification(err.message, '#ff6b6b');
+    }
+}
+function sortProjects() {
+    const list = document.getElementById('uploads-list');
+    const items = Array.from(list.children);
+    
+    items.sort((a, b) => {
+        const aPinned = a.querySelector('.pin-btn').dataset.pinned === 'true';
+        const bPinned = b.querySelector('.pin-btn').dataset.pinned === 'true';
+        return bPinned - aPinned;
+    });
+
+    items.forEach(item => list.appendChild(item));
+}
 function toggleActivityLogs() {
     const activityList = document.getElementById('activity-list');
     const arrow = document.getElementById('toggleArrow');
@@ -30,7 +70,7 @@ function toggleActivityLogs() {
     activityList.classList.toggle('collapsed');
     arrow.style.transform = logsVisible ? 'rotate(0deg)' : 'rotate(180deg)';
 }
-// Updated JavaScript with modern UI feedback
+
 async function deleteProject(projectId, projectFolder, listItem) {
     if (!projectId || !projectFolder) {
         alert('Invalid project data');
@@ -51,7 +91,6 @@ async function deleteProject(projectId, projectFolder, listItem) {
         listItem.style.opacity = '0';
         setTimeout(() => listItem.remove(), 300);
         showNotification('Project deleted successfully', 'var(--teal)');
-        // Optional: Remove folder from server
         await fetch(`/api/cleanup/${projectFolder}`, { method: 'POST' });
         
     } catch (err) {
@@ -79,7 +118,7 @@ const response = await fetch('/get_regno');
 const data = await response.json();
 return data.regno;
 }
-// Update the delete handler in your dashboard script
+
 document.addEventListener('click', (e) => {
     if (e.target.classList.contains('delete-btn')) {
         const listItem = e.target.closest('.upload-item');
@@ -95,18 +134,16 @@ document.addEventListener('click', (e) => {
     }
 });
 
-// Add this before the fetchRegno() call
 async function fetchBaseUrl() {
     const response = await fetch('/get_base_url');
     const data = await response.json();
     baseUrl = data.base_url;
 }
 
-// Add this error logging function
 function handleClipboardError(err) {
     console.error('Clipboard error:', err);
     const tempInput = document.createElement('input');
-    const fullUrl = window.location.href; // Fallback URL
+    const fullUrl = window.location.href;
     tempInput.value = fullUrl;
     document.body.appendChild(tempInput);
     tempInput.select();
@@ -115,25 +152,18 @@ function handleClipboardError(err) {
     alert('URL copied to clipboard!');
 }
 
-// Modified share handler with better feedback
-// Update the share button event listener
-// Update the share button handler
 document.addEventListener('click', async (e) => {
     const btn = e.target.closest('.share-btn');
     if (btn) {
         try {
-            // Get the actual view project URL from the anchor tag
             const viewLink = btn.closest('.upload-actions').querySelector('a').href;
             
-            // Visual feedback
             const originalText = btn.innerHTML;
             btn.innerHTML = '⏳ Copying...';
             btn.style.pointerEvents = 'none';
 
-            // Try modern clipboard API first
             await navigator.clipboard.writeText(viewLink);
             
-            // Success feedback
             btn.innerHTML = '✅ Copied!';
             setTimeout(() => {
                 btn.innerHTML = originalText;
@@ -141,7 +171,6 @@ document.addEventListener('click', async (e) => {
             }, 2000);
 
         } catch (err) {
-            // Fallback for browsers that block clipboard access
             const viewLink = btn.closest('.upload-actions').querySelector('a').href;
             const tempInput = document.createElement('input');
             tempInput.value = viewLink;
@@ -150,7 +179,6 @@ document.addEventListener('click', async (e) => {
             document.execCommand('copy');
             document.body.removeChild(tempInput);
             
-            // Show success feedback even for fallback
             btn.innerHTML = '✅ Copied!';
             setTimeout(() => {
                 btn.innerHTML = '🔗 Share';
@@ -160,12 +188,11 @@ document.addEventListener('click', async (e) => {
     }
 });
 
-// Update the initialization flow
+
 async function initialize() {
 try {
     await fetchBaseUrl();
     const regno = await fetchRegno();
-    // Rest of your dashboard loading code
 } catch (error) {
     console.error('Initialization error:', error);
     alert('Failed to initialize page');
@@ -185,33 +212,41 @@ fetch('/api/dashboard')
         if (data.uploads && data.uploads.length > 0) {
             data.uploads.forEach((upload, index) => {
                 const li = document.createElement('li');
-                li.className = 'upload-item';
+                li.className = `upload-item ${upload.is_pinned ? 'pinned-project' : ''}`;
                 li.style.animationDelay = `${index * 0.1}s`;
-                // Use the regno here after it's fetched
                 li.innerHTML = `
-                    <div class="upload-info">
-                        <strong>📄 ${upload.project_folder}</strong>
+                    <div class="project-header">
+                        <strong>✨${upload.project_folder}✨</strong>
+                        <button class="pin-btn" 
+                            data-id="${upload.id}"
+                            data-pinned="${upload.is_pinned}">
+                            ${upload.is_pinned ? '📌' : '📌'}
+                        </button>
+                    </div>
+                    <div class="project-details">
+                        <div class="upload-time">
+                            <i class="far fa-clock"></i>
+                            ${new Date(upload.upload_time).toLocaleString()}
+                        </div>
                         <div class="upload-actions">
-                            <a href="/projects/${regno}/${upload.project_folder}" target="_blank">
-                                  View Project
+                            <a href="/projects/${regno}/${upload.project_folder}" target="_blank" class="view-btn">
+                                <i class="fas fa-eye"></i> View
                             </a>
-                            <button class="share-btn" 
-                                    data-path="${upload.project_folder}">
-                                🔗 Share
+                            <button class="share-btn" data-path="${upload.project_folder}">
+                                <i class="fas fa-share"></i> Share
                             </button>
                             <button class="delete-btn" 
-                                    data-id="${upload.id}"
-                                    data-folder="${upload.project_folder}">
-                                🗑 Delete
+                                data-id="${upload.id}"
+                                data-folder="${upload.project_folder}">
+                                <i class="fas fa-trash"></i> Delete
                             </button>
                         </div>
+
                     </div>
-                    <div class="upload-time">
-                        <i class="far fa-clock"></i>
-                        ${new Date(upload.upload_time).toLocaleString()}
-                    </div>`;
+                `;
                 list.appendChild(li);
             });
+            sortProjects();
         } else {
             list.innerHTML = '<li>No uploads found.</li>';
         }
@@ -224,13 +259,12 @@ fetch('/api/dashboard')
 console.error('Error fetching regno:', error);
 alert('Failed to fetch regno');
 });
-// Add these functions to dashboard.html's script
+
 async function loadActivityLogs() {
     const activityList = document.getElementById('activity-list');
     const adminBadge = document.getElementById('adminBadge');
     
     try {
-        // Show loading state
         activityList.innerHTML = '<div class="activity-item">Loading activities...</div>';
 
         const response = await fetch('/api/activity-logs');
@@ -242,15 +276,12 @@ async function loadActivityLogs() {
 
         const data = await response.json();
 
-        // Validate response structure
         if (!data || !Array.isArray(data.logs)) {
             throw new Error('Invalid activity data format');
         }
 
-        // Clear existing content
         activityList.innerHTML = '';
 
-        // Process registration numbers for admin view
         const regnos = data.logs.map(log => log.regno).filter(Boolean);
         const isAdminView = new Set(regnos).size > 1;
         adminBadge.style.display = isAdminView ? 'inline-block' : 'none';
@@ -279,7 +310,6 @@ async function loadActivityLogs() {
             activityList.innerHTML = '<div class="activity-item">No activity records found</div>';
         }
 
-        // Ensure section is expanded after load
         if (!logsVisible) toggleActivityLogs();
 
     } catch (error) {
@@ -291,12 +321,11 @@ async function loadActivityLogs() {
         `;
         showNotification(`Activity Error: ${error.message}`, '#ff6b6b');
         
-        // Collapse section on error
         if (logsVisible) toggleActivityLogs();
     }
 }
 
-// Enhanced helper functions
+
 function getActionIcon(actionType) {
     const iconMap = {
         upload: '📤',
@@ -306,7 +335,9 @@ function getActionIcon(actionType) {
         view: '👁️',
         register: '📝',
         download: '📥',
-        update: '🔄'
+        update: '🔄',
+        pin: '📌',
+        unpin: '📍'
     };
     return iconMap[actionType] || '📄';
 }
@@ -320,7 +351,9 @@ function formatDefaultAction(actionType) {
         view: 'Viewed project',
         register: 'Registered new account',
         download: 'Downloaded project',
-        update: 'Updated project'
+        update: 'Updated project',
+        pin: 'Pinned a project',
+        unpin: 'Unpinned a project'
     };
     return actionMap[actionType] || `Performed ${actionType} action`;
 }
