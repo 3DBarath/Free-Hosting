@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neon Globe Visualization</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: #000;
+    }
+    #globe-container {
+      width: 100vw;
+      height: 100vh;
+    }
+    canvas {
+      cursor: grab;
+    }
+    canvas:active {
+      cursor: grabbing;
+    }
+  </style>
+</head>
+<body>
+  <div id="globe-container"></div>
+
+  <!-- Three.js Dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three-globe@2.26.6/dist/three-globe.min.js"></script>
+
+  <script>
+    // Initialize Three.js renderer
+    const renderer = new THREE.WebGLRenderer({
+      antialias: true,
+      alpha: true
+    });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.getElementById('globe-container').appendChild(renderer.domElement);
+
+    // Create scene and camera
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(
+      45,
+      window.innerWidth / window.innerHeight,
+      0.1,
+      1000
+    );
+    camera.position.z = 400;
+
+    // Create ThreeGlobe instance
+    const globe = new ThreeGlobe()
+      .onGlobeReady(() => console.log('Globe initialized successfully'))
+      .onGlobeError(error => console.error('Globe error:', error))
+      
+      // Globe appearance
+      .globeImageUrl('https://unpkg.com/three-globe@2.26.6/example/img/earth-night.jpg')
+      .bumpImageUrl('https://unpkg.com/three-globe@2.26.6/example/img/earth-topology.png')
+      .showAtmosphere(true)
+      .atmosphereColor('#00f9ff')
+      .atmosphereAltitude(0.25)
+      
+      // Arc configurations
+      .arcsData([
+        { startLat: 37.7749, startLng: -122.4194, endLat: 51.5074, endLng: -0.1278, color: ['#00ffff'] }, // SF to London
+        { startLat: 37.7749, startLng: -122.4194, endLat: -33.8688, endLng: 151.2093, color: ['#00ffff'] }, // SF to Sydney
+        { startLat: 51.5074, startLng: -0.1278, endLat: 28.6139, endLng: 77.2090, color: ['#00ffff'] }, // London to Delhi
+        { startLat: -33.8688, startLng: 151.2093, endLat: 35.6762, endLng: 139.6503, color: ['#00ffff'] }  // Sydney to Tokyo
+      ])
+      .arcColor('color')
+      .arcAltitude(0.25)
+      .arcStroke(0.5)
+      .arcDashLength(0.25)
+      .arcDashGap(1)
+      .arcDashInitialGap(() => Math.random() * 2)
+      .arcDashAnimateTime(3000)
+      
+      // Point configurations
+      .pointsData([
+        { lat: 37.7749, lng: -122.4194, size: 1.5 }, // SF
+        { lat: 51.5074, lng: -0.1278, size: 1.5 },    // London
+        { lat: -33.8688, lng: 151.2093, size: 1.5 },   // Sydney
+        { lat: 28.6139, lng: 77.2090, size: 1.5 },     // Delhi
+        { lat: 35.6762, lng: 139.6503, size: 1.5 }    // Tokyo
+      ])
+      .pointColor('#00f9ff')
+      .pointAltitude(0.05)
+      .pointRadius('size');
+
+    scene.add(globe);
+
+    // Lighting configuration
+    const ambientLight = new THREE.AmbientLight(0xffffff, 1.2);
+    scene.add(ambientLight);
+
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+    directionalLight.position.set(500, 500, 300);
+    scene.add(directionalLight);
+
+    // Add subtle background stars
+    const starsGeometry = new THREE.BufferGeometry();
+    const starsVertices = [];
+    for (let i = 0; i < 1000; i++) {
+      starsVertices.push(
+        THREE.MathUtils.randFloatSpread(2000),
+        THREE.MathUtils.randFloatSpread(2000),
+        THREE.MathUtils.randFloatSpread(2000)
+      );
+    }
+    starsGeometry.setAttribute('position', new THREE.Float32BufferAttribute(starsVertices, 3));
+    const starsMaterial = new THREE.PointsMaterial({ color: 0xFFFFFF, size: 0.7 });
+    const starField = new THREE.Points(starsGeometry, starsMaterial);
+    scene.add(starField);
+
+    // Handle window resize
+    window.addEventListener('resize', () => {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    });
+
+    // Animation loop
+    function animate() {
+      requestAnimationFrame(animate);
+      
+      // Rotate globe
+      globe.rotation.y += 0.001;
+      
+      // Rotate star field
+      starField.rotation.x += 0.0001;
+      starField.rotation.y += 0.0001;
+      
+      renderer.render(scene, camera);
+    }
+
+    // Start animation
+    animate();
+  </script>
+</body>
+</html>

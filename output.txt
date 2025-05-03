@@ -1101,3 +1101,33 @@ Press CTRL+C to quit
  * Restarting with stat
  * Debugger is active!
  * Debugger PIN: 225-432-578
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7777
+ * Running on http://210.16.91.251:7777
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+210.16.91.251 - - [03/May/2025 12:56:27] "GET /dashboard HTTP/1.1" 200 -
+210.16.91.251 - - [03/May/2025 12:56:27] "GET /get_base_url HTTP/1.1" 200 -
+210.16.91.251 - - [03/May/2025 12:56:27] "GET /get_regno HTTP/1.1" 200 -
+210.16.91.251 - - [03/May/2025 12:56:27] "GET /api/activity-logs HTTP/1.1" 200 -
+210.16.91.251 - - [03/May/2025 12:56:27] "GET /get_regno HTTP/1.1" 200 -
+210.16.91.251 - - [03/May/2025 12:56:27] "GET /api/dashboard HTTP/1.1" 200 -
+[2025-05-03 12:56:47,099] INFO in app: Attempting to log activity: logout for user 10
+[2025-05-03 12:56:47,146] INFO in app: Successfully logged activity: logout for user 10
+210.16.91.251 - - [03/May/2025 12:56:47] "GET /logout HTTP/1.1" 302 -
+210.16.91.251 - - [03/May/2025 12:56:47] "GET /login HTTP/1.1" 200 -
+[2025-05-03 12:56:52,166] INFO in app: Attempting to log activity: login for user 8
+[2025-05-03 12:56:52,213] INFO in app: Successfully logged activity: login for user 8
+210.16.91.251 - - [03/May/2025 12:56:52] "POST /login HTTP/1.1" 200 -
+210.16.91.251 - - [03/May/2025 12:56:53] "GET /home HTTP/1.1" 304 -
+210.16.91.251 - - [03/May/2025 12:56:55] "GET /dashboard HTTP/1.1" 304 -
+210.16.91.251 - - [03/May/2025 12:56:56] "GET /get_regno HTTP/1.1" 200 -
+210.16.91.251 - - [03/May/2025 12:56:56] "GET /get_base_url HTTP/1.1" 200 -
+210.16.91.251 - - [03/May/2025 12:56:56] "GET /api/activity-logs HTTP/1.1" 200 -
+210.16.91.251 - - [03/May/2025 12:56:56] "GET /get_regno HTTP/1.1" 200 -
+210.16.91.251 - - [03/May/2025 12:56:56] "GET /api/dashboard HTTP/1.1" 200 -

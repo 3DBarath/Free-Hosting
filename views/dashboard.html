@@ -279,6 +279,45 @@
             align-items: center;
             gap: 0.8rem;
         }
+        .activity-section {
+        margin-top: 2rem;
+        background: rgba(10, 25, 47, 0.8);
+        border-radius: 10px;
+        padding: 1rem;
+        border: 1px solid rgba(100, 255, 218, 0.2);
+    }
+
+    .toggle-header {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+    }
+
+    .toggle-header:hover {
+        background: rgba(100, 255, 218, 0.05);
+    }
+
+    .toggle-arrow {
+        transition: transform 0.3s ease;
+        margin-left: 1rem;
+    }
+
+    .activity-list {
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+        max-height: 1000px;
+    }
+
+    .activity-list.collapsed {
+        max-height: 0;
+        opacity: 0;
+        margin: 0;
+        padding: 0;
+    }
     </style>
 </head>
 <body>
@@ -293,10 +332,13 @@
         </ul>
         <!-- Add after the uploads list -->
         <div class="activity-section">
-            <h3>
-                Activity Logs 
-                <span id="adminBadge" class="admin-badge" style="display: none;">🔒 Admin View</span>
-            </h3>
+            <div class="toggle-header" onclick="toggleActivityLogs()">
+                <h3>
+                    Activity Logs 
+                    <span id="adminBadge" class="admin-badge" style="display: none;">🔒 Admin View</span>
+                </h3>
+                <span class="toggle-arrow" id="toggleArrow">▼</span>
+            </div>
             <div class="activity-list" id="activity-list"></div>
         </div>
 
@@ -313,6 +355,16 @@
     </div>
 
     <script>
+        let logsVisible = true;
+
+        function toggleActivityLogs() {
+            const activityList = document.getElementById('activity-list');
+            const arrow = document.getElementById('toggleArrow');
+            
+            logsVisible = !logsVisible;
+            activityList.classList.toggle('collapsed');
+            arrow.style.transform = logsVisible ? 'rotate(0deg)' : 'rotate(180deg)';
+        }
         // Updated JavaScript with modern UI feedback
         async function deleteProject(projectId, projectFolder, listItem) {
             if (!projectId || !projectFolder) {
@@ -512,89 +564,111 @@
         alert('Failed to fetch regno');
     });
     // Add these functions to dashboard.html's script
-    // Add these functions to your dashboard.html
     async function loadActivityLogs() {
-        try {
-            const response = await fetch('/api/activity-logs');
-            
-            if (!response.ok) {
-                const error = await response.json();
-                throw new Error(error.error || 'Failed to load activity logs');
-            }
-
-            const data = await response.json();
-            
-            // Clear existing logs
             const activityList = document.getElementById('activity-list');
-            activityList.innerHTML = '';
-            
-            // Admin badge visibility
             const adminBadge = document.getElementById('adminBadge');
-            const uniqueRegnos = [...new Set(data.logs.map(log => log.regno))];
-            const isAdminView = uniqueRegnos.length > 1;
-            adminBadge.style.display = isAdminView ? 'inline-block' : 'none';
-
-            // Populate logs
-            if (data.logs && data.logs.length > 0) {
-                data.logs.forEach(log => {
-                    const logItem = document.createElement('div');
-                    logItem.className = `activity-item ${isAdminView ? 'admin-log' : ''}`;
-                    
-                    logItem.innerHTML = `
-                        <div class="activity-time">
-                            ${new Date(log.created_at).toLocaleString()}
-                            ${log.ip_address ? `• ${log.ip_address}` : ''}
-                        </div>
-                        <div class="activity-action">
-                            ${isAdminView ? `<span class="user-regno">${log.regno}</span>` : ''}
-                            <div class="activity-icon">
-                                ${getActionIcon(log.action_type)}
-                            </div>
-                            ${log.description || formatDefaultAction(log.action_type)}
-                        </div>
-                    `;
-                    activityList.appendChild(logItem);
-                });
-            } else {
-                activityList.innerHTML = '<div class="activity-item">No activity found</div>';
-            }
             
-        } catch (error) {
-            console.error('Error loading activity logs:', error);
-            showNotification(`Error: ${error.message}`, '#ff6b6b');
+            try {
+                // Show loading state
+                activityList.innerHTML = '<div class="activity-item">Loading activities...</div>';
+
+                const response = await fetch('/api/activity-logs');
+                
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    throw new Error(errorData.message || `HTTP error! status: ${response.status}`);
+                }
+
+                const data = await response.json();
+
+                // Validate response structure
+                if (!data || !Array.isArray(data.logs)) {
+                    throw new Error('Invalid activity data format');
+                }
+
+                // Clear existing content
+                activityList.innerHTML = '';
+
+                // Process registration numbers for admin view
+                const regnos = data.logs.map(log => log.regno).filter(Boolean);
+                const isAdminView = new Set(regnos).size > 1;
+                adminBadge.style.display = isAdminView ? 'inline-block' : 'none';
+
+                if (data.logs.length > 0) {
+                    data.logs.forEach(log => {
+                        const logItem = document.createElement('div');
+                        logItem.className = `activity-item ${isAdminView ? 'admin-log' : ''}`;
+                        
+                        logItem.innerHTML = `
+                            <div class="activity-time">
+                                ${new Date(log.created_at).toLocaleString()}
+                                ${log.ip_address ? `• ${log.ip_address}` : ''}
+                            </div>
+                            <div class="activity-action">
+                                ${isAdminView ? `<span class="user-regno">${log.regno}</span>` : ''}
+                                <div class="activity-icon">
+                                    ${getActionIcon(log.action_type)}
+                                </div>
+                                ${log.description || formatDefaultAction(log.action_type)}
+                            </div>
+                        `;
+                        activityList.appendChild(logItem);
+                    });
+                } else {
+                    activityList.innerHTML = '<div class="activity-item">No activity records found</div>';
+                }
+
+                // Ensure section is expanded after load
+                if (!logsVisible) toggleActivityLogs();
+
+            } catch (error) {
+                console.error('Activity log error:', error);
+                activityList.innerHTML = `
+                    <div class="activity-item error">
+                        ⚠️ Failed to load activities: ${error.message}
+                    </div>
+                `;
+                showNotification(`Activity Error: ${error.message}`, '#ff6b6b');
+                
+                // Collapse section on error
+                if (logsVisible) toggleActivityLogs();
+            }
         }
-    }
 
-    function getActionIcon(actionType) {
-        const icons = {
-            'upload': '📤',
-            'delete': '🗑️',
-            'login': '🔑',
-            'logout': '🚪',
-            'view': '👁️',
-            'register': '📝'
-        };
-        return icons[actionType] || '📄';
-    }
+        // Enhanced helper functions
+        function getActionIcon(actionType) {
+            const iconMap = {
+                upload: '📤',
+                delete: '🗑️',
+                login: '🔑',
+                logout: '🚪',
+                view: '👁️',
+                register: '📝',
+                download: '📥',
+                update: '🔄'
+            };
+            return iconMap[actionType] || '📄';
+        }
 
-    function formatDefaultAction(actionType) {
-        const actions = {
-            'upload': 'Uploaded project files',
-            'delete': 'Deleted a project',
-            'login': 'Logged into system',
-            'logout': 'Logged out from system',
-            'view': 'Viewed project',
-            'register': 'Registered new account'
-        };
-        return actions[actionType] || 'Performed an action';
-    }
+        function formatDefaultAction(actionType) {
+            const actionMap = {
+                upload: 'Uploaded project files',
+                delete: 'Deleted a project',
+                login: 'Logged into system',
+                logout: 'Logged out from system',
+                view: 'Viewed project',
+                register: 'Registered new account',
+                download: 'Downloaded project',
+                update: 'Updated project'
+            };
+            return actionMap[actionType] || `Performed ${actionType} action`;
+        }
 
-    // Call this when dashboard loads
-    document.addEventListener('DOMContentLoaded', () => {
-        loadActivityLogs();
-    });
-
-
+        // Initialize everything
+        document.addEventListener('DOMContentLoaded', () => {
+            loadActivityLogs();
+            initialize();  // Your existing initialize function
+        });
 </script>
 </body>
 <!-- Add below <body> tag -->

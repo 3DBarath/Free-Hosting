@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><title>Book a Room</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<nav class="navbar">
+  <div class="nav-logo">Hotel Booking</div>
+  <ul class="nav-links">
+    <li><a href="register.html">Register</a></li>
+    <li><a href="login.html">Login</a></li>
+    <li><a href="book_room.html">Book Room</a></li>
+    <li><a href="payment.html">Payment</a></li>
+  </ul>
+</nav><div class="container"><h2>Book a Room</h2>
+<form action="book_room.php" method="POST">
+<input type="number" name="customer_id" placeholder="Customer ID" required>
+<input type="number" name="room_id" placeholder="Room ID" required>
+<input type="date" name="check_in" required>
+<input type="date" name="check_out" required>
+<button type="submit">Book</button></form></div></body></html>
