@@ -6258,3 +6258,358 @@ Press CTRL+C to quit
  * Restarting with stat
  * Debugger is active!
  * Debugger PIN: 225-432-578
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7777
+ * Running on http://210.16.91.251:7777
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+106.195.44.121 - - [04/May/2025 02:05:34] "GET /deploy HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:05:35] "GET /views/styles/upload.css?v=1.0 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:05:35] "GET /views/scripts/upload.js?v=1.0 HTTP/1.1" 304 -
+106.195.44.121 - - [04/May/2025 02:05:42] "GET /api/check-name?name=globe HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:05:50] "GET /api/check-name?name=globeToTestLink HTTP/1.1" 200 -
+[2025-05-04 02:05:51,734] INFO in app: Attempting to log activity: upload for user 8
+[2025-05-04 02:05:51,780] INFO in app: Successfully logged activity: upload for user 8
+106.195.44.121 - - [04/May/2025 02:05:51] "POST /upload HTTP/1.1" 500 -
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+106.195.44.121 - - [04/May/2025 02:06:19] "GET /deploy HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:06:19] "GET /views/scripts/upload.js?v=1.0 HTTP/1.1" 304 -
+106.195.44.121 - - [04/May/2025 02:06:19] "GET /views/styles/upload.css?v=1.0 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:06:23] "GET /api/check-name?name=globe HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:06:30] "GET /api/check-name?name=globeToTestLink HTTP/1.1" 200 -
+[2025-05-04 02:06:32,830] INFO in app: Attempting to log activity: upload for user 8
+[2025-05-04 02:06:32,893] INFO in app: Successfully logged activity: upload for user 8
+106.195.44.121 - - [04/May/2025 02:06:32] "POST /upload HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:06:34] "GET /projects/830123104011/globeToTestLink/ HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:06:39] "GET /dashboard HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:06:39] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:06:39] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 304 -
+106.195.44.121 - - [04/May/2025 02:06:39] "GET /get_regno HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:06:39] "GET /get_base_url HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:06:39] "GET /api/activity-logs HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:06:39] "GET /get_regno HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:06:39] "GET /api/dashboard HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+210.16.91.251 - - [04/May/2025 02:14:00] "GET / HTTP/1.1" 302 -
+210.16.91.251 - - [04/May/2025 02:14:00] "GET /home HTTP/1.1" 200 -
+210.16.91.251 - - [04/May/2025 02:14:00] "GET /favicon.ico HTTP/1.1" 302 -
+210.16.91.251 - - [04/May/2025 02:14:00] "GET /login HTTP/1.1" 200 -
+210.16.91.251 - - [04/May/2025 02:14:41] "GET /home HTTP/1.1" 200 -
+210.16.91.251 - - [04/May/2025 02:14:42] "GET /favicon.ico HTTP/1.1" 302 -
+210.16.91.251 - - [04/May/2025 02:14:42] "GET /login HTTP/1.1" 200 -
+210.16.91.251 - - [04/May/2025 02:14:48] "GET /home HTTP/1.1" 200 -
+210.16.91.251 - - [04/May/2025 02:14:49] "GET /favicon.ico HTTP/1.1" 302 -
+210.16.91.251 - - [04/May/2025 02:14:50] "GET /login HTTP/1.1" 200 -
+210.16.91.251 - - [04/May/2025 02:14:59] "GET /dashboard HTTP/1.1" 302 -
+210.16.91.251 - - [04/May/2025 02:14:59] "GET /login HTTP/1.1" 200 -
+210.16.91.251 - - [04/May/2025 02:14:59] "GET /favicon.ico HTTP/1.1" 302 -
+210.16.91.251 - - [04/May/2025 02:14:59] "GET /login HTTP/1.1" 200 -
+210.16.91.251 - - [04/May/2025 02:15:06] "GET /dashboard HTTP/1.1" 302 -
+210.16.91.251 - - [04/May/2025 02:15:06] "GET /login HTTP/1.1" 200 -
+210.16.91.251 - - [04/May/2025 02:15:06] "GET /favicon.ico HTTP/1.1" 302 -
+210.16.91.251 - - [04/May/2025 02:15:06] "GET /login HTTP/1.1" 200 -
+20.168.6.41 - - [04/May/2025 02:15:19] code 400, message Bad request syntax ('MGLNDD_210.16.91.251_7777')
+20.168.6.41 - - [04/May/2025 02:15:19] "MGLNDD_210.16.91.251_7777" HTTPStatus.BAD_REQUEST -
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+106.195.44.121 - - [04/May/2025 02:17:03] "GET /dashboard HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:17:04] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:17:04] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:17:04] "GET /get_regno HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:17:04] "GET /api/activity-logs HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:17:05] "GET /get_base_url HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:17:05] "GET /get_regno HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:17:05] "GET /api/dashboard HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+  File "C:\Users\Administrator\Documents\Free-Hosting\app.py", line 137
+    action_type = request.args.get('action_type', 'all')
+                                                        ^
+IndentationError: unindent does not match any outer indentation level
+  File "C:\Users\Administrator\Documents\Free-Hosting\app.py", line 137
+    action_type = request.args.get('action_type', 'all')
+                                                        ^
+IndentationError: unindent does not match any outer indentation level
+  File "C:\Users\Administrator\Documents\Free-Hosting\app.py", line 137
+    action_type = request.args.get('action_type', 'all')
+                                                        ^
+IndentationError: unindent does not match any outer indentation level
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7777
+ * Running on http://210.16.91.251:7777
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+  File "C:\Users\Administrator\Documents\Free-Hosting\app.py", line 154
+    where_clauses = []
+IndentationError: unexpected indent
+  File "C:\Users\Administrator\Documents\Free-Hosting\app.py", line 154
+    where_clauses = []
+IndentationError: unexpected indent
+  File "C:\Users\Administrator\Documents\Free-Hosting\app.py", line 154
+    where_clauses = []
+IndentationError: unexpected indent
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7777
+ * Running on http://210.16.91.251:7777
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+  File "C:\Users\Administrator\Documents\Free-Hosting\app.py", line 156
+    if not is_admin:
+IndentationError: unexpected indent
+  File "C:\Users\Administrator\Documents\Free-Hosting\app.py", line 156
+    if not is_admin:
+IndentationError: unexpected indent
+  File "C:\Users\Administrator\Documents\Free-Hosting\app.py", line 156
+    if not is_admin:
+IndentationError: unexpected indent
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7777
+ * Running on http://210.16.91.251:7777
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+  File "C:\Users\Administrator\Documents\Free-Hosting\app.py", line 178
+    params.extend([per_page, (page - 1) * per_page])
+IndentationError: unexpected indent
+  File "C:\Users\Administrator\Documents\Free-Hosting\app.py", line 178
+    params.extend([per_page, (page - 1) * per_page])
+IndentationError: unexpected indent
+  File "C:\Users\Administrator\Documents\Free-Hosting\app.py", line 178
+    params.extend([per_page, (page - 1) * per_page])
+IndentationError: unexpected indent
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7777
+ * Running on http://210.16.91.251:7777
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+  File "C:\Users\Administrator\Documents\Free-Hosting\app.py", line 178
+    query += " ORDER BY al.created_at DESC LIMIT %s OFFSET %s"
+IndentationError: unexpected indent
+  File "C:\Users\Administrator\Documents\Free-Hosting\app.py", line 178
+    query += " ORDER BY al.created_at DESC LIMIT %s OFFSET %s"
+IndentationError: unexpected indent
+  File "C:\Users\Administrator\Documents\Free-Hosting\app.py", line 178
+    query += " ORDER BY al.created_at DESC LIMIT %s OFFSET %s"
+IndentationError: unexpected indent
+  File "C:\Users\Administrator\Documents\Free-Hosting\app.py", line 178
+    query += " ORDER BY al.created_at DESC LIMIT 10"
+IndentationError: unexpected indent
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7777
+ * Running on http://210.16.91.251:7777
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7777
+ * Running on http://210.16.91.251:7777
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+106.195.44.121 - - [04/May/2025 02:29:38] "GET /dashboard HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:29:39] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:29:39] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:29:39] "GET /get_regno HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:29:39] "GET /get_base_url HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:29:39] "GET /get_regno HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:29:39] "GET /api/dashboard HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+  File "C:\Users\Administrator\Documents\Free-Hosting\app.py", line 178
+    query += " ORDER BY al.created_at DESC LIMIT 10"
+IndentationError: unexpected unindent
+  File "C:\Users\Administrator\Documents\Free-Hosting\app.py", line 178
+    query += " ORDER BY al.created_at DESC LIMIT 10"
+IndentationError: unexpected unindent
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7777
+ * Running on http://210.16.91.251:7777
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7777
+ * Running on http://210.16.91.251:7777
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+106.195.44.121 - - [04/May/2025 02:33:46] "GET /dashboard HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:33:46] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:33:46] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:33:46] "GET /get_regno HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:33:46] "GET /get_base_url HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:33:47] "GET /get_regno HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:33:47] "GET /api/dashboard HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:36:53] "GET /dashboard HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:36:54] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:36:54] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:36:54] "GET /get_base_url HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:36:54] "GET /get_regno HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:36:54] "GET /get_regno HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:36:54] "GET /api/dashboard HTTP/1.1" 200 -
+[2025-05-04 02:36:57,302] ERROR in app: Activity log error: Not all parameters were used in the SQL statement
+106.195.44.121 - - [04/May/2025 02:36:57] "GET /api/activity-logs?page=1&action_type=all&regno= HTTP/1.1" 500 -
+[2025-05-04 02:37:01,677] ERROR in app: Activity log error: Not all parameters were used in the SQL statement
+106.195.44.121 - - [04/May/2025 02:37:01] "GET /api/activity-logs?page=1&action_type=all&regno= HTTP/1.1" 500 -
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7777
+ * Running on http://210.16.91.251:7777
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+106.195.44.121 - - [04/May/2025 02:41:52] "GET /dashboard HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:41:52] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:41:52] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 304 -
+106.195.44.121 - - [04/May/2025 02:41:52] "GET /get_regno HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:41:52] "GET /get_base_url HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:41:53] "GET /api/dashboard HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:41:53] "GET /get_regno HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:41:55] "GET /api/activity-logs?page=1&action_type=all&regno= HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:41:59] "GET /api/activity-logs?page=2&action_type=all&regno= HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:42:01] "GET /api/activity-logs?page=3&action_type=all&regno= HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:42:06] "GET /api/activity-logs?page=1&action_type=upload&regno= HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:42:06] "GET /api/activity-logs?page=2&action_type=upload&regno= HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:44:00] "GET /dashboard HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:44:01] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 304 -
+106.195.44.121 - - [04/May/2025 02:44:01] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:44:01] "GET /get_regno HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:44:01] "GET /get_base_url HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:44:01] "GET /get_regno HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:44:01] "GET /api/dashboard HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:44:06] "GET /api/activity-logs?page=1&action_type=all&regno= HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:44:12] "GET /api/activity-logs?page=1&action_type=upload&regno=8 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:44:13] "GET /api/activity-logs?page=1&action_type=upload&regno=83 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:44:13] "GET /api/activity-logs?page=1&action_type=upload&regno=830 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:44:13] "GET /api/activity-logs?page=1&action_type=upload&regno=8301 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:44:14] "GET /api/activity-logs?page=1&action_type=upload&regno=83012 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:44:14] "GET /api/activity-logs?page=1&action_type=upload&regno=830123 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:44:14] "GET /api/activity-logs?page=1&action_type=upload&regno=8301231 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:44:15] "GET /api/activity-logs?page=1&action_type=upload&regno=83012310 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:44:15] "GET /api/activity-logs?page=1&action_type=upload&regno=830123104 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:44:16] "GET /api/activity-logs?page=1&action_type=upload&regno=8301231040 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:44:16] "GET /api/activity-logs?page=1&action_type=upload&regno=83012310401 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:44:16] "GET /api/activity-logs?page=1&action_type=upload&regno=830123104011 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:44:26] "GET /api/activity-logs?page=1&action_type=all&regno=830123104011 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:44:28] "GET /api/activity-logs?page=2&action_type=all&regno=830123104011 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:44:31] "GET /api/activity-logs?page=3&action_type=all&regno=830123104011 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:44:32] "GET /api/activity-logs?page=4&action_type=all&regno=830123104011 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:45:11] "GET /api/activity-logs?page=1&action_type=all&regno= HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:45:18] "GET /api/activity-logs?page=2&action_type=all&regno= HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:45:25] "GET /api/activity-logs?page=3&action_type=all&regno= HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:45:29] "GET /api/activity-logs?page=4&action_type=all&regno= HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:45:38] "GET /dashboard HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:45:38] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 304 -
+106.195.44.121 - - [04/May/2025 02:45:38] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 304 -
+106.195.44.121 - - [04/May/2025 02:45:38] "GET /get_regno HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:45:38] "GET /get_base_url HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:45:39] "GET /get_regno HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:45:39] "GET /api/dashboard HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 02:45:41] "GET /api/activity-logs?page=1&action_type=all&regno= HTTP/1.1" 200 -

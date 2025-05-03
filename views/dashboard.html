@@ -31,7 +31,23 @@
                 </h3>
                 <span class="toggle-arrow" id="toggleArrow">▼</span>
             </div>
-            <div class="activity-list" id="activity-list"></div>
+            
+            <!-- Move controls inside the toggle section -->
+            <div class="activity-content">
+                <div class="activity-controls">
+                    <select id="actionFilter" class="filter-select">
+                        <option value="all">All Actions</option>
+                        <option value="upload">Uploads</option>
+                        <option value="delete">Deletes</option>
+                        <option value="login">Logins</option>
+                        <option value="logout">Logouts</option>
+                    </select>
+                    <input type="text" id="regnoFilter" class="regno-filter" placeholder="Filter by Regno" style="display: none;">
+                </div>
+                
+                <div class="activity-list" id="activity-list"></div>
+                <button id="loadMore" class="load-more-btn">Load More</button>
+            </div>
         </div>
 
         <div class="actions">

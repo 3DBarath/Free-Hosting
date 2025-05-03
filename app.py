@@ -133,32 +133,65 @@ def get_activity_logs():
     cursor = conn.cursor(dictionary=True)
     
     try:
+        # Get parameters
+        page = request.args.get('page', 1, type=int)
+        action_type = request.args.get('action_type', 'all')
+        regno_filter = request.args.get('regno', '')
+        per_page = 10
+        offset = (page - 1) * per_page
+
         # Check admin status
         cursor.execute("SELECT is_admin FROM users WHERE id = %s", (session['user_id'],))
         user = cursor.fetchone()
-        
         if not user:
             return jsonify(error="User not found"), 404
+            
+        is_admin = user.get('is_admin', False)
 
-        # Base query
+        # Build base query
         query = """
-            SELECT al.*, u.regno 
+            SELECT SQL_CALC_FOUND_ROWS al.*, u.regno 
             FROM activity_logs al
             JOIN users u ON al.user_id = u.id
         """
+        where_clauses = []
         params = []
 
-        # Add where clause for non-admins
-        if not user.get('is_admin', False):
-            query += " WHERE al.user_id = %s"
+        # Apply filters
+        if not is_admin:
+            where_clauses.append("al.user_id = %s")
             params.append(session['user_id'])
+        
+        if action_type != 'all':
+            where_clauses.append("al.action_type = %s")
+            params.append(action_type)
+            
+        if regno_filter and is_admin:
+            where_clauses.append("u.regno LIKE %s")
+            params.append(f"%{regno_filter}%")
 
-        query += " ORDER BY al.created_at DESC LIMIT 10"
+        # Add WHERE clause if needed
+        if where_clauses:
+            query += " WHERE " + " AND ".join(where_clauses)
 
+        # Add sorting and pagination
+        query += " ORDER BY al.created_at DESC LIMIT %s OFFSET %s"
+        params.extend([per_page, offset])
+
+        # Execute query
         cursor.execute(query, params)
         logs = cursor.fetchall()
 
-        return jsonify(logs=logs)
+        # Get total results
+        cursor.execute("SELECT FOUND_ROWS()")
+        total = cursor.fetchone()['FOUND_ROWS()']
+        has_more = (page * per_page) < total
+
+        return jsonify(
+            logs=logs,
+            has_more=has_more,
+            is_admin=is_admin
+        )
 
     except Exception as e:
         app.logger.error(f"Activity log error: {str(e)}")
@@ -166,7 +199,7 @@ def get_activity_logs():
     finally:
         cursor.close()
         conn.close()
-
+        
 def log_activity(user_id, action_type, table_affected=None, record_id=None, description=None, request=None):
     """Log user activity to the database"""
     try:

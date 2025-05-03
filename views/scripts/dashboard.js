@@ -1,12 +1,50 @@
 document.addEventListener('DOMContentLoaded', () => {
-    document.querySelector('.toggle-header').addEventListener('click', toggleActivityLogs);
+    const toggleHeader = document.querySelector('.toggle-header');
+    const activitySection = document.querySelector('.activity-section');
+    const arrow = document.querySelector('.toggle-arrow');
+
+    toggleHeader.addEventListener('click', async () => {
+        // Toggle visibility immediately
+        const wasExpanded = activitySection.classList.toggle('expanded');
+        arrow.style.transform = wasExpanded ? 'rotate(180deg)' : 'rotate(0deg)';
+        
+        // Load content only once
+        if (!logsLoaded && wasExpanded) {
+            await loadActivityLogs();
+            logsLoaded = true;
+        }
+    });
+
+    // Rest of your event listeners
     document.addEventListener('click', handleButtonClicks);
-    loadActivityLogs();
+    document.getElementById('loadMore').addEventListener('click', loadMore);
+    document.getElementById('actionFilter').addEventListener('change', updateFilters);
+    document.getElementById('regnoFilter').addEventListener('input', updateFilters);
     initialize();
 });
 
 let logsVisible = false;
 let baseUrl = '';
+let logsLoaded = false;
+let currentPage = 1;
+let currentFilters = {
+    actionType: 'all',
+    regno: ''
+};
+let isAdmin = false;
+async function updateFilters() {
+    currentFilters = {
+        actionType: document.getElementById('actionFilter').value,
+        regno: document.getElementById('regnoFilter').value
+    };
+    currentPage = 1;
+    await loadActivityLogs(true);
+}
+
+async function loadMore() {
+    currentPage++;
+    await loadActivityLogs(false);
+}
 
 function handleButtonClicks(e) {
     if (e.target.classList.contains('delete-btn')) {
@@ -63,13 +101,14 @@ function sortProjects() {
     items.forEach(item => list.appendChild(item));
 }
 function toggleActivityLogs() {
-    const activityList = document.getElementById('activity-list');
+    const activitySection = document.querySelector('.activity-section');
     const arrow = document.getElementById('toggleArrow');
     
     logsVisible = !logsVisible;
-    activityList.classList.toggle('collapsed');
-    arrow.style.transform = logsVisible ? 'rotate(0deg)' : 'rotate(180deg)';
+    activitySection.classList.toggle('expanded');
+    arrow.style.transform = logsVisible ? 'rotate(180deg)' : 'rotate(0deg)';
 }
+
 
 async function deleteProject(projectId, projectFolder, listItem) {
     if (!projectId || !projectFolder) {
@@ -258,71 +297,71 @@ console.error('Error fetching regno:', error);
 alert('Failed to fetch regno');
 });
 
-async function loadActivityLogs() {
+async function loadActivityLogs(clear = true) {
     const activityList = document.getElementById('activity-list');
+    const loadMoreBtn = document.getElementById('loadMore');
     const adminBadge = document.getElementById('adminBadge');
     
     try {
-        activityList.innerHTML = '<div class="activity-item">Loading activities...</div>';
-
-        const response = await fetch('/api/activity-logs');
-        
-        if (!response.ok) {
-            const errorData = await response.json();
-            throw new Error(errorData.message || `HTTP error! status: ${response.status}`);
+        if (clear) {
+            activityList.innerHTML = '<div class="activity-item">Loading...</div>';
         }
+
+        const response = await fetch(`/api/activity-logs?page=${currentPage}&action_type=${currentFilters.actionType}&regno=${currentFilters.regno}`);
+        
+        if (!response.ok) throw new Error(await response.text());
 
         const data = await response.json();
+        isAdmin = data.is_admin;
 
-        if (!data || !Array.isArray(data.logs)) {
-            throw new Error('Invalid activity data format');
-        }
+        // Update UI elements
+        document.getElementById('regnoFilter').style.display = isAdmin ? 'block' : 'none';
+        adminBadge.style.display = isAdmin ? 'inline-block' : 'none';
 
-        activityList.innerHTML = '';
+        if (clear) activityList.innerHTML = '';
 
-        const regnos = data.logs.map(log => log.regno).filter(Boolean);
-        const isAdminView = new Set(regnos).size > 1;
-        adminBadge.style.display = isAdminView ? 'inline-block' : 'none';
-
-        if (data.logs.length > 0) {
-            data.logs.forEach(log => {
-                const logItem = document.createElement('div');
-                logItem.className = `activity-item ${isAdminView ? 'admin-log' : ''}`;
-                
-                logItem.innerHTML = `
-                    <div class="activity-time">
-                        ${new Date(log.created_at).toLocaleString()}
-                        ${log.ip_address ? `• ${log.ip_address}` : ''}
-                    </div>
-                    <div class="activity-action">
-                        ${isAdminView ? `<span class="user-regno">${log.regno}</span>` : ''}
-                        <div class="activity-icon">
-                            ${getActionIcon(log.action_type)}
-                        </div>
-                        ${log.description || formatDefaultAction(log.action_type)}
-                    </div>
-                `;
-                activityList.appendChild(logItem);
-            });
-        } else {
+        // Handle empty state
+        if (data.logs.length === 0) {
+            if (currentPage > 1) currentPage--;
             activityList.innerHTML = '<div class="activity-item">No activity records found</div>';
+            loadMoreBtn.style.display = 'none';
+            return;
         }
 
-        if (!logsVisible) toggleActivityLogs();
+        // Populate logs
+        data.logs.forEach(log => {
+            activityList.appendChild(createLogItem(log, isAdmin));
+        });
+
+        loadMoreBtn.style.display = data.has_more ? 'block' : 'none';
 
     } catch (error) {
         console.error('Activity log error:', error);
-        activityList.innerHTML = `
-            <div class="activity-item error">
-                ⚠️ Failed to load activities: ${error.message}
-            </div>
-        `;
-        showNotification(`Activity Error: ${error.message}`, '#ff6b6b');
-        
-        if (logsVisible) toggleActivityLogs();
+        activityList.innerHTML = `<div class="activity-item error">⚠️ ${error.message}</div>`;
+        loadMoreBtn.style.display = 'none';
     }
 }
 
+
+// Fixed createLogItem function (remove redundant HTML)
+function createLogItem(log, isAdmin) {
+    const logItem = document.createElement('div');
+    logItem.className = `activity-item ${isAdmin ? 'admin-log' : ''}`;
+    logItem.innerHTML = `
+        <div class="activity-time">
+            ${new Date(log.created_at).toLocaleString()}
+            ${log.ip_address ? `• ${log.ip_address}` : ''}
+        </div>
+        <div class="activity-action">
+            ${isAdmin ? `<span class="user-regno">${log.regno}</span>` : ''}
+            <div class="activity-icon">
+                ${getActionIcon(log.action_type)}
+            </div>
+            ${log.description || formatDefaultAction(log.action_type)}
+        </div>
+    `;
+    return logItem;
+}
 
 function getActionIcon(actionType) {
     const iconMap = {

@@ -295,9 +295,24 @@ background: rgba(10, 25, 47, 0.8);
 border-radius: 10px;
 padding: 1rem;
 border: 1px solid rgba(100, 255, 218, 0.2);
-overflow: hidden;
 }
-
+.activity-section .activity-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+.activity-section.expanded .activity-content {
+    max-height: 1000px; /* Adjust based on your needs */
+}
+.activity-section.expanded .activity-content {
+    max-height: 1000px;
+}
+.activity-section.expanded .toggle-arrow {
+    transform: rotate(180deg);
+}
+.toggle-arrow {
+    transition: transform 0.3s ease;
+}
 .toggle-header {
 cursor: pointer;
 display: flex;
@@ -613,4 +628,38 @@ padding: 0;
         padding-right: 60px; /* Prevent text overlap with button */
         max-width: calc(100% - 70px);
     }
+}
+.activity-controls {
+    margin: 15px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.filter-select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid var(--navy);
+    background: white;
+}
+
+.regno-filter {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid var(--navy);
+    flex-grow: 1;
+}
+
+.load-more-btn {
+    width: 100%;
+    padding: 10px;
+    background: var(--teal);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.load-more-btn:hover {
+    background: #2a9d8f;
 }
