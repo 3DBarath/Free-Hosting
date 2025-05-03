@@ -153,7 +153,7 @@ def get_activity_logs():
             query += " WHERE al.user_id = %s"
             params.append(session['user_id'])
 
-        query += " ORDER BY al.created_at DESC LIMIT 100"
+        query += " ORDER BY al.created_at DESC LIMIT 10"
 
         cursor.execute(query, params)
         logs = cursor.fetchall()
@@ -294,14 +294,14 @@ def upload_zip():
 
             # Store in database
             cursor = conn.cursor()
+            project_url = f"/projects/{regno}/{project_name}/"
             cursor.execute(
-                "INSERT INTO uploads (user_id, filename, project_folder) VALUES (%s, %s, %s)",
-                (session['user_id'], filename, project_name)
+                "INSERT INTO uploads (user_id, filename, project_folder,link) VALUES (%s, %s, %s,%s)",
+                (session['user_id'], filename, project_name,f"http://{request.host}{project_url}")
             )
             conn.commit()
             cursor.close()
 
-            project_url = f"/projects/{regno}/{project_name}/"
 
             log_activity(
             session['user_id'],

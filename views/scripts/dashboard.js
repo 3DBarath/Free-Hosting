@@ -199,8 +199,6 @@ try {
 }
 }
 
-
-
 fetchRegno().then(regno => {
 fetch('/api/dashboard')
     .then(response => {
