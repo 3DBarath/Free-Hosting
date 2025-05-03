@@ -90,7 +90,7 @@ h2 {
     padding: 0;
 }
 .upload-item {
-    background: rgba(100, 255, 218, 0.05);
+    background: rgba(72, 187, 179, 0);
     border-radius: 10px;
     padding: 1.5rem;
     margin-bottom: 1rem;
@@ -110,7 +110,7 @@ h2 {
 .upload-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(100, 255, 218, 0.1);
-    background: rgba(100, 255, 218, 0.08);
+    background: rgba(77, 189, 163, 0.020);
 }
 
 .upload-info {
@@ -185,10 +185,18 @@ h2 {
 }
 
 .view-btn {
-    background: var(--gradient);
-    color: var(--navy);
+    background: rgba(100, 255, 218, 0.1);
+    color: var(--teal);
+    border: 1px solid rgba(100, 255, 218, 0.3);
 }
-
+.view-btn:hover {
+    background: rgba(100, 255, 218, 0.2);
+    box-shadow: 0 5px 15px rgba(100, 255, 218, 0.1);
+}
+.share-btn:hover {
+    background: rgba(100, 255, 218, 0.2);
+    box-shadow: 0 5px 15px rgba(100, 255, 218, 0.1);
+}
 .share-btn {
     background: rgba(100, 255, 218, 0.1);
     color: var(--teal);
@@ -200,9 +208,13 @@ h2 {
     color: #ff6b6b;
     border: 1px solid rgba(255, 107, 107, 0.3);
 }
+.delete-btn:hover {
+    background: rgba(204, 77, 77, 0.377);
+    box-shadow: 0 5px 15px rgba(100, 255, 218, 0.1);
+}
 
 .view-btn:hover, .share-btn:hover, .delete-btn:hover {
-    transform: translateY(-2px);
+    transform: translateY(-4px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
@@ -215,7 +227,7 @@ h2 {
     .upload-item {
         position: relative;
         padding: 1.5rem;
-        background: rgba(100, 255, 218, 0.05);
+        /* background: rgba(100, 255, 218, 0.05); */
         border-radius: 10px;
         margin-bottom: 1rem;
         transition: all 0.3s ease;
@@ -307,6 +319,7 @@ margin-left: 1rem;
 
 .activity-list {
 overflow-y: auto;
+overflow-x: auto;
 max-height: 400px; 
 transition: all 0.3s ease-in-out;
 padding-right: 8px;
@@ -326,6 +339,7 @@ padding-right: 8px;
     border-radius: 4px;
 }
 
+
 .activity-list::-webkit-scrollbar-thumb:hover {
     background: #00C9A7;
 }
@@ -339,52 +353,34 @@ padding: 0;
     background: rgba(100, 255, 218, 0.1);
     border: 1px  rgba(100, 255, 218, 0.1);
     color: var(--teal);
-    padding: 0.5rem 1rem;
     border-radius: 20px;
     box-shadow: #0A192F 2px 0px 0px 1px;
     transition: all 0.3s ease;
-    padding: absolute;
     left: 0;
     top: 50%;
-    transform: translateY(-50%);
     margin-top: 0;
+    position: static !important;
+    transform: none !important;
+    margin: 0 !important;
+    order: 2;
+    padding: 0.3rem 0.8rem !important;
 }
+.pin-btn:hover {
+    background: rgba(100, 255, 218, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
 .pin-btn[data-pinned="true"] {
     color:black;
     border: 1px solid var(--teal);
 }
 
 
-@media (max-width: 768px) {
-    .pin-btn {
-        position: static;
-        transform: none;
-        margin-top: 0.5rem;
-        align-self: flex-start;
-        order: -1;
-    }
-    
-    .project-header {
-        position: absolute;
-        flex-direction: column;
-        align-items: flex-end;
-    }
-
-    .project-details {
-        flex-direction: column;
-        align-items: flex-end;
-    }
-    
-    .upload-time {
-        order: -1;
-        margin-bottom: 1rem;
-    }
-}
-
 .upload-item.pinned-project {
-    border-left: 4px solid var(--teal);
-    background: rgba(72, 187, 179, 0);
-    box-shadow: 0 7px 20px rgba(6, 150, 216, 0.5);
+    /* border-left: 4px solid rgb(1, 101, 168); */
+    background: rgba(100, 255, 219, 0.020);
+    box-shadow: 0 7px 10px rgba(6, 150, 216, 0.39);
     order: -1; 
 }
 .project-header {
@@ -403,4 +399,218 @@ padding: 0;
     display: flex;
     justify-content: space-between;
     gap: 1rem;
+}
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    .dashboard-container {
+        margin: 1rem 0;
+        padding: 1.5rem;
+        border-radius: 10px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+        margin-bottom: 1.5rem;
+    }
+    .upload-item {
+        padding: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .project-header {
+        padding-right: 0;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .project-header strong {
+        font-size: 1.2rem;
+        max-width: 70%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .project-details {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        gap: 0.8rem;
+    }
+    .pin-btn {
+        position: static !important;
+        transform: none !important;
+        margin: 0 !important;
+        order: 2;
+        padding: 0.3rem 0.8rem !important;
+    }
+
+    .upload-actions {
+        width: 100%;
+        flex-direction: row;
+        gap: 0.5rem;
+        justify-content: space-between;
+    }
+    .upload-actions a,
+    .upload-actions button {
+        flex: 1;
+        min-width: auto;
+        padding: 0.6rem !important;
+        font-size: 0.9em;
+    }
+
+    .upload-actions .view-btn i,
+    .upload-actions .share-btn i,
+    .upload-actions .delete-btn i {
+        display: none;
+    }
+
+    .view-btn, 
+    .share-btn, 
+    .delete-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 0.8rem !important;
+    }
+
+    .upload-time {
+        font-size: 0.8em;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .actions {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .actions a {
+        width: 100%;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .activity-list {
+        max-height: 300px;
+    }
+
+    .activity-item {
+        padding: 0.8rem;
+        font-size: 0.9em;
+    }
+
+    .home-link {
+        position: fixed;
+        top: 1.5rem;
+        left: 1.5rem;
+        z-index: 1000;
+        text-decoration: none;
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    
+    .home-link-content {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0.8rem 1.2rem;
+        background: rgba(100, 255, 218, 0.1);
+        border-radius: 50px;
+        border: 1px solid rgba(100, 255, 218, 0.3);
+        backdrop-filter: blur(5px);
+        transition: all 0.3s ease;
+    }
+    
+    .home-link:hover .home-link-content {
+        background: rgba(100, 255, 218, 0.2);
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(100, 255, 218, 0.2);
+    }
+    
+    .home-link i {
+        color: var(--teal);
+        font-size: 1.2rem;
+        transition: transform 0.3s ease;
+        transform: rotate(45deg);
+    }
+    
+    .home-link:hover i {
+        transform: rotate(0deg);
+    }
+    
+    .home-link-text {
+        color: var(--teal);
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        background: linear-gradient(45deg, var(--teal), #00C9A7);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: background-position 0.3s ease;
+    }
+    
+    @media (max-width: 768px) {
+        .home-link {
+            position: relative; /* Keep it fixed */
+            top: 1rem; /* Adjust position for mobile */
+            left: 1rem;
+            transform: scale(0.8); /* Make it slightly smaller */
+            margin: 0; /* Remove margin */
+            z-index: 1000; /* Ensure it stays on top */
+        }
+    
+        .home-link-content {
+            padding: 0.6rem 1rem; /* Reduce padding */
+        }
+    
+        .home-link-text {
+            font-size: 0.9rem; /* Smaller text */
+        }
+    
+    }
+    .toggle-header {
+        padding: 0.5rem 0;
+    }
+
+    /* Fix for mobile overflow */
+    .dashboard-container,
+    .activity-section {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
+    /* Better touch targets */
+    button, a {
+        min-height: 44px;
+    }
+}
+@media (min-width: 769px) {
+    .project-header {
+        position: relative;
+        padding-right: 0; /* Remove the 100px padding */
+    }
+
+    .pin-btn {
+        position: absolute;
+        right: 1.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 0.35rem 1rem !important;
+        font-size: 0.9em;
+        line-height: 1.2;
+        min-height: auto;
+        width: auto;
+        box-shadow: none;
+        border-radius: 15px;
+    }
+    .project-header strong {
+        padding-right: 60px; /* Prevent text overlap with button */
+        max-width: calc(100% - 70px);
+    }
 }

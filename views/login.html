@@ -44,29 +44,74 @@ body {
     color: var(--teal);
 }
 
-/* Add to existing CSS */
 .home-link {
-    position: fixed;
-    top: 1.5rem;
-    left: 1.5rem;
-    color: var(--teal);
-    text-decoration: none;
-    font-weight: 600;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    transition: all 0.3s ease;
-}
-
-.home-link:hover {
-    color: var(--light-slate);
-    transform: translateX(-3px);
-}
-
-.home-link i {
-    font-size: 1.2rem;
-}
+        position: fixed;
+        top: 1.5rem;
+        left: 1.5rem;
+        z-index: 1000;
+        text-decoration: none;
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    
+    .home-link-content {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0.8rem 1.2rem;
+        background: rgba(100, 255, 218, 0.1);
+        border-radius: 50px;
+        border: 1px solid rgba(100, 255, 218, 0.3);
+        backdrop-filter: blur(5px);
+        transition: all 0.3s ease;
+    }
+    
+    .home-link:hover .home-link-content {
+        background: rgba(100, 255, 218, 0.2);
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(100, 255, 218, 0.2);
+    }
+    
+    .home-link i {
+        color: var(--teal);
+        font-size: 1.2rem;
+        transition: transform 0.3s ease;
+        transform: rotate(45deg);
+    }
+    
+    .home-link:hover i {
+        transform: rotate(0deg);
+    }
+    
+    .home-link-text {
+        color: var(--teal);
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        background: linear-gradient(45deg, var(--teal), #00C9A7);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: background-position 0.3s ease;
+    }
+    
+    @media (max-width: 768px) {
+            .home-link {
+                position: fixed; /* Keep it fixed */
+                top: 1rem; /* Adjust position for mobile */
+                left: 1rem;
+                transform: scale(0.8); /* Make it slightly smaller */
+                margin: 0; /* Remove margin */
+                z-index: 1000; /* Ensure it stays on top */
+            }
+        
+            .home-link-content {
+                padding: 0.6rem 1rem; /* Reduce padding */
+            }
+        
+            .home-link-text {
+                font-size: 0.9rem; /* Smaller text */
+            }
+        
+        }
 
 /* Cyber-style background elements */
 .auth-blob {
@@ -282,9 +327,10 @@ togglePassword.addEventListener('click', () => {
 });
     </script>
 </body>
-<!-- Add below <body> tag -->
-    <a href="{{ url_for('home') }}" class="home-link">
-        <i class="fas fa-home"></i>
-        Zip Host
-    </a>
+<a href="/" class="home-link">
+    <div class="home-link-content">
+        <i class="fas fa-home"></i> <!-- Changed from fa-home to rocket for more visual interest -->
+        <span class="home-link-text">ZipHost</span>
+    </div>
+</a>
 </html>

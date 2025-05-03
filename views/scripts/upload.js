@@ -105,8 +105,6 @@ if (event.target === modal) {
   modal.style.display = 'none';
 }
 }
-
-
 function showNameDialog(defaultName) {
 nameDialog.style.display = 'flex';
 const nameInput = document.getElementById('projectName');

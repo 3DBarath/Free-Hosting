@@ -34,28 +34,27 @@
             <button type="submit">Deploy Project</button>
         </form>
 
-        <!-- <div class="toggle-group">
-            <button class="toggle-btn active" data-view="preview">🌐 Preview</button>
-            <button class="toggle-btn" data-view="files">📂 Files</button>
-        </div> -->
-
-        <div class="help-button" onclick="toggleInstructions()" title="Upload Help" aria-label="Help">?</div>
+        <div class="help-button" onclick="toggleInstructions()" title="Upload Help" aria-label="Help">HELP?!</div>
 
         <div class="instructions-modal" id="instructionsModal">
             <div class="instructions-content">
                 <span class="close-modal" onclick="toggleInstructions()">×</span>
-                <h2>Deployment Guide</h2>
+
+                <h2>Deployment Guide:</h2>
                 <ul class="instructions-list">
-                    <li>Prepare your project files in a ZIP archive</li>
+                    <li>Rename your main(entry) html as index.html‼️</li>
+                    <li>Place your html,css,js files in a folder.</li>
+                    <li>Compress that folder and Rename it(This name will be your Project Name‼️)</li>
                     <li>Click the upload area or drag & drop your ZIP file</li>
-                    <li>If prompted, choose a unique project name</li>
-                    <li>Wait for the upload to complete</li>
-                    <li>Access your live preview link immediately</li>
-                    <li>Manage projects through your dashboard</li>
+                    <li>Smash the Deploy Button.💥</li>
+                    <li>If another Project with same name exist,you will be prompted,Then enter a different Project Name</li>
+                    <li>Wait for the upload to complete.</li>
+                    <li>Access your live preview link immediately.🚀</li>
+                    <li>Share your project with your friends and family!✨</li>
                 </ul>
-                <h3>Requirements:</h3>
+                <h2>Deployment Features</h2>
                 <ul class="instructions-list">
-                    <li>ZIP file must contain an index.html as entry point</li>
+                    <li>Manage projects through your dashboard</li>
                     <li>Maximum file size: 100MB</li>
                     <li>No executable files allowed</li>
                     <li>Supported browsers: Chrome, Firefox, Safari</li>
@@ -64,7 +63,6 @@
         </div>
 
         <div id="resultContainer"></div>
-
         <p style="text-align: center; margin-top: 2rem; color: var(--slate);">
             Manage projects in <a href="/dashboard" style="color: var(--teal); text-decoration: none;">Dashboard →</a>
         </p>
@@ -72,9 +70,10 @@
 
     <script src="{{ url_for('static', filename='scripts/upload.js') }}?v=1.0"></script>
 </body>
-<!-- Add below <body> tag -->
-  <a href="/" class="home-link">
-    <i class="fas fa-home"></i>
-    Zip Host
+<a href="/" class="home-link">
+    <div class="home-link-content">
+        <i class="fas fa-home"></i>
+        <span class="home-link-text">ZipHost</span>
+    </div>
 </a>
 </html>
