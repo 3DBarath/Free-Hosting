@@ -1,0 +1,76 @@
+<!-- services.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HealthConnect - Services</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Retain original look */
+        .service-finder {
+            margin-top: 80px;
+            padding: 2rem;
+        }
+
+        .map-container {
+            height: 500px;
+            border-radius: 20px;
+            margin: 2rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .filter-option {
+            background: #e2e8f0;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            margin-right: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .filter-option.active {
+            background: #2563eb;
+            color: white;
+        }
+
+        .clinic-card {
+            background: white;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <nav class="main-nav">
+        <a href="index.html">🏠 Dashboard</a>
+        <a href="services.html" class="active">📍 Services</a>
+        <a href="health-tools.html">🩺 Health Tools</a>
+        <a href="profile.html">👤 Profile</a>
+    </nav>
+
+    <div class="service-finder">
+        <h1>🏥 Healthcare Services Map</h1>
+        
+        <div class="map-container" id="map"></div>
+
+        <div class="filter-controls">
+            <div class="filter-option active" data-type="all">All</div>
+            <div class="filter-option" data-type="hospital">Hospitals</div>
+            <div class="filter-option" data-type="clinic">Clinics</div>
+            <div class="filter-option" data-type="pharmacy">Pharmacies</div>
+        </div>
+
+        <div class="results-grid" id="serviceResults"></div>
+    </div>
+    <footer class="main-footer">
+        <div class="container">
+            <p>© 2025 GcesHealthConnect. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="services.js"></script>
+</body>
+</html>

@@ -330,7 +330,7 @@ def upload_zip():
             project_url = f"/projects/{regno}/{project_name}/"
             cursor.execute(
                 "INSERT INTO uploads (user_id, filename, project_folder,link) VALUES (%s, %s, %s,%s)",
-                (session['user_id'], filename, project_name,f"http://{request.host}{project_url}")
+                (session['user_id'], filename, project_name,f"https://{request.host}{project_url}")
             )
             conn.commit()
             cursor.close()
@@ -347,7 +347,7 @@ def upload_zip():
             return jsonify(
                 success=True,
                 url=project_url,
-                viewUrl=f"http://{request.host}{project_url}",
+                viewUrl=f"https://{request.host}{project_url}",
             )
 
         except Exception as e:
@@ -584,6 +584,10 @@ def register_page():
 def home():
     return render_template('home.html')
 
+@app.before_request
+def force_https():
+    if not request.is_secure:
+        return redirect(request.url.replace("http://", "https://", 1))
 @app.route('/dash')
 def dash():
     return render_template("dashboard.html")
@@ -610,4 +614,9 @@ def serve_project_index(regno, project):
         return "index.html not found", 404
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=PORT, debug=True)
+    app.run(host='0.0.0.0', port=PORT, debug=True,  # You can change this to 443 if needed
+        ssl_context=(
+            r'C:\Users\Administrator\.acme.sh\gces2.duckdns.org_ecc\fullchain.cer',  # Cert file
+            r'C:\Users\Administrator\.acme.sh\gces2.duckdns.org_ecc\gces2.duckdns.org.key'  # Key file
+        )
+    )

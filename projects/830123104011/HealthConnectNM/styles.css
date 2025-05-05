@@ -1,0 +1,581 @@
+:root {
+    --primary: #2563eb;
+    --secondary: #3b82f6;
+    --accent: #60a5fa;
+    --bg: #f8fafc;
+    --text: #1e293b;
+    --success: #10b981;
+    --warning: #f59e0b;
+    --danger: #ef4444;
+    --glass: rgba(255, 255, 255, 0.9);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+.main-nav {
+    background: var(--glass);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    gap: 2rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.main-nav a {
+    color: var(--text);
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.main-nav a:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.main-nav a.active {
+    background: var(--primary);
+    color: white;
+}
+
+.dashboard-grid {
+    display: grid;
+    gap: 2rem;
+    padding: 2rem;
+    margin-top: 80px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.health-metric {
+    background: var(--glass);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.health-metric:hover {
+    transform: translateY(-5px);
+}
+
+.live-data {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    color: var(--primary);
+}
+
+.cta-btn {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cta-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.calculator-card {
+    background: var(--glass);
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    display: grid;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.input-group input {
+    padding: 1rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+
+.result-display {
+    padding: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.95);
+}
+
+/* Animations */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes gradientPulse {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.emergency {
+    background: linear-gradient(45deg, var(--danger), #ff6b6b);
+    animation: gradientPulse 1.5s ease infinite;
+}
+/* Profile Page Styles */
+.profile-container {
+    margin-top: 80px;
+    padding: 2rem;
+    display: grid;
+    gap: 2rem;
+}
+
+.profile-card {
+    background: var(--glass);
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.avatar {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.medical-info {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.info-card {
+    background: var(--glass);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.info-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-list {
+    margin: 1rem 0;
+}
+
+.journal-entries {
+    margin-top: 1rem;
+}
+
+.journal-entry {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 10px;
+}
+
+/* Services Page Specific */
+.service-finder {
+    margin-top: 80px;
+    padding: 2rem;
+}
+
+.map-container {
+    height: 400px;
+    background: #e2e8f0;
+    border-radius: 20px;
+    margin: 2rem 0;
+}
+
+.filter-controls {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.filter-option {
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.filter-option.active {
+    background: var(--primary);
+    color: white;
+}
+
+.results-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.clinic-card {
+    background: var(--glass);
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Health Tools Specific */
+.tools-container {
+    margin-top: 80px;
+    padding: 2rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.calculator-card {
+    background: var(--glass);
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.bmi-scale-container {
+    height: 10px;
+    background: #e2e8f0;
+    border-radius: 5px;
+    margin: 1rem 0;
+    position: relative;
+}
+
+.bmi-pointer {
+    position: absolute;
+    top: -5px;
+    width: 10px;
+    height: 20px;
+    background: var(--primary);
+    border-radius: 3px;
+}
+
+/* Toast Notifications */
+.toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    background: var(--primary);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.toast.warning {
+    background: var(--warning);
+}
+
+.toast.emergency {
+    background: var(--danger);
+}
+
+.toast.success {
+    background: var(--success);
+}
+.tools-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.tool-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.tool-card input, .tool-card select {
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px;
+}
+.tools-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.tool-card {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+input, select, button {
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.result {
+    margin-top: 10px;
+    font-weight: bold;
+}
+.tool-card {
+background: #ffffff;
+padding: 20px;
+border-radius: 12px;
+box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+margin: 10px;
+transition: transform 0.2s;
+}
+
+.tool-card:hover {
+transform: translateY(-3px);
+}
+
+.result {
+margin-top: 15px;
+padding: 10px;
+background: #f8f9fa;
+border-radius: 8px;
+color: #2c3e50;
+}
+
+button {
+background: #3498db;
+color: white;
+border: none;
+padding: 12px;
+border-radius: 6px;
+cursor: pointer;
+transition: background 0.3s;
+}
+
+button:hover {
+background: #2980b9;
+}
+
+input, select {
+border: 1px solid #bdc3c7;
+border-radius: 4px;
+margin: 8px 0;
+}
+/* Base Styles */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --background-color: #f8f9fa;
+    --text-color: #2c3e50;
+    --success-color: #27ae60;
+    --warning-color: #f1c40f;
+    --danger-color: #e74c3c;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding-top: 60px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation */
+.main-nav {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.main-nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+}
+
+.nav-links a.active {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+/* Tools Grid */
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem 0;
+}
+
+.tool-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tool-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.tool-card h3 {
+    margin: 0 0 1rem 0;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+/* Form Elements */
+input, select, button {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Results */
+.result {
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 6px;
+    background-color: var(--background-color);
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Footer */
+/* Updated Navigation Styles */
+.main-nav {
+    height: 50px; /* Reduced from default */
+}
+
+.main-nav .container {
+    padding: 0.5rem 0; /* Reduced vertical padding */
+}
+
+.brand {
+    font-size: 1.2rem; /* Smaller logo text */
+    padding: 0.5rem 0; /* Compact padding */
+}
+
+.nav-links a {
+    padding: 0.3rem 0.8rem; /* Tighter padding */
+    margin-left: 0.5rem; /* Reduced spacing between items */
+    font-size: 0.9rem; /* Smaller font */
+}
+
+/* Adjust body padding to match new nav height */
+body {
+    padding-top: 50px;
+}
+
+/* Compact form elements */
+input, select, button {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+}
+
+/* Make tool cards more compact */
+.tool-card {
+    padding: 1rem;
+}
+
+.tool-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Smaller footer */
+.main-footer {
+    padding: 1rem 0;
+}

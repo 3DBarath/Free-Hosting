@@ -303,7 +303,7 @@ button[type="submit"]:hover {
                 position: fixed; /* Keep it fixed */
                 top: 1rem; /* Adjust position for mobile */
                 left: 1rem;
-                transform: scale(0.8); /* Make it slightly smaller */
+                /* transform: scale(0.8); Make it slightly smaller */
                 margin: 0; /* Remove margin */
                 z-index: 1000; /* Ensure it stays on top */
             }

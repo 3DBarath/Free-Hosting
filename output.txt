@@ -6772,3 +6772,1657 @@ Press CTRL+C to quit
 106.195.44.121 - - [04/May/2025 03:08:29] "GET /api/dashboard HTTP/1.1" 200 -
 106.195.44.121 - - [04/May/2025 03:08:29] "GET /get_regno HTTP/1.1" 200 -
 106.195.44.121 - - [04/May/2025 03:08:31] "GET /api/activity-logs?page=1&action_type=all&regno= HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:11:56] "GET /dashboard HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:11:56] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 304 -
+106.195.44.121 - - [04/May/2025 03:11:56] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:11:57] "GET /get_regno HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:11:57] "GET /get_base_url HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:11:57] "GET /api/dashboard HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:11:57] "GET /get_regno HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:12:10] "GET /api/activity-logs?page=1&action_type=all&regno= HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:12:15] "GET /api/activity-logs?page=1&action_type=all&regno= HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:12:28] "GET /api/activity-logs?page=1&action_type=all&regno=8 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:12:30] "GET /api/activity-logs?page=1&action_type=all&regno=83 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:12:31] "GET /api/activity-logs?page=1&action_type=all&regno=830 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:12:31] "GET /api/activity-logs?page=1&action_type=all&regno=8301 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:12:31] "GET /api/activity-logs?page=1&action_type=all&regno=83012 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:12:31] "GET /api/activity-logs?page=1&action_type=all&regno=830123 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:12:32] "GET /api/activity-logs?page=1&action_type=all&regno=8301231 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:12:33] "GET /api/activity-logs?page=1&action_type=all&regno=83012310 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:12:34] "GET /api/activity-logs?page=1&action_type=all&regno=830123104 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:12:35] "GET /api/activity-logs?page=1&action_type=all&regno=8301231040 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:12:36] "GET /api/activity-logs?page=1&action_type=all&regno=83012310401 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:12:37] "GET /api/activity-logs?page=1&action_type=all&regno=830123104015 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:15:23] "GET / HTTP/1.1" 302 -
+106.195.44.121 - - [04/May/2025 03:15:23] "GET /home HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:15:49] "GET /dashboard HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:15:50] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:15:50] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:15:50] "GET /get_regno HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:15:50] "GET /get_base_url HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:15:50] "GET /get_regno HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:15:50] "GET /api/dashboard HTTP/1.1" 200 -
+[2025-05-04 03:15:53,949] INFO in app: Attempting to log activity: logout for user 8
+[2025-05-04 03:15:53,996] INFO in app: Successfully logged activity: logout for user 8
+106.195.44.121 - - [04/May/2025 03:15:53] "GET /logout HTTP/1.1" 302 -
+106.195.44.121 - - [04/May/2025 03:15:54] "GET /login HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:16:05] "GET /home HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:16:10] "GET /home HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:16:14] "GET /dashboard HTTP/1.1" 302 -
+106.195.44.121 - - [04/May/2025 03:16:14] "GET /login HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:16:25] "GET /dashboard HTTP/1.1" 302 -
+106.195.44.121 - - [04/May/2025 03:16:25] "GET /login HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:16:46] "GET /register HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:16:58] "GET /login HTTP/1.1" 200 -
+[2025-05-04 03:17:03,483] INFO in app: Attempting to log activity: login for user 8
+[2025-05-04 03:17:03,514] INFO in app: Successfully logged activity: login for user 8
+106.195.44.121 - - [04/May/2025 03:17:03] "POST /login HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:17:05] "GET /home HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:17:06] "GET /login HTTP/1.1" 302 -
+106.195.44.121 - - [04/May/2025 03:17:06] "GET /dashboard HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:17:07] "GET /dashboard HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:17:08] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 304 -
+106.195.44.121 - - [04/May/2025 03:17:08] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:17:08] "GET /get_regno HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:17:08] "GET /get_base_url HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:17:08] "GET /api/dashboard HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:17:08] "GET /get_regno HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:17:12] "GET /deploy HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:17:12] "GET /views/scripts/upload.js?v=1.0 HTTP/1.1" 304 -
+106.195.44.121 - - [04/May/2025 03:17:12] "GET /views/styles/upload.css?v=1.0 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:17:28] "GET /api/check-name?name=zipper HTTP/1.1" 200 -
+[2025-05-04 03:17:29,264] INFO in app: Attempting to log activity: upload for user 8
+[2025-05-04 03:17:29,311] INFO in app: Successfully logged activity: upload for user 8
+106.195.44.121 - - [04/May/2025 03:17:29] "POST /upload HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:17:31] "GET /projects/830123104011/zipper/ HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:19:25] "GET /dashboard HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:19:25] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 304 -
+106.195.44.121 - - [04/May/2025 03:19:25] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 304 -
+106.195.44.121 - - [04/May/2025 03:19:25] "GET /get_regno HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:19:26] "GET /get_base_url HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:19:26] "GET /get_regno HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:19:26] "GET /api/dashboard HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:19:45] "GET /projects/830123104011/zipper HTTP/1.1" 308 -
+106.195.44.121 - - [04/May/2025 03:19:45] "GET /projects/830123104011/zipper/ HTTP/1.1" 304 -
+[2025-05-04 03:19:55,750] INFO in app: Attempting to log activity: pin for user 8
+[2025-05-04 03:19:55,766] ERROR in app: Failed to log activity: 1265 (01000): Data truncated for column 'action_type' at row 1
+106.195.44.121 - - [04/May/2025 03:19:55] "POST /api/toggle-pin/61 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:20:07] "GET /projects/830123104011/globeToTestLink HTTP/1.1" 308 -
+106.195.44.121 - - [04/May/2025 03:20:08] "GET /projects/830123104011/globeToTestLink/ HTTP/1.1" 304 -
+106.195.44.121 - - [04/May/2025 03:20:15] "GET /projects/830123104011/WorkingGlobe HTTP/1.1" 308 -
+106.195.44.121 - - [04/May/2025 03:20:15] "GET /projects/830123104011/WorkingGlobe/ HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:20:21] "GET /projects/830123104011/GlobeDeepSeek HTTP/1.1" 308 -
+106.195.44.121 - - [04/May/2025 03:20:22] "GET /projects/830123104011/GlobeDeepSeek/ HTTP/1.1" 304 -
+106.195.44.121 - - [04/May/2025 03:20:33] "GET /projects/830123104011/samp HTTP/1.1" 308 -
+106.195.44.121 - - [04/May/2025 03:20:33] "GET /projects/830123104011/samp/ HTTP/1.1" 304 -
+106.195.44.121 - - [04/May/2025 03:20:33] "GET /projects/830123104011/samp/style.css HTTP/1.1" 304 -
+106.195.44.121 - - [04/May/2025 03:20:33] "GET /projects/830123104011/samp/script.js HTTP/1.1" 304 -
+106.195.44.121 - - [04/May/2025 03:20:46] "GET /projects/830123104011/WorkingGlobe/ HTTP/1.1" 200 -
+[2025-05-04 03:21:21,384] INFO in app: Attempting to log activity: delete for user 8
+[2025-05-04 03:21:21,446] INFO in app: Successfully logged activity: delete for user 8
+106.195.44.121 - - [04/May/2025 03:21:21] "DELETE /api/delete-project/60 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:21:21] "POST /api/cleanup/WorkingGlobe HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:21:37] "GET /api/activity-logs?page=1&action_type=all&regno= HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:22:00] "GET /api/activity-logs?page=1&action_type=login&regno= HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:22:05] "GET /api/activity-logs?page=1&action_type=upload&regno= HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:35:05] "GET / HTTP/1.1" 302 -
+106.195.44.121 - - [04/May/2025 03:35:05] "GET /home HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:35:05] "GET /favicon.ico HTTP/1.1" 302 -
+106.195.44.121 - - [04/May/2025 03:35:05] "GET /login HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:35:12] "GET / HTTP/1.1" 302 -
+106.195.44.121 - - [04/May/2025 03:35:12] "GET /home HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:35:13] "GET /favicon.ico HTTP/1.1" 302 -
+106.195.44.121 - - [04/May/2025 03:35:13] "GET /login HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:35:15] "GET /home HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:35:15] "GET /favicon.ico HTTP/1.1" 302 -
+106.195.44.121 - - [04/May/2025 03:35:15] "GET /login HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:35:17] "GET /deploy HTTP/1.1" 302 -
+106.195.44.121 - - [04/May/2025 03:35:17] "GET /login HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:35:18] "GET /favicon.ico HTTP/1.1" 302 -
+106.195.44.121 - - [04/May/2025 03:35:18] "GET /login HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:35:22] "GET /register HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:35:22] "GET /favicon.ico HTTP/1.1" 302 -
+106.195.44.121 - - [04/May/2025 03:35:22] "GET /login HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:35:24] "GET / HTTP/1.1" 302 -
+106.195.44.121 - - [04/May/2025 03:35:24] "GET /home HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:35:24] "GET /favicon.ico HTTP/1.1" 302 -
+106.195.44.121 - - [04/May/2025 03:35:25] "GET /login HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:35:26] "GET /deploy HTTP/1.1" 302 -
+106.195.44.121 - - [04/May/2025 03:35:26] "GET /login HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:35:26] "GET /favicon.ico HTTP/1.1" 302 -
+106.195.44.121 - - [04/May/2025 03:35:27] "GET /login HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:35:28] "GET /register HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:35:28] "GET /favicon.ico HTTP/1.1" 302 -
+106.195.44.121 - - [04/May/2025 03:35:28] "GET /login HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:35:33] "GET / HTTP/1.1" 302 -
+106.195.44.121 - - [04/May/2025 03:35:33] "GET /home HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:35:33] "GET /favicon.ico HTTP/1.1" 302 -
+106.195.44.121 - - [04/May/2025 03:35:33] "GET /login HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:35:34] "GET /deploy HTTP/1.1" 302 -
+106.195.44.121 - - [04/May/2025 03:35:34] "GET /login HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:35:34] "GET /favicon.ico HTTP/1.1" 302 -
+106.195.44.121 - - [04/May/2025 03:35:34] "GET /login HTTP/1.1" 200 -
+[2025-05-04 03:35:50,309] INFO in app: Attempting to log activity: login for user 10
+[2025-05-04 03:35:50,356] INFO in app: Successfully logged activity: login for user 10
+106.195.44.121 - - [04/May/2025 03:35:50] "POST /login HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:35:52] "GET /home HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:35:52] "GET /favicon.ico HTTP/1.1" 404 -
+106.195.44.121 - - [04/May/2025 03:36:32] "GET /deploy HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:36:32] "GET /views/scripts/upload.js?v=1.0 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:36:32] "GET /views/styles/upload.css?v=1.0 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:36:56] "GET /dashboard HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:36:57] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:36:57] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:36:57] "GET /get_base_url HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:36:57] "GET /get_regno HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:36:57] "GET /get_regno HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:36:57] "GET /api/dashboard HTTP/1.1" 200 -
+[2025-05-04 03:37:01,230] INFO in app: Attempting to log activity: pin for user 10
+[2025-05-04 03:37:01,246] ERROR in app: Failed to log activity: 1265 (01000): Data truncated for column 'action_type' at row 1
+106.195.44.121 - - [04/May/2025 03:37:01] "POST /api/toggle-pin/51 HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:37:05] "GET /projects/830123104015/nm1/ HTTP/1.1" 304 -
+106.195.44.121 - - [04/May/2025 03:37:14] "GET /api/activity-logs?page=1&action_type=all&regno= HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:37:28] "GET /dashboard HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:37:28] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 304 -
+106.195.44.121 - - [04/May/2025 03:37:28] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 304 -
+106.195.44.121 - - [04/May/2025 03:37:28] "GET /get_regno HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:37:28] "GET /get_base_url HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:37:29] "GET /api/dashboard HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:37:29] "GET /get_regno HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:37:35] "GET /dashboard HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:37:35] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 304 -
+106.195.44.121 - - [04/May/2025 03:37:35] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 304 -
+106.195.44.121 - - [04/May/2025 03:37:35] "GET /get_regno HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:37:35] "GET /get_base_url HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:37:35] "GET /api/dashboard HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:37:35] "GET /get_regno HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:37:39] "GET /api/activity-logs?page=1&action_type=all&regno= HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:37:55] "GET /api/activity-logs?page=1&action_type=upload&regno= HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:37:58] "GET /api/activity-logs?page=1&action_type=login&regno= HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:38:09] "GET /deploy HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:38:09] "GET /views/styles/upload.css?v=1.0 HTTP/1.1" 304 -
+106.195.44.121 - - [04/May/2025 03:38:09] "GET /views/scripts/upload.js?v=1.0 HTTP/1.1" 304 -
+106.195.44.121 - - [04/May/2025 03:38:11] "GET /dashboard HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:38:11] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 304 -
+106.195.44.121 - - [04/May/2025 03:38:11] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 304 -
+106.195.44.121 - - [04/May/2025 03:38:12] "GET /get_regno HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:38:12] "GET /get_base_url HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:38:12] "GET /get_regno HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:38:12] "GET /api/dashboard HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:38:22] "GET / HTTP/1.1" 302 -
+106.195.44.121 - - [04/May/2025 03:38:22] "GET /home HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:38:32] "GET /dashboard HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:38:32] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 304 -
+106.195.44.121 - - [04/May/2025 03:38:33] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 304 -
+106.195.44.121 - - [04/May/2025 03:38:33] "GET /get_regno HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:38:33] "GET /get_base_url HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:38:33] "GET /api/dashboard HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:38:33] "GET /get_regno HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:39:13] "GET /api/activity-logs?page=1&action_type=all&regno= HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:41:38] "GET /dashboard HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:41:38] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 304 -
+106.195.44.121 - - [04/May/2025 03:41:38] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 304 -
+106.195.44.121 - - [04/May/2025 03:41:39] "GET /get_base_url HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:41:39] "GET /get_regno HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:41:39] "GET /get_regno HTTP/1.1" 200 -
+106.195.44.121 - - [04/May/2025 03:41:39] "GET /api/dashboard HTTP/1.1" 200 -
+198.235.24.199 - - [04/May/2025 09:38:15] "GET / HTTP/1.1" 302 -
+198.235.24.199 - - [04/May/2025 09:38:16] "GET /home HTTP/1.1" 200 -
+65.49.1.25 - - [04/May/2025 10:42:39] "GET / HTTP/1.1" 302 -
+65.49.1.32 - - [04/May/2025 10:42:49] "GET / HTTP/1.1" 302 -
+65.49.1.25 - - [04/May/2025 10:42:50] "GET /home HTTP/1.1" 200 -
+65.49.1.32 - - [04/May/2025 10:42:57] "GET /favicon.ico HTTP/1.1" 302 -
+106.195.36.255 - - [04/May/2025 10:55:46] "GET /deploy HTTP/1.1" 302 -
+106.195.36.255 - - [04/May/2025 10:55:46] "GET /login HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 10:55:51] "GET /login HTTP/1.1" 200 -
+[2025-05-04 10:56:01,606] INFO in app: Attempting to log activity: login for user 8
+[2025-05-04 10:56:01,653] INFO in app: Successfully logged activity: login for user 8
+106.195.36.255 - - [04/May/2025 10:56:01] "POST /login HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 10:56:03] "GET /home HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 10:56:06] "GET /dashboard HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 10:56:06] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 10:56:06] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 10:56:07] "GET /get_regno HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 10:56:07] "GET /get_base_url HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 10:56:07] "GET /api/dashboard HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 10:56:07] "GET /get_regno HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 10:56:33] "GET /api/activity-logs?page=1&action_type=all&regno= HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 10:56:54] "GET /api/activity-logs?page=1&action_type=all&regno=8 HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 10:56:55] "GET /api/activity-logs?page=1&action_type=all&regno=83 HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 10:56:56] "GET /api/activity-logs?page=1&action_type=all&regno=830 HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 10:56:57] "GET /api/activity-logs?page=1&action_type=all&regno=830123104011 HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 10:56:57] "GET /api/activity-logs?page=1&action_type=all&regno=830123104011 HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 10:56:57] "GET /api/activity-logs?page=1&action_type=all&regno=830123104011 HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 10:56:57] "GET /api/activity-logs?page=1&action_type=all&regno=830123104011 HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 10:56:57] "GET /api/activity-logs?page=1&action_type=all&regno=830123104011 HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 10:56:58] "GET /api/activity-logs?page=1&action_type=all&regno=83012310401 HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 10:56:58] "GET /api/activity-logs?page=1&action_type=all&regno=830123104015 HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 10:57:34] "GET /api/activity-logs?page=2&action_type=all&regno=830123104015 HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 10:57:52] "GET /projects/830123104011/GlobeDeepSeek HTTP/1.1" 308 -
+106.195.36.255 - - [04/May/2025 10:57:52] "GET /projects/830123104011/GlobeDeepSeek/ HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 10:58:40] "GET /projects/830123104011/GlobeDeepSeek/ HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 10:58:43] "GET /projects/830123104011/globeToTestLink HTTP/1.1" 308 -
+106.195.36.255 - - [04/May/2025 10:58:43] "GET /projects/830123104011/globeToTestLink/ HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:04:43] "GET / HTTP/1.1" 302 -
+106.195.36.255 - - [04/May/2025 11:04:43] "GET /home HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:04:50] "GET /dashboard HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:04:50] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 304 -
+106.195.36.255 - - [04/May/2025 11:04:50] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 304 -
+106.195.36.255 - - [04/May/2025 11:04:50] "GET /get_regno HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:04:50] "GET /get_base_url HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:04:50] "GET /api/dashboard HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:04:50] "GET /get_regno HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:07:22] "GET /deploy HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:07:22] "GET /views/scripts/upload.js?v=1.0 HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:07:22] "GET /views/styles/upload.css?v=1.0 HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:07:59] "GET /dashboard HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:07:59] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 304 -
+106.195.36.255 - - [04/May/2025 11:07:59] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 304 -
+106.195.36.255 - - [04/May/2025 11:07:59] "GET /get_regno HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:07:59] "GET /get_base_url HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:07:59] "GET /api/dashboard HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:07:59] "GET /get_regno HTTP/1.1" 200 -
+[2025-05-04 11:08:02,533] INFO in app: Attempting to log activity: logout for user 8
+[2025-05-04 11:08:02,704] INFO in app: Successfully logged activity: logout for user 8
+106.195.36.255 - - [04/May/2025 11:08:02] "GET /logout HTTP/1.1" 302 -
+106.195.36.255 - - [04/May/2025 11:08:02] "GET /login HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:08:16] "GET /register HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:08:38] "GET /register HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:08:47] "GET /login HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:44:46] "GET /login HTTP/1.1" 200 -
+[2025-05-04 11:44:52,942] INFO in app: Attempting to log activity: login for user 8
+[2025-05-04 11:44:53,005] INFO in app: Successfully logged activity: login for user 8
+106.195.36.255 - - [04/May/2025 11:44:53] "POST /login HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:44:54] "GET /home HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:44:56] "GET /dashboard HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:44:56] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:44:56] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 304 -
+106.195.36.255 - - [04/May/2025 11:44:56] "GET /get_regno HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:44:56] "GET /get_base_url HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:44:57] "GET /api/dashboard HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:44:57] "GET /get_regno HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:45:00] "GET /dashboard HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:45:00] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 304 -
+106.195.36.255 - - [04/May/2025 11:45:00] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 304 -
+106.195.36.255 - - [04/May/2025 11:45:00] "GET /get_regno HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:45:00] "GET /get_base_url HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:45:00] "GET /api/dashboard HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:45:00] "GET /get_regno HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:47:05] "GET /deploy HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:47:05] "GET /views/styles/upload.css?v=1.0 HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:47:05] "GET /views/scripts/upload.js?v=1.0 HTTP/1.1" 304 -
+106.195.36.255 - - [04/May/2025 11:47:17] "GET /dashboard HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:47:17] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 304 -
+106.195.36.255 - - [04/May/2025 11:47:17] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 304 -
+106.195.36.255 - - [04/May/2025 11:47:17] "GET /get_regno HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:47:17] "GET /get_base_url HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:47:17] "GET /api/dashboard HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:47:17] "GET /get_regno HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:49:25] "GET /dashboard HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:49:25] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 304 -
+106.195.36.255 - - [04/May/2025 11:49:25] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 304 -
+106.195.36.255 - - [04/May/2025 11:49:25] "GET /get_regno HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:49:25] "GET /get_base_url HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:49:25] "GET /api/dashboard HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:49:25] "GET /get_regno HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:49:28] "GET /dashboard HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:49:28] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 304 -
+106.195.36.255 - - [04/May/2025 11:49:28] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 304 -
+106.195.36.255 - - [04/May/2025 11:49:28] "GET /get_regno HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:49:28] "GET /get_base_url HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:49:28] "GET /get_regno HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:49:28] "GET /api/dashboard HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:49:55] "GET /dashboard HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:49:55] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:49:55] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 304 -
+106.195.36.255 - - [04/May/2025 11:49:55] "GET /get_regno HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:49:55] "GET /get_base_url HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:49:55] "GET /get_regno HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:49:55] "GET /api/dashboard HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:49:57] "GET /dashboard HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:49:58] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 304 -
+106.195.36.255 - - [04/May/2025 11:49:58] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 304 -
+106.195.36.255 - - [04/May/2025 11:49:58] "GET /get_base_url HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:49:58] "GET /get_regno HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:49:58] "GET /get_regno HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:49:58] "GET /api/dashboard HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:50:55] "GET /dashboard HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:50:55] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 304 -
+106.195.36.255 - - [04/May/2025 11:50:55] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:50:56] "GET /get_regno HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:50:56] "GET /get_base_url HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:50:56] "GET /get_regno HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:50:56] "GET /api/dashboard HTTP/1.1" 200 -
+[2025-05-04 11:50:58,614] INFO in app: Attempting to log activity: logout for user 8
+[2025-05-04 11:50:58,661] INFO in app: Successfully logged activity: logout for user 8
+106.195.36.255 - - [04/May/2025 11:50:58] "GET /logout HTTP/1.1" 302 -
+106.195.36.255 - - [04/May/2025 11:50:58] "GET /login HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:51:01] "GET /login HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:51:06] "GET /register HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:51:08] "GET /register HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:52:36] "GET /register HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:52:39] "GET /register HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:52:49] "GET /register HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:53:34] "GET /register HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:53:37] "GET /register HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:53:38] "GET /login HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:54:16] "GET /login HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:55:02] "GET /login HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:56:37] "GET /login HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:56:39] "GET /login HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:57:01] "GET /login HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:57:07] "GET /register HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:57:11] "GET / HTTP/1.1" 302 -
+106.195.36.255 - - [04/May/2025 11:57:11] "GET /home HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:57:15] "GET /deploy HTTP/1.1" 302 -
+106.195.36.255 - - [04/May/2025 11:57:15] "GET /login HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:57:17] "GET /dashboard HTTP/1.1" 302 -
+106.195.36.255 - - [04/May/2025 11:57:18] "GET /login HTTP/1.1" 200 -
+[2025-05-04 11:57:23,340] INFO in app: Attempting to log activity: login for user 8
+[2025-05-04 11:57:23,387] INFO in app: Successfully logged activity: login for user 8
+106.195.36.255 - - [04/May/2025 11:57:23] "POST /login HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:57:25] "GET /home HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:57:26] "GET /dashboard HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:57:27] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 304 -
+106.195.36.255 - - [04/May/2025 11:57:27] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 304 -
+106.195.36.255 - - [04/May/2025 11:57:27] "GET /get_regno HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:57:27] "GET /get_base_url HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:57:27] "GET /api/dashboard HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:57:27] "GET /get_regno HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 11:57:36] "GET /api/activity-logs?page=1&action_type=all&regno= HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 12:42:59] "GET /api/dashboard HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 12:42:59] "GET /get_regno HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 12:43:18] "GET /dashboard HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 12:43:18] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 304 -
+106.195.36.255 - - [04/May/2025 12:43:18] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 304 -
+106.195.36.255 - - [04/May/2025 12:43:18] "GET /get_regno HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 12:43:18] "GET /get_base_url HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 12:43:18] "GET /api/dashboard HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 12:43:18] "GET /get_regno HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 12:43:37] "GET /api/activity-logs?page=1&action_type=all&regno= HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 12:43:44] "GET /api/activity-logs?page=1&action_type=all&regno=8 HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 12:43:45] "GET /api/activity-logs?page=1&action_type=all&regno=83 HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 12:43:45] "GET /api/activity-logs?page=1&action_type=all&regno=830 HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 12:43:46] "GET /api/activity-logs?page=1&action_type=all&regno=8301 HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 12:43:47] "GET /api/activity-logs?page=1&action_type=all&regno=83012 HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 12:43:48] "GET /api/activity-logs?page=1&action_type=all&regno=830123 HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 12:43:50] "GET /api/activity-logs?page=1&action_type=all&regno=8301231 HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 12:43:51] "GET /api/activity-logs?page=1&action_type=all&regno=83012310 HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 12:43:53] "GET /api/activity-logs?page=1&action_type=all&regno=830123104 HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 12:43:54] "GET /api/activity-logs?page=1&action_type=all&regno=8301231043 HTTP/1.1" 200 -
+[2025-05-04 12:44:14,881] INFO in app: Attempting to log activity: logout for user 8
+[2025-05-04 12:44:15,006] INFO in app: Successfully logged activity: logout for user 8
+106.195.36.255 - - [04/May/2025 12:44:15] "GET /logout HTTP/1.1" 302 -
+106.195.36.255 - - [04/May/2025 12:44:15] "GET /login HTTP/1.1" 200 -
+106.195.36.255 - - [04/May/2025 12:44:25] "GET /register HTTP/1.1" 200 -
+154.212.141.214 - - [04/May/2025 14:31:15] "GET / HTTP/1.1" 302 -
+152.32.135.132 - - [04/May/2025 14:31:16] "GET / HTTP/1.1" 302 -
+152.32.135.132 - - [04/May/2025 14:31:16] "GET /home HTTP/1.1" 200 -
+152.32.135.132 - - [04/May/2025 14:31:17] "GET /favicon.ico HTTP/1.1" 302 -
+152.32.135.132 - - [04/May/2025 14:31:17] "GET /login HTTP/1.1" 200 -
+152.32.135.132 - - [04/May/2025 14:31:18] "GET /favicon.ico HTTP/1.1" 302 -
+152.32.135.132 - - [04/May/2025 14:31:19] "GET /login HTTP/1.1" 200 -
+[2025-05-04 16:20:29,653] INFO in app: Attempting to log activity: login for user 8
+[2025-05-04 16:20:29,700] INFO in app: Successfully logged activity: login for user 8
+106.195.46.130 - - [04/May/2025 16:20:29] "POST /login HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 16:20:31] "GET /home HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 16:20:45] "GET /dashboard HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 16:20:45] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 304 -
+106.195.46.130 - - [04/May/2025 16:20:45] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 304 -
+106.195.46.130 - - [04/May/2025 16:20:46] "GET /get_regno HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 16:20:46] "GET /get_base_url HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 16:20:46] "GET /api/dashboard HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 16:20:46] "GET /get_regno HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 16:21:03] "GET /api/activity-logs?page=1&action_type=all&regno= HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 16:21:43] "GET / HTTP/1.1" 302 -
+106.195.46.130 - - [04/May/2025 16:21:43] "GET /home HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 16:21:45] "GET /deploy HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 16:21:45] "GET /views/scripts/upload.js?v=1.0 HTTP/1.1" 304 -
+106.195.46.130 - - [04/May/2025 16:21:45] "GET /views/styles/upload.css?v=1.0 HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 16:22:09] "GET /dashboard HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 16:22:09] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 304 -
+106.195.46.130 - - [04/May/2025 16:22:09] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 304 -
+106.195.46.130 - - [04/May/2025 16:22:10] "GET /get_regno HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 16:22:10] "GET /get_base_url HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 16:22:10] "GET /get_regno HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 16:22:10] "GET /api/dashboard HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 16:22:15] "GET /projects/830123104011/projectArjun HTTP/1.1" 308 -
+106.195.46.130 - - [04/May/2025 16:22:15] "GET /projects/830123104011/projectArjun/ HTTP/1.1" 304 -
+[2025-05-04 16:22:17,924] INFO in app: Attempting to log activity: pin for user 8
+[2025-05-04 16:22:17,940] ERROR in app: Failed to log activity: 1265 (01000): Data truncated for column 'action_type' at row 1
+106.195.46.130 - - [04/May/2025 16:22:17] "POST /api/toggle-pin/48 HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 16:22:22] "GET /projects/830123104011/projectArjun/ HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 16:22:47] "GET / HTTP/1.1" 302 -
+106.195.46.130 - - [04/May/2025 16:22:48] "GET /home HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 17:48:41] "GET / HTTP/1.1" 302 -
+106.195.46.130 - - [04/May/2025 17:48:41] "GET /home HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 17:48:42] "GET /login HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 17:50:30] "GET /dashboard HTTP/1.1" 302 -
+106.195.46.130 - - [04/May/2025 17:50:30] "GET /login HTTP/1.1" 200 -
+[2025-05-04 17:50:35,711] INFO in app: Attempting to log activity: login for user 8
+[2025-05-04 17:50:35,773] INFO in app: Successfully logged activity: login for user 8
+106.195.46.130 - - [04/May/2025 17:50:35] "POST /login HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 17:50:37] "GET /home HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 17:50:37] "GET /login HTTP/1.1" 302 -
+106.195.46.130 - - [04/May/2025 17:50:38] "GET /dashboard HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 17:50:41] "GET / HTTP/1.1" 302 -
+106.195.46.130 - - [04/May/2025 17:50:41] "GET /home HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 17:50:42] "GET /dashboard HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 17:50:42] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 17:50:42] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 17:50:43] "GET /get_regno HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 17:50:43] "GET /get_base_url HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 17:50:43] "GET /get_regno HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 17:50:43] "GET /api/dashboard HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 17:50:47] "GET /deploy HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 17:50:47] "GET /views/styles/upload.css?v=1.0 HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 17:50:47] "GET /views/scripts/upload.js?v=1.0 HTTP/1.1" 304 -
+106.195.46.130 - - [04/May/2025 17:51:02] "GET /api/check-name?name=zipper HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 17:51:20] "GET /api/check-name?name=HelloWorldTesting HTTP/1.1" 200 -
+[2025-05-04 17:51:22,148] INFO in app: Attempting to log activity: upload for user 8
+[2025-05-04 17:51:22,195] INFO in app: Successfully logged activity: upload for user 8
+106.195.46.130 - - [04/May/2025 17:51:22] "POST /upload HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 17:51:45] "GET /projects/830123104011/HelloWorldTesting/ HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 17:53:03] "GET /dashboard HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 17:53:03] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 304 -
+106.195.46.130 - - [04/May/2025 17:53:03] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 304 -
+106.195.46.130 - - [04/May/2025 17:53:03] "GET /get_base_url HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 17:53:03] "GET /get_regno HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 17:53:03] "GET /get_regno HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 17:53:03] "GET /api/dashboard HTTP/1.1" 200 -
+[2025-05-04 17:53:12,691] INFO in app: Attempting to log activity: unpin for user 8
+[2025-05-04 17:53:12,707] ERROR in app: Failed to log activity: 1265 (01000): Data truncated for column 'action_type' at row 1
+106.195.46.130 - - [04/May/2025 17:53:12] "POST /api/toggle-pin/48 HTTP/1.1" 200 -
+[2025-05-04 17:53:17,129] INFO in app: Attempting to log activity: pin for user 8
+[2025-05-04 17:53:17,129] ERROR in app: Failed to log activity: 1265 (01000): Data truncated for column 'action_type' at row 1
+106.195.46.130 - - [04/May/2025 17:53:17] "POST /api/toggle-pin/63 HTTP/1.1" 200 -
+[2025-05-04 17:53:41,050] INFO in app: Attempting to log activity: unpin for user 8
+[2025-05-04 17:53:41,066] ERROR in app: Failed to log activity: 1265 (01000): Data truncated for column 'action_type' at row 1
+106.195.46.130 - - [04/May/2025 17:53:41] "POST /api/toggle-pin/61 HTTP/1.1" 200 -
+[2025-05-04 17:53:42,847] INFO in app: Attempting to log activity: unpin for user 8
+[2025-05-04 17:53:42,847] ERROR in app: Failed to log activity: 1265 (01000): Data truncated for column 'action_type' at row 1
+106.195.46.130 - - [04/May/2025 17:53:42] "POST /api/toggle-pin/57 HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 17:56:20] "GET / HTTP/1.1" 302 -
+106.195.46.130 - - [04/May/2025 17:56:21] "GET /home HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 17:56:21] "GET /login HTTP/1.1" 302 -
+106.195.46.130 - - [04/May/2025 17:57:12] "GET / HTTP/1.1" 302 -
+106.195.46.130 - - [04/May/2025 17:57:12] "GET /home HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 18:17:54] "GET / HTTP/1.1" 302 -
+106.195.46.130 - - [04/May/2025 18:17:55] "GET /home HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 18:17:55] "GET /favicon.ico HTTP/1.1" 302 -
+106.195.46.130 - - [04/May/2025 18:17:55] "GET /login HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 18:24:59] "GET / HTTP/1.1" 302 -
+106.195.46.130 - - [04/May/2025 18:24:59] "GET /home HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 18:24:59] "GET /favicon.ico HTTP/1.1" 302 -
+106.195.46.130 - - [04/May/2025 18:24:59] "GET /login HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 18:25:10] "GET /dashboard HTTP/1.1" 302 -
+106.195.46.130 - - [04/May/2025 18:25:11] "GET /login HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 18:25:11] "GET /favicon.ico HTTP/1.1" 302 -
+106.195.46.130 - - [04/May/2025 18:25:11] "GET /login HTTP/1.1" 200 -
+[2025-05-04 18:25:20,864] INFO in app: Attempting to log activity: login for user 8
+[2025-05-04 18:25:21,082] INFO in app: Successfully logged activity: login for user 8
+106.195.46.130 - - [04/May/2025 18:25:21] "POST /login HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 18:25:22] "GET /home HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 18:25:23] "GET /favicon.ico HTTP/1.1" 404 -
+106.195.46.130 - - [04/May/2025 18:25:25] "GET /dashboard HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 18:25:25] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 18:25:25] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 304 -
+106.195.46.130 - - [04/May/2025 18:25:25] "GET /get_base_url HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 18:25:25] "GET /get_regno HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 18:25:25] "GET /get_regno HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 18:25:25] "GET /api/dashboard HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 18:25:40] "GET /api/activity-logs?page=1&action_type=all&regno= HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 18:25:46] "GET /api/activity-logs?page=2&action_type=all&regno= HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 18:25:53] "GET /api/activity-logs?page=3&action_type=all&regno= HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 18:26:26] "GET / HTTP/1.1" 302 -
+106.195.46.130 - - [04/May/2025 18:26:26] "GET /home HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 18:26:28] "GET /dashboard HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 18:26:28] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 304 -
+106.195.46.130 - - [04/May/2025 18:26:28] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 304 -
+106.195.46.130 - - [04/May/2025 18:26:28] "GET /get_regno HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 18:26:28] "GET /get_base_url HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 18:26:28] "GET /api/dashboard HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 18:26:28] "GET /get_regno HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 18:26:30] "GET / HTTP/1.1" 302 -
+106.195.46.130 - - [04/May/2025 18:26:30] "GET /home HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 18:26:31] "GET /deploy HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 18:26:31] "GET /views/styles/upload.css?v=1.0 HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 18:26:31] "GET /views/scripts/upload.js?v=1.0 HTTP/1.1" 304 -
+106.195.46.130 - - [04/May/2025 18:26:37] "GET /deploy HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 18:26:38] "GET /views/scripts/upload.js?v=1.0 HTTP/1.1" 304 -
+106.195.46.130 - - [04/May/2025 18:26:38] "GET /views/styles/upload.css?v=1.0 HTTP/1.1" 304 -
+106.195.46.130 - - [04/May/2025 19:42:40] "GET /deploy HTTP/1.1" 302 -
+106.195.46.130 - - [04/May/2025 19:42:40] "GET /login HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 19:42:43] "GET /favicon.ico HTTP/1.1" 302 -
+106.195.46.130 - - [04/May/2025 19:42:46] "GET /login HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 21:22:59] "GET /dashboard HTTP/1.1" 302 -
+106.195.46.130 - - [04/May/2025 21:22:59] "GET /login HTTP/1.1" 200 -
+106.195.46.130 - - [04/May/2025 21:23:19] "POST /login HTTP/1.1" 401 -
+106.195.46.130 - - [04/May/2025 21:23:32] "POST /login HTTP/1.1" 401 -
+106.195.46.130 - - [04/May/2025 21:23:41] "POST /login HTTP/1.1" 401 -
+[2025-05-04 22:15:24,006] INFO in app: Attempting to log activity: login for user 8
+[2025-05-04 22:15:24,068] INFO in app: Successfully logged activity: login for user 8
+106.195.43.66 - - [04/May/2025 22:15:24] "POST /login HTTP/1.1" 200 -
+106.195.43.66 - - [04/May/2025 22:15:26] "GET /home HTTP/1.1" 200 -
+106.195.43.66 - - [04/May/2025 22:15:31] "GET /dashboard HTTP/1.1" 200 -
+106.195.43.66 - - [04/May/2025 22:15:31] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 304 -
+106.195.43.66 - - [04/May/2025 22:15:31] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 304 -
+106.195.43.66 - - [04/May/2025 22:15:32] "GET /get_regno HTTP/1.1" 200 -
+106.195.43.66 - - [04/May/2025 22:15:32] "GET /get_base_url HTTP/1.1" 200 -
+106.195.43.66 - - [04/May/2025 22:15:32] "GET /get_regno HTTP/1.1" 200 -
+106.195.43.66 - - [04/May/2025 22:15:32] "GET /api/dashboard HTTP/1.1" 200 -
+106.195.43.66 - - [04/May/2025 22:15:44] "GET /projects/830123104011/zipper HTTP/1.1" 308 -
+106.195.43.66 - - [04/May/2025 22:15:44] "GET /projects/830123104011/zipper/ HTTP/1.1" 200 -
+106.195.43.66 - - [04/May/2025 22:15:50] "GET /projects/830123104011/HelloWorldTesting HTTP/1.1" 308 -
+106.195.43.66 - - [04/May/2025 22:15:50] "GET /projects/830123104011/HelloWorldTesting/ HTTP/1.1" 200 -
+[2025-05-04 22:15:56,928] INFO in app: Attempting to log activity: pin for user 8
+[2025-05-04 22:15:56,959] ERROR in app: Failed to log activity: 1265 (01000): Data truncated for column 'action_type' at row 1
+106.195.43.66 - - [04/May/2025 22:15:56] "POST /api/toggle-pin/61 HTTP/1.1" 200 -
+106.195.43.66 - - [04/May/2025 22:15:58] "GET /projects/830123104011/globeToTestLink HTTP/1.1" 308 -
+106.195.43.66 - - [04/May/2025 22:15:59] "GET /projects/830123104011/globeToTestLink/ HTTP/1.1" 304 -
+106.195.43.66 - - [04/May/2025 22:16:41] "GET /projects/830123104011/samp HTTP/1.1" 308 -
+106.195.43.66 - - [04/May/2025 22:16:41] "GET /projects/830123104011/samp/ HTTP/1.1" 200 -
+106.195.43.66 - - [04/May/2025 22:16:42] "GET /projects/830123104011/samp/style.css HTTP/1.1" 200 -
+106.195.43.66 - - [04/May/2025 22:16:42] "GET /projects/830123104011/samp/script.js HTTP/1.1" 200 -
+[2025-05-04 22:16:44,615] INFO in app: Attempting to log activity: pin for user 8
+[2025-05-04 22:16:44,630] ERROR in app: Failed to log activity: 1265 (01000): Data truncated for column 'action_type' at row 1
+106.195.43.66 - - [04/May/2025 22:16:44] "POST /api/toggle-pin/59 HTTP/1.1" 200 -
+106.195.43.66 - - [04/May/2025 22:16:49] "GET /projects/830123104011/sample HTTP/1.1" 308 -
+106.195.43.66 - - [04/May/2025 22:16:49] "GET /projects/830123104011/sample/ HTTP/1.1" 200 -
+106.195.43.66 - - [04/May/2025 22:16:55] "GET /projects/830123104011/GlobeDeepSeek HTTP/1.1" 308 -
+106.195.43.66 - - [04/May/2025 22:16:55] "GET /projects/830123104011/GlobeDeepSeek/ HTTP/1.1" 200 -
+[2025-05-04 22:16:57,958] INFO in app: Attempting to log activity: pin for user 8
+[2025-05-04 22:16:57,974] ERROR in app: Failed to log activity: 1265 (01000): Data truncated for column 'action_type' at row 1
+106.195.43.66 - - [04/May/2025 22:16:57] "POST /api/toggle-pin/57 HTTP/1.1" 200 -
+106.195.43.66 - - [04/May/2025 22:17:01] "GET /projects/830123104011/globe HTTP/1.1" 308 -
+106.195.43.66 - - [04/May/2025 22:17:01] "GET /projects/830123104011/globe/ HTTP/1.1" 200 -
+106.195.43.66 - - [04/May/2025 22:17:05] "GET /projects/830123104011/projectArjun3 HTTP/1.1" 308 -
+106.195.43.66 - - [04/May/2025 22:17:05] "GET /projects/830123104011/projectArjun3/ HTTP/1.1" 304 -
+106.195.43.66 - - [04/May/2025 22:17:06] "GET /projects/830123104011/projectArjun3/style.css HTTP/1.1" 304 -
+106.195.43.66 - - [04/May/2025 22:17:06] "GET /projects/830123104011/projectArjun3/script.js HTTP/1.1" 304 -
+106.195.43.66 - - [04/May/2025 22:17:11] "GET /projects/830123104011/samp/ HTTP/1.1" 200 -
+106.195.43.66 - - [04/May/2025 22:17:11] "GET /projects/830123104011/samp/style.css HTTP/1.1" 304 -
+106.195.43.66 - - [04/May/2025 22:17:11] "GET /projects/830123104011/samp/script.js HTTP/1.1" 304 -
+[2025-05-04 22:17:17,364] INFO in app: Attempting to log activity: unpin for user 8
+[2025-05-04 22:17:17,380] ERROR in app: Failed to log activity: 1265 (01000): Data truncated for column 'action_type' at row 1
+106.195.43.66 - - [04/May/2025 22:17:17] "POST /api/toggle-pin/59 HTTP/1.1" 200 -
+[2025-05-04 22:17:19,989] INFO in app: Attempting to log activity: pin for user 8
+[2025-05-04 22:17:20,005] ERROR in app: Failed to log activity: 1265 (01000): Data truncated for column 'action_type' at row 1
+106.195.43.66 - - [04/May/2025 22:17:20] "POST /api/toggle-pin/50 HTTP/1.1" 200 -
+106.195.43.66 - - [04/May/2025 22:17:21] "GET /projects/830123104011/projectArjun HTTP/1.1" 308 -
+106.195.43.66 - - [04/May/2025 22:17:22] "GET /projects/830123104011/projectArjun/ HTTP/1.1" 200 -
+106.195.43.66 - - [04/May/2025 22:17:24] "GET /projects/830123104011/globe/ HTTP/1.1" 200 -
+106.195.43.66 - - [04/May/2025 22:17:27] "GET /projects/830123104011/projectArjun3/ HTTP/1.1" 200 -
+106.195.43.66 - - [04/May/2025 22:17:28] "GET /projects/830123104011/projectArjun3/script.js HTTP/1.1" 304 -
+106.195.43.66 - - [04/May/2025 22:17:28] "GET /projects/830123104011/projectArjun3/style.css HTTP/1.1" 304 -
+106.195.43.66 - - [04/May/2025 22:17:41] "GET /api/activity-logs?page=1&action_type=all&regno= HTTP/1.1" 200 -
+106.195.43.66 - - [04/May/2025 22:17:48] "GET /api/activity-logs?page=2&action_type=all&regno= HTTP/1.1" 200 -
+106.195.43.66 - - [04/May/2025 22:17:50] "GET /api/activity-logs?page=3&action_type=all&regno= HTTP/1.1" 200 -
+106.195.43.66 - - [04/May/2025 22:17:56] "GET /deploy HTTP/1.1" 200 -
+106.195.43.66 - - [04/May/2025 22:17:56] "GET /views/styles/upload.css?v=1.0 HTTP/1.1" 304 -
+106.195.43.66 - - [04/May/2025 22:17:56] "GET /views/scripts/upload.js?v=1.0 HTTP/1.1" 304 -
+106.195.43.66 - - [04/May/2025 22:18:10] "GET / HTTP/1.1" 302 -
+106.195.43.66 - - [04/May/2025 22:18:10] "GET /home HTTP/1.1" 200 -
+106.195.43.66 - - [04/May/2025 22:34:06] "GET / HTTP/1.1" 302 -
+106.195.43.66 - - [04/May/2025 22:34:06] "GET /home HTTP/1.1" 200 -
+106.195.43.66 - - [04/May/2025 22:34:06] "GET /favicon.ico HTTP/1.1" 302 -
+106.195.43.66 - - [04/May/2025 22:34:06] "GET /login HTTP/1.1" 200 -
+106.195.43.66 - - [04/May/2025 22:34:29] "GET / HTTP/1.1" 302 -
+106.195.43.66 - - [04/May/2025 22:34:29] "GET /home HTTP/1.1" 200 -
+106.195.43.66 - - [04/May/2025 22:34:30] "GET /favicon.ico HTTP/1.1" 302 -
+106.195.43.66 - - [04/May/2025 22:34:30] "GET /login HTTP/1.1" 200 -
+106.195.43.66 - - [04/May/2025 22:36:46] code 400, message Bad request version ('[[4ª(úP+')
+106.195.43.66 - - [04/May/2025 22:36:46] "\x16\x03\x01\x06ú\x01\x00\x06ö\x03\x03ÀñkÙ\x0edç\x9aÑ\x13´ê\x1b«LNu\x8bX\x8eÌÂÙS\x97¹%=V\x82]\x83 \x89\x17\x11êÛ\x8f\x99\x85[[4ª(úP+" HTTPStatus.BAD_REQUEST -
+106.195.43.66 - - [04/May/2025 22:36:46] code 400, message Bad request version ("í·zf\x82Y'\x14Zõù\x08m\x83\x119è$\x80¼\x00\xadÈ\x8b$r2q\x11oMâ\x8e\x7fØm\x17")
+106.195.43.66 - - [04/May/2025 22:36:46] "\x16\x03\x01\x06º\x01\x00\x06¶\x03\x03>,º\x13*,>ÎÎ\x0bÙø¯ä\x07PFA\x99­æ£ô\x06¨\x89'\x00Ôÿ\x1f\x91 ]\x11\x10­\x00fk·èPR\\\x06\\Þý¬\x02>Î\x06\x99KÚ\x09FÀ\x8cg\x82úý\x00 \x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06M\x8a\x8a\x00\x00\x00\x17\x00\x00\x00\x0b\x00\x02\x01\x00\x00\x12\x00\x00DÍ\x00\x05\x00\x03\x02h2\x003\x04ï\x04íªª\x00\x01\x00\x11ì\x04Àj\\uú\x1a~îH\x17Qä{rÁ#y«\x07,K\x93\x8aÄ\x1eS"\x89\x058\x94\x89 G@hG[\x05\x15Ý27\x89\x86{\x85¹Ë&Z>\x8f\x97$Dã¦\x177\x94\x1c\x89Z¾Ódå\x89)ê\x006\x105\x83kÕj\x85J\x903X\x7f×,\x9b\x08'F{ m\x1fóT\x84\x99\x0c\x94e\x03\x85\x0c\x13\x1c\x88È5\x82\x1bf$\x8aöjbº*^¹º\x1b*«ÃÏê{ÿ§tb\x91\x9ed¹ifaqþBA\x09B+R\x94«\x81V©\x9b±#¿ôdûù\x05¥7bb&:N\x15\x08Æâ\x0dí·zf\x82Y'\x14Zõù\x08m\x83\x119è$\x80¼\x00­È\x8b$r2q\x11oMâ\x8e\x7fØm\x17" HTTPStatus.BAD_REQUEST -
+165.154.129.220 - - [04/May/2025 22:46:59] "GET / HTTP/1.1" 302 -
+165.154.129.220 - - [04/May/2025 22:46:59] code 400, message Bad request version ('À\x13À')
+165.154.129.220 - - [04/May/2025 22:46:59] "\x16\x03\x01\x00ò\x01\x00\x00î\x03\x03&º\x16ÕÑEL3é+ÉØéé\x97Ó\x99\x9fwâìzïF\x94ÁÊW3:TÂ *<aÐç?ÍÈz>\x85\\\x9eÔ^\x9f¨\x1bíûTÚ3eB\x96G³\x1c q \x00&À+À/À,À0Ì©Ì¨À\x09À\x13À" HTTPStatus.BAD_REQUEST -
+165.154.129.220 - - [04/May/2025 22:47:00] code 400, message Bad HTTP/0.9 request type ('t3')
+165.154.129.220 - - [04/May/2025 22:47:00] "t3 12.1.2" HTTPStatus.BAD_REQUEST -
+165.154.182.174 - - [04/May/2025 22:47:21] "GET / HTTP/1.1" 302 -
+165.154.182.174 - - [04/May/2025 22:47:21] "GET /favicon.ico HTTP/1.1" 302 -
+165.154.182.174 - - [04/May/2025 22:47:22] "GET /login HTTP/1.1" 200 -
+165.154.182.174 - - [04/May/2025 22:47:22] "GET /home/robots.txt HTTP/1.1" 302 -
+165.154.182.174 - - [04/May/2025 22:47:22] "GET /home/sitemap.xml HTTP/1.1" 302 -
+165.154.182.174 - - [04/May/2025 22:47:23] "GET /login HTTP/1.1" 200 -
+165.154.182.174 - - [04/May/2025 22:47:23] "GET /login HTTP/1.1" 200 -
+165.154.182.174 - - [04/May/2025 22:47:24] "GET /home HTTP/1.1" 200 -
+165.154.182.174 - - [04/May/2025 22:47:24] "GET /favicon.ico HTTP/1.1" 302 -
+165.154.182.174 - - [04/May/2025 22:47:25] "GET /login HTTP/1.1" 200 -
+165.154.182.174 - - [04/May/2025 22:47:25] "GET /home/robots.txt HTTP/1.1" 302 -
+165.154.182.174 - - [04/May/2025 22:47:25] "GET /home/sitemap.xml HTTP/1.1" 302 -
+165.154.182.174 - - [04/May/2025 22:47:26] "GET /login HTTP/1.1" 200 -
+165.154.182.174 - - [04/May/2025 22:47:26] "GET /login HTTP/1.1" 200 -
+103.118.180.11 - - [04/May/2025 23:13:43] code 400, message Bad request syntax ('\x03\x00\x00\x13\x0eà\x00\x00\x00\x00\x00\x01\x00\x08\x00\x03\x00\x00\x00')
+103.118.180.11 - - [04/May/2025 23:13:43] "\x03\x00\x00\x13\x0eà\x00\x00\x00\x00\x00\x01\x00\x08\x00\x03\x00\x00\x00" HTTPStatus.BAD_REQUEST -
+106.195.43.66 - - [04/May/2025 23:20:18] "GET /home HTTP/1.1" 200 -
+18.117.183.25 - - [05/May/2025 00:05:39] "GET / HTTP/1.1" 302 -
+18.117.183.25 - - [05/May/2025 00:05:39] "GET /home HTTP/1.1" 200 -
+18.117.183.25 - - [05/May/2025 00:12:23] code 400, message Bad request syntax ('SSH-2.0-Go')
+18.117.183.25 - - [05/May/2025 00:12:23] "SSH-2.0-Go" HTTPStatus.BAD_REQUEST -
+18.117.183.25 - - [05/May/2025 00:14:15] code 400, message Bad request version ('À\x14À')
+18.117.183.25 - - [05/May/2025 00:14:15] "\x16\x03\x01\x00{\x01\x00\x00w\x03\x03B\x10;3Î\x9dê\x09\x86É òNíg\x8d\x93R\x0f\x9c)É;-áøöÞK\x1eÞf\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+147.185.132.198 - - [05/May/2025 00:27:38] "GET / HTTP/1.1" 302 -
+147.185.132.198 - - [05/May/2025 00:27:39] "GET /home HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 01:56:46] "GET / HTTP/1.1" 302 -
+106.195.43.66 - - [05/May/2025 01:56:46] "GET /home HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 01:56:47] "GET /login HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 01:56:47] "GET /dashboard HTTP/1.1" 302 -
+106.195.43.66 - - [05/May/2025 01:56:47] "GET /login HTTP/1.1" 200 -
+[2025-05-05 01:56:50,664] INFO in app: Attempting to log activity: login for user 8
+[2025-05-05 01:56:50,726] INFO in app: Successfully logged activity: login for user 8
+106.195.43.66 - - [05/May/2025 01:56:50] "POST /login HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 01:56:52] "GET /home HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 01:56:52] "GET /login HTTP/1.1" 302 -
+106.195.43.66 - - [05/May/2025 01:56:53] "GET /dashboard HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 01:56:53] "GET /dashboard HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 01:56:53] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 01:56:54] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 01:56:54] "GET /get_regno HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 01:56:54] "GET /get_base_url HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 01:56:54] "GET /api/dashboard HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 01:56:54] "GET /get_regno HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 01:57:02] "GET /deploy HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 01:57:02] "GET /views/styles/upload.css?v=1.0 HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 01:57:02] "GET /views/scripts/upload.js?v=1.0 HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 01:57:07] "GET /api/check-name?name=NM HTTP/1.1" 200 -
+[2025-05-05 01:58:13,850] INFO in app: Attempting to log activity: upload for user 8
+[2025-05-05 01:58:13,896] INFO in app: Successfully logged activity: upload for user 8
+106.195.43.66 - - [05/May/2025 01:58:13] "POST /upload HTTP/1.1" 500 -
+106.195.43.66 - - [05/May/2025 01:58:13] "GET /deploy HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 01:58:14] "GET /views/styles/upload.css?v=1.0 HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 01:58:14] "GET /views/scripts/upload.js?v=1.0 HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 01:58:39] "GET /api/check-name?name=NM HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 01:58:39] "POST /upload HTTP/1.1" 400 -
+106.195.43.66 - - [05/May/2025 01:58:58] "GET /api/check-name?name=NM HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 01:58:58] "POST /upload HTTP/1.1" 400 -
+106.195.43.66 - - [05/May/2025 01:59:13] "GET /api/check-name?name=nm HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 01:59:14] "POST /upload HTTP/1.1" 400 -
+106.195.43.66 - - [05/May/2025 01:59:20] "GET /dashboard HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 01:59:20] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 01:59:20] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 01:59:20] "GET /get_base_url HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 01:59:20] "GET /get_regno HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 01:59:20] "GET /get_regno HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 01:59:20] "GET /api/dashboard HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 01:59:25] "GET / HTTP/1.1" 302 -
+106.195.43.66 - - [05/May/2025 01:59:26] "GET /home HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 01:59:28] "GET /dashboard HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 01:59:28] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 01:59:28] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 01:59:28] "GET /get_base_url HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 01:59:28] "GET /get_regno HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 01:59:28] "GET /get_regno HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 01:59:28] "GET /api/dashboard HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 01:59:31] "GET /deploy HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 01:59:31] "GET /views/scripts/upload.js?v=1.0 HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 01:59:31] "GET /views/styles/upload.css?v=1.0 HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 01:59:34] "GET /api/check-name?name=nm HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 01:59:34] "POST /upload HTTP/1.1" 400 -
+106.195.43.66 - - [05/May/2025 02:01:51] "GET /api/check-name?name=zipper HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:01:55] "GET /api/check-name?name=zipper22222 HTTP/1.1" 200 -
+[2025-05-05 02:01:55,810] INFO in app: Attempting to log activity: upload for user 8
+[2025-05-05 02:01:55,857] INFO in app: Successfully logged activity: upload for user 8
+106.195.43.66 - - [05/May/2025 02:01:55] "POST /upload HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:02:17] "GET /api/check-name?name=naan HTTP/1.1" 200 -
+[2025-05-05 02:02:17,576] INFO in app: Attempting to log activity: upload for user 8
+[2025-05-05 02:02:17,623] INFO in app: Successfully logged activity: upload for user 8
+106.195.43.66 - - [05/May/2025 02:02:17] "POST /upload HTTP/1.1" 500 -
+106.195.43.66 - - [05/May/2025 02:02:25] "GET /api/check-name?name=naan HTTP/1.1" 200 -
+[2025-05-05 02:02:25,513] INFO in app: Attempting to log activity: upload for user 8
+[2025-05-05 02:02:25,576] INFO in app: Successfully logged activity: upload for user 8
+106.195.43.66 - - [05/May/2025 02:02:25] "POST /upload HTTP/1.1" 500 -
+106.195.43.66 - - [05/May/2025 02:03:07] "GET /dashboard HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:03:07] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:03:07] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:03:07] "GET /get_base_url HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:03:07] "GET /get_regno HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:03:07] "GET /get_regno HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:03:07] "GET /api/dashboard HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:03:13] "GET /api/activity-logs?page=1&action_type=all&regno= HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:06:10] "GET /deploy HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:06:10] "GET /views/styles/upload.css?v=1.0 HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:06:10] "GET /views/scripts/upload.js?v=1.0 HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:06:10] "GET /favicon.ico HTTP/1.1" 404 -
+106.195.43.66 - - [05/May/2025 02:06:10] "GET /login HTTP/1.1" 302 -
+106.195.43.66 - - [05/May/2025 02:06:26] "GET /api/check-name?name=naan HTTP/1.1" 200 -
+[2025-05-05 02:06:27,359] INFO in app: Attempting to log activity: upload for user 8
+[2025-05-05 02:06:27,421] INFO in app: Successfully logged activity: upload for user 8
+106.195.43.66 - - [05/May/2025 02:06:27] "POST /upload HTTP/1.1" 500 -
+106.195.43.66 - - [05/May/2025 02:07:12] "GET /api/check-name?name=naan HTTP/1.1" 200 -
+[2025-05-05 02:07:13,374] INFO in app: Attempting to log activity: upload for user 8
+[2025-05-05 02:07:13,437] INFO in app: Successfully logged activity: upload for user 8
+106.195.43.66 - - [05/May/2025 02:07:13] "POST /upload HTTP/1.1" 500 -
+106.195.43.66 - - [05/May/2025 02:07:17] "GET /api/check-name?name=naan HTTP/1.1" 200 -
+[2025-05-05 02:07:18,265] INFO in app: Attempting to log activity: upload for user 8
+[2025-05-05 02:07:18,311] INFO in app: Successfully logged activity: upload for user 8
+106.195.43.66 - - [05/May/2025 02:07:18] "POST /upload HTTP/1.1" 500 -
+106.195.43.66 - - [05/May/2025 02:08:05] "GET /api/check-name?name=naanmuthalvan HTTP/1.1" 200 -
+[2025-05-05 02:08:06,046] INFO in app: Attempting to log activity: upload for user 8
+[2025-05-05 02:08:06,109] INFO in app: Successfully logged activity: upload for user 8
+106.195.43.66 - - [05/May/2025 02:08:06] "POST /upload HTTP/1.1" 500 -
+106.195.43.66 - - [05/May/2025 02:10:00] "GET /api/check-name?name=naanmuthalvan HTTP/1.1" 200 -
+[2025-05-05 02:10:00,904] INFO in app: Attempting to log activity: upload for user 8
+[2025-05-05 02:10:00,967] INFO in app: Successfully logged activity: upload for user 8
+106.195.43.66 - - [05/May/2025 02:10:00] "POST /upload HTTP/1.1" 500 -
+106.195.43.66 - - [05/May/2025 02:10:45] "GET /api/check-name?name=nm HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:10:45] "POST /upload HTTP/1.1" 400 -
+106.195.43.66 - - [05/May/2025 02:11:41] "GET /api/check-name?name=NM2 HTTP/1.1" 200 -
+[2025-05-05 02:11:41,564] INFO in app: Attempting to log activity: upload for user 8
+[2025-05-05 02:11:41,610] INFO in app: Successfully logged activity: upload for user 8
+106.195.43.66 - - [05/May/2025 02:11:41] "POST /upload HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:11:43] "GET /projects/830123104011/NM2/ HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:11:43] "GET /projects/830123104011/NM2/styles.css HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:11:43] "GET /projects/830123104011/NM2/dashboard.js HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:11:43] "GET /projects/830123104011/NM2/common.js HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:11:49] "GET /dashboard HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:11:50] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:11:50] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:11:50] "GET /get_base_url HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:11:50] "GET /get_regno HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:11:50] "GET /get_regno HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:11:50] "GET /api/dashboard HTTP/1.1" 200 -
+[2025-05-05 02:11:58,288] INFO in app: Attempting to log activity: delete for user 8
+[2025-05-05 02:11:58,335] INFO in app: Successfully logged activity: delete for user 8
+106.195.43.66 - - [05/May/2025 02:11:58] "DELETE /api/delete-project/65 HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:11:58] "POST /api/cleanup/NM2 HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:12:35] "GET /projects/830123104011/samp HTTP/1.1" 308 -
+106.195.43.66 - - [05/May/2025 02:12:36] "GET /projects/830123104011/samp/ HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:12:36] "GET /projects/830123104011/samp/style.css HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:12:36] "GET /projects/830123104011/samp/script.js HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:12:39] "GET /projects/830123104011/sample HTTP/1.1" 308 -
+106.195.43.66 - - [05/May/2025 02:12:40] "GET /projects/830123104011/sample/ HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:12:43] "GET /deploy HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:12:43] "GET /views/styles/upload.css?v=1.0 HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:12:43] "GET /views/scripts/upload.js?v=1.0 HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:12:46] "GET /api/check-name?name=HealthConnectNM HTTP/1.1" 200 -
+[2025-05-05 02:12:47,209] INFO in app: Attempting to log activity: upload for user 8
+[2025-05-05 02:12:47,303] INFO in app: Successfully logged activity: upload for user 8
+106.195.43.66 - - [05/May/2025 02:12:47] "POST /upload HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:12:48] "GET /projects/830123104011/HealthConnectNM/ HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:12:49] "GET /projects/830123104011/HealthConnectNM/common.js HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:12:49] "GET /projects/830123104011/HealthConnectNM/dashboard.js HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:12:49] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:12:51] "GET /dashboard HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:12:51] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:12:51] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:12:51] "GET /get_regno HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:12:52] "GET /get_base_url HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:12:52] "GET /get_regno HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:12:52] "GET /api/dashboard HTTP/1.1" 200 -
+[2025-05-05 02:12:57,302] INFO in app: Attempting to log activity: pin for user 8
+[2025-05-05 02:12:57,318] ERROR in app: Failed to log activity: 1265 (01000): Data truncated for column 'action_type' at row 1
+106.195.43.66 - - [05/May/2025 02:12:57] "POST /api/toggle-pin/66 HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:13:20] "GET /projects/830123104011/HealthConnectNM HTTP/1.1" 308 -
+106.195.43.66 - - [05/May/2025 02:13:20] "GET /projects/830123104011/HealthConnectNM/ HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:13:20] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:13:20] "GET /projects/830123104011/HealthConnectNM/dashboard.js HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:13:21] "GET /projects/830123104011/HealthConnectNM/common.js HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:13:35] "GET /projects/830123104011/HealthConnectNM/services.html HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:13:35] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:13:35] "GET /projects/830123104011/HealthConnectNM/services.js HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:13:42] "GET /projects/830123104011/HealthConnectNM/health-tools.html HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:13:42] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:13:42] "GET /projects/830123104011/HealthConnectNM/health-tools.js HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:13:43] "GET /projects/830123104011/HealthConnectNM/profile.html HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:13:44] "GET /projects/830123104011/HealthConnectNM/common.js HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:13:44] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:13:44] "GET /projects/830123104011/HealthConnectNM/profile.js HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:13:47] "GET /projects/830123104011/HealthConnectNM/health-tools.html HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:13:48] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:13:48] "GET /projects/830123104011/HealthConnectNM/health-tools.js HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:14:23] "GET /projects/830123104011/HealthConnectNM/health-tools.html HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:14:24] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:14:24] "GET /projects/830123104011/HealthConnectNM/health-tools.js HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:14:24] "GET /projects/830123104011/HealthConnectNM/services.html HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:14:25] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:14:25] "GET /projects/830123104011/HealthConnectNM/services.js HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:14:26] "GET /projects/830123104011/HealthConnectNM/index.html HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:14:26] "GET /projects/830123104011/HealthConnectNM/dashboard.js HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:14:26] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:14:26] "GET /projects/830123104011/HealthConnectNM/common.js HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:15:25] "GET / HTTP/1.1" 302 -
+106.195.43.66 - - [05/May/2025 02:15:25] "GET /home HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:15:27] "GET /dashboard HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:15:28] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:15:28] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:15:28] "GET /get_regno HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:15:28] "GET /get_base_url HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:15:28] "GET /get_regno HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:15:28] "GET /api/dashboard HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:15:33] "GET /projects/830123104011/HealthConnectNM HTTP/1.1" 308 -
+106.195.43.66 - - [05/May/2025 02:15:33] "GET /projects/830123104011/HealthConnectNM/ HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:15:33] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:15:33] "GET /projects/830123104011/HealthConnectNM/dashboard.js HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:15:33] "GET /projects/830123104011/HealthConnectNM/common.js HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:15:37] "GET /projects/830123104011/HealthConnectNM/services.html HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:15:38] "GET /projects/830123104011/HealthConnectNM/services.js HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:15:38] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:15:42] "GET /projects/830123104011/HealthConnectNM/index.html HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:15:43] "GET /projects/830123104011/HealthConnectNM/common.js HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:15:43] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:15:43] "GET /projects/830123104011/HealthConnectNM/dashboard.js HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:15:45] "GET /projects/830123104011/HealthConnectNM/health-tools.html HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:15:45] "GET /projects/830123104011/HealthConnectNM/health-tools.js HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:15:45] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:15:47] "GET /projects/830123104011/HealthConnectNM/profile.html HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:15:47] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:15:47] "GET /projects/830123104011/HealthConnectNM/common.js HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:15:47] "GET /projects/830123104011/HealthConnectNM/profile.js HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:16:21] "GET /projects/830123104011/HealthConnectNM/health-tools.html HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:16:22] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:16:22] "GET /projects/830123104011/HealthConnectNM/health-tools.js HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:16:43] "GET /projects/830123104011/HealthConnectNM/services.html HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:16:44] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:16:44] "GET /projects/830123104011/HealthConnectNM/services.js HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:16:45] "GET /projects/830123104011/HealthConnectNM/index.html HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:16:46] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:16:46] "GET /projects/830123104011/HealthConnectNM/common.js HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:16:46] "GET /projects/830123104011/HealthConnectNM/dashboard.js HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:30:37] "GET /home HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:30:40] "GET /dashboard HTTP/1.1" 302 -
+106.195.43.66 - - [05/May/2025 02:30:40] "GET /login HTTP/1.1" 200 -
+[2025-05-05 02:30:48,530] INFO in app: Attempting to log activity: login for user 8
+[2025-05-05 02:30:48,593] INFO in app: Successfully logged activity: login for user 8
+106.195.43.66 - - [05/May/2025 02:30:48] "POST /login HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:30:50] "GET /home HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:30:52] "GET /dashboard HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:30:52] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:30:52] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:30:53] "GET /get_regno HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:30:53] "GET /get_base_url HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:30:53] "GET /api/dashboard HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:30:53] "GET /get_regno HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:31:01] code 400, message Bad request version ('À')
+106.195.43.66 - - [05/May/2025 02:31:01] "\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03Q"M \x04\x90ùlÉ±\x1cuQZ\x9daù2Slt\x09oìU²YþK$;` Æï=õ\x81a\x04\x99\x12¡û \x9eF\x16\x0bó2"\x98L\x82&(û±\x8c\x9dÐÑcÒ\x00"\x13\x01\x13\x02\x13\x03À+À,Ì©À/À0Ì¨À\x09À" HTTPStatus.BAD_REQUEST -
+106.195.43.66 - - [05/May/2025 02:31:18] code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x17\x00\x00\x00-\x00\x02\x01\x01\x00')
+106.195.43.66 - - [05/May/2025 02:31:18] "\x16\x03\x01\x06ú\x01\x00\x06ö\x03\x03Ü\x83\x97ù|\x94\x80q\x9a}¨kà\x97¶wX\x87H¹ÍÏ~\x1d£ þ£ÃÐý) î¸\x8fzÍ@\x17d ÷´ß\x8e\x96H¸/kø\x9eö<*ò§\x84ÃXe$S<\x00 JJ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x8djj\x00\x00\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x17\x00\x00\x00-\x00\x02\x01\x01\x00" HTTPStatus.BAD_REQUEST -
+106.195.43.66 - - [05/May/2025 02:31:18] code 400, message Bad request syntax ('\x16\x03\x01\x06º\x01\x00\x06¶\x03\x03Ù\x97;bç^')
+106.195.43.66 - - [05/May/2025 02:31:18] "\x16\x03\x01\x06º\x01\x00\x06¶\x03\x03Ù\x97;bç^" HTTPStatus.BAD_REQUEST -
+106.195.43.66 - - [05/May/2025 02:31:27] "GET /projects/830123104011/HealthConnectNM HTTP/1.1" 308 -
+106.195.43.66 - - [05/May/2025 02:31:27] "GET /projects/830123104011/HealthConnectNM/ HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:31:27] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:31:27] "GET /projects/830123104011/HealthConnectNM/common.js HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:31:27] "GET /projects/830123104011/HealthConnectNM/dashboard.js HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:31:28] "GET /favicon.ico HTTP/1.1" 302 -
+106.195.43.66 - - [05/May/2025 02:31:28] "GET /login HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:31:32] "GET /projects/830123104011/HealthConnectNM/ HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:31:32] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:31:32] "GET /projects/830123104011/HealthConnectNM/dashboard.js HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:31:32] "GET /projects/830123104011/HealthConnectNM/common.js HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:31:32] "GET /favicon.ico HTTP/1.1" 302 -
+106.195.43.66 - - [05/May/2025 02:31:33] "GET /login HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:31:34] "GET /projects/830123104011/HealthConnectNM/ HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:31:34] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:31:34] "GET /projects/830123104011/HealthConnectNM/common.js HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:31:34] "GET /projects/830123104011/HealthConnectNM/dashboard.js HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:31:35] "GET /favicon.ico HTTP/1.1" 302 -
+106.195.43.66 - - [05/May/2025 02:31:35] "GET /login HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:31:36] "GET /projects/830123104011/HealthConnectNM/services.html HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:31:36] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:31:36] "GET /projects/830123104011/HealthConnectNM/services.js HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:31:37] "GET /favicon.ico HTTP/1.1" 302 -
+106.195.43.66 - - [05/May/2025 02:31:37] "GET /projects/830123104011/HealthConnectNM/health-tools.html HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:31:37] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:31:37] "GET /login HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:31:37] "GET /projects/830123104011/HealthConnectNM/health-tools.js HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:31:37] "GET /favicon.ico HTTP/1.1" 302 -
+106.195.43.66 - - [05/May/2025 02:31:37] "GET /login HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:31:38] "GET /projects/830123104011/HealthConnectNM/health-tools.html HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:31:39] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:31:39] "GET /projects/830123104011/HealthConnectNM/health-tools.js HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 02:31:39] "GET /favicon.ico HTTP/1.1" 302 -
+106.195.43.66 - - [05/May/2025 02:31:39] "GET /login HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 02:48:35] "GET /favicon.ico HTTP/1.1" 302 -
+106.195.43.66 - - [05/May/2025 02:48:35] "GET /login HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 03:38:02] "GET /favicon.ico HTTP/1.1" 302 -
+106.195.43.66 - - [05/May/2025 03:38:02] "GET /login HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 03:50:04] "GET /favicon.ico HTTP/1.1" 302 -
+106.195.43.66 - - [05/May/2025 03:50:04] "GET /login HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 04:32:16] code 400, message Bad request version ('\x96\x07C©E')
+106.195.43.66 - - [05/May/2025 04:32:16] "\x16\x03\x01\x06º\x01\x00\x06¶\x03\x03qÑ¼\x09#\x1c\x96\x07C©E" HTTPStatus.BAD_REQUEST -
+106.195.43.66 - - [05/May/2025 04:32:16] code 400, message Bad request version ('\x00\x02\x01\x00\x00\x12\x00\x00\x00#\x00\x00\x00\x17\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00\x00\x00\x16\x00\x14\x00\x00\x11gces2.duckdns.org\x00+\x00\x07\x06ªª\x03\x04\x03\x03DÍ\x00\x05\x00\x03\x02h2ÿ\x01\x00\x01\x00\x00')
+106.195.43.66 - - [05/May/2025 04:32:16] "\x16\x03\x01\x06º\x01\x00\x06¶\x03\x03aKº«Iü\x07ó\x0eY\x13^öÕ\x17k\x1fZ@\x0e\x0eN\x13*\x92ÏÜ\x9aùõù\x15 Ã¥xµ_ÑÂ\x07A©\x02ü\x07åq\x05\x97\x81\x1f÷Æ\x80Bn\x04\x85\x19¯ó½zÏ\x00 ::\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06MJJ\x00\x00\x00\x0b\x00\x02\x01\x00\x00\x12\x00\x00\x00#\x00\x00\x00\x17\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00\x00\x00\x16\x00\x14\x00\x00\x11gces2.duckdns.org\x00+\x00\x07\x06ªª\x03\x04\x03\x03DÍ\x00\x05\x00\x03\x02h2ÿ\x01\x00\x01\x00\x00" HTTPStatus.BAD_REQUEST -
+106.195.43.66 - - [05/May/2025 04:32:27] code 400, message Bad request version ('\x02h2\x08http/1.1ÿ\x01\x00\x01\x00\x00\x00\x00\x16\x00\x14\x00\x00\x11gces2.duckdns.org\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00')
+106.195.43.66 - - [05/May/2025 04:32:27] "\x16\x03\x01\x06Ú\x01\x00\x06Ö\x03\x03.\x9f¾¡ßõe²¿°\x93ë\x0bôôý+\x1e¥s¼\x05\x19b\x0c\x1bÈ\x06ü#Ì\x03 B!\x1a\x1d\x1c\x15\x1c\x06Øä\x9eguâ\x8b\x94\x89 \x08ª\x92 \x08°\x9e^\x93\x8evÝPl\x00 ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06mjj\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1ÿ\x01\x00\x01\x00\x00\x00\x00\x16\x00\x14\x00\x00\x11gces2.duckdns.org\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00" HTTPStatus.BAD_REQUEST -
+106.195.43.66 - - [05/May/2025 04:32:27] code 400, message Bad request version ('\x00')
+106.195.43.66 - - [05/May/2025 04:32:27] "\x16\x03\x01\x06ú\x01\x00\x06ö\x03\x03/Êz\x05nÅM,\x14õVëu.ÐÕ/eâ.Ïÿ\x96MføÎZÜ¦õa ìÐß¥\x88*Ä3ú£ã°­+\x9d'"×©ìAa_f\x8dãÒFÑx*\x0e\x00 \x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x8dúú\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00+\x00\x07\x06**\x03\x04\x03\x03ÿ\x01\x00\x01\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00#\x00\x00\x00\x00\x00\x16\x00\x14\x00\x00\x11gces2.duckdns.org\x00\x17\x00\x00\x00\x12\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1þ\x0d\x00ú\x00\x00\x01\x00\x01³\x00 OÃõ°f,ý²J\x85­f|\x95\x95°t\x12#°Ëª\x12ä\x03\x95\x0dv\x98\x9bºt\x00ÐV\x09{y4Ú,APøhú\x1bh BAÆoQ=Dfa¥¬¼ôÐgÈ\x1aº~F\x02®oHï\x84_ìðinNÜÐÑ`\x16\x87µ\x1e\x90>\x95Î²\x91\x08Où\x1d\x187â'\x84\x00\x02+Z\x13® æS`Ñ_\x12kÄê\x94ìrÈ·å©ÑGý<\x1cýÚ·Ïª\x9cÂî\x88lâ\x92Þ,\\^ÂÞ'\x9d\x98 /Ç\x18CÔI\x94ê"ý«\x1dWÚ¦\x17@<7¹RK\x0eú\x87\x81\x8d\x0dR\x0f!\x19;¯G²ÎO°\x01&\x07²y\x8eÎi¶\x19\x82\x96¨Á¹})ë6EÀûYù\x8f\x89\x85½ib¼RàqY\x8ew2\x15\x07@ÊÁ\x9e6l\x109\x09\x00" HTTPStatus.BAD_REQUEST -
+106.195.43.66 - - [05/May/2025 04:32:29] "GET /projects/830123104011/HealthConnectNM HTTP/1.1" 308 -
+106.195.43.66 - - [05/May/2025 04:32:30] "GET /projects/830123104011/HealthConnectNM/ HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 04:32:30] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 04:32:30] "GET /projects/830123104011/HealthConnectNM/dashboard.js HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 04:32:30] "GET /projects/830123104011/HealthConnectNM/common.js HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 04:32:30] "GET /favicon.ico HTTP/1.1" 302 -
+106.195.43.66 - - [05/May/2025 04:32:30] "GET /login HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 04:32:35] "GET /projects/830123104011/HealthConnectNM/services.html HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 04:32:36] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 04:32:36] "GET /projects/830123104011/HealthConnectNM/services.js HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 04:32:36] "GET /favicon.ico HTTP/1.1" 302 -
+106.195.43.66 - - [05/May/2025 04:32:37] "GET /login HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 04:32:39] "GET /projects/830123104011/HealthConnectNM/health-tools.html HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 04:32:39] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 04:32:39] "GET /projects/830123104011/HealthConnectNM/health-tools.js HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 04:32:39] "GET /favicon.ico HTTP/1.1" 302 -
+106.195.43.66 - - [05/May/2025 04:32:40] "GET /login HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 04:32:47] "GET /projects/830123104011/HealthConnectNM/profile.html HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 04:32:47] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 04:32:47] "GET /projects/830123104011/HealthConnectNM/profile.js HTTP/1.1" 200 -
+106.195.43.66 - - [05/May/2025 04:32:47] "GET /projects/830123104011/HealthConnectNM/common.js HTTP/1.1" 304 -
+106.195.43.66 - - [05/May/2025 04:32:47] "GET /favicon.ico HTTP/1.1" 302 -
+106.195.43.66 - - [05/May/2025 04:32:47] "GET /login HTTP/1.1" 200 -
+106.197.77.64 - - [05/May/2025 06:13:29] code 400, message Bad request version ('\x82«ñ\x01?($\x8e\x16)µ2R¼Ð\x9c\x04HÃ¨\x8bÍØËK\x14%_f')
+106.197.77.64 - - [05/May/2025 06:13:29] "\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x03\x8bá/á\x7fÓÐD\x87N\x8b\x80{XJ\x9bÂ+\x05×aÓ\x99\x0dÇ©\x9c\x91ÆV\x8eÙ ×Eøø )nçP\x98;å\x81Y\x18MÛ\x1d\x85~]ÜÖ\x84Oö$w\x92+BÊ\x00 JJ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06­\x9a\x9a\x00\x00\x003\x04ï\x04íÚÚ\x00\x01\x00\x11ì\x04À~\x95\x9b/³\x09\x8fJa\x13<Ä\x92ñ?ß\x93\x011&\x14"$µ¦Ç©P\x86\x09\x15\x95·\x86\x08vb\x19\x87ï¸7y7`I\x93¶\x1d\x88aâ@¸¬!Ï\x1cG66p\x96úi\x86då-\x00Ì´\x9d)=\x9f\x85\x82«ñ\x01?($\x8e\x16)µ2R¼Ð\x9c\x04HÃ¨\x8bÍØËK\x14%_f" HTTPStatus.BAD_REQUEST -
+106.197.77.64 - - [05/May/2025 06:13:29] code 400, message Bad request syntax ('\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x03^\x15\x0fÐ\x8c\x8cÜ\x08ÄÂ')
+106.197.77.64 - - [05/May/2025 06:13:29] "\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x03^\x15\x0fÐ\x8c\x8cÜ\x08ÄÂ" HTTPStatus.BAD_REQUEST -
+106.197.77.64 - - [05/May/2025 06:13:29] code 400, message Bad request version ('**\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06M\x8a\x8a\x00\x00\x00+\x00\x07\x06zz\x03\x04\x03\x03\x00')
+106.197.77.64 - - [05/May/2025 06:13:29] "\x16\x03\x01\x06º\x01\x00\x06¶\x03\x03ÞóY°òÙB¶S6ø\x18\x9fx\x10\x17Ö¯\x823.}ëóP\x0b<$<ý}\x0d ã\x14ª\x0eòSÎóì[\x04µ}\x10j\x97yØÕ7âüM|Ûó\x97:\x80ÅÜ\x94\x00 **\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06M\x8a\x8a\x00\x00\x00+\x00\x07\x06zz\x03\x04\x03\x03\x00" HTTPStatus.BAD_REQUEST -
+106.197.77.64 - - [05/May/2025 06:13:29] code 400, message Bad request syntax ('\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x03')
+106.197.77.64 - - [05/May/2025 06:13:29] "\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x03" HTTPStatus.BAD_REQUEST -
+106.197.77.64 - - [05/May/2025 06:13:32] code 400, message Bad request version ('\x92Ü¸\x02\x19\\m³L;F®H¯ðP¶¯Q`©\x7fÑ')
+106.197.77.64 - - [05/May/2025 06:13:32] "\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x03dí«Ñf*|\x91\x86\x00ËQÝ³Ê¡,®o¨0¥4_üä¥ÍöÄ+\x0c ý\x11¤¡è¸\x19Å\x14Ì\x81XZÂã\x9d="u\x92\x7f\x80äÐt\x93æívÖË!\x00 \x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06­ZZ\x00\x00þ\x0d\x01\x1a\x00\x00\x01\x00\x01ò\x00 wù+Fm}<S&/\x11`\x05ð®N\x06³äfÅg¨ÚJ\x98Î¢Ë\x0fõN\x00ðO\x82§<òDkJý¡ß\x0c\x02ÛÂ\\a|jÊY\x18Ò\x1b\x80\x81å\x0e\x98\x88ê\x91\x80V;(vnò?f^Õû\x14F~\x82\x9cS\x06\x89Ýæ\x0eÞ/\x81ÈMç¨L\x19ðÅ±òv\x8d¹\x18O"$£\x1d\x04ë\x89júýÎ®\x93D\x85çËÔ%º³Y\x82Ó7U¥­;.¼\x7f-´óÝ\x89q\x92¬ünz\\¶ê\x92\x90\x1cÊ\x0fù\x93=¯ªªÓ÷c\x85­\x98w$<xF\x95ÏàBË\x18¨Aø\x8feéx½\x7fÕ\x84¡q(Ïç7hðgô\x87ºz\x8d\x8d}p$x\x85\x92Ü¸\x02\x19\\m³L;F®H¯ðP¶¯Q`©\x7fÑ" HTTPStatus.BAD_REQUEST -
+106.197.77.64 - - [05/May/2025 06:13:32] code 400, message Bad request version ('zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06m\x1a\x1a\x00\x00\x00+\x00\x07\x06ºº\x03\x04\x03\x03\x003\x04ï\x04í**\x00\x01\x00\x11ì\x04À\x9d³S\x9bÙ6åÊÅg')
+106.197.77.64 - - [05/May/2025 06:13:32] "\x16\x03\x01\x06Ú\x01\x00\x06Ö\x03\x03\x87ô\x14};\x1dþ¡¶\x84¡½ÕGÈjÑ]}þ\x9aÃ\x8fc@*\x08",*e\x83 vÈX;\x9b\x0c[V}XO}ÛJu\x9agRK\x1d{º\x07½á¿âX\x94:gÝ\x00 zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06m\x1a\x1a\x00\x00\x00+\x00\x07\x06ºº\x03\x04\x03\x03\x003\x04ï\x04í**\x00\x01\x00\x11ì\x04À\x9d³S\x9bÙ6åÊÅg" HTTPStatus.BAD_REQUEST -
+106.197.77.64 - - [05/May/2025 06:13:32] code 400, message Bad request version ('jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06M\x8a\x8a\x00\x00\x00-\x00\x02\x01\x01\x00#\x00\x00\x00\x00\x00\x16\x00\x14\x00\x00\x11gces2.duckdns.org\x00+\x00\x07\x06\x1a\x1a\x03\x04\x03\x03DÍ\x00\x05\x00\x03\x02h2\x00')
+106.197.77.64 - - [05/May/2025 06:13:32] "\x16\x03\x01\x06º\x01\x00\x06¶\x03\x03«\x0dzé\x07\x0e;\x91\x17\x0e(â ¶@GuoÒ@~z`\x11´óÌÐ\x90øÞ\x97 D¨ãyî½\x9d¡\x87\x15Ò\x7f#u\x01xø\x19±Ñ\x13n%»xÔ\x0d§_Ä¼K\x00 jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06M\x8a\x8a\x00\x00\x00-\x00\x02\x01\x01\x00#\x00\x00\x00\x00\x00\x16\x00\x14\x00\x00\x11gces2.duckdns.org\x00+\x00\x07\x06\x1a\x1a\x03\x04\x03\x03DÍ\x00\x05\x00\x03\x02h2\x00" HTTPStatus.BAD_REQUEST -
+106.197.77.64 - - [05/May/2025 06:13:32] code 400, message Bad request version ('Åw)9\x08\x890ÁCd\x93\x82;2Q4aæ5\x9aætïAI=v,\x9d\x861Õ+ËÉ\x10¼K\x01\x98ha\x06\x08{²\x02¹2Ê{|îKZ\x9f7T3q<E¥?Ëcª')
+106.197.77.64 - - [05/May/2025 06:13:32] "\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x03Ï\x1c\x04£¦wño5Â\x1ch(Ûg)ÈÛ"\x1e{îÖä\x8e¤¼ r\x14GØ Im\x0c¶¶\x99\x8bîàÆ\x1bÀê\x9b\x89þpÞÿ,O\x1d\x89\x1c\x8a°ð\x95"Õ­+\x00 úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06­zz\x00\x00\x00\x17\x00\x00\x00#\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00ÿ\x01\x00\x01\x00\x003\x04ï\x04íÊÊ\x00\x01\x00\x11ì\x04À`§»>\x8b\x922ÅAÕ\x05\x8b\x1aq¥Ná{¨\x8a\x86Oj\x07PÈ£W©¥|úT³F\x8f\x17C\x86]\x94\x04®\x98\x18¿¦±õfÇ>Xo\x05rÇ?C\x96Ñ¡\x99\x8fÔKúk\x9a\x02cHï\x1cÅw)9\x08\x890ÁCd\x93\x82;2Q4aæ5\x9aætïAI=v,\x9d\x861Õ+ËÉ\x10¼K\x01\x98ha\x06\x08{²\x02¹2Ê{|îKZ\x9f7T3q<E¥?Ëcª" HTTPStatus.BAD_REQUEST -
+106.197.77.64 - - [05/May/2025 06:13:34] code 400, message Bad request version ('uN©¸ª\x84Ú\x99Åiä/6÷8`±Y\\oÉ\x00G')
+106.197.77.64 - - [05/May/2025 06:13:34] "\x16\x03\x01\x06Ú\x01\x00\x06Ö\x03\x03Nû\x0d6Ú\x96 \x88æ[\x02i¼QÍSKÁ\x1câô\x01éU\x0còK]y£\x02Ì àÑ\x12@ü*î¡n\x05³-s\x16à÷t\x14±þe"¡\x7fnQCÊÆ\x85\x83\x0f\x00 jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06mÚÚ\x00\x00\x00\x1b\x00\x03\x02\x00\x02þ\x0d\x00Ú\x00\x00\x01\x00\x01\x0f\x00 ÛÓ[§F[Xð2\x8f®\x083;ñ~e\x16Ê\x9c\x0b\x1d¡^\x81\x93JÂ\x85\x04H:\x00°ïg\x97×Ã\x85<~\x0e2\x8eô(Ð\x0dOf\x1eÁ\x1fz\x9c\x1f\x7fá©ÂÙ\x1c«wC,h]¸ûÛûRÉ\x14çwÁ\x1c$\x94\x11|;\x1b4â«îæ\x9b\x1a¸\x8d\x1cö\x18\x82§D\x9e<{¢ù¤õ+ö¥h\x1a{\x90\x8e>+V>ò§@#\x92\x99\x0dh%\x1e®\x92ce°\x09\x93®ò½äï#Ò\x0cuN©¸ª\x84Ú\x99Åiä/6÷8`±Y\\oÉ\x00G" HTTPStatus.BAD_REQUEST -
+106.197.77.64 - - [05/May/2025 06:13:34] code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+106.197.77.64 - - [05/May/2025 06:13:34] "\x16\x03\x01\x06º\x01\x00\x06¶\x03\x03j#"å\x9d\x87ÏjÐ²\x08(Ûð¸\x89Êð ¾\x09\x13GÉë\x06U^\x9eÚÝV \x8aÁ\x18x²¶?G³Là?N\x0fZÿ·uÕªJ1½\x1fj}Ã\x09\x14\x88È\x81\x00 JJ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06M::\x00\x00\x00\x0b\x00\x02\x01\x00\x00" HTTPStatus.BAD_REQUEST -
+106.197.77.64 - - [05/May/2025 06:13:38] code 400, message Bad request version ("\x99ÉQ\x86ë¡Í'Î2\x1a\x9ek°\x06¨\x97Æ")
+106.197.77.64 - - [05/May/2025 06:13:38] "\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x03®B_.\x01\x1eÓ[\x89$\x8bö(\x07ç\x9fZk\x10\x86¬iXû\x9b\x1b«\x8f£\x02ÿ¬ 5ÉôJ\x0c=\x91ob$\x98,\x1038TñjUÈ\x0cÄ½ÜÂQ«\x93\x1bî\x83k\x00 zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06­JJ\x00\x00\x00#\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1ÿ\x01\x00\x01\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x0b\x00\x02\x01\x00\x00\x17\x00\x00\x00+\x00\x07\x06ÊÊ\x03\x04\x03\x03\x00\x00\x00\x16\x00\x14\x00\x00\x11gces2.duckdns.org\x00-\x00\x02\x01\x01\x003\x04ï\x04íºº\x00\x01\x00\x11ì\x04À1\x05\x87SÂ\x1e"õJ\x0fi¾üÑsÎç\x10! 5\x1dL\x93dë\x1eªÒ\x19£ì\x84@U¯:ü\x85þ»°¯\x00@t\x15'\x9aÌ\x16f¡Næ\x12\x0f9\x9c\x9e\x86ÖÊ{7\x88\x00ñI\x1dH\x96Sf0®|C¼\x88-\x191\x1c È\x9aÁ÷P\x98ñ\x8f\x9dû^Á\x1bNÚ\x04PÍ:­/\x90ÁÚ\x12N8Æ»Fs~1Á7î22k×È\x04¶/?\x17\x96×\x04»Ü)\x82\x9d)\x01aú\x05>\x0c¯<\x9aÉ8\x88\x8b\x94jaÃÊ\x1e{Dy5ó¥Â\x19Åêi©\x8b¡\x7fzu¯VØ|:e¾Ëã\x15¨\x16i:úAd\x94;\x0e\x840A\x85\x91 Ë·¤[|D*`-r-P\x12\x00\x82ä}Éò¢%W²m¦Uâ\x0b\x95(F\x0f©\x82gäE\x97\x04J6gÔ(÷\x03Ãü\x04\x9c¼\x16\x95bH6yº¾ß¸X8\x88Y\x98b¤lgÇ\x00\x97n%Ð\x85D7±\x02ö\x02-$\x82°l\x1eX,l|6)\x1btJ\x13k¥ÿv2úÆ\x7f\x97{+\x04ÉqÐ3ZQ\x91vo\x11R¨Û\x13\x87\\2¥C6|ø£\x8b×Ç\x1a\x01YD{\x1aÌ\x85\x96ciNvÉÏå\x84e\x9d\x90Æ\x99\x09±Í\x12\x17\x932'+sª\x94|,-²\x09ËñIºÆL\x89¶o©\x06\x7f/\x02g¹r!p&ÀÁ\x11\x98(W\x89:¤e[\x09w]ð\x1d\x99ÉQ\x86ë¡Í'Î2\x1a\x9ek°\x06¨\x97Æ" HTTPStatus.BAD_REQUEST -
+106.197.77.64 - - [05/May/2025 06:13:38] code 400, message Bad request version ('¦Ò~')
+106.197.77.64 - - [05/May/2025 06:13:38] "\x16\x03\x01\x06º\x01\x00\x06¶\x03\x03\x15úa\x9aç\x85qg\x9fÚÖ@M\x9eÈÆ­ÑÈJ\x1c97>!A4[j)\x85c ¤Ó\x1d¦Ò~" HTTPStatus.BAD_REQUEST -
+106.197.77.64 - - [05/May/2025 06:13:40] code 400, message Bad request version ('©l')
+106.197.77.64 - - [05/May/2025 06:13:40] "\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x03¢\x06)LÃ\x04\x99 \x01 3M×ÿG}N\x86\x99CÀy3ã\x1c\x81\x8aÿôQÃÃ \x12äæ{îöT¨.\x7föÊÄ_£ 5\x94\x17¯Æ÷ó\x946 $*\x0f7\x84\x02\x00 zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06­JJ\x00\x00\x00\x12\x00\x00\x00#\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00\x17\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1þ\x0d\x01\x1a\x00\x00\x01\x00\x01&\x00 ~\x1a¶ûað\x8b·³Äö9¥0\x17\x05I\x88ß´ð\x15ç©V\x18äÚÈÿ)4\x00ð\x8f:Ø|­\x96çØLºî\x12%Q\x13rYµBW\x00SyÐìP¾\x1f¢\x9bP\x09R\x05\x9cz²61Ð¾\x80\x01Bùtú\x12\x14\x05n\x97ºA¼è«¾ÐUô4«±\x13\x0c²ñ÷º¯=«,\x8a\x99\x83t¹©Àì\x1cW2\x0d\x09ZhChÆtÊ§Äì`<1Å[\x07%\x82©\x0dÔæ\x15Þ²\x830ô¹·Ú>*\x8dÓ\x0cÝð\x16¶n!éya\x1d}7`u\x8f\x04#Ú\x1b\x88ïB à»©\x81UQ\x02\x96ðÔ\x01\x83íò1~ª<Ý'm\x8a\x8e§\x1fA­\x0d\x1d©l" HTTPStatus.BAD_REQUEST -
+106.197.77.64 - - [05/May/2025 06:13:40] code 400, message Bad request version ('\x02h2\x08http/1.1\x00\x00\x00\x16\x00\x14\x00\x00\x11gces2.duckdns.orgDÍ\x00\x05\x00\x03\x02h2\x00')
+106.197.77.64 - - [05/May/2025 06:13:40] "\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x03.!\x80\x98yîý\x98Ç[^=\x91Z\x0b'êgÍ\x12UñêajüSÁk\x85±\x9d \x8dp\x80÷r­\x10Ìû\x93s}}5\x02Ôê5Î\x14/×.DF×¢\x8as¥t\x88\x00 ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06­ZZ\x00\x00\x00\x17\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x00\x00\x16\x00\x14\x00\x00\x11gces2.duckdns.orgDÍ\x00\x05\x00\x03\x02h2\x00" HTTPStatus.BAD_REQUEST -
+64.62.156.124 - - [05/May/2025 06:17:55] "GET / HTTP/1.1" 302 -
+64.62.156.129 - - [05/May/2025 06:18:19] "GET / HTTP/1.1" 302 -
+64.62.156.129 - - [05/May/2025 06:18:20] "GET /home HTTP/1.1" 200 -
+64.62.156.130 - - [05/May/2025 06:19:09] "GET /favicon.ico HTTP/1.1" 302 -
+106.197.77.64 - - [05/May/2025 06:56:40] code 400, message Bad request version ('|\x83ÌLÐGâÄ')
+106.197.77.64 - - [05/May/2025 06:56:40] "\x16\x03\x01\x06Ú\x01\x00\x06Ö\x03\x03Ö«\x8eºÕ¸\x02DÈ<p<öÝ³é\x1a\x17)\x0f \x8bõØ;\x17öi÷ñA5 \x89\x86p\x9a5¥ã=íÂ*\x8e\x08\x86"\x17\x93*\x0b \x84o\x19\x9eê¢àåeaàm\x00 ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06m::\x00\x00\x00\x12\x00\x00þ\x0d\x00Ú\x00\x00\x01\x00\x01Ñ\x00 Ñi~\x13Ó\x96À¸\x02\x02Ù\x0eÂ-¨L2¤\x06Hkb\x03\x0f\x94=\x18»¯Ñ\x18e\x00°\x8d\x8e+t¡E\x1b/NþüiL0\x08\x09µàá\x1e|ºô19\x15\x8d5Õ±\x81\\ÖI\x08\x0bý\x0d:®æ\x1b=e\x85\x98]\x14\x8cr`\x82U-býù\x07­¥°O\x97×ì\x9cv2\x10.\x17\x0cD¸\x12\x81£køú¾\x97ó\x09î\x0fB\x14;\x9a_3t</\x02\x9eå\x04¨³-Ítz`)¡E\x05~Ü\x00sukëµ&îuo\x09\x8d]\x958\x1a²¤3Ð,l°\x1eÖå_Rsn\x8exns\x1b¶x2[n8°~~¢\x1b¶\x96ÃO\x93\x1d+aç\x1b§·ÝI\x0fÒ\x85Ö\x00-\x00\x02\x01\x01\x00#\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x003\x04ï\x04í\x1a\x1a\x00\x01\x00\x11ì\x04À03}\x13gj\x84º\x19\x01\x81\x1e\x06¬\x96\x06<\x12\x8bvTãx&©Ë\x04±wS6×\x9cóDs\x12pÇ\x9f;\x19Ô{"\x97¹\x83YK\x96MÚk\x97ü\x92\x16e\x07\x07U\x12\x14ù=\x84\x19S<Ç2·u\x1ey\x88»;Êy¿\x81\x19Ä·\x95ù \x8e£»'F@$¯(²\x0e©6í\x12\x19\x08x_,"Ìès¢¤\x13ZIäÌ!WPì(bòc\x14\x82\x0b\x99·qAX\x0b\x8b;À\x8a\x10\x84xQ\x00\x9a3A&jG¾·:¸U2´Y+¥VK\x13¸,Q»å8¶\x0cZ\x97Ü\x89AYn\x90£J¨9y+\x9bIã\x9bÀ®|Àäé\x02\x87EgÖôr\x15¸\x80c°\x04ÞÅ4#\x93\x9f\x09HVñ°\x91rgÎ\x08È\x92\x05Ù*¶k\x8cóû£}\x03\x16\x14wXÛ\x80[·ÄÂùä\x08û[x\x9dB½\x10àK\x99\x12À\x1e\x13\x1c=\x17v\x0e0V#Æ\x8fN¥=ö\x93c\x139\x03ÖWM\x1e»\x94ðÅ\x88V\x9cw·i\x8bøq\x90D\x97±²:\x88X¶\x0f6Öi\x1c\x1c\x97\x08a\\g0?\x01F\x1e>\x04Åeálõ\x14ZÆùÃß1\x9f\x0eàÈF\x88¸\x1dª@ADw\x0cú¶ßi\x94ëù\x02æSv\x94ä.þ;¥ðÒ¦`\x91ÁªYÏ\x8e\x16A\x90Ñe\x09g\x96¯ð\\¼å.®\x18\x95ç\x06}ú,vJyb\x1e¹{Ã\x82¤\x0e8g\x09Û/\x14&,÷C\x9bå¨M¤q«\x83Ù¾ò\x97ª»à±Z\x85\x1f|\x83ÌLÐGâÄ" HTTPStatus.BAD_REQUEST -
+106.197.77.64 - - [05/May/2025 06:56:40] code 400, message Bad request version ('\x00')
+106.197.77.64 - - [05/May/2025 06:56:40] "\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x03w(\x9a»0Ô\x0dC\x8293ío^½¯ÏC#\x1dv\x05,9¸Õ\x05Ô\x09ø%: NNª¿ÖþÍè¾\x15ÆU\x04ºh\x92\x0f\x80N;tûõUo»Òú{¶Û\x1d\x00 " HTTPStatus.BAD_REQUEST -
+106.197.77.64 - - [05/May/2025 06:56:43] code 400, message Bad request version ('**\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x8d\x8a\x8a\x00\x00DÍ\x00\x05\x00\x03\x02h2\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+106.197.77.64 - - [05/May/2025 06:56:43] "\x16\x03\x01\x06ú\x01\x00\x06ö\x03\x03\x0e\x9e\x8eóò>\x8aýÏ\\\x00\x03\x0fø¤H´ëèÁ×ºn\x9a\x0fTW\x97\x9dvèº G\x8a~\x1cEv\x13:\x05cc§ÚO7\x03s\x1f<\x8aü\x1f\x19]?G\x96¾÷\x9céÎ\x00 **\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x8d\x8a\x8a\x00\x00DÍ\x00\x05\x00\x03\x02h2\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00" HTTPStatus.BAD_REQUEST -
+106.197.77.64 - - [05/May/2025 06:56:43] code 400, message Bad request version ('(·')
+106.197.77.64 - - [05/May/2025 06:56:43] "\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x03L8tÜÿ\x98ï¬\x8dK5\x98R\x136ÐV×+W\x11ÆË"øÈÚ\x90{\x93Ì] \x00\x12|ì\x10\x04\x99È\x9c\x89\x94\x91Æ\x11H'\x18P_\x0e\x9d\x01\x11Iî³x±Ä\x9b'R\x00 \x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06­JJ\x00\x00\x00\x00\x00\x16\x00\x14\x00\x00\x11gces2.duckdns.org\x00\x12\x00\x00þ\x0d\x01\x1a\x00\x00\x01\x00\x01ç\x00 \x89\x83cÁ-\x9bp¾\x04\x86½\x0e\x8cìª\x04%\x90"¿§O(\x8b\x82T23R|ÝK\x00ð6;\x9d£?\x1e¬2X`(æÅ\x80\x10ò!¬\x09](ùMÇ\x9d%ø\x0c¢¢\x1f\x1a)ùë\x07}\x1ePÓð\x8f\x98\x95³d Ñ\x84Fs¹\x1e\x8b-§!\x07Ü<p^±\x0dHÚ@ªÐë*O\x84Õ*\x9f8xòæhàp?Ûê\x89\x06h/¼¸z+¿é\x85_rïíöqøi§Ì\x19ß)\x05E»sË\x115Ê\x0b\x08ð«\x9aq\x84\x89Vå\x1f"ÿ®\x18Åªµi\x9eR\x82\x89è!\x99nÒ>\x09ÏJã1ëÍ\x80\x8b\x08 Ç\x96\x8fY[ÄÅñ^O¥\x92\\¹²ü$\x02\x00*Ê¬á®xê\x8d©p0Àô\x1a\x89u\x19O=\x00½Ý\x17üÚu<É·¹á\x978þ)$Â\x09]m\x1d\x91\x1a[\x9bÊÇaBi\x1e c¿ÀO{HUò\x94v\x13\x003\x04ï\x04íªª\x00\x01\x00\x11ì\x04À\x157H\x99k<ÈEÂÈ\x11ÍjÄqMV x\x8c\x0d4«}\x11y\x10z\x02flRÎâ\x86g»\x98´êçX\x94·\x91ÿ`\x10²4\\\x88q3äÒµê|\x81Ç VðT$!\x93QÐs\x1aã\x17\x80k|lß(jÍÙ\x04\x1fê\x95\x02{Å V\x8cø¤µ78Ëë&\x9f]ÛLý\x11²\x16\x8cs\x18ë^üÊ\x85±\\\x08ð\\\x98½c\x94ÞüÃÙÁIP\x950i\x14^\x8aÆ\x1fÉÂ@»À¹PÃ¦ìIºÔô{ßÐ\x1c\x9dWL\x9f\x01$-IkT\x88\x8aôÈ%¬·w:×n¿ª\x83æ÷dO\x11\x00Á\x9bVõÚk\x93\x91/Ih\x92\x11z\x99\x0d\x1a\x88ÒYJ\x11 dU\x96§Û©\x16Î\x1b]\x13x#\x8f¤\x89hSyi´FuLnHË\x84\x00IÄ\x8eúsùû]5\x0bu\x98Ci\x99\x06=·3¿Õ\x90¿\x05t_y¼kü\x83Â#s\x8a\x0fñÌ\x9d\x95Ê\x94$\x92SÜVÂ%C^ð¾/\x82-\x8bälíV.\x82¥E¶l\x95\x09(·" HTTPStatus.BAD_REQUEST -
+106.197.77.64 - - [05/May/2025 06:56:49] code 400, message Bad request version ('\x94\x87ú\x00')
+106.197.77.64 - - [05/May/2025 06:56:49] "\x16\x03\x01\x06ú\x01\x00\x06ö\x03\x03\x1b\x92cig\x8föÂã\x17÷\x9a}%\x97\x04°ö\x8dh/\x988Üls]1='õ< ,g·\x12\x01/ÙHH¬æH\x96Ð´ \x17ûgx$z½¹b\x11¹\x84SÙ~G\x00 ::\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x8d**\x00\x00\x00-\x00\x02\x01\x01\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00+\x00\x07\x06ÊÊ\x03\x04\x03\x03\x00\x0b\x00\x02\x01\x00\x00\x12\x00\x00\x003\x04ï\x04í\x9a\x9a\x00\x01\x00\x11ì\x04Àe§À\x19ñ\x92h8\x95vUpÈÀ¬\x8c\x9cZð\x16Ë¥R\x98ÌV!\x8d#¶\x01\x962ýüÊ³\x86Á\x14æX\x1cÄ\x088É\x8c[Ù(z\x19´ÇÊz\x19ëÌÛ\x14ªºCcLp1\x96ÙYC' \x03\x86\x17ª§z-5GÜz@×ò¢¢ä¯å@Jý\x89`\x18Ç\x07ºÃª\x0bìm¾@ÂS\x99k\x0c´¾µ\x05¢]u\x09\x18\x09ÐH\x8a¿]\x83ËÉFº3\x17!ÈùÌ\x80×\x12=f\x9c\x87\x1a\x91§Ú,\x97;Äd\x94Bs[\x0f¸\x07SË@Ï@LÆ\x0ei\x92Éi©¨ÒÁ©\x84!?5\x93\x0e\x02_è\x1b©\x04¼\x96°\x0bm»Ó\x9e\x1b{yEBÄõ2\x9f\x91:9\x87\x8aºn\x83_PÜ\x97ØÃ\x18LIQ\x19\x17µ¦\\È7¤>Ú¬3~W\x10=UoM\x08¶-\x02.ßÈ\x84'ãgvZ\x85Ü\x06»`LA\x81\x9bTÃ«·\x92Õr\x0d³1»åP\x94\x16¢\x1c¦JEg\x16ª@IÐ ½\x0d\x94\x87ú\x00" HTTPStatus.BAD_REQUEST -
+106.197.77.64 - - [05/May/2025 06:56:50] code 400, message Bad request version ("¶q`æ<ü¹\x8ecµÃ\x08\x9cus\x95\x03¤Us')\x8e\x1b/uN\x02/N3|ìV?Å×Ê\x05")
+106.197.77.64 - - [05/May/2025 06:56:50] "\x16\x03\x01\x06ú\x01\x00\x06ö\x03\x03\x1d\x7fòXÃ\x18oð3\x08ãL\x93Ô`pc\x9a°ô\x01ö/7s\x0e|ÛK)\x1fF îÿ\x09¦(·\x9dþ?~¸7%\x96d\x0e9¼Â7j$âgi26<!\x9b;¥\x00 jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x8d\x1a\x1a\x00\x00þ\x0d\x00ú\x00\x00\x01\x00\x01K\x00 Ç'f\x0e\x8b«\x84Û¤Ó3X\x08¶¶MàA¥\x11«êÂpÑ\x7fA\x18¤\x99|B\x00Ð3£\x16x\x15\x03\x005¬NÐ}\x99·$²ìùsã}¸E\x16\x10Îk±0åC+%Ü ¶q`æ<ü¹\x8ecµÃ\x08\x9cus\x95\x03¤Us')\x8e\x1b/uN\x02/N3|ìV?Å×Ê\x05" HTTPStatus.BAD_REQUEST -
+106.197.77.64 - - [05/May/2025 06:57:07] code 400, message Bad request version ('Úæx\x9dë46÷ËÑïv\x81¥>=©þx¥±GìÙq\x01=\x00')
+106.197.77.64 - - [05/May/2025 06:57:07] "\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x03À"&=¦M\x8eD\x02J\x06\x17n8¼å\\M\x94 {Ø(Õ\x7fÏAw\x99Tc\x01 \x15aiÌ\x1cÚæx\x9dë46÷ËÑïv\x81¥>=©þx¥±GìÙq\x01=\x00 " HTTPStatus.BAD_REQUEST -
+106.197.77.64 - - [05/May/2025 06:57:07] code 400, message Bad request version ('/XgÈd')
+106.197.77.64 - - [05/May/2025 06:57:07] "\x16\x03\x01\x06ú\x01\x00\x06ö\x03\x03\x8eR=Jã°9íØò-ý\x81¦\x17\x81^Ó¸I-\x9e­µU»YµK\x82\x1fN D3aAÝ\x0c\x0då\x9d¦3l\x8fX3%\x8cG\x95,ó\x9dc\x0eüOX)·$P+\x00 JJ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x8dZZ\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x00\x00\x16\x00\x14\x00\x00\x11gces2.duckdns.org\x00+\x00\x07\x06ºº\x03\x04\x03\x03\x00#\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00-\x00\x02\x01\x01\x00\x12\x00\x00\x00\x17\x00\x00\x00\x0b\x00\x02\x01\x00ÿ\x01\x00\x01\x00\x003\x04ï\x04íêê\x00\x01\x00\x11ì\x04Ày²}~ä\x98{ê'þcTþ\x80°2ÑÂQ&\x0eÆ@ÅÑ\x09fyZLDQ\x8aÇ\x13\x1aÒi\x01U\x83¨9P'TÐ\x19ÝÆ\x1e/XgÈd" HTTPStatus.BAD_REQUEST -
+106.197.77.64 - - [05/May/2025 06:57:09] code 400, message Bad request version ('\x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06M**\x00\x00\x00')
+106.197.77.64 - - [05/May/2025 06:57:09] "\x16\x03\x01\x06º\x01\x00\x06¶\x03\x03ÜuK¢È\x87º\x9aË\x8c\x94¬\x86Ðr°ßÙ \x88\x9e¨-å\x02Á\x1ak\x1e©\x14P ÍFW³\x135v¸îØ\x8c$H©VXÒ_Sg\x023º`Tqû\x9bw.¤Å\x00 \x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06M**\x00\x00\x00" HTTPStatus.BAD_REQUEST -
+106.197.77.64 - - [05/May/2025 06:57:10] code 400, message Bad request syntax ('\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x03\x96\x8c\x87KrWuùó\x96ô\x89&¾Ì6§Â\x18Åi\x02©ÆãÉ3i')
+106.197.77.64 - - [05/May/2025 06:57:10] "\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x03\x96\x8c\x87KrWuùó\x96ô\x89&¾Ì6§Â\x18Åi\x02©ÆãÉ3i" HTTPStatus.BAD_REQUEST -
+106.197.77.64 - - [05/May/2025 06:57:42] "GET /projects/830123104011/HealthConnectNM HTTP/1.1" 308 -
+106.197.77.64 - - [05/May/2025 06:57:42] "GET /projects/830123104011/HealthConnectNM/ HTTP/1.1" 200 -
+106.197.77.64 - - [05/May/2025 06:57:42] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 200 -
+106.197.77.64 - - [05/May/2025 06:57:42] "GET /projects/830123104011/HealthConnectNM/common.js HTTP/1.1" 200 -
+106.197.77.64 - - [05/May/2025 06:57:42] "GET /projects/830123104011/HealthConnectNM/dashboard.js HTTP/1.1" 200 -
+106.197.77.64 - - [05/May/2025 06:57:43] "GET /favicon.ico HTTP/1.1" 302 -
+106.197.77.64 - - [05/May/2025 06:57:43] "GET /login HTTP/1.1" 200 -
+157.51.65.165 - - [05/May/2025 09:19:20] code 400, message Bad request version ('zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\xad**\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x17\x00\x00\x00')
+157.51.65.165 - - [05/May/2025 09:19:20] "\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x03\x81y'Ð\x1c\x7f\x11ý-\x02\x86º\x1d\x0dÒÂ\x14¸Vly\x19ka©ÓdÔîâÅ³ ³Ä=\x93\x0e\x0f\x03Z¶óà\x88é¦\x13OïRô³¾äY\x9aì'\x14¨ÈQ\x92\x02\x00 zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06­**\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x17\x00\x00\x00" HTTPStatus.BAD_REQUEST -
+157.51.65.165 - - [05/May/2025 09:19:20] code 400, message Bad request version ('Ì§ÂáÌaZ?â8!¹ü¾tÉÉp«ËÀ(>aX>æç.\x00Z\x13\x99º.óRµ\x1215\x98C/É)&äæ\x0e\x0e&]7\x87Tø[`\x83bµÂ\x15}8ÉGùñ\x0e')
+157.51.65.165 - - [05/May/2025 09:19:20] "\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x03\x93\x98o\x8a¢ßÎ\x87\x18þ"ØK\x08@­¸Q\x02Ô3ù\x09ðÜ\\ç¶b×Z\x1d ¬\x1f\x95\x1fôªg^^Ìw\x97\x90º«\x95ý\x84ÿ\x9aÂP\x1d\x8c\x0bè­\x8c\x80Ì]|\x00 ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06­\x9a\x9a\x00\x00\x00+\x00\x07\x06ºº\x03\x04\x03\x03\x003\x04ï\x04í\x1a\x1a\x00\x01\x00\x11ì\x04ÀÍ\x08ÅÍ'kN¸,¤u286([r]$D\x9aÙ\x06;è\x85h\x8dÑ¤X\x16~\x12Y\x1byXX%º\x0eüµ\x02â)\x83»¤\x06ãT\x07¶\x8bÁÃË!\x0d\x19¹©ó^:*·<)WØ¼q¡Slðá}xt'%°\x81Ü$}d, } rI\x16±¥\x1c5ª\x03´¿+\x92¶\x1b\x84á\x04Yg:6µ#D³õ,9éªþÜp2\x08\x1b\x96¤¶®\x07t\x09Ì§ÂáÌaZ?â8!¹ü¾tÉÉp«ËÀ(>aX>æç.\x00Z\x13\x99º.óRµ\x1215\x98C/É)&äæ\x0e\x0e&]7\x87Tø[`\x83bµÂ\x15}8ÉGùñ\x0e" HTTPStatus.BAD_REQUEST -
+157.51.65.165 - - [05/May/2025 09:19:20] code 400, message Bad request version ('{\x9a¥*ü»\x80')
+157.51.65.165 - - [05/May/2025 09:19:20] "\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x03\x13ËA\x11»\x85Õ\x1eá\x0dH¸ZÀ$\x0dU\x1búÕ\x85á\x1d\x1aÎ\x96?\x1eL\x88O\x15 E¯V\x02¦\x91ñO8\x92ÓÄh\x03«GÀjrRÐÒ¹\x05wW¼W\x84?Ù\x84\x00 **\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06­::\x00\x00\x00\x0b\x00\x02\x01\x00\x00\x1b\x00\x03\x02\x00\x02\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x003\x04ï\x04íºº\x00\x01\x00\x11ì\x04ÀÚå\x1b\x86ÅÊ\x8cÂe6$µ,ùºi\x83\x16¬:\x83¢ìM'K\x8cL{¦iyU\x930Tá\x83D\x1bj\x92ÀÌ¯ûH\\·E\x95\x89\x95¥Y66ÇHr8b\x82\x08\x09h\x15)mß²;°ê\x09ï\x15\x94+ÙA\x93c=\x13ÂO¨i\x10\x9bÌsÿq'yJ\x89\x7fðB¢Ò¼Ë¹\x16\x16X0Xø\x97Î\x8b\x85\x19'Ë\x19Bu\x0cç\x9f}RV¹voÎø'ZQ\x03û\x02}ND1yiÎãÅ\x81Øw""kV$È¸YÜ=¦\x96+Ö\x98P\x8cb#)\x80\x16_',xãJ\x96hSÂXa\x05:¨ý(\x1d§\x17\x82\x84éy\x09\x09\x14Ýv'F\x84\x909û½\x01\x84Lt\x11P3\x00\x09\x8b±\x7f\x9f;5\x8b·qç¤~@´z\x04æ\x15\x9dQ\x9f{\x87 :·\x1f\x88ëE\x9e\x83Tº\x10Ç":`XÆs$\x0b+\x8aH\x9a°ò±âÐºw÷G`\x94h\x1a¢\x00~B\x80C±\x88'õNÔ\x8a {\x9a¥*ü»\x80" HTTPStatus.BAD_REQUEST -
+157.51.65.165 - - [05/May/2025 09:19:21] code 400, message Bad request version ("'5\x91Ü®b\x00")
+157.51.65.165 - - [05/May/2025 09:19:21] "\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x03;L77\x02ñ¥\x02ÅYQ°ë\x9c¼É·Á6BÓ\x99jM(\x94\x01³*v++ HÓÄ¥J\x10ß\x1d%\x8a,uÂ%\x87´ \x08ÀØAÕv3\x7f\x1f'5\x91Ü®b\x00 " HTTPStatus.BAD_REQUEST -
+157.51.65.165 - - [05/May/2025 09:19:22] code 400, message Bad request version ('ÙXð')
+157.51.65.165 - - [05/May/2025 09:19:22] "\x16\x03\x01\x06º\x01\x00\x06¶\x03\x03I>D\x1bN°Ú<CÑ²4F~ãP9:èI\x0d#¨\x0f²æ|òMÇ\x1e® è\x14,7Å\x11z\x17\x1d\x88^\x8eTÞàB\x1cP\x0dÙXð" HTTPStatus.BAD_REQUEST -
+157.51.65.165 - - [05/May/2025 09:19:22] code 400, message Bad request version ('jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x8dÚÚ\x00\x00\x00-\x00\x02\x01\x01DÍ\x00\x05\x00\x03\x02h2\x00\x12\x00\x00\x00+\x00\x07\x06\x1a\x1a\x03\x04\x03\x03\x00')
+157.51.65.165 - - [05/May/2025 09:19:22] "\x16\x03\x01\x06ú\x01\x00\x06ö\x03\x03o\x97Í}\x11\x82´ùæUD3±\x88\x98 Û\x0c&æ?\x97ÒXlnÿ\x99¼hL) Á\x03î\x14z"¼ýþØsZÜ³CUÎ\x15{]\x10\x80}Í')=#3S\x13Ù\x00 jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x8dÚÚ\x00\x00\x00-\x00\x02\x01\x01DÍ\x00\x05\x00\x03\x02h2\x00\x12\x00\x00\x00+\x00\x07\x06\x1a\x1a\x03\x04\x03\x03\x00" HTTPStatus.BAD_REQUEST -
+157.51.65.165 - - [05/May/2025 09:19:23] code 400, message Bad request version ('::\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06m\x1a\x1a\x00\x00\x003\x04ï\x04í::\x00\x01\x00\x11ì\x04Àé\x10Îa@vðÃ»t\x06\x17®C\x8eÊK\x88Y×qGw+\x03q.J\x9a\x05Ë\x93\x82_h\x9a¬³\x18\x12°\x9ei;\x90\x87Ó%Ô\x10««Z#ÿÛ¤\x8eÃ(Qú\x9e\x1bY\x04üÃ,ÏÉ¸ôö\x84\x16\x14I\x8aóOöê')
+157.51.65.165 - - [05/May/2025 09:19:23] "\x16\x03\x01\x06Ú\x01\x00\x06Ö\x03\x03'$\x11óá;\x05¥²¸§¹9\x8f\x9e®Ú^×_}Bç¼y2cÛ:C\x16\x06 \x8e\x9fIë\x8c\x7f/ Iá\x91¢¼ñÍð\x8eà\x99åÖéA]Ã³î¨Þ\x1e½Ü\x00 ::\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06m\x1a\x1a\x00\x00\x003\x04ï\x04í::\x00\x01\x00\x11ì\x04Àé\x10Îa@vðÃ»t\x06\x17®C\x8eÊK\x88Y×qGw+\x03q.J\x9a\x05Ë\x93\x82_h\x9a¬³\x18\x12°\x9ei;\x90\x87Ó%Ô\x10««Z#ÿÛ¤\x8eÃ(Qú\x9e\x1bY\x04üÃ,ÏÉ¸ôö\x84\x16\x14I\x8aóOöê" HTTPStatus.BAD_REQUEST -
+157.51.65.165 - - [05/May/2025 09:19:23] code 400, message Bad request version ('óò\x18íá\x12Ô\x0f')
+157.51.65.165 - - [05/May/2025 09:19:23] "\x16\x03\x01\x06º\x01\x00\x06¶\x03\x03(XÙ6\x88^\x9dÕe\x0cxÉGÃ\x86\x98OÀ`\x9aÙz\x1bK>\x1d7©Ð<Ó¤ \x98¥ë3±ÑÈË;\x10z¾cã\x0c9¥7jy\x1cóò\x18íá\x12Ô\x0f" HTTPStatus.BAD_REQUEST -
+157.51.65.165 - - [05/May/2025 09:19:24] code 400, message Bad request version ('CÃª\x8fE.\x81AÉ\x97Fª9\x12\x02\x80)©\\U,,cË¶ú<ic\x03\x91À\x00\x19d^/ê3=Æ')
+157.51.65.165 - - [05/May/2025 09:19:24] "\x16\x03\x01\x06º\x01\x00\x06¶\x03\x03\x05èÞÊbÆ\x07Äs\x9cI\x0c\x83¾\x02\x7fã©ø¿f/ Uf¦gó¬_iÎ ð\x99\x9d\x1eãûºá@¨\x07ø½\x1e$éÑâJôè\x91ÓÞî(\x0eß=ì\x04¨\x00 **\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06M\x9a\x9a\x00\x00\x00\x0b\x00\x02\x01\x00ÿ\x01\x00\x01\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x003\x04ï\x04íêê\x00\x01\x00\x11ì\x04À\x09ËC\x1bì¸¢ÌOQð&ÖT\x98+!¯ñê/o\x91Í¥,ca°Ì\x93³!\x8aH\x1dGç\x96~°6\x85¤.Ú§\x1eCÃª\x8fE.\x81AÉ\x97Fª9\x12\x02\x80)©\\U,,cË¶ú<ic\x03\x91À\x00\x19d^/ê3=Æ" HTTPStatus.BAD_REQUEST -
+157.51.65.165 - - [05/May/2025 09:19:24] code 400, message Bad request version ('Å\x9a\x8cF5´Èe\x7f\x10b%¨')
+157.51.65.165 - - [05/May/2025 09:19:24] "\x16\x03\x01\x06Ú\x01\x00\x06Ö\x03\x03\x8c\x82)Ïø\x03yKæeQÔß@ù\x9dA\x82-îå»q\x08\x0eÙ\x0d\x9b@8n³ \x9b@\x1fò\x8a\x15\x8cñÝE<\x9d^'k£ô2X\x06\x8bÕ\x85*F\x94îáo2\x11¼\x00 \x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06mJJ\x00\x00\x003\x04ï\x04íJJ\x00\x01\x00\x11ì\x04ÀÒ\x94¡`EM²ª|\x89GML¬Y¾Õ\x0bec\x84j)\x9aýLFµ¬®º\x96rÙ\x04\x1eÅ\x9a\x8cF5´Èe\x7f\x10b%¨" HTTPStatus.BAD_REQUEST -
+157.51.65.165 - - [05/May/2025 09:19:24] code 400, message Bad request version ('Jß\x80\x16ë-ëµô¼°\x14èZ\x11')
+157.51.65.165 - - [05/May/2025 09:19:24] "\x16\x03\x01\x06Ú\x01\x00\x06Ö\x03\x037ÜTá(\x80kÖ÷U+G\x9aÜ`\x995L\x0fj¯Ëöv=w\x98%\x01@`e td·ß\x87Ä¤IW-"¤9âå#6Ns~\x14Æ\x03\x1f2½?Ø4hÎ\x97\x00 **\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06múú\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00\x0b\x00\x02\x01\x00\x00-\x00\x02\x01\x01þ\x0d\x00Ú\x00\x00\x01\x00\x01\\\x00 w$\x13O<ô\x12\x8c\x92z\x94EØ%Ö³\x989Æéþ|i3\x92N¶ï¯UÄ&\x00°\x15Ú(á¹\x01e$\x8f!Z_·\x94\x83 2³\x7f\x9e6\x14ÉFzÖEÝ\x8e8\x037³ïJ\x04§ì±\x94&Ýmg\x84_g\x9e\x81»N\x09Jß\x80\x16ë-ëµô¼°\x14èZ\x11" HTTPStatus.BAD_REQUEST -
+157.51.65.165 - - [05/May/2025 09:19:24] code 400, message Bad request version ('\x04©Ú\x96\x8fú\x1bZE\x91}ña')
+157.51.65.165 - - [05/May/2025 09:19:24] "\x16\x03\x01\x06º\x01\x00\x06¶\x03\x03aû\x92è­ï\x93«TlF0\x0cáKvB#ñ÷mK£vµ|?\x85:\x14<d ×J§PcÙ\x1d\x06·P\x89Ñ\x09\x1c5q\x92\x9f\x8a¬jCL\x96Ë\x95D½èDï4\x00 JJ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06MÚÚ\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00+\x00\x07\x06zz\x03\x04\x03\x03\x00\x12\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00\x00\x00\x16\x00\x14\x00\x00\x11gces2.duckdns.org\x003\x04ï\x04í\x1a\x1a\x00\x01\x00\x11ì\x04ÀBr-@Ûfë"s»\x97Àê\x02+ÉÇ\x89ÐP8?º^R\x10QÿzÅÊw}Û\x88¶6K"\x8aÆ=óC¹É5\x1aJ\x97³¯\x84Nøñi\x0d\x10I:y\x0dôûhØ4Ê´øk\x0f±\x80\x07|\x0f¦+OC3TìÑ\x17XëDÃ«'<B\x05\x83\x08Â\x86#¬Ô+Á\x8dC4t\x90ºÂs\x10:\x15Ìpp\x05NªºÖ#n :lîê\x98ðb\x8fÊq\x1aøl È|\x81\x97ÈS,0\x00@t¦äÊ§RXÏW,neçÉiªv^b\x8c¬z´ú°  W£\x8aá\x88ã¹\x90ë !\x7f¢\x9e2åÀZÇ\x80\x01K¸\x0c\x04©Ú\x96\x8fú\x1bZE\x91}ña" HTTPStatus.BAD_REQUEST -
+157.51.65.165 - - [05/May/2025 09:19:33] code 400, message Bad request version ('oï\x8a±\x03Öä"')
+157.51.65.165 - - [05/May/2025 09:19:33] "\x16\x03\x01\x06º\x01\x00\x06¶\x03\x03f\x1d6ª\x82^\x88ó\x98\x9fú\x9cû\x977\x03}ÿ\x89Re?²\x13¾¼¼%xWbg oï\x8a±\x03Öä"" HTTPStatus.BAD_REQUEST -
+157.51.65.165 - - [05/May/2025 09:19:33] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x03Ï`ìÝª\x900_\x05r¾&\x9d\x99\x81HVis$\x00ë\x15\x02Ò9íÖV³ÁE')
+157.51.65.165 - - [05/May/2025 09:19:33] "\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x03Ï`ìÝª\x900_\x05r¾&\x9d\x99\x81HVis$\x00ë\x15\x02Ò9íÖV³ÁE \x9d¥ay¡ð¾" HTTPStatus.BAD_REQUEST -
+157.51.65.165 - - [05/May/2025 09:19:34] code 400, message Bad request version ('ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06M')
+157.51.65.165 - - [05/May/2025 09:19:34] "\x16\x03\x01\x06º\x01\x00\x06¶\x03\x03¢Ïa;ZJ\x9c/\x83!qs¶p\x91s0ÈxæÐk)d*îd\x08Ï3ÿò û\x90{ÖÕUPjB\x88|ä\x10\x82Í\x9a~\x1ai\x99§\x8eJ"8z\x99\x04 \x06\x87\x9b\x00 ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06M" HTTPStatus.BAD_REQUEST -
+157.51.65.165 - - [05/May/2025 09:19:34] code 400, message Bad request version ('ß\x15^\x92\x18\x89\x1b\x1bÂ%ä')
+157.51.65.165 - - [05/May/2025 09:19:34] "\x16\x03\x01\x06Ú\x01\x00\x06Ö\x03\x03ßd\x03\x16\x99ó0uþº\x03­O­Ð©\x10\x1f¦¬?\x92W\x15+\x95Ç©¼ÿ\x7fã ß\x15^\x92\x18\x89\x1b\x1bÂ%ä" HTTPStatus.BAD_REQUEST -
+157.51.65.165 - - [05/May/2025 09:19:34] code 400, message Bad request version ('\x051\x16^NÕ.ä~\x8f+ç^-#ø\x99G5\x98æÏ\x00')
+157.51.65.165 - - [05/May/2025 09:19:34] "\x16\x03\x01\x06Ú\x01\x00\x06Ö\x03\x03ø@\x05\x93\x9d¿\x12J$0àù¸EÛ\x0c"òQÂ¬°nÔÀ\x0bE6\x93Vp\x9e \x06\x16tú³níÖ\x7fÚø\x96q\x07\x93\x0eýß\x05Ë_AÙÏÂñ÷\x12&c\x8f/\x00 \x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06m**\x00\x00\x00-\x00\x02\x01\x01\x00\x00\x00\x16\x00\x14\x00\x00\x11gces2.duckdns.org\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1ÿ\x01\x00\x01\x00\x00\x1b\x00\x03\x02\x00\x02\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x17\x00\x00þ\x0d\x00Ú\x00\x00\x01\x00\x01\x01\x00 ¸Ú¸¦\x11Ï#èh\x0c: "r\x83ä\x88¶\x1a\x80¦®¼ÈFî\x14.\x98¦©(\x00°~>\x800\x90Y&1\x879ÚÎV\\\x83pâç8ã¾²ÛÚCj\x14ÅåÂ¡\\\x85ö¬\x0bj¢¢ùô\x8fÅ\x1d2AX3w¶¸\x14F\x14\x8eá\x09?\x11J\x05«\x88ôly9\x00û¡îÆ\x02\x8eÙ\x92,\x17\x8f³p¿-BéÍü³·ð±\x00>FÆ;É6\\ä\x7f¥ª\x14Ô%Óã{«¼À!ª¬a÷9\x923?¹|\x9c\x90|U\x8e·¿\x97ÿjõä\x01\x89Bg\x1d¥g\x9c¶<\x7f_\x0cbiÛ\x9cõ \x051\x16^NÕ.ä~\x8f+ç^-#ø\x99G5\x98æÏ\x00" HTTPStatus.BAD_REQUEST -
+157.51.65.165 - - [05/May/2025 09:19:34] code 400, message Bad request version ('\x80\x97ÛÚí/')
+157.51.65.165 - - [05/May/2025 09:19:34] "\x16\x03\x01\x06º\x01\x00\x06¶\x03\x03~\x9f5åÐZØ\x91©\x9cëu5°\x97{r\x02s°×Ã3NuO\x93J;Ú.I \x8d#>1Ñ@F\x09\x0b\x0d\x80\x97ÛÚí/" HTTPStatus.BAD_REQUEST -
+157.51.65.165 - - [05/May/2025 09:19:35] code 400, message Bad request version ('0¯¹F@°\x8e²êC\x10\x9c`ÿæ¼mF\x96\x01\x05Âþ\x14½MÂ\x93Ìu:¦A£K\x98=@ÊÂ\x18ì8PÈ°\x00É\x9dî\x15¾\x9a³FUæ°½vh\x8b|Cá\x92DF\x83\x07·\x97tt\x17¥hçjá')
+157.51.65.165 - - [05/May/2025 09:19:35] "\x16\x03\x01\x06º\x01\x00\x06¶\x03\x03i¶ÁZK\x98¶Cí\x82AÃ­¬\x8b\x12\x04Mõ_×û\x1c\x1fî\x15zw"!â\x87 áD\x97z¼5ÙT\x9eÜüØÉã¯Î6ñ¬ò·ßó}\x93NWl\x0bz¸\x09\x00 zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06M**\x00\x00\x003\x04ï\x04í\x8a\x8a\x00\x01\x00\x11ì\x04Àd\x94\x8e®Ó\x1aS\x1bÅ{á\x89\x88±d¦õ_û×uå`ky\x80ÏHÌ£ò\x09]P\x08B\x1f¥{\x87*9Î\x02n»U\x9cÓÄ°æ|L\x1b°¬qá¸\x9aóÉPVi\x85¼º¿\x02\x99ê¤\x8e\x95RFðÛ=ÜØ\x06Üü&ÙXr6ø½|D[FµMb\x15_û\x93\x91¤Ñ9¼r9×»\x12Ä!³)Å\x05ÄE1½©Ef\x14\x8c\x9b4\x98vy\x05Æø\x1dÿ°\x19ýc·.»£6ìQÎ\x19\x0f\x83\x89¡\x16å~d\x02ÄÓEZ¬\x03\x89à\x03©J©\x7fÁR{\x9dbt\x86H³\x18\x0bv\x81\x81©>k£\x95ó-á\x94!I\x94c\x18D\x91F\x80À]·Éí\x8c\x80·ÅRqQ\x1e»ûÏÑ¤³©\x0c\x0d\x10&¶\x1fBH\x1eó²\x83\x80i\x81Ð$e1$'óið&!6\x174\x89Ã\x02\x1fÔ(a<u\x152U\x8eõ¤Ë\x15,\x93$[a7Á\x86\x0b0¯¹F@°\x8e²êC\x10\x9c`ÿæ¼mF\x96\x01\x05Âþ\x14½MÂ\x93Ìu:¦A£K\x98=@ÊÂ\x18ì8PÈ°\x00É\x9dî\x15¾\x9a³FUæ°½vh\x8b|Cá\x92DF\x83\x07·\x97tt\x17¥hçjá" HTTPStatus.BAD_REQUEST -
+157.51.65.165 - - [05/May/2025 09:19:35] code 400, message Bad request version ('\x02h2\x08http/1.1\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00')
+157.51.65.165 - - [05/May/2025 09:19:35] "\x16\x03\x01\x06º\x01\x00\x06¶\x03\x03\x98é±÷dG\x09Ç\x90;\x87\x15{\x9aó«®+\x84\x00BOq\x90¬¨\x00\x8aTìÙ\x91 ÷\x86?\x86\x89È¤"kÈMúR\x11â\x14ÁÛ\x0fø±h§olÅÍ\x87t\x18éN\x00 **\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06M::\x00\x00ÿ\x01\x00\x01\x00\x00\x17\x00\x00\x00+\x00\x07\x06ÚÚ\x03\x04\x03\x03\x00-\x00\x02\x01\x01\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00" HTTPStatus.BAD_REQUEST -
+157.51.65.165 - - [05/May/2025 09:19:35] code 400, message Bad request version ('*\x00\x90Ï÷1\x8ft-=:\x83¡ùä:¢7\x93\x12\x9c\x002D%I\x89Ñù\x9fÂÆ=ãpÜ\x06zj\x9eÒ)g`A\x08´öEðß\x12)l')
+157.51.65.165 - - [05/May/2025 09:19:35] "\x16\x03\x01\x06º\x01\x00\x06¶\x03\x03\x8f¶>gI3²·KNA;3æ\x9dQ¡añ\x10YÞA!÷\x88ÉQm\x0eºÕ àè~=\x0c\x18\x1aWøºp-Ëê\x0fZ\x07¨D\x80\x1f\x9fì\x89üÊ\x18éEÁ\x0b+\x00 JJ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06MÊÊ\x00\x00\x00#\x00\x00\x00\x00\x00\x16\x00\x14\x00\x00\x11gces2.duckdns.orgþ\x0d\x00º\x00\x00\x01\x00\x01\x91\x00 ÛÝÁ\x83pÖ\x7fÉéÛÚ\x0eiIõ\x87Ï(\x08\x17{_®éã\x82zÝ\x7f´\x1f*\x00\x90Ï÷1\x8ft-=:\x83¡ùä:¢7\x93\x12\x9c\x002D%I\x89Ñù\x9fÂÆ=ãpÜ\x06zj\x9eÒ)g`A\x08´öEðß\x12)l" HTTPStatus.BAD_REQUEST -
+157.51.65.165 - - [05/May/2025 09:19:35] code 400, message Bad request version ('\x84¿¥)\x849\x8fÊ\x97f3h\x11WÕi8\x03')
+157.51.65.165 - - [05/May/2025 09:19:35] "\x16\x03\x01\x06ú\x01\x00\x06ö\x03\x03þîdU\x1cÊ\x1c\x84¿¥)\x849\x8fÊ\x97f3h\x11WÕi8\x03" HTTPStatus.BAD_REQUEST -
+157.51.65.165 - - [05/May/2025 09:19:35] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x03\x19Ý\x7fã\x14D')
+157.51.65.165 - - [05/May/2025 09:19:35] "\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x03\x19Ý\x7fã\x14D\x0cË\x08#:íNE" HTTPStatus.BAD_REQUEST -
+157.51.65.165 - - [05/May/2025 09:19:35] code 400, message Bad request version ('\x96}ü\x8c')
+157.51.65.165 - - [05/May/2025 09:19:35] "\x16\x03\x01\x06º\x01\x00\x06¶\x03\x03\x94òíÅë\x8d,\x0b\x88ÝÐq\x8dÞ9WµFÑ2\x10¢è­>:â/\\K¸è ù×íNÊ\x89\x87ñð\x1a\x01Ñ¤]ø\x943·ù\x0dæ°\x8a\\\x91|Òý\x92¾ÁN\x00 \x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06MZZ\x00\x00\x00\x12\x00\x00\x00\x0b\x00\x02\x01\x00\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x003\x04ï\x04í\x9a\x9a\x00\x01\x00\x11ì\x04À¦ \x086tWEº¨Ðä'é\x97!{É\x1e|L7¥{ªÒèwT\x90`)Â\x05\x9bäÉVx:}Dlógn»ë\x1cñË\x8a7\x14º@C±ýÂI¤Z\x0f²\x05uá\x8a\x92\x17\\d\x9d\x05\x1a\x98L\x88hñ\x09\x86T\x1f=È\x00Þæ}Ï\x90\x88\x01@\x9bÙi\x8d98qkt\x8fI\x82:(B\x82Æã"\x1d|+êy\x86¥u¥8\x99wj¢\x8b´U\x09Ý\x92©â±¿\x82\x97\x1eÐ\x84\x83m\x09\x80¦§ \x99:@ï¸zÖ\x9b\x04\x8dÈDùKd²\x16 è\x94¯å[I&Rm\x03£:cH\x91oõX\x13h*\x1dª\x87\x84H1º£\x99\x88I[¥ù\x08`á\x1aQ\x99\x8d\x18w/Á¦P\x98ª\x1cÔÔÊòttð\x16adp;}øÈ\x84\x08§qöN\x08p"o\x8c\x05`(\x00È«\x8eÎÃ\x95\x01{\x0dy(Y}\x05. ÷\x1aHH_\x80f¼U\x1c\x96}ü\x8c" HTTPStatus.BAD_REQUEST -
+157.51.65.165 - - [05/May/2025 09:19:35] code 400, message Bad request version ('6Ó×ë\x01\x15ñ¹Pí\x06\x12»ó²/\x8b\x81laJî"#=\'Ô_óc°\x8f\x00')
+157.51.65.165 - - [05/May/2025 09:19:35] "\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x03\x9c\x1cÍ+øt\x98\x06\x10¨UIü\x1aóÌüg.à\x1e~`pa\x06\x9b\x8dÊ_Ù: 6Ó×ë\x01\x15ñ¹Pí\x06\x12»ó²/\x8b\x81laJî"#='Ô_óc°\x8f\x00 " HTTPStatus.BAD_REQUEST -
+157.51.65.165 - - [05/May/2025 09:19:35] code 400, message Bad request version ('¦Ô¦{þ')
+157.51.65.165 - - [05/May/2025 09:19:35] "\x16\x03\x01\x06º\x01\x00\x06¶\x03\x03J·\x7f\x86\x96\x1d\x94E2ÈH¿\x92OüÂË5Ôå\x0f\x07á\x1bL>>¦²Ý\x91\x9a \x9cøUuØ\x1cPëM+\x83t\x8a\x94yÒgÜtì£A\x9f:ö\x12)g\x8eÓ÷\x92\x00 ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06MJJ\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x17\x00\x00þ\x0d\x00º\x00\x00\x01\x00\x01¿\x00 \x05>eZÅ÷\x95ñc;¿\x07Sôe\x95PL\x87\x9c+ôÂ\x02\x07Îî}exn\x00\x00\x90A\x8d*qf¨"ïY/ÔO\x92\x80\x83#ÕG0\x96\x0bCn\x19Á_\x104å\x9eLwõø\x17`.\x1f\x05\x8bîfK\x00&\x05þA\x8a¾NGQ\x10YÎ:\x8a²ÓppÜY\\#i\x88l-ÝÌb\x97\x84©\x93Ò£ÜãcÍT\x87plc\x92n\x08]¯&~T\x7f¾#»[\x92#ßáÊA0:%i^\x8cC\x92nR\x9aAá\x8dÙ4<\x05½\x9cD»\x1c¦Ô¦{þ" HTTPStatus.BAD_REQUEST -
+157.51.65.165 - - [05/May/2025 09:19:35] code 400, message Bad request version ('::\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Mªª\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00')
+157.51.65.165 - - [05/May/2025 09:19:35] "\x16\x03\x01\x06º\x01\x00\x06¶\x03\x03\x98#o_uN\x02B\x80\x8a\x08³$\x07\x09©¶Íá\x12ClXK\x82~üF1eöb \x11³aj\x8bi+\x87»o½"ÝÉø¦\x18&\x17\x97\x19ªm¹0ÜkX\x84²Ââ\x00 ::\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Mªª\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00" HTTPStatus.BAD_REQUEST -
+157.51.65.165 - - [05/May/2025 09:19:36] code 400, message Bad request version ('\x16\x8d×&=4(&º`')
+157.51.65.165 - - [05/May/2025 09:19:36] "\x16\x03\x01\x06º\x01\x00\x06¶\x03\x03m\x07ÃÌHM\x0fhÛ\x91Éu6²(\x0bF»Õ\x01©\x07'\x80qj×IL\x15ê\x03 ï\x8eg\x0f\x0cîã³Jw\x1e9x\x81^ßþï,ôÆê5\x92àöÒ\x9f\x02ßåî\x00 úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Mjj\x00\x00\x00\x17\x00\x00DÍ\x00\x05\x00\x03\x02h2\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1þ\x0d\x00º\x00\x00\x01\x00\x01#\x00 º}Ú\x96>\x1e×\x90¾[Ù\x87\x14\x8e,²ñ{\x16Ü\x7f^-.¿÷\x12]\x03( m\x00\x90ÐÊ\x1c\x0ca=ZaÚ\x0b°3ñ\x91û\x18\x8c$\x03\x00R\x9cæ2\x8có\x10å\x82è§\x18\x974\x8f\x09K1*\x01\x97Ò'æ¸Ü\x04Ô@Ø3#F\x80ý´\x1f\x17Ó5?¸25\x16\x10_õÇ\x17\x0fdðýé\x0d\x1e~\x01«%oÞz`s\x9dÆL\x14ÍG¶#Q\x0f\x80æoõg\x94\x98ÝHµ\x95¥Ö¸\x1b\x86N\x05å\x13ÃÒ\x8b\x05\x88Þ<\x19Y\x1dj\x9dKñëCÒÚ·´§¸bÏ­ÆPn\x00+\x00\x07\x06jj\x03\x04\x03\x03ÿ\x01\x00\x01\x00\x003\x04ï\x04í\x9a\x9a\x00\x01\x00\x11ì\x04À°ò\x13ü[\x9eëË\x0bíæÍ\x9aÆ\x9ey¥D\x9cs\x97RärÜ(1\x85\x16\x8d×&=4(&º`" HTTPStatus.BAD_REQUEST -
+106.195.40.108 - - [05/May/2025 11:10:24] code 400, message Bad request version ('\x14®\x01ußv:ë³j4ê\x03\x17h\x9fæky;!¦nLX¢/çæ¼WSèy\x8a\x15BN\x14\x04R\x06öF')
+106.195.40.108 - - [05/May/2025 11:10:24] "\x16\x03\x01\x06º\x01\x00\x06¶\x03\x03ÏðV\x7f|À]h ^'Oz\x1e\x83]xå\x13\x18\x8fq&C\x1b\x15\x12øjt±ú Þ5éÕ!\x0b&³\x91\x10)ðr\x05\x964\x06ó'ûX¬ã\x17\x12àÖ\x0e£õ\x99Ô\x00 \x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06MÚÚ\x00\x00\x00\x12\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x17\x00\x00\x00+\x00\x07\x06úú\x03\x04\x03\x03þ\x0d\x00º\x00\x00\x01\x00\x01;\x00 H\x12Eé-È}@D\x9b\x9a\x9d\x1dl\x14ÇO\x84yòYÒì\x8d\x1cáç³wo\x8e\x05\x00\x90\x17ÓT:\x8f\x9a\x0bü£\x1fAºz\x86Ac\x8cÂ-|ûô\x037G¥Ü\x82@~\x18¥0\x956PÞCe\x00Û\x0bäZtÏ8ñÖ\x1f\x14®\x01ußv:ë³j4ê\x03\x17h\x9fæky;!¦nLX¢/çæ¼WSèy\x8a\x15BN\x14\x04R\x06öF" HTTPStatus.BAD_REQUEST -
+106.195.40.108 - - [05/May/2025 11:10:24] code 400, message Bad request version ('°\x95w\\\x83a#\x80/\x0e$MNk³\x9fðL')
+106.195.40.108 - - [05/May/2025 11:10:24] "\x16\x03\x01\x06ú\x01\x00\x06ö\x03\x03-x(\x99W\x06\x9emñ°\x8a\x0f\x05UF<öâin\x94\x13\x08r²B\x16æS¬!Ê \x18B\x01ö É³Ö\x11Ôºb\x13*&\x01\x87(Ï\x88ïê°A\x800Ñ¯'ÒV²\x00 ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x8d\x8a\x8a\x00\x00\x003\x04ï\x04ízz\x00\x01\x00\x11ì\x04Àý\x01KòÜ¶\\¢\x84@\x8cL0Fgk\x0bP` \x8a\x1e\x99\x1d°\x95w\\\x83a#\x80/\x0e$MNk³\x9fðL" HTTPStatus.BAD_REQUEST -
+106.195.40.108 - - [05/May/2025 11:10:29] code 400, message Bad request version ('\x00ðq2Ü¶\x03')
+106.195.40.108 - - [05/May/2025 11:10:29] "\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x03K\x19i°ßË\x1fp\x8a\x8cåY­t\x18Kô­·\x16=\x80!TØ\x85\x89ÇÝ¾»R ¼â\x91?&C3\x97/\x90\x03ôø\x91zÕ@eÆD\x8djnæ£mQÎö\x8d:¨\x00 JJ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06­ÚÚ\x00\x00\x00\x12\x00\x00\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x0b\x00\x02\x01\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1þ\x0d\x01\x1a\x00\x00\x01\x00\x01Í\x00 AÑßÐ\x82R?¾+\x0e\x05â:\x19¤m\x180i\x82Â{f\x94&o¸»Ìùê\x0c\x00ðq2Ü¶\x03" HTTPStatus.BAD_REQUEST -
+106.195.40.108 - - [05/May/2025 11:10:29] code 400, message Bad request version ('\x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06m')
+106.195.40.108 - - [05/May/2025 11:10:29] "\x16\x03\x01\x06Ú\x01\x00\x06Ö\x03\x03H\x91a\x95¤\x02Ð}K LU¿nÖnsQ\x7f\x06©r\x1aòá\x82Ó.Þn^b >ÙÚ\x08³<P\x0f\x92\x84\x9fÍº\x9e\x9dS\x9f\x85ºP\x10ô\\\x92R«Õ J\x1b¦ü\x00 \x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06m" HTTPStatus.BAD_REQUEST -
+106.195.40.108 - - [05/May/2025 11:10:29] code 400, message Bad request version ('Ã\x13\x8eø\x9d>s,¿[&«¢neÑj')
+106.195.40.108 - - [05/May/2025 11:10:29] "\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x03\x05W¤æ!ö?46\x1fòA³\x92=ï\x87}gG\x0eÈL®§v_a¹âL\x96 á\x18­Zª\x04®:t\x15\x83\x03),·ì]Ð¤¯x½Ü\x0cº~\x06\x02\x96\\\x15\x99\x00 ::\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06­\x1a\x1a\x00\x00\x00-\x00\x02\x01\x01\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00\x00\x00\x16\x00\x14\x00\x00\x11gces2.duckdns.orgDÍ\x00\x05\x00\x03\x02h2\x003\x04ï\x04íÚÚ\x00\x01\x00\x11ì\x04Àó\x19\x1d$\x98iÀÜS\x88Ä_+¡y\x86\x04Y3\x91>ËS\x1e\x1c¦\x09wÅ\x15Oa\x88"H±\x97 uîr\x02HÙjß\x171\x93{Ë\x86\x8a\x00ßó\x94'ð¢V\x06'Í\x15\x08¦\x1bÉ6\x840gêI 8¡\x172>Ï\x1b¿\x91¢Êk4\x8c~t½\x16\x15Y \x11[ö1"\x15\x17!\x1fÃ\x13\x8eø\x9d>s,¿[&«¢neÑj" HTTPStatus.BAD_REQUEST -
+106.195.40.108 - - [05/May/2025 11:10:29] code 400, message Bad request version ('9®r<\x86\x90*\x98\x88,»\x00')
+106.195.40.108 - - [05/May/2025 11:10:29] "\x16\x03\x01\x06Ú\x01\x00\x06Ö\x03\x03²Ï(wø?L\x9b\x09a;ë»»\x86¥¼O\x8câ°aaìÈ\x9c\x87Y\x83S¨] ^Àb¶m·;\x0b´\x9fc°\x99â?ô£¥Ý\x0d>4«\x98c\x9bûð»ÏçÚ\x00 jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06mjj\x00\x00\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01þ\x0d\x00Ú\x00\x00\x01\x00\x01ð\x00 \x93MfÿbßiK\x95Ó[ëÂaôa\x10ÔkÝD=\x07]%\x18\x88\x1b\x7fWí.\x00°<\x15!vyå÷£úÕ°E^\x05{\x8d\x8dtÏ9\x11M³Ê'Û-+ÚöL÷É\x1c\x9a\x16¡åF\\\x8eÜ\x84}JÀ\x08ÉR\x9d\x81e\x88v³\x99\x10W<J\\ÖÞ\x16\x8a¿ß\x8f\\ý7±\x9a\x0b\x89,Ó\x1cu¯W¿¾\x15Váu°T\x84F`ã¼ÛN\x14\x91\x10u\x7f\x99f<Ô¶¸f¾?ü\x09øfn)Fê\x14\x07!+2÷ã\x1bê\x04¯\x15\x919~!±Ý'¦+B\x16Å£\x00\x91\x05.ä[rz\x00e$Oô\x18\x0e\x94[Ó]ß\x8e 9®r<\x86\x90*\x98\x88,»\x00" HTTPStatus.BAD_REQUEST -
+106.195.40.108 - - [05/May/2025 11:10:37] "GET /projects/830123104011/HealthConnectNM/ HTTP/1.1" 304 -
+106.195.40.108 - - [05/May/2025 11:10:37] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+106.195.40.108 - - [05/May/2025 11:10:37] "GET /projects/830123104011/HealthConnectNM/common.js HTTP/1.1" 304 -
+106.195.40.108 - - [05/May/2025 11:10:38] "GET /projects/830123104011/HealthConnectNM/dashboard.js HTTP/1.1" 304 -
+106.195.40.108 - - [05/May/2025 11:10:38] "GET /favicon.ico HTTP/1.1" 302 -
+106.195.40.108 - - [05/May/2025 11:10:38] "GET /login HTTP/1.1" 200 -
+106.195.40.108 - - [05/May/2025 11:11:04] "GET /projects/830123104011/HealthConnectNM/services.html HTTP/1.1" 304 -
+106.195.40.108 - - [05/May/2025 11:11:04] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+106.195.40.108 - - [05/May/2025 11:11:04] "GET /projects/830123104011/HealthConnectNM/services.js HTTP/1.1" 304 -
+106.195.40.108 - - [05/May/2025 11:11:05] "GET /favicon.ico HTTP/1.1" 302 -
+106.195.40.108 - - [05/May/2025 11:11:05] "GET /login HTTP/1.1" 200 -
+106.195.40.108 - - [05/May/2025 11:11:27] "GET /projects/830123104011/HealthConnectNM/profile.html HTTP/1.1" 304 -
+106.195.40.108 - - [05/May/2025 11:11:27] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+106.195.40.108 - - [05/May/2025 11:11:27] "GET /projects/830123104011/HealthConnectNM/common.js HTTP/1.1" 304 -
+106.195.40.108 - - [05/May/2025 11:11:27] "GET /projects/830123104011/HealthConnectNM/profile.js HTTP/1.1" 304 -
+106.195.40.108 - - [05/May/2025 11:11:27] "GET /favicon.ico HTTP/1.1" 302 -
+106.195.40.108 - - [05/May/2025 11:11:27] "GET /login HTTP/1.1" 200 -
+106.195.40.108 - - [05/May/2025 11:11:43] "GET /projects/830123104011/HealthConnectNM/health-tools.html HTTP/1.1" 304 -
+106.195.40.108 - - [05/May/2025 11:11:43] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+106.195.40.108 - - [05/May/2025 11:11:43] "GET /projects/830123104011/HealthConnectNM/health-tools.js HTTP/1.1" 304 -
+106.195.40.108 - - [05/May/2025 11:11:43] "GET /favicon.ico HTTP/1.1" 302 -
+106.195.40.108 - - [05/May/2025 11:11:43] "GET /login HTTP/1.1" 200 -
+223.237.185.150 - - [05/May/2025 11:38:44] "GET /projects/830123104011 HTTP/1.1" 404 -
+223.237.185.150 - - [05/May/2025 11:38:44] "GET /favicon.ico HTTP/1.1" 302 -
+223.237.185.150 - - [05/May/2025 11:38:44] "GET /login HTTP/1.1" 200 -
+223.237.185.150 - - [05/May/2025 11:38:55] "GET /projects/ HTTP/1.1" 404 -
+223.237.185.150 - - [05/May/2025 11:38:55] "GET /favicon.ico HTTP/1.1" 302 -
+223.237.185.150 - - [05/May/2025 11:38:55] "GET /login HTTP/1.1" 200 -
+223.237.185.150 - - [05/May/2025 11:39:01] "GET / HTTP/1.1" 302 -
+223.237.185.150 - - [05/May/2025 11:39:01] "GET /home HTTP/1.1" 200 -
+223.237.185.150 - - [05/May/2025 11:39:02] "GET /favicon.ico HTTP/1.1" 302 -
+223.237.185.150 - - [05/May/2025 11:39:02] "GET /login HTTP/1.1" 200 -
+223.237.185.150 - - [05/May/2025 11:39:05] "GET /dashboard HTTP/1.1" 302 -
+223.237.185.150 - - [05/May/2025 11:39:05] "GET /login HTTP/1.1" 200 -
+223.237.185.150 - - [05/May/2025 11:39:05] "GET /favicon.ico HTTP/1.1" 302 -
+223.237.185.150 - - [05/May/2025 11:39:05] "GET /login HTTP/1.1" 200 -
+223.237.185.150 - - [05/May/2025 11:39:11] "GET /dashboard HTTP/1.1" 302 -
+223.237.185.150 - - [05/May/2025 11:39:11] "GET /login HTTP/1.1" 200 -
+223.237.185.150 - - [05/May/2025 11:39:11] "GET /favicon.ico HTTP/1.1" 302 -
+223.237.185.150 - - [05/May/2025 11:39:11] "GET /login HTTP/1.1" 200 -
+[2025-05-05 11:39:15,291] INFO in app: Attempting to log activity: login for user 10
+[2025-05-05 11:39:15,353] INFO in app: Successfully logged activity: login for user 10
+223.237.185.150 - - [05/May/2025 11:39:15] "POST /login HTTP/1.1" 200 -
+223.237.185.150 - - [05/May/2025 11:39:17] "GET /home HTTP/1.1" 200 -
+223.237.185.150 - - [05/May/2025 11:39:17] "GET /favicon.ico HTTP/1.1" 404 -
+223.237.185.150 - - [05/May/2025 11:39:19] "GET /dashboard HTTP/1.1" 200 -
+223.237.185.150 - - [05/May/2025 11:39:19] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 200 -
+223.237.185.150 - - [05/May/2025 11:39:20] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 200 -
+223.237.185.150 - - [05/May/2025 11:39:20] "GET /get_regno HTTP/1.1" 200 -
+223.237.185.150 - - [05/May/2025 11:39:20] "GET /get_base_url HTTP/1.1" 200 -
+223.237.185.150 - - [05/May/2025 11:39:20] "GET /api/dashboard HTTP/1.1" 200 -
+223.237.185.150 - - [05/May/2025 11:39:20] "GET /get_regno HTTP/1.1" 200 -
+[2025-05-05 11:39:56,806] INFO in app: Attempting to log activity: login for user 8
+[2025-05-05 11:39:56,853] INFO in app: Successfully logged activity: login for user 8
+223.237.185.150 - - [05/May/2025 11:39:56] "POST /login HTTP/1.1" 200 -
+223.237.185.150 - - [05/May/2025 11:39:59] "GET /home HTTP/1.1" 200 -
+223.237.185.150 - - [05/May/2025 11:40:04] "GET /dashboard HTTP/1.1" 200 -
+223.237.185.150 - - [05/May/2025 11:40:04] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 304 -
+223.237.185.150 - - [05/May/2025 11:40:04] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 304 -
+223.237.185.150 - - [05/May/2025 11:40:04] "GET /get_regno HTTP/1.1" 200 -
+223.237.185.150 - - [05/May/2025 11:40:04] "GET /get_base_url HTTP/1.1" 200 -
+223.237.185.150 - - [05/May/2025 11:40:04] "GET /api/dashboard HTTP/1.1" 200 -
+223.237.185.150 - - [05/May/2025 11:40:04] "GET /get_regno HTTP/1.1" 200 -
+223.237.185.150 - - [05/May/2025 11:40:14] "GET /projects/830123104011/globeToTestLink HTTP/1.1" 308 -
+223.237.185.150 - - [05/May/2025 11:40:15] "GET /projects/830123104011/globeToTestLink/ HTTP/1.1" 200 -
+223.237.185.150 - - [05/May/2025 11:40:43] "GET /projects/830123104011/HealthConnectNM HTTP/1.1" 308 -
+223.237.185.150 - - [05/May/2025 11:40:43] "GET /projects/830123104011/HealthConnectNM/ HTTP/1.1" 200 -
+223.237.185.150 - - [05/May/2025 11:40:43] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 200 -
+223.237.185.150 - - [05/May/2025 11:40:43] "GET /projects/830123104011/HealthConnectNM/dashboard.js HTTP/1.1" 200 -
+223.237.185.150 - - [05/May/2025 11:40:43] "GET /projects/830123104011/HealthConnectNM/common.js HTTP/1.1" 200 -
+223.237.185.150 - - [05/May/2025 11:40:49] "GET /projects/830123104011/HealthConnectNM/ HTTP/1.1" 304 -
+223.237.185.150 - - [05/May/2025 11:40:50] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+223.237.185.150 - - [05/May/2025 11:40:50] "GET /projects/830123104011/HealthConnectNM/common.js HTTP/1.1" 304 -
+223.237.185.150 - - [05/May/2025 11:40:50] "GET /projects/830123104011/HealthConnectNM/dashboard.js HTTP/1.1" 304 -
+223.237.185.150 - - [05/May/2025 11:41:11] "GET /projects/830123104011/HealthConnectNM/services.html HTTP/1.1" 200 -
+223.237.185.150 - - [05/May/2025 11:41:11] "GET /projects/830123104011/HealthConnectNM/services.js HTTP/1.1" 200 -
+223.237.185.150 - - [05/May/2025 11:41:12] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+223.237.185.150 - - [05/May/2025 11:41:14] "GET /projects/830123104011/HealthConnectNM/health-tools.html HTTP/1.1" 200 -
+223.237.185.150 - - [05/May/2025 11:41:14] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+223.237.185.150 - - [05/May/2025 11:41:14] "GET /projects/830123104011/HealthConnectNM/health-tools.js HTTP/1.1" 200 -
+223.237.185.150 - - [05/May/2025 11:41:16] "GET /projects/830123104011/HealthConnectNM/profile.html HTTP/1.1" 200 -
+223.237.185.150 - - [05/May/2025 11:41:17] "GET /projects/830123104011/HealthConnectNM/profile.js HTTP/1.1" 200 -
+223.237.185.150 - - [05/May/2025 11:41:17] "GET /projects/830123104011/HealthConnectNM/common.js HTTP/1.1" 304 -
+223.237.185.150 - - [05/May/2025 11:41:17] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+223.237.185.150 - - [05/May/2025 11:41:50] "GET /projects/830123104011/HealthConnectNM/health-tools.html HTTP/1.1" 304 -
+223.237.185.150 - - [05/May/2025 11:41:51] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+223.237.185.150 - - [05/May/2025 11:41:51] "GET /projects/830123104011/HealthConnectNM/health-tools.js HTTP/1.1" 304 -
+[2025-05-05 11:45:54,422] INFO in app: Attempting to log activity: pin for user 8
+[2025-05-05 11:45:54,422] ERROR in app: Failed to log activity: 1265 (01000): Data truncated for column 'action_type' at row 1
+223.237.185.150 - - [05/May/2025 11:45:54] "POST /api/toggle-pin/64 HTTP/1.1" 200 -
+[2025-05-05 11:45:57,797] INFO in app: Attempting to log activity: unpin for user 8
+[2025-05-05 11:45:57,813] ERROR in app: Failed to log activity: 1265 (01000): Data truncated for column 'action_type' at row 1
+223.237.185.150 - - [05/May/2025 11:45:57] "POST /api/toggle-pin/64 HTTP/1.1" 200 -
+223.237.185.150 - - [05/May/2025 11:46:10] "GET /api/activity-logs?page=1&action_type=all&regno= HTTP/1.1" 200 -
+223.237.185.150 - - [05/May/2025 11:46:44] "GET /dashboard HTTP/1.1" 200 -
+223.237.185.150 - - [05/May/2025 11:46:44] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 304 -
+223.237.185.150 - - [05/May/2025 11:46:44] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 304 -
+223.237.185.150 - - [05/May/2025 11:46:45] "GET /get_base_url HTTP/1.1" 200 -
+223.237.185.150 - - [05/May/2025 11:46:45] "GET /get_regno HTTP/1.1" 200 -
+223.237.185.150 - - [05/May/2025 11:46:45] "GET /get_regno HTTP/1.1" 200 -
+223.237.185.150 - - [05/May/2025 11:46:45] "GET /api/dashboard HTTP/1.1" 200 -
+223.237.182.150 - - [05/May/2025 11:46:52] "GET /api/activity-logs?page=1&action_type=all&regno= HTTP/1.1" 200 -
+223.237.182.150 - - [05/May/2025 11:46:56] "GET /api/activity-logs?page=2&action_type=all&regno= HTTP/1.1" 200 -
+223.237.188.150 - - [05/May/2025 11:47:09] "GET /api/activity-logs?page=1&action_type=all&regno=8 HTTP/1.1" 200 -
+223.237.188.150 - - [05/May/2025 11:47:09] "GET /api/activity-logs?page=1&action_type=all&regno=83 HTTP/1.1" 200 -
+223.237.188.150 - - [05/May/2025 11:47:10] "GET /api/activity-logs?page=1&action_type=all&regno=830 HTTP/1.1" 200 -
+223.237.188.150 - - [05/May/2025 11:47:11] "GET /api/activity-logs?page=1&action_type=all&regno=8301 HTTP/1.1" 200 -
+223.237.188.150 - - [05/May/2025 11:47:12] "GET /api/activity-logs?page=1&action_type=all&regno=83012 HTTP/1.1" 200 -
+223.237.188.150 - - [05/May/2025 11:47:12] "GET /api/activity-logs?page=1&action_type=all&regno=830123 HTTP/1.1" 200 -
+223.237.188.150 - - [05/May/2025 11:47:12] "GET /api/activity-logs?page=1&action_type=all&regno=8301231 HTTP/1.1" 200 -
+223.237.188.150 - - [05/May/2025 11:47:13] "GET /api/activity-logs?page=1&action_type=all&regno=83012310 HTTP/1.1" 200 -
+223.237.188.150 - - [05/May/2025 11:47:13] "GET /api/activity-logs?page=1&action_type=all&regno=830123104 HTTP/1.1" 200 -
+223.237.188.150 - - [05/May/2025 11:47:14] "GET /api/activity-logs?page=1&action_type=all&regno=8301231040 HTTP/1.1" 200 -
+223.237.188.150 - - [05/May/2025 11:47:14] "GET /api/activity-logs?page=1&action_type=all&regno=83012310401 HTTP/1.1" 200 -
+223.237.188.150 - - [05/May/2025 11:47:15] "GET /api/activity-logs?page=1&action_type=all&regno=830123104015 HTTP/1.1" 200 -
+223.237.189.150 - - [05/May/2025 11:47:20] "GET /api/activity-logs?page=2&action_type=all&regno=830123104015 HTTP/1.1" 200 -
+106.195.40.108 - - [05/May/2025 12:43:48] "GET / HTTP/1.1" 302 -
+106.195.40.108 - - [05/May/2025 12:43:48] "GET /home HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 13:57:53] "GET / HTTP/1.1" 302 -
+210.16.91.251 - - [05/May/2025 13:57:53] "GET /home HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 13:57:54] "GET /favicon.ico HTTP/1.1" 302 -
+210.16.91.251 - - [05/May/2025 13:57:54] "GET /login HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:7777
+ * Running on https://192.168.16.65:7777
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+210.16.91.251 - - [05/May/2025 14:03:23] "GET / HTTP/1.1" 302 -
+210.16.91.251 - - [05/May/2025 14:04:15] "GET / HTTP/1.1" 302 -
+210.16.91.251 - - [05/May/2025 14:04:15] "GET /home HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:15:45] "GET / HTTP/1.1" 302 -
+210.16.91.251 - - [05/May/2025 14:15:45] "GET /home HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:15:45] "GET /favicon.ico HTTP/1.1" 302 -
+210.16.91.251 - - [05/May/2025 14:15:45] "GET /login HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:16:01] "GET /dashboard HTTP/1.1" 302 -
+210.16.91.251 - - [05/May/2025 14:16:01] "GET /login HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:16:01] "GET /favicon.ico HTTP/1.1" 302 -
+210.16.91.251 - - [05/May/2025 14:16:01] "GET /login HTTP/1.1" 200 -
+[2025-05-05 14:16:14,819] INFO in app: Attempting to log activity: login for user 8
+[2025-05-05 14:16:14,889] INFO in app: Successfully logged activity: login for user 8
+210.16.91.251 - - [05/May/2025 14:16:14] "POST /login HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:16:16] "GET /home HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:16:16] "GET /favicon.ico HTTP/1.1" 404 -
+210.16.91.251 - - [05/May/2025 14:16:20] "GET /deploy HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:16:20] "GET /views/styles/upload.css?v=1.0 HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:16:20] "GET /views/scripts/upload.js?v=1.0 HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:16:37] "GET /api/check-name?name=sample HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:16:44] "GET /api/check-name?name=sampleproject HTTP/1.1" 200 -
+[2025-05-05 14:16:46,068] INFO in app: Attempting to log activity: upload for user 8
+[2025-05-05 14:16:46,122] INFO in app: Successfully logged activity: upload for user 8
+210.16.91.251 - - [05/May/2025 14:16:46] "POST /upload HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:16:54] "GET /projects/830123104011/sampleproject/ HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:17:06] "GET /dashboard HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:17:06] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:17:06] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:17:06] "GET /get_regno HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:17:06] "GET /get_base_url HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:17:06] "GET /api/dashboard HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:17:06] "GET /get_regno HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:17:38] "GET /api/activity-logs?page=1&action_type=all&regno= HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:18:06] "GET /projects/830123104011/HealthConnectNM HTTP/1.1" 308 -
+210.16.91.251 - - [05/May/2025 14:18:06] "GET /projects/830123104011/HealthConnectNM/ HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:18:07] "GET /projects/830123104011/HealthConnectNM/common.js HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:18:07] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:18:07] "GET /projects/830123104011/HealthConnectNM/dashboard.js HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:18:10] "GET /projects/830123104011/HealthConnectNM/services.html HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:18:10] "GET /projects/830123104011/HealthConnectNM/services.js HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:18:10] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+210.16.91.251 - - [05/May/2025 14:18:13] "GET /projects/830123104011/HealthConnectNM/index.html HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:18:14] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+210.16.91.251 - - [05/May/2025 14:18:14] "GET /projects/830123104011/HealthConnectNM/dashboard.js HTTP/1.1" 304 -
+210.16.91.251 - - [05/May/2025 14:18:14] "GET /projects/830123104011/HealthConnectNM/common.js HTTP/1.1" 304 -
+210.16.91.251 - - [05/May/2025 14:18:14] "GET /projects/830123104011/HealthConnectNM/health-tools.html HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:18:15] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+210.16.91.251 - - [05/May/2025 14:18:15] "GET /projects/830123104011/HealthConnectNM/health-tools.js HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:18:18] "GET /projects/830123104011/HealthConnectNM/profile.html HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:18:18] "GET /projects/830123104011/HealthConnectNM/profile.js HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:18:18] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+210.16.91.251 - - [05/May/2025 14:18:18] "GET /projects/830123104011/HealthConnectNM/common.js HTTP/1.1" 304 -
+210.16.91.251 - - [05/May/2025 14:18:23] "GET /projects/830123104011/HealthConnectNM/index.html HTTP/1.1" 304 -
+210.16.91.251 - - [05/May/2025 14:18:23] "GET /projects/830123104011/HealthConnectNM/dashboard.js HTTP/1.1" 304 -
+210.16.91.251 - - [05/May/2025 14:18:23] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+210.16.91.251 - - [05/May/2025 14:18:23] "GET /projects/830123104011/HealthConnectNM/common.js HTTP/1.1" 304 -
+[2025-05-05 14:20:25,637] INFO in app: Attempting to log activity: logout for user 8
+[2025-05-05 14:20:25,702] INFO in app: Successfully logged activity: logout for user 8
+210.16.91.251 - - [05/May/2025 14:20:25] "GET /logout HTTP/1.1" 302 -
+210.16.91.251 - - [05/May/2025 14:20:25] "GET /login HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:21:24] "GET /login HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:45:16] "GET / HTTP/1.1" 302 -
+210.16.91.251 - - [05/May/2025 14:45:17] "GET /home HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:52:22] "GET / HTTP/1.1" 302 -
+210.16.91.251 - - [05/May/2025 14:52:22] "GET /home HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:52:23] "GET /favicon.ico HTTP/1.1" 302 -
+210.16.91.251 - - [05/May/2025 14:52:23] "GET /login HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:53:34] "GET /home HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:53:34] "GET /favicon.ico HTTP/1.1" 302 -
+210.16.91.251 - - [05/May/2025 14:53:34] "GET /login HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:7777
+ * Running on https://192.168.16.65:7777
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+210.16.91.251 - - [05/May/2025 14:56:15] "GET /home HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:56:34] "GET /dashboard HTTP/1.1" 302 -
+210.16.91.251 - - [05/May/2025 14:56:34] "GET /login HTTP/1.1" 200 -
+[2025-05-05 14:56:39,606] INFO in app: Attempting to log activity: login for user 8
+[2025-05-05 14:56:39,668] INFO in app: Successfully logged activity: login for user 8
+210.16.91.251 - - [05/May/2025 14:56:39] "POST /login HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:56:41] "GET /home HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:56:43] "GET /dashboard HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:56:43] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 304 -
+210.16.91.251 - - [05/May/2025 14:56:43] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 304 -
+210.16.91.251 - - [05/May/2025 14:56:43] "GET /get_base_url HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:56:43] "GET /get_regno HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:56:43] "GET /get_regno HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:56:44] "GET /api/dashboard HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:56:49] "GET /deploy HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:56:49] "GET /views/styles/upload.css?v=1.0 HTTP/1.1" 304 -
+210.16.91.251 - - [05/May/2025 14:56:49] "GET /views/scripts/upload.js?v=1.0 HTTP/1.1" 304 -
+210.16.91.251 - - [05/May/2025 14:57:08] "GET /dashboard HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:57:08] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 304 -
+210.16.91.251 - - [05/May/2025 14:57:08] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 304 -
+210.16.91.251 - - [05/May/2025 14:57:08] "GET /get_regno HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:57:08] "GET /get_base_url HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:57:08] "GET /get_regno HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:57:08] "GET /api/dashboard HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:57:13] "GET /projects/830123104011/HealthConnectNM HTTP/1.1" 308 -
+210.16.91.251 - - [05/May/2025 14:57:13] "GET /projects/830123104011/HealthConnectNM/ HTTP/1.1" 304 -
+210.16.91.251 - - [05/May/2025 14:57:14] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+210.16.91.251 - - [05/May/2025 14:57:14] "GET /projects/830123104011/HealthConnectNM/dashboard.js HTTP/1.1" 304 -
+210.16.91.251 - - [05/May/2025 14:57:14] "GET /projects/830123104011/HealthConnectNM/common.js HTTP/1.1" 304 -
+210.16.91.251 - - [05/May/2025 14:57:15] "GET /projects/830123104011/HealthConnectNM/services.html HTTP/1.1" 304 -
+210.16.91.251 - - [05/May/2025 14:57:15] "GET /projects/830123104011/HealthConnectNM/health-tools.html HTTP/1.1" 304 -
+210.16.91.251 - - [05/May/2025 14:57:16] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+210.16.91.251 - - [05/May/2025 14:57:16] "GET /projects/830123104011/HealthConnectNM/health-tools.js HTTP/1.1" 304 -
+210.16.91.251 - - [05/May/2025 14:57:30] "GET /projects/830123104011/globeToTestLink HTTP/1.1" 308 -
+210.16.91.251 - - [05/May/2025 14:57:30] "GET /projects/830123104011/globeToTestLink/ HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:57:41] "GET /projects/830123104011/projectArjun HTTP/1.1" 308 -
+210.16.91.251 - - [05/May/2025 14:57:41] "GET /projects/830123104011/projectArjun/ HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:57:47] "GET /projects/830123104011/globe HTTP/1.1" 308 -
+210.16.91.251 - - [05/May/2025 14:57:47] "GET /projects/830123104011/globe/ HTTP/1.1" 200 -
+[2025-05-05 14:57:53,309] INFO in app: Attempting to log activity: delete for user 8
+[2025-05-05 14:57:53,356] INFO in app: Successfully logged activity: delete for user 8
+210.16.91.251 - - [05/May/2025 14:57:53] "DELETE /api/delete-project/56 HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:57:53] "POST /api/cleanup/globe HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:57:58] "GET /projects/830123104011/sample HTTP/1.1" 308 -
+210.16.91.251 - - [05/May/2025 14:57:58] "GET /projects/830123104011/sample/ HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:58:01] "GET /projects/830123104011/samp HTTP/1.1" 308 -
+210.16.91.251 - - [05/May/2025 14:58:01] "GET /projects/830123104011/samp/ HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:58:01] "GET /projects/830123104011/samp/style.css HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:58:01] "GET /projects/830123104011/samp/script.js HTTP/1.1" 200 -
+[2025-05-05 14:58:35,239] INFO in app: Attempting to log activity: delete for user 8
+[2025-05-05 14:58:35,292] INFO in app: Successfully logged activity: delete for user 8
+210.16.91.251 - - [05/May/2025 14:58:35] "DELETE /api/delete-project/58 HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:58:35] "POST /api/cleanup/sample HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 14:58:46] "GET /projects/830123104011/HealthConnectNM/ HTTP/1.1" 304 -
+210.16.91.251 - - [05/May/2025 14:58:47] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+210.16.91.251 - - [05/May/2025 14:58:47] "GET /projects/830123104011/HealthConnectNM/dashboard.js HTTP/1.1" 304 -
+210.16.91.251 - - [05/May/2025 14:58:47] "GET /projects/830123104011/HealthConnectNM/common.js HTTP/1.1" 304 -
+210.16.91.251 - - [05/May/2025 14:58:53] "GET /projects/830123104011/HealthConnectNM/services.html HTTP/1.1" 304 -
+210.16.91.251 - - [05/May/2025 14:58:53] "GET /projects/830123104011/HealthConnectNM/services.js HTTP/1.1" 304 -
+210.16.91.251 - - [05/May/2025 14:58:53] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+210.16.91.251 - - [05/May/2025 14:59:13] "GET /projects/830123104011/HealthConnectNM/profile.html HTTP/1.1" 304 -
+210.16.91.251 - - [05/May/2025 14:59:13] "GET /projects/830123104011/HealthConnectNM/profile.js HTTP/1.1" 304 -
+210.16.91.251 - - [05/May/2025 14:59:13] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+210.16.91.251 - - [05/May/2025 14:59:13] "GET /projects/830123104011/HealthConnectNM/common.js HTTP/1.1" 304 -
+210.16.91.251 - - [05/May/2025 14:59:19] "GET /projects/830123104011/HealthConnectNM/health-tools.html HTTP/1.1" 304 -
+210.16.91.251 - - [05/May/2025 14:59:19] "GET /projects/830123104011/HealthConnectNM/styles.css HTTP/1.1" 304 -
+210.16.91.251 - - [05/May/2025 14:59:19] "GET /projects/830123104011/HealthConnectNM/health-tools.js HTTP/1.1" 304 -
+[2025-05-05 15:01:06,426] INFO in app: Attempting to log activity: logout for user 8
+[2025-05-05 15:01:06,489] INFO in app: Successfully logged activity: logout for user 8
+210.16.91.251 - - [05/May/2025 15:01:06] "GET /logout HTTP/1.1" 302 -
+210.16.91.251 - - [05/May/2025 15:01:06] "GET /login HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 15:01:10] "GET /register HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 15:01:19] "GET /login HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 15:01:21] "GET / HTTP/1.1" 302 -
+210.16.91.251 - - [05/May/2025 15:01:21] "GET /home HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7777
+ * Running on http://192.168.16.65:7777
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7777
+ * Running on http://192.168.16.65:7777
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7777
+ * Running on http://192.168.16.65:7777
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+210.16.91.251 - - [05/May/2025 15:08:21] "GET / HTTP/1.1" 302 -
+210.16.91.251 - - [05/May/2025 15:08:21] "GET /home HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 15:08:24] "GET /favicon.ico HTTP/1.1" 302 -
+210.16.91.251 - - [05/May/2025 15:08:25] "GET /login HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+210.16.91.251 - - [05/May/2025 15:10:36] code 400, message Bad request version ('\x00\x02\x01\x00\x00\x12\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00+\x00\x07\x06**\x03\x04\x03\x03\x00\x17\x00\x00\x00\x00\x00\x16\x00\x14\x00\x00\x11gces2.duckdns.orgDÍ\x00\x05\x00\x03\x02h2\x00')
+210.16.91.251 - - [05/May/2025 15:10:36] "\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x03\\'ÎÇ~\x99ùÑ\x15\x0c§+\x8d%W2¬OÆ\x0d\x95\x0bèF¨»\x06Ûà\x84ÐÏ 0Lë"lDë\x90\x93#f­æWPG\x8dEt\x93Hn¶\x09ÓÔ\x1d« ?\x82Ê\x00 zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06­ºº\x00\x00\x00\x0b\x00\x02\x01\x00\x00\x12\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00+\x00\x07\x06**\x03\x04\x03\x03\x00\x17\x00\x00\x00\x00\x00\x16\x00\x14\x00\x00\x11gces2.duckdns.orgDÍ\x00\x05\x00\x03\x02h2\x00" HTTPStatus.BAD_REQUEST -
+210.16.91.251 - - [05/May/2025 15:10:36] code 400, message Bad request version ('\x02Á§\x87\x93\x1bu\x03\x801V©þ\x8czË´¸Xë&óT¨G<\x82\x10')
+210.16.91.251 - - [05/May/2025 15:10:36] "\x16\x03\x01\x06Ú\x01\x00\x06Ö\x03\x03\x09¬\x90£µ7\x1f\x91\x9a EÁ\x13ãPÀgÁÖçó~Ê}ýpaJ4\x84ÔÝ \x13\x15Þ2\x88±¢Bs\x91±bYü õx\x0c·ª&x\x9ai*\x09^\\:¯^ª\x00 **\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06múú\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x17\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x12\x00\x00\x00#\x00\x00\x00\x0b\x00\x02\x01\x00\x00-\x00\x02\x01\x01\x00\x05\x00\x05\x01\x00\x00\x00\x00\x003\x04ï\x04í\x8a\x8a\x00\x01\x00\x11ì\x04À\x97\x1bJi9oò¥¹)Ã\x8a`W\x8b,\x17µ´\x12Q<øu<Tn6§\x9cBj\x8bWÒ\x0d\x9c:\x1d\x02a>ÊH\x89xÊ\x03£R\x8b\x06g22û\x04éJ\x9fBx¹Å ­hªLÞç¯\x84Ñs¶g\x08ÒáÉXp\x00y\x01%Y+\x0dD\x92d^ª\x90¼rÎ;À.£XP\x9e\x87oÕyÈ?)`å¼]d`\x0dÚ\x165¾\x17Ph¹>2 AUÓ&¦ìdïA&]\x10\x8f\x1eµ®\x98Ò\x14Ï\x8aÃ)\x1c\x97ÎÊ¿6&q\x1a²4E0F¢Ù`æ«PEÒ+\x1b(\x0fæ\x03\x0c|é\x91Íæ¬\x12\x04PÇr\x86Ü#Mûw§ÀL\x7f\x0eó2rR\x18\x09I\x0c\x02Á§\x87\x93\x1bu\x03\x801V©þ\x8czË´¸Xë&óT¨G<\x82\x10" HTTPStatus.BAD_REQUEST -
+210.16.91.251 - - [05/May/2025 15:10:39] code 400, message Bad request version ('9¨£\x8cñ.Ú}Zj')
+210.16.91.251 - - [05/May/2025 15:10:39] "\x16\x03\x01\x06ú\x01\x00\x06ö\x03\x03K*é\x87V\x1f1Æò\x0c\x0d\x98L\x90}£]£tÅýÍI0d\x7fñ \x9e8\x0b9 äD@äýV\x01/\x1aÖ\x1axÌ\x8d"Å¨Ãmû\x93d\x02\x9d\x97å\x11ÝÞçì \x00 \x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x8dJJ\x00\x00þ\x0d\x00ú\x00\x00\x01\x00\x01Ø\x00 9¨£\x8cñ.Ú}Zj" HTTPStatus.BAD_REQUEST -
+210.16.91.251 - - [05/May/2025 15:10:39] "GET /home HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 15:10:39] code 400, message Bad request version ('zð')
+210.16.91.251 - - [05/May/2025 15:10:39] "\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x037§'ïNÄ\x86\x96\x1e\x07\x0dæE"ß.:/æÃÜ!8À«\x17´+3oRÇ Úy·Ýþ(ÒÐ[B·uò\x86\x94\x14õK<Ù7\\\x989\\û\x1d\x07\x9dT\x0e\x94\x00 zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06­jj\x00\x00ÿ\x01\x00\x01\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x003\x04ï\x04ízz\x00\x01\x00\x11ì\x04À\x8a'\x1fo\x07ºÈØ+.zi`\x1an¢\x89¶ëÓ\x10\x8bH\x9d{RU\x80¥c\x14\\\x02éÆQò\x86Ç\x8aL\x02Ç \x14\x9f»\x0dH4\x02iªhæx\x10*$¡\x03\x8a(vvE\x84üHa(6\x86Ä\x89\x97r^mô2O\x11©»U°ô5¬\x96"¤J\x86\x81\x96i=\x9e\x81\x93×\x14;DåA~Ü1\x97u\x824E\x85\x10\x8aI¬e¤tô­<\x81p¿\x81]]Ü\x86AsU¨¨³\x95[C\x06Ô\x01yf\x1aS¬e-ÓÃ\x00<\x04\x91·\x15¨r\x1ezð" HTTPStatus.BAD_REQUEST -
+210.16.91.251 - - [05/May/2025 15:10:39] "GET /favicon.ico HTTP/1.1" 302 -
+210.16.91.251 - - [05/May/2025 15:10:39] "GET /login HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 15:10:40] "GET /home HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 15:10:40] "GET /favicon.ico HTTP/1.1" 302 -
+210.16.91.251 - - [05/May/2025 15:10:40] "GET /login HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 15:10:40] "GET /home HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 15:10:41] "GET /favicon.ico HTTP/1.1" 302 -
+210.16.91.251 - - [05/May/2025 15:10:41] "GET /login HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 15:10:46] code 400, message Bad request version ('Àø\x95&LRÄ¦Ùã´«\x13\x17dÐ\x00Ü`ìÈì')
+210.16.91.251 - - [05/May/2025 15:10:46] "\x16\x03\x01\x06Ú\x01\x00\x06Ö\x03\x03\x1c«ñ½í\x1e¯\x06Û\x09Àø\x95&LRÄ¦Ùã´«\x13\x17dÐ\x00Ü`ìÈì " HTTPStatus.BAD_REQUEST -
+210.16.91.251 - - [05/May/2025 15:10:46] code 400, message Bad request version ('iäR\x01Ñ}\x02o*Ü<²\x03GÂÚª\x00')
+210.16.91.251 - - [05/May/2025 15:10:46] "\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x03ü\x94:\x16¹\x91xà÷ GÁ^r mìn²\x8f\x0bÉ,\x0f%Pv\x04®­3\x8d Æ\x88/ø­dëû]½\x13Îý» iäR\x01Ñ}\x02o*Ü<²\x03GÂÚª\x00 " HTTPStatus.BAD_REQUEST -
+210.16.91.251 - - [05/May/2025 15:10:46] code 400, message Bad request version ("*\x92ñõ?¬\x02\x15'Õw\x90ó\x15±«i\x8djK\x14\x17³Ã")
+210.16.91.251 - - [05/May/2025 15:10:46] "\x16\x03\x01\x06Ú\x01\x00\x06Ö\x03\x03v°¡v(Æ\x8b\x00Úº|}\x980\x1bÄ{óa\x11{}O2"J\x7fñ\x81BA\x92 ³¼Dbvj\x89¶O\\\x93ý;ñk\x98)Ç Äi\x09\x05\x81&\x99\x0b:\x03ä\x86\x9e\x00 ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06m::\x00\x00þ\x0d\x00Ú\x00\x00\x01\x00\x01z\x00 }#E¬]zÕÌ\x1aï\x9b`cî}ËQÓ¢èÚ¬ñv\x81\x1d~D¤ªJ)\x00°Rý92\x94÷H¢\x8d\x80}\x86tµî\x13\x98\x1f7G²oðÙª\x0fs% \\n°·Vê\x99¸\x18%(r\x98lèzëÀ´\x1fäÅû:jH\x08ª\x00x\x9fO¸i\x0b8\x00­ù\x93\x9cfÏVBPÞES\x08\x88`'\x0c\x9cÚÕSÍtÆY¢ý»*¸¬#aÕ&}\x8dùìM,LSW\x88uö\x92\x1c2mò£Z\x05y¤Q ¥\x17\x85*ø*þ\x0c«\x8d]"5\x97\x95\x1caÅ=òÇ@ N\x18Ù¾\x8f5\x01ì|û\x84)ÁíÜ\x8cåj/À\x1aG¾ÕÜÇË\x1d\x00\x17\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x003\x04ï\x04í\x8a\x8a\x00\x01\x00\x11ì\x04À\x96·"g\x1c\x88ÐpÀÃU¢m\x19\x88F\x9b\x8eÙÇ\x00\x1d*\x92ñõ?¬\x02\x15'Õw\x90ó\x15±«i\x8djK\x14\x17³Ã" HTTPStatus.BAD_REQUEST -
+210.16.91.251 - - [05/May/2025 15:10:46] code 400, message Bad request version ('ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x8dZZ\x00\x00\x00#\x00\x00ÿ\x01\x00\x01\x00\x00\x17\x00\x00\x00')
+210.16.91.251 - - [05/May/2025 15:10:46] "\x16\x03\x01\x06ú\x01\x00\x06ö\x03\x03\x9f\x18¨w©\x9e®\x9bo¤JO<q£\x02\x9fËòÐ\x08:}sQw\x87¤a\x8b\x81u .{r\x9e\x82/ÝR\x0fÐþxõÂ\x0e"ö\x0dä\x0f@Ãjy\x07K\x0bÿr\x07T]\x00 ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x8dZZ\x00\x00\x00#\x00\x00ÿ\x01\x00\x01\x00\x00\x17\x00\x00\x00" HTTPStatus.BAD_REQUEST -
+210.16.91.251 - - [05/May/2025 15:10:46] code 400, message Bad request version ('**\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\xadÊÊ\x00\x00\x00#\x00\x00\x00')
+210.16.91.251 - - [05/May/2025 15:10:46] "\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x031ÓÐãD\x16\x17zk\x97nÎèÉõTåái\x0f'Ó #Ij\x09´uµuô °\x88+î<°Ä\x13_iøC\x89QK}ÉÒé\x0c8&\x01$\x97\x1a®%Dì#º\x00 **\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06­ÊÊ\x00\x00\x00#\x00\x00\x00" HTTPStatus.BAD_REQUEST -
+210.16.91.251 - - [05/May/2025 15:10:46] code 400, message Bad request version ('ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\xadÚÚ\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x1b\x00\x03\x02\x00\x02DÍ\x00\x05\x00\x03\x02h2\x00')
+210.16.91.251 - - [05/May/2025 15:10:46] "\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x03@+Âl%-\x80Zê\x93äw*\x84Ýpàw\x10ÿ:\x9f4»°'\x0e\x93#C­I x\x82\x09ûs\x9e/\x1bh\x0e§ÆÙ\x0bÍ\x1cù\x03\x03XQç._¬a"4\x0d1.í\x00 ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06­ÚÚ\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x1b\x00\x03\x02\x00\x02DÍ\x00\x05\x00\x03\x02h2\x00" HTTPStatus.BAD_REQUEST -
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7777
+ * Running on http://192.168.16.65:7777
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+210.16.91.251 - - [05/May/2025 15:13:25] code 400, message Bad request version ('ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06mºº\x00\x00\x00\x00\x00\x16\x00\x14\x00\x00\x11gces2.duckdns.org\x00')
+210.16.91.251 - - [05/May/2025 15:13:25] "\x16\x03\x01\x06Ú\x01\x00\x06Ö\x03\x03\x0c-O\x99ø`±î7x<ú9\x84ô5\x93ÂÆE\x19ôµe±¨A}\x855ÆV ãðy\x095Qþ\x1d\x1f\\]dÖô_â\x1d\x8c\x03,a"Í\x9dÞWÁØ<\x17ðÝ\x00 ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06mºº\x00\x00\x00\x00\x00\x16\x00\x14\x00\x00\x11gces2.duckdns.org\x00" HTTPStatus.BAD_REQUEST -
+210.16.91.251 - - [05/May/2025 15:13:25] code 400, message Bad request version ("\x9aÜi\x9c\x9cÅMõº\x952Ç'9\x1bB\x8fö\x95#ì\x13\x14X¸Á\x05\x13\x8dA*ü\x07Ìvóeöã7·2\x84\\×\x9f\x01ètG\x91ºÆ\x10}n{\x89\x00Z.\x15\x83}\x05óg")
+210.16.91.251 - - [05/May/2025 15:13:25] "\x16\x03\x01\x06º\x01\x00\x06¶\x03\x03¨.t9-]\x0e{èëÿ»õ\x0c\x04__ÈÜz-åB¢>íêbË\x077> \x16\x8dî\x09?\x1f\x00\x12\x1aù\x01Y;\x84çVª×LG7øøPË\x96lr\x8e\x83OÁ\x00 ::\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06M\x1a\x1a\x00\x00\x00\x00\x00\x16\x00\x14\x00\x00\x11gces2.duckdns.org\x00\x0b\x00\x02\x01\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x003\x04ï\x04íêê\x00\x01\x00\x11ì\x04À\x02ãÏç\x89LÍ1¦\x9eA5\x9a"/{À«§\x88X^Y\x8fe\x12\x86ÑrX\x03:\x8f`'NÙ\x19ÂÂ\x98.\x0c³\x8da\x923jBW`æ¡û\x97@\x07ÕyÔR6l©ln\x07y8G½À0kY7¼#<!\x0dì¢Ö£d\x1bSÊª«ª d-î:nh1«hÂ\x9b2°1\x93|Y\x87\\\x1c_Ä'<e}\x96Òw´SÌ\x89ã%5\x1bhKë\x96¦àfíåÃO¸]/ðWóÌvã`¨n,)áÚÆ\x06;S\x9b\x0c\x9aÜi\x9c\x9cÅMõº\x952Ç'9\x1bB\x8fö\x95#ì\x13\x14X¸Á\x05\x13\x8dA*ü\x07Ìvóeöã7·2\x84\\×\x9f\x01ètG\x91ºÆ\x10}n{\x89\x00Z.\x15\x83}\x05óg " HTTPStatus.BAD_REQUEST -
+210.16.91.251 - - [05/May/2025 15:13:25] code 400, message Bad request version ('\x02h2\x08http/1.1\x00')
+210.16.91.251 - - [05/May/2025 15:13:25] "\x16\x03\x01\x06º\x01\x00\x06¶\x03\x03'¥W8¹\x9b\x98­6w\x94ÌRÿ^N8y8\x98ÃÖ\x86Û&j¾Ìnþ\x1a\x94 Gÿ}L\x1b\x12P¯\x8b°ý\x03Ü\x95ZO¿{{<-\x97¿Â6oì\x02\x9d/\x89%\x00 zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06M**\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00#\x00\x00ÿ\x01\x00\x01\x00\x00\x0b\x00\x02\x01\x00\x00\x17\x00\x00\x00\x00\x00\x16\x00\x14\x00\x00\x11gces2.duckdns.org\x00\x12\x00\x00\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00+\x00\x07\x06ÚÚ\x03\x04\x03\x03\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00" HTTPStatus.BAD_REQUEST -
+210.16.91.251 - - [05/May/2025 15:13:25] code 400, message Bad request version ('\x02h2\x08http/1.1\x00\x17\x00\x00\x00+\x00\x07\x06::\x03\x04\x03\x03\x00\x00\x00\x16\x00\x14\x00\x00\x11gces2.duckdns.org\x00\x12\x00\x00\x00#\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00-\x00\x02\x01\x01DÍ\x00\x05\x00\x03\x02h2\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00')
+210.16.91.251 - - [05/May/2025 15:13:25] "\x16\x03\x01\x07\x1a\x01\x00\x07\x16\x03\x03\x01»yöÉ×\x1b\x0e%[_\x99vVP{6èVB{3<³X\x8a^\x07þÕ)\x9e \x1bq\x01M\x8b<häsï"qwÂ\x0b\x9caâÜÖOf\x0bQ ÔËÎÆ\x1c\x12¡\x00 ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06­ÊÊ\x00\x00\x00\x0b\x00\x02\x01\x00\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x17\x00\x00\x00+\x00\x07\x06::\x03\x04\x03\x03\x00\x00\x00\x16\x00\x14\x00\x00\x11gces2.duckdns.org\x00\x12\x00\x00\x00#\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00-\x00\x02\x01\x01DÍ\x00\x05\x00\x03\x02h2\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00" HTTPStatus.BAD_REQUEST -
+210.16.91.251 - - [05/May/2025 15:13:28] "GET /home HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 15:13:29] "GET /favicon.ico HTTP/1.1" 302 -
+210.16.91.251 - - [05/May/2025 15:13:30] "GET /login HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 15:16:58] "GET /dashboard HTTP/1.1" 302 -
+210.16.91.251 - - [05/May/2025 15:16:58] "GET /login HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 15:16:59] "GET /favicon.ico HTTP/1.1" 302 -
+210.16.91.251 - - [05/May/2025 15:16:59] "GET /login HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 15:19:41] "GET / HTTP/1.1" 302 -
+210.16.91.251 - - [05/May/2025 15:19:41] "GET /home HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 15:19:41] "GET /favicon.ico HTTP/1.1" 302 -
+210.16.91.251 - - [05/May/2025 15:19:41] "GET /login HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 15:19:50] "GET /home HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 15:19:50] "GET /favicon.ico HTTP/1.1" 302 -
+210.16.91.251 - - [05/May/2025 15:19:50] "GET /login HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 15:19:52] "GET /home HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 15:19:52] "GET /favicon.ico HTTP/1.1" 302 -
+210.16.91.251 - - [05/May/2025 15:19:52] "GET /login HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 15:19:52] "GET /home HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 15:19:52] "GET /favicon.ico HTTP/1.1" 302 -
+210.16.91.251 - - [05/May/2025 15:19:52] "GET /login HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 15:19:53] "GET /home HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 15:19:53] "GET /favicon.ico HTTP/1.1" 302 -
+210.16.91.251 - - [05/May/2025 15:19:53] "GET /login HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 15:19:53] "GET /home HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 15:19:53] "GET /favicon.ico HTTP/1.1" 302 -
+210.16.91.251 - - [05/May/2025 15:19:53] "GET /login HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 15:19:53] "GET /home HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 15:19:54] "GET /favicon.ico HTTP/1.1" 302 -
+210.16.91.251 - - [05/May/2025 15:19:54] "GET /login HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 15:19:54] "GET /home HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 15:19:54] "GET /favicon.ico HTTP/1.1" 302 -
+210.16.91.251 - - [05/May/2025 15:19:54] "GET /login HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7777
+ * Running on http://192.168.16.65:7777
+Press CTRL+C to quit
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7777
+ * Running on http://210.16.91.251:7777
+Press CTRL+C to quit
+27.61.54.72 - - [05/May/2025 15:22:18] "GET / HTTP/1.1" 302 -
+27.61.54.72 - - [05/May/2025 15:22:18] "GET /home HTTP/1.1" 200 -
+  File "C:\Users\Administrator\Documents\Free-Hosting\app.py", line 618
+    ssl_context=(
+    ^
+SyntaxError: invalid syntax
+  File "C:\Users\Administrator\Documents\Free-Hosting\app.py", line 618
+    ssl_context=(
+    ^
+SyntaxError: invalid syntax
+  File "C:\Users\Administrator\Documents\Free-Hosting\app.py", line 618
+    ssl_context=(
+    ^
+SyntaxError: invalid syntax
+  File "C:\Users\Administrator\Documents\Free-Hosting\app.py", line 618
+    ssl_context=(
+    ^
+SyntaxError: invalid syntax
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:7777
+ * Running on http://210.16.91.251:7777
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+27.61.54.72 - - [05/May/2025 15:24:38] "GET /home HTTP/1.1" 200 -
+27.61.54.72 - - [05/May/2025 15:24:53] code 400, message Bad request version ('|\x93ð\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+27.61.54.72 - - [05/May/2025 15:24:53] "\x16\x03\x01\x02\x9f\x01\x00\x02\x9b\x03\x03\x0fûËµëÇÒ}K=¾¨ÚîÈqÄÁ\x951\x96}t§Í\x81\x8c7BÜ\x17] id/äÏ\x96hå0m+Ó­\x9bcÔ\x98Yî\x1fµ2¦M\x1a\x9b'^ |\x93ð\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À" HTTPStatus.BAD_REQUEST -
+27.61.54.72 - - [05/May/2025 15:24:54] code 400, message Bad request version ('³ÑºTûW\x90\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+27.61.54.72 - - [05/May/2025 15:24:54] "\x16\x03\x01\x02\x9f\x01\x00\x02\x9b\x03\x03,ü³¿0iõîÐ»\x88>ñ;h)ÐªÛº·æ0\x84§.\x1eé\x9a§\\9 \x86\x825ô$\x8d\x82p@û\x83Á²íU~NøÓ\x8dD*ZÞ\x85³ÑºTûW\x90\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À" HTTPStatus.BAD_REQUEST -
+27.61.54.72 - - [05/May/2025 15:24:54] code 400, message Bad request syntax ('\x16\x03\x01\x02\x9f\x01\x00\x02\x9b\x03\x03w[\x96Ñ#GmL5|sî\x9d¶¥P,$Ê1Í\x9fQ¼ì')
+27.61.54.72 - - [05/May/2025 15:24:54] "\x16\x03\x01\x02\x9f\x01\x00\x02\x9b\x03\x03w[\x96Ñ#GmL5|sî\x9d¶¥P,$Ê1Í\x9fQ¼ì" HTTPStatus.BAD_REQUEST -
+27.61.54.72 - - [05/May/2025 15:24:55] code 400, message Bad request version ('t¨\x05\x15Æ¨Ï\x92à·ÖðÔtn\x8eÒ@åÑ°\x9dQ\x10üsçkÞs?æ\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+27.61.54.72 - - [05/May/2025 15:24:55] "\x16\x03\x01\x02\x9f\x01\x00\x02\x9b\x03\x03\x1a4]\x10±â'ÃN×\x1f\x1aä ú Dn¥ìßí´¿ìwt\x84s\x95Ì§ t¨\x05\x15Æ¨Ï\x92à·ÖðÔtn\x8eÒ@åÑ°\x9dQ\x10üsçkÞs?æ\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À" HTTPStatus.BAD_REQUEST -
+27.61.54.72 - - [05/May/2025 15:25:01] "GET /home HTTP/1.1" 200 -
+27.61.54.72 - - [05/May/2025 15:25:03] "GET /dashboard HTTP/1.1" 302 -
+27.61.54.72 - - [05/May/2025 15:25:04] "GET /login HTTP/1.1" 200 -
+27.61.54.72 - - [05/May/2025 15:25:07] "GET /login HTTP/1.1" 200 -
+[2025-05-05 15:25:15,801] INFO in app: Attempting to log activity: login for user 8
+[2025-05-05 15:25:15,864] INFO in app: Successfully logged activity: login for user 8
+27.61.54.72 - - [05/May/2025 15:25:15] "POST /login HTTP/1.1" 200 -
+27.61.54.72 - - [05/May/2025 15:25:17] "GET /home HTTP/1.1" 200 -
+27.61.54.72 - - [05/May/2025 15:25:19] "GET /dashboard HTTP/1.1" 200 -
+27.61.54.72 - - [05/May/2025 15:25:20] "GET /views/styles/dashboard.css?v=1.0 HTTP/1.1" 200 -
+27.61.54.72 - - [05/May/2025 15:25:20] "GET /views/scripts/dashboard.js?v=1.0 HTTP/1.1" 200 -
+27.61.54.72 - - [05/May/2025 15:25:20] "GET /get_regno HTTP/1.1" 200 -
+27.61.54.72 - - [05/May/2025 15:25:20] "GET /get_base_url HTTP/1.1" 200 -
+27.61.54.72 - - [05/May/2025 15:25:20] "GET /get_regno HTTP/1.1" 200 -
+27.61.54.72 - - [05/May/2025 15:25:21] "GET /api/dashboard HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 15:55:02] "GET / HTTP/1.1" 302 -
+210.16.91.251 - - [05/May/2025 15:55:02] "GET /home HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 15:55:03] "GET /favicon.ico HTTP/1.1" 302 -
+210.16.91.251 - - [05/May/2025 15:55:03] "GET /login HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 15:55:03] "GET /home HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 15:55:03] "GET /favicon.ico HTTP/1.1" 302 -
+210.16.91.251 - - [05/May/2025 15:55:03] "GET /login HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:7777
+ * Running on https://210.16.91.251:7777
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+210.16.91.251 - - [05/May/2025 15:57:50] "GET /home HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 15:57:50] "GET /favicon.ico HTTP/1.1" 302 -
+210.16.91.251 - - [05/May/2025 15:59:14] "GET / HTTP/1.1" 302 -
+210.16.91.251 - - [05/May/2025 15:59:14] "GET /home HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 15:59:14] "GET /favicon.ico HTTP/1.1" 302 -
+210.16.91.251 - - [05/May/2025 15:59:14] "GET /login HTTP/1.1" 200 -
+27.61.54.72 - - [05/May/2025 16:03:19] "GET / HTTP/1.1" 302 -
+27.61.54.72 - - [05/May/2025 16:03:20] "GET /home HTTP/1.1" 200 -
+27.61.54.72 - - [05/May/2025 16:03:50] "GET / HTTP/1.1" 302 -
+27.61.54.72 - - [05/May/2025 16:03:50] "GET / HTTP/1.1" 302 -
+27.61.54.72 - - [05/May/2025 16:03:51] "GET /home HTTP/1.1" 200 -
+27.61.54.72 - - [05/May/2025 16:03:51] "GET /home HTTP/1.1" 200 -
+27.61.54.72 - - [05/May/2025 16:03:51] "GET /favicon.ico HTTP/1.1" 302 -
+27.61.54.72 - - [05/May/2025 16:03:51] "GET /favicon.ico HTTP/1.1" 302 -
+27.61.54.72 - - [05/May/2025 16:03:51] "GET /login HTTP/1.1" 200 -
+27.61.54.72 - - [05/May/2025 16:03:52] "GET /login HTTP/1.1" 200 -
+27.61.54.72 - - [05/May/2025 16:03:56] "GET / HTTP/1.1" 302 -
+27.61.54.72 - - [05/May/2025 16:03:57] "GET /home HTTP/1.1" 200 -
+27.61.54.72 - - [05/May/2025 16:03:58] "GET /favicon.ico HTTP/1.1" 302 -
+27.61.54.72 - - [05/May/2025 16:03:59] "GET /login HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+27.61.54.72 - - [05/May/2025 16:06:20] "GET /home HTTP/1.1" 200 -
+27.61.54.72 - - [05/May/2025 16:06:20] "GET /favicon.ico HTTP/1.1" 302 -
+27.61.54.72 - - [05/May/2025 16:06:20] "GET /login HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:7777
+ * Running on https://210.16.91.251:7777
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+ * Detected change in 'C:\\Users\\Administrator\\Documents\\Free-Hosting\\app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 225-432-578
+210.16.91.251 - - [05/May/2025 16:07:30] "GET /home HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 16:07:30] "GET /favicon.ico HTTP/1.1" 302 -
+210.16.91.251 - - [05/May/2025 16:07:30] "GET /login HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 16:07:40] "GET /home HTTP/1.1" 200 -
+210.16.91.251 - - [05/May/2025 16:07:41] "GET /favicon.ico HTTP/1.1" 302 -
+210.16.91.251 - - [05/May/2025 16:07:41] "GET /login HTTP/1.1" 200 -

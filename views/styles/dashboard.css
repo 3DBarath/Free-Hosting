@@ -28,6 +28,7 @@ body {
     text-decoration: none;
     font-weight: 600;
     z-index: 1000;
+    transform: translateX(-3px);
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -36,7 +37,7 @@ body {
 
 .home-link:hover {
     color: var(--light-slate);
-    transform: translateX(-3px);
+
 }
 
 .home-link i {

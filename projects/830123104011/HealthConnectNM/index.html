@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthConnect - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <a href="index.html" class="active">🏠 Dashboard</a>
+        <a href="services.html">📍 Services</a>
+        <a href="health-tools.html">🩺 Health Tools</a>
+        <a href="profile.html">👤 Profile</a>
+    </nav>
+
+    <div class="dashboard-grid">
+        <!-- Real-time Health Metrics -->
+        <div class="health-metric pulse">
+            <h3>❤️ Heart Rate</h3>
+            <div class="live-data" id="heartRate">72</div>
+            <div class="metric-trend"></div>
+        </div>
+
+        <!-- Appointment Calendar -->
+        <div class="calendar-widget">
+            <h3>📅 Today's Schedule</h3>
+            <div class="appointment-list" id="appointments"></div>
+            <button class="cta-btn" onclick="scheduleAppointment()">+ New Appointment</button>
+        </div>
+
+        <!-- Health Timeline -->
+        <div class="timeline-widget">
+            <h3>⏳ Health Timeline</h3>
+            <div class="timeline-items" id="timeline"></div>
+        </div>
+    </div>
+    <script src="common.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>

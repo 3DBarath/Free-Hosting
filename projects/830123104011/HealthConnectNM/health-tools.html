@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthConnect - 25+ Health Tools</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <a href="index.html">🏠 Dashboard</a>
+        <a href="services.html">📍 Services</a>
+        <a href="health-tools.html">🩺 Health Tools</a>
+        <a href="profile.html" class="active">👤 Profile</a>
+    </nav>
+
+    <main class="container">
+        <h1 class="page-title">Health Tools</h1>
+        
+        <div class="tools-grid">
+            <!-- 1. BMI Calculator -->
+        <div class="tool-card">
+            <h3>⚖️ BMI Calculator</h3>
+            <input type="number" id="weight" placeholder="Weight (kg)">
+            <input type="number" id="height" placeholder="Height (cm)">
+            <button onclick="calculateBMI()">Calculate</button>
+            <div class="result" id="bmiResult"></div>
+        </div>
+
+        <!-- 2. Body Fat Calculator -->
+        <div class="tool-card">
+            <h3>📏 Body Fat %</h3>
+            <select id="bfGender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <input type="number" id="waist" placeholder="Waist (cm)">
+            <input type="number" id="neck" placeholder="Neck (cm)">
+            <input type="number" id="hip" placeholder="Hip (cm)">
+            <button onclick="calculateBodyFat()">Calculate</button>
+            <div class="result" id="bodyFatResult"></div>
+        </div>
+
+        <!-- 3. Calorie Calculator -->
+        <div class="tool-card">
+            <h3>🔥 Daily Calories</h3>
+            <select id="calGender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <input type="number" id="calWeight" placeholder="Weight (kg)">
+            <input type="number" id="calHeight" placeholder="Height (cm)">
+            <input type="number" id="calAge" placeholder="Age">
+            <select id="calActivity">
+                <option value="1.2">Sedentary</option>
+                <option value="1.375">Light Exercise</option>
+                <option value="1.55">Moderate</option>
+                <option value="1.725">Active</option>
+                <option value="1.9">Very Active</option>
+            </select>
+            <button onclick="calculateCalories()">Calculate</button>
+            <div class="result" id="calorieResult"></div>
+        </div>
+
+        <!-- 4. Heart Rate Zone Calculator -->
+        <div class="tool-card">
+            <h3>❤️ Heart Rate Zones</h3>
+            <input type="number" id="hrAge" placeholder="Age">
+            <input type="number" id="hrResting" placeholder="Resting HR">
+            <button onclick="calculateHRZones()">Calculate</button>
+            <div class="result" id="hrResult"></div>
+        </div>
+
+        <!-- 5. Pregnancy Due Date -->
+        <div class="tool-card">
+            <h3>🤰 Due Date Calculator</h3>
+            <input type="date" id="lmp">
+            <button onclick="calculateDueDate()">Calculate</button>
+            <div class="result" id="dueDateResult"></div>
+        </div>
+
+        <!-- 6. Alcohol BAC Calculator -->
+        <div class="tool-card">
+            <h3>🍷 Blood Alcohol</h3>
+            <select id="bacGender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <input type="number" id="bacWeight" placeholder="Weight (kg)">
+            <input type="number" id="drinks" placeholder="Standard Drinks">
+            <input type="number" id="hours" placeholder="Hours">
+            <button onclick="calculateBAC()">Calculate</button>
+            <div class="result" id="bacResult"></div>
+        </div>
+
+        <!-- 7. Hydration Calculator -->
+        <div class="tool-card">
+            <h3>💧 Water Intake</h3>
+            <input type="number" id="hWeight" placeholder="Weight (kg)">
+            <select id="hActivity">
+                <option value="1">Sedentary</option>
+                <option value="1.2">Active</option>
+                <option value="1.5">Athlete</option>
+            </select>
+            <button onclick="calculateHydration()">Calculate</button>
+            <div class="result" id="hydrationResult"></div>
+        </div>
+
+        <!-- 8. Sleep Calculator -->
+        <div class="tool-card">
+            <h3>🛌 Sleep Needs</h3>
+            <input type="number" id="sAge" placeholder="Age">
+            <button onclick="calculateSleep()">Calculate</button>
+            <div class="result" id="sleepResult"></div>
+        </div>
+
+        <!-- 9. Waist-to-Hip Ratio -->
+        <div class="tool-card">
+            <h3>📐 Waist-Hip Ratio</h3>
+            <input type="number" id="whWaist" placeholder="Waist (cm)">
+            <input type="number" id="whHip" placeholder="Hip (cm)">
+            <button onclick="calculateWHR()">Calculate</button>
+            <div class="result" id="whResult"></div>
+        </div>
+
+        <!-- 10. Protein Calculator -->
+        <div class="tool-card">
+            <h3>🥩 Protein Needs</h3>
+            <input type="number" id="pWeight" placeholder="Weight (kg)">
+            <select id="pActivity">
+                <option value="0.8">Sedentary</option>
+                <option value="1.2">Active</option>
+                <option value="1.6">Athlete</option>
+            </select>
+            <button onclick="calculateProtein()">Calculate</button>
+            <div class="result" id="proteinResult"></div>
+        </div>
+
+<!-- Continue adding to the tools-container div -->
+
+<!-- 11. Blood Pressure Checker -->
+<div class="tool-card">
+    <h3>🩺 BP Category</h3>
+    <input type="number" id="systolic" placeholder="Systolic (mmHg)">
+    <input type="number" id="diastolic" placeholder="Diastolic (mmHg)">
+    <button onclick="checkBP()">Check</button>
+    <div class="result" id="bpResult"></div>
+</div>
+
+<!-- 12. Diabetes Risk Test -->
+<div class="tool-card">
+    <h3>🩸 Diabetes Risk</h3>
+    <input type="number" id="diabAge" placeholder="Age">
+    <input type="number" id="diabBMI" placeholder="BMI">
+    <select id="diabFamily">
+        <option value="0">No Family History</option>
+        <option value="1">Family History</option>
+    </select>
+    <button onclick="diabetesRisk()">Calculate</button>
+    <div class="result" id="diabResult"></div>
+</div>
+
+<!-- 13. TDEE Calculator -->
+<div class="tool-card">
+    <h3>⚡ Total Energy Expenditure</h3>
+    <input type="number" id="tdeeWeight" placeholder="Weight (kg)">
+    <input type="number" id="tdeeActivity" placeholder="Activity Level (1.2-1.9)">
+    <button onclick="calculateTDEE()">Calculate</button>
+    <div class="result" id="tdeeResult"></div>
+</div>
+
+<!-- 14. Ideal Weight Calculator -->
+<div class="tool-card">
+    <h3>🎯 Ideal Weight</h3>
+    <select id="iwGender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select>
+    <input type="number" id="iwHeight" placeholder="Height (cm)">
+    <button onclick="idealWeight()">Calculate</button>
+    <div class="result" id="iwResult"></div>
+</div>
+
+<!-- 15. Ovulation Calculator -->
+<div class="tool-card">
+    <h3>📅 Ovulation Day</h3>
+    <input type="number" id="cycleLength" placeholder="Cycle Length (days)">
+    <button onclick="calculateOvulation()">Calculate</button>
+    <div class="result" id="ovResult"></div>
+</div>
+
+<!-- 16. Cholesterol Ratio -->
+<div class="tool-card">
+    <h3>🩸 Cholesterol Ratio</h3>
+    <input type="number" id="totalChol" placeholder="Total Cholesterol">
+    <input type="number" id="hdlChol" placeholder="HDL Cholesterol">
+    <button onclick="calculateCholRatio()">Calculate</button>
+    <div class="result" id="cholResult"></div>
+</div>
+
+<!-- 17. Stress Test -->
+<div class="tool-card">
+    <h3>😓 Stress Level Test</h3>
+    <select id="stressSleep">
+        <option value="0">Good Sleep</option>
+        <option value="1">Poor Sleep</option>
+    </select>
+    <select id="stressMood">
+        <option value="0">Good Mood</option>
+        <option value="1">Poor Mood</option>
+    </select>
+    <button onclick="calculateStress()">Check</button>
+    <div class="result" id="stressResult"></div>
+</div>
+
+<!-- 18. Carb Calculator -->
+<div class="tool-card">
+    <h3>🍞 Carb Intake</h3>
+    <input type="number" id="carbCalories" placeholder="Daily Calories">
+    <input type="number" id="carbPercentage" placeholder="% Carbs (50-65)">
+    <button onclick="calculateCarbs()">Calculate</button>
+    <div class="result" id="carbResult"></div>
+</div>
+
+<!-- 19. Vitamin D Needs -->
+<div class="tool-card">
+    <h3>☀️ Vitamin D Needs</h3>
+    <input type="number" id="vitdAge" placeholder="Age">
+    <select id="vitdExposure">
+        <option value="600">Low Sun Exposure</option>
+        <option value="400">Moderate Sun</option>
+        <option value="200">High Sun</option>
+    </select>
+    <button onclick="calculateVitD()">Calculate</button>
+    <div class="result" id="vitdResult"></div>
+</div>
+
+<!-- 20. Body Surface Area -->
+<div class="tool-card">
+    <h3>📐 Body Surface Area</h3>
+    <input type="number" id="bsaWeight" placeholder="Weight (kg)">
+    <input type="number" id="bsaHeight" placeholder="Height (cm)">
+    <button onclick="calculateBSA()">Calculate</button>
+    <div class="result" id="bsaResult"></div>
+</div>
+
+<!-- 21. Bone Mass Calculator -->
+<div class="tool-card">
+    <h3>🦴 Bone Mass</h3>
+    <input type="number" id="boneWeight" placeholder="Weight (kg)">
+    <input type="number" id="boneFat" placeholder="Body Fat %">
+    <button onclick="calculateBoneMass()">Calculate</button>
+    <div class="result" id="boneResult"></div>
+</div>
+
+<!-- 22. Pregnancy Weight Gain -->
+<div class="tool-card">
+    <h3>🤰 Weight Gain</h3>
+    <input type="number" id="pregBMI" placeholder="Pre-pregnancy BMI">
+    <button onclick="pregWeight()">Recommend</button>
+    <div class="result" id="pregResult"></div>
+</div>
+
+<!-- 23. Running Pace Calculator -->
+<div class="tool-card">
+    <h3>🏃 Running Pace</h3>
+    <input type="number" id="runDistance" placeholder="Distance (km)">
+    <input type="number" id="runTime" placeholder="Time (minutes)">
+    <button onclick="calculatePace()">Calculate</button>
+    <div class="result" id="paceResult"></div>
+</div>
+
+<!-- 24. Blood Sugar Converter -->
+<div class="tool-card">
+    <h3>🩸 Glucose Units</h3>
+    <input type="number" id="glucoseValue" placeholder="Value">
+    <select id="glucoseUnit">
+        <option value="mgdl">mg/dL</option>
+        <option value="mmol">mmol/L</option>
+    </select>
+    <button onclick="convertGlucose()">Convert</button>
+    <div class="result" id="glucoseResult"></div>
+</div>
+
+<!-- 25. Health Age Calculator -->
+<div class="tool-card">
+    <h3>👴 Health Age</h3>
+    <input type="number" id="haAge" placeholder="Chronological Age">
+    <input type="number" id="haBMI" placeholder="BMI">
+    <select id="haSmoker">
+        <option value="0">Non-smoker</option>
+        <option value="5">Smoker</option>
+    </select>
+    <button onclick="healthAge()">Calculate</button>
+    <div class="result" id="haResult"></div>
+</div>
+
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>© 2025 GcesHealthConnect. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="health-tools.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HealthConnect - Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <a href="index.html">🏠 Dashboard</a>
+        <a href="services.html">📍 Services</a>
+        <a href="health-tools.html">🩺 Health Tools</a>
+        <a href="profile.html" class="active">👤 Profile</a>
+    </nav>
+
+    <div class="profile-container">
+        <div class="profile-card">
+            <div class="avatar">👤</div>
+            <h2 id="userName">John Doe</h2>
+            <p id="userEmail">john@healthconnect.com</p>
+            <button class="cta-btn" onclick="editProfile()">✏️ Edit Profile</button>
+        </div>
+
+        <div class="medical-info">
+            <div class="info-card">
+                <h3>🩺 Medical History</h3>
+                <div class="info-grid" id="medicalHistory"></div>
+            </div>
+
+            <div class="info-card">
+                <h3>⚠️ Emergency Contacts</h3>
+                <div class="contact-list" id="emergencyContacts"></div>
+                <button class="cta-btn" onclick="addContact()">➕ Add Contact</button>
+            </div>
+
+            <div class="info-card">
+                <h3>📝 Health Journal</h3>
+                <textarea id="journalEntry" placeholder="How are you feeling today?"></textarea>
+                <button class="cta-btn" onclick="saveJournalEntry()">💾 Save Entry</button>
+                <div class="journal-entries" id="journalEntries"></div>
+            </div>
+        </div>
+    </div>
+    <footer class="main-footer">
+        <div class="container">
+            <p>© 2025 GcesHealthConnect. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="common.js"></script>
+    <script src="profile.js"></script>
+</body>
+</html>
