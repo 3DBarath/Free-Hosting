@@ -614,9 +614,9 @@ def serve_project_index(regno, project):
         return "index.html not found", 404
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=PORT, debug=True,  # You can change this to 443 if needed
+    app.run(host='0.0.0.0', port=PORT, debug=True, 
         ssl_context=(
-            r'C:\Users\Administrator\.acme.sh\gces2.duckdns.org_ecc\fullchain.cer',  # Cert file
-            r'C:\Users\Administrator\.acme.sh\gces2.duckdns.org_ecc\gces2.duckdns.org.key'  # Key file
+            r'C:\Users\Administrator\.acme.sh\gces2.duckdns.org_ecc\fullchain.cer',
+            r'C:\Users\Administrator\.acme.sh\gces2.duckdns.org_ecc\gces2.duckdns.org.key'
         )
     )
