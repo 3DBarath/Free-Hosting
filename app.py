@@ -382,7 +382,7 @@ def upload_zip():
 
 
             # Store in database
-            cursor = conn.cursor()
+            cursor = conn.cursor(cursor_factory=RealDictCursor)
             project_url = f"/projects/{regno}/{project_name}/"
             cursor.execute(
                 "INSERT INTO uploads (user_id, filename, project_folder,link) VALUES (%s, %s, %s,%s) RETURNING id",
