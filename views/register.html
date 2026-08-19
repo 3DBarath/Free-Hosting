@@ -298,21 +298,11 @@ button:hover {
                 <div class="error-message" id="regno-error">Invalid registration number format</div>
             </div>
             
-            <div class="form-group dob-group">
-                <label for="dob">Date of Birth</label>
-                <i class="fas fa-calendar input-icon"></i>
-                <input type="date" id="dob" name="dob" required 
-                       pattern="\d{4}-\d{2}-\d{2}"
-                       title="Enter your date of birth in yyyy-mm-dd format">
-                <div class="error-message" id="dob-error">Invalid date of birth</div>
-            </div>
-            
             <div class="form-group">
-                <label for="password">Create Password</label>
+                <label for="password">Password</label>
                 <i class="fas fa-key input-icon"></i>
-                <input type="password" id="password" name="password" required 
-                       minlength="8"
-                       title="Password must be at least 8 characters">
+                <input type="password" id="password" name="password" required
+                       title="Your hostel account password — verified against the student database">
             </div>
             
             <button type="submit">Create Account</button>
@@ -326,15 +316,6 @@ button:hover {
     const isValid = VALID_REGNO.test(this.value);
     this.style.borderColor = isValid ? 'var(--teal)' : '#ff6b6b';
     document.getElementById('regno-error').style.display = isValid ? 'none' : 'block';
-});
-
-document.getElementById('dob').addEventListener('change', function() {
-    const isValid = isValidDate(this.value) && validateCredentials(
-        document.getElementById('regno').value,
-        this.value
-    );
-    this.style.borderColor = isValid ? 'var(--teal)' : '#ff6b6b';
-    document.getElementById('dob-error').style.display = isValid ? 'none' : 'block';
 });
 
 document.getElementById('register-form').addEventListener('submit', async function(event) {

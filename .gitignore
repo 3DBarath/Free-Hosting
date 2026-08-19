@@ -3,3 +3,10 @@ crack.py
 output.txt
 flask_session/
 settings.json
+venv/
+__pycache__/
+*.pyc
+temp/
+cmd.txt
+.env
+*.log

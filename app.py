@@ -8,24 +8,35 @@ import time
 import datetime
 from datetime import timedelta
 import shutil
-import mysql.connector
+import requests
+import psycopg2
+from psycopg2.extras import RealDictCursor
 from flask_session import Session
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Configuration
 PORT = 7777
-ALLOWED_HOST = 'gces2.duckdns.org'
+ALLOWED_HOST = 'freehosting.gces.net.in'
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECTS_DIR = os.path.join(BASE_DIR, 'projects')
 TEMP_DIR = os.path.join(BASE_DIR, 'temp')
 VIEWS_DIR = os.path.join(BASE_DIR, 'views')
 
-# MySQL Configuration
+# PostgreSQL Configuration
 DB_CONFIG = {
-    'host': 'localhost',
-    'user': 'root',
-    'password': 'server-84k$',
-    'database': 'ziphost'
+    'host': os.getenv('DB_HOST', 'localhost'),
+    'port': int(os.getenv('DB_PORT', '5432')),
+    'user': os.getenv('DB_USER', 'MessReduction'),
+    'password': os.getenv('DB_PASSWORD'),
+    'dbname': os.getenv('DB_NAME', 'ziphost')
 }
+
+# Hostel student-verification API (used at registration to validate
+# registerNo + password against the real student database).
+STUDENT_VERIFY_API_URL = os.getenv('STUDENT_VERIFY_API_URL', 'https://hostel-api.gces.net.in/api/auth/verify-details')
+STUDENT_VERIFY_API_KEY = os.getenv('STUDENT_VERIFY_API_KEY')
 
 app = Flask(__name__,
             template_folder='views',
@@ -34,7 +45,7 @@ app = Flask(__name__,
 # Add session lifetime configuration
 app.config['PERMANENT_SESSION'] = True
 app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(hours=1)
-app.config['SECRET_KEY'] = 'your-secret-key'
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', 'dev-insecure-key')
 app.config['SESSION_TYPE'] = 'filesystem'
 app.config['UPLOAD_FOLDER'] = TEMP_DIR
 Session(app)
@@ -43,41 +54,53 @@ os.makedirs(PROJECTS_DIR, exist_ok=True)
 os.makedirs(TEMP_DIR, exist_ok=True)
 
 def get_db():
-    return mysql.connector.connect(**DB_CONFIG)                                                                                                                                                                                                                                                                                                                                                             
+    return psycopg2.connect(**DB_CONFIG)
+
+def verify_student(regno, password):
+    """Verify registerNo + password against the hostel student DB.
+
+    Returns True (valid), False (invalid), or None (verification service
+    unavailable).
+    """
+    try:
+        resp = requests.post(
+            STUDENT_VERIFY_API_URL,
+            json={'registerNo': regno, 'password': password},
+            headers={'X-API-Key': STUDENT_VERIFY_API_KEY},
+            timeout=10
+        )
+        text = resp.text.strip().lower()
+        if text == 'true':
+            return True
+        try:
+            return bool(resp.json().get('success'))
+        except Exception:
+            return False
+    except requests.RequestException as e:
+        app.logger.error(f"Student verification error: {str(e)}")
+        return None
+
 # Auth Routes
 @app.route('/register', methods=['POST'])
 def register():
     regno = request.form['regno']
-    dob = request.form['dob']
     password = request.form['password']
-    
+
     # Validate REGNO format
     if not regno.startswith('8301') or len(regno) != 12 or not regno.isdigit():
         return jsonify(error="Invalid registration number format"), 400
-    
-    # Validate date format
-    try:
-        datetime.datetime.strptime(dob, '%Y-%m-%d')
-    except ValueError:
-        return jsonify(error="Invalid date format (use YYYY-MM-DD)"), 400
-    
+
+    # Verify registerNo + password against the hostel student database
+    verified = verify_student(regno, password)
+    if verified is None:
+        return jsonify(error="Verification service unavailable, please try again"), 503
+    if not verified:
+        return jsonify(error="Invalid registration number or password"), 401
+
     conn = get_db()
-    cursor = conn.cursor(dictionary=True)
-    
+    cursor = conn.cursor(cursor_factory=RealDictCursor)
+
     try:
-        # Check valid REGNO/DOB combination
-        cursor.execute("""
-            SELECT regno 
-            FROM valid_registrations 
-            WHERE regno = %s AND dob = %s
-        """, (regno, dob))
-        valid = cursor.fetchone()
-        
-        if not valid:
-            return jsonify(error="Invalid registration number or date of birth"), 401
-
-        # Rest of registration logic...
-
         # Check if already registered
         cursor.execute("SELECT id FROM users WHERE regno = %s", (regno,))
         if cursor.fetchone():
@@ -85,14 +108,14 @@ def register():
         hashed_password = generate_password_hash(password)
         # Create user
         cursor.execute("""
-            INSERT INTO users (regno, password_hash) 
+            INSERT INTO users (regno, password_hash)
             VALUES (%s, %s)
         """, (regno, hashed_password))
         conn.commit()
-        
+
         return jsonify(success=True)
-        
-    except mysql.connector.Error as e:
+
+    except psycopg2.Error as e:
         return jsonify(error="Database error"), 500
     finally:
         cursor.close()
@@ -102,21 +125,55 @@ def register():
 def login():
     regno = request.form['regno']
     password = request.form['password']
-    
+
     conn = get_db()
-    cursor = conn.cursor(dictionary=True)
+    cursor = conn.cursor(cursor_factory=RealDictCursor)
     cursor.execute("SELECT * FROM users WHERE regno = %s", (regno,))
     user = cursor.fetchone()
-    cursor.close()
-    conn.close()
-    
-    if user and check_password_hash(user['password_hash'], password):
-        session['user_id'] = user['id']
-        session['regno'] = regno
-        session['is_admin'] = user.get('is_admin', False)  # Add admin status to session
-        log_activity(user['id'], 'login', description=f"User logged in", request=request)
-        return jsonify(success=True)
-    return jsonify(error="Invalid credentials"), 401
+
+    try:
+        if user and check_password_hash(user['password_hash'], password):
+            # Known user, stored password matches.
+            session['user_id'] = user['id']
+            session['regno'] = regno
+            session['is_admin'] = user.get('is_admin', False)
+            log_activity(user['id'], 'login', description=f"User logged in", request=request)
+            return jsonify(success=True)
+
+        if not user:
+            # Unknown user: verify against the hostel DB and auto-create on
+            # success, so a first login doubles as registration.
+            verified = verify_student(regno, password)
+            if verified is None:
+                return jsonify(error="Verification service unavailable, please try again"), 503
+            if verified:
+                hashed_password = generate_password_hash(password)
+                # Guard against a concurrent registration racing this insert.
+                try:
+                    cursor.execute(
+                        "INSERT INTO users (regno, password_hash) VALUES (%s, %s) RETURNING id",
+                        (regno, hashed_password)
+                    )
+                    new_id = cursor.fetchone()['id']
+                except Exception:
+                    cursor.rollback()
+                    cursor.execute("SELECT id FROM users WHERE regno = %s", (regno,))
+                    new_id = user = cursor.fetchone()
+                    if not new_id:
+                        return jsonify(error="Invalid credentials"), 401
+                    new_id = new_id['id']
+                conn.commit()
+                session['user_id'] = new_id
+                session['regno'] = regno
+                session['is_admin'] = False
+                log_activity(new_id, 'login', description="User auto-created on first login", request=request)
+                return jsonify(success=True, created=True)
+
+        # Known user but wrong password, or unknown user failed verification.
+        return jsonify(error="Invalid credentials"), 401
+    finally:
+        cursor.close()
+        conn.close()
 
 @app.route('/logout')
 def logout():
@@ -130,7 +187,7 @@ def get_activity_logs():
         return jsonify(error="Unauthorized"), 401
     
     conn = get_db()
-    cursor = conn.cursor(dictionary=True)
+    cursor = conn.cursor(cursor_factory=RealDictCursor)
     
     try:
         # Get parameters
@@ -150,7 +207,7 @@ def get_activity_logs():
 
         # Build base query
         query = """
-            SELECT SQL_CALC_FOUND_ROWS al.*, u.regno 
+            SELECT al.*, u.regno, COUNT(*) OVER() AS total_count
             FROM activity_logs al
             JOIN users u ON al.user_id = u.id
         """
@@ -182,9 +239,8 @@ def get_activity_logs():
         cursor.execute(query, params)
         logs = cursor.fetchall()
 
-        # Get total results
-        cursor.execute("SELECT FOUND_ROWS()")
-        total = cursor.fetchone()['FOUND_ROWS()']
+        # Get total results from the window function column
+        total = logs[0]['total_count'] if logs else 0
         has_more = (page * per_page) < total
 
         return jsonify(
@@ -243,7 +299,7 @@ def upload_zip():
     try:
         # Verify user exists
         conn = get_db()
-        cursor = conn.cursor(dictionary=True)
+        cursor = conn.cursor(cursor_factory=RealDictCursor)
         cursor.execute("SELECT id FROM users WHERE id = %s", (session['user_id'],))
         user = cursor.fetchone()
         cursor.close()
@@ -329,9 +385,10 @@ def upload_zip():
             cursor = conn.cursor()
             project_url = f"/projects/{regno}/{project_name}/"
             cursor.execute(
-                "INSERT INTO uploads (user_id, filename, project_folder,link) VALUES (%s, %s, %s,%s)",
+                "INSERT INTO uploads (user_id, filename, project_folder,link) VALUES (%s, %s, %s,%s) RETURNING id",
                 (session['user_id'], filename, project_name,f"https://{request.host}{project_url}")
             )
+            new_id = cursor.fetchone()['id']
             conn.commit()
             cursor.close()
 
@@ -340,7 +397,7 @@ def upload_zip():
             session['user_id'],
             'upload',
             table_affected='uploads',
-            record_id=cursor.lastrowid,
+            record_id=new_id,
             description=f"Uploaded project: {project_name}",
             request=request)
 
@@ -378,7 +435,7 @@ def delete_project(project_id):
 
     try:
         conn = get_db()
-        cursor = conn.cursor(dictionary=True)
+        cursor = conn.cursor(cursor_factory=RealDictCursor)
         
         # Verify ownership
         cursor.execute("""
@@ -450,7 +507,7 @@ def dashboard_data():
         return jsonify(error="Unauthorized"), 401
     
     conn = get_db()
-    cursor = conn.cursor(dictionary=True)
+    cursor = conn.cursor(cursor_factory=RealDictCursor)
     cursor.execute("""
         SELECT id, filename, project_folder, upload_time, is_pinned
         FROM uploads 
@@ -495,7 +552,7 @@ def toggle_pin(project_id):
 
     try:
         conn = get_db()
-        cursor = conn.cursor(dictionary=True)
+        cursor = conn.cursor(cursor_factory=RealDictCursor)
         
         # Get current pin state
         cursor.execute("""
@@ -545,7 +602,7 @@ def check_valid_session():
     
     # Verify user exists in database
     conn = get_db()
-    cursor = conn.cursor(dictionary=True)
+    cursor = conn.cursor(cursor_factory=RealDictCursor)
     cursor.execute("SELECT id FROM users WHERE id = %s", (session['user_id'],))
     user = cursor.fetchone()
     cursor.close()
@@ -586,7 +643,13 @@ def home():
 
 @app.before_request
 def force_https():
-    if not request.is_secure:
+    # TLS is terminated by the Cloudflare tunnel, which forwards plain HTTP
+    # to the origin and sets X-Forwarded-Proto. Only enforce https when the
+    # proxy reports the client-facing scheme as http. Direct connections to
+    # the origin (e.g. localhost dev) have no forwarded header and are served
+    # as-is, so local testing doesn't get redirected into a dead https: loop.
+    forwarded = request.headers.get('X-Forwarded-Proto')
+    if forwarded == 'http':
         return redirect(request.url.replace("http://", "https://", 1))
 @app.route('/dash')
 def dash():
@@ -613,10 +676,17 @@ def serve_project_index(regno, project):
     else:
         return "index.html not found", 404
 
+@app.errorhandler(Exception)
+def handle_error(e):
+    # The frontend always does response.json(); make sure server errors return
+    # JSON rather than an HTML error page that breaks the client's parser.
+    from werkzeug.exceptions import HTTPException
+    app.logger.error(f"Unhandled error: {type(e).__name__}: {e}")
+    if isinstance(e, HTTPException):
+        return jsonify(error=e.description), e.code
+    return jsonify(error="Server error"), 500
+
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=PORT, debug=True, 
-        ssl_context=(
-            r'C:\Users\Administrator\.acme.sh\gces2.duckdns.org_ecc\fullchain.cer',
-            r'C:\Users\Administrator\.acme.sh\gces2.duckdns.org_ecc\gces2.duckdns.org.key'
-        )
-    )
+    # TLS is terminated at the Cloudflare tunnel edge, so the app runs plain
+    # HTTP on this port. Use no_proxy/ProxyFix if running behind a reverse proxy.
+    app.run(host='0.0.0.0', port=PORT, debug=True)
